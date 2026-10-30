@@ -1,0 +1,45 @@
+{
+ "model": "gpt-4o-mini",
+ "prompt_version": "v2_strict",
+ "prompt": "You judge prerequisite relations between study concepts. Answer true only if a learner cannot properly understand B without first knowing A. Being related, being in the same field, or A being generally useful background is not enough. Most pairs are not prerequisites, and the relation is directional: if B is needed for A, answer false. Reply with JSON only: {\"reason\": \"<one line>\", \"requires\": true or false}.",
+ "tune": {
+  "n": 809,
+  "positives": 18,
+  "predicted_positive": 10,
+  "accuracy": 0.9802224969097652,
+  "precision": 0.6,
+  "recall": 0.3333333333333333,
+  "f1": 0.42857142857142855,
+  "kappa": 0.4193432621568276
+ },
+ "holdout": {
+  "n": 809,
+  "positives": 18,
+  "predicted_positive": 14,
+  "accuracy": 0.9777503090234858,
+  "precision": 0.5,
+  "recall": 0.3888888888888889,
+  "f1": 0.4375,
+  "kappa": 0.42633154743145285,
+  "ci95": {
+   "f1": [
+    0.18181818181818182,
+    0.6428571428571429
+   ],
+   "kappa": [
+    0.17053998632946,
+    0.6366984012933357
+   ]
+  }
+ },
+ "all_zero_baseline": {
+  "n": 809,
+  "positives": 18,
+  "predicted_positive": 0,
+  "accuracy": 0.9777503090234858,
+  "precision": 0.0,
+  "recall": 0.0,
+  "f1": 0.0,
+  "kappa": 0.0
+ }
+}

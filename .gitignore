@@ -1,0 +1,9 @@
+.env
+.venv/
+__pycache__/
+.pytest_cache/
+.DS_Store
+# Third-party clones: re-fetch using data/SOURCES.md
+data/raw/
+# Test data stays out of the repo and unopened until "run test"
+data/test/

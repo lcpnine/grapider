@@ -1,0 +1,38 @@
+{
+ "seed": 20261030,
+ "crossing_pairs_dropped": 21625,
+ "lb2_concepts_removed_as_judge": 30,
+ "normalize": {
+  "lb1": {
+   "rows_in": 42750,
+   "duplicate": 402,
+   "unknown_id": 829,
+   "self_loop": 2,
+   "conflict": 4,
+   "both_directions": 12,
+   "edges_out": 41485,
+   "positive_out": 885
+  },
+  "lb2": {
+   "rows_in": 68075,
+   "duplicate": 2430,
+   "self_loop": 13,
+   "conflict": 20,
+   "both_directions": 3,
+   "edges_out": 65585,
+   "positive_out": 445
+  }
+ },
+ "judge_dev": {
+  "sha256": "6eb08ca422b4981e23d68d80aab2e6cc74d702ce30196b8b74c729184bd3b2ee",
+  "concepts": 42,
+  "pairs": 1618,
+  "positives": 36
+ },
+ "system_dev": {
+  "sha256": "a4609fec41f113742b3395d9f228dd487bf478d7faa8041e3bcf5e1e3d5caff9",
+  "concepts": 318,
+  "pairs": 83827,
+  "positives": 954
+ }
+}

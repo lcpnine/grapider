@@ -1,0 +1,9966 @@
+{
+"concepts": [
+{
+"description": "",
+"id": "neural_machine_translation",
+"name": "Neural Machine Translation",
+"source": "lb1"
+},
+{
+"description": "",
+"id": "ibm_translation_model",
+"name": "IBM Translation Models",
+"source": "lb1"
+},
+{
+"description": "",
+"id": "rouge",
+"name": "ROUGE",
+"source": "lb1"
+},
+{
+"description": "",
+"id": "open_information_extraction",
+"name": "Open information extraction",
+"source": "lb1"
+},
+{
+"description": "",
+"id": "semantic_role_labeling",
+"name": "Semantic Role Labeling",
+"source": "lb1"
+},
+{
+"description": "",
+"id": "context_free_grammar",
+"name": "Context Free Grammar",
+"source": "lb1"
+},
+{
+"description": "",
+"id": "domain_adaptation",
+"name": "Domain Adaptation",
+"source": "lb1"
+},
+{
+"description": "",
+"id": "backpropagation",
+"name": "Backpropagation",
+"source": "lb1"
+},
+{
+"description": "",
+"id": "logistic_regression",
+"name": "Logistic Regression",
+"source": "lb1"
+},
+{
+"description": "",
+"id": "combinatory_categorial_grammar",
+"name": "Combinatory Categorial Grammar",
+"source": "lb1"
+},
+{
+"description": "",
+"id": "automated_essay_scoring",
+"name": "Automated essay scoring",
+"source": "lb1"
+},
+{
+"description": "",
+"id": "latent_semantic_indexing",
+"name": "Latent semantic indexing",
+"source": "lb1"
+},
+{
+"description": "",
+"id": "hidden_markov_model",
+"name": "Hidden Markov Models",
+"source": "lb1"
+},
+{
+"description": "",
+"id": "deep_belief_network",
+"name": "deep belief networks",
+"source": "lb1"
+},
+{
+"description": "",
+"id": "part_of_speech_tagging",
+"name": "Part of Speech tagging",
+"source": "lb1"
+},
+{
+"description": "",
+"id": "multi_document_summarization",
+"name": "multi-Document Summarization",
+"source": "lb1"
+},
+{
+"description": "",
+"id": "one_shot_learning",
+"name": "One-shot learning",
+"source": "lb1"
+},
+{
+"description": "",
+"id": "bootstrapping",
+"name": "Bootstrapping",
+"source": "lb1"
+},
+{
+"description": "",
+"id": "lexicography",
+"name": "Lexicography",
+"source": "lb1"
+},
+{
+"description": "",
+"id": "multilingual_word",
+"name": "Multilingual Word",
+"source": "lb1"
+},
+{
+"description": "",
+"id": "radial_basis_function_network",
+"name": "Radial Basis Function Network",
+"source": "lb1"
+},
+{
+"description": "",
+"id": "kernel_function",
+"name": "Kernel Function",
+"source": "lb1"
+},
+{
+"description": "",
+"id": "expectation_maximization_em_algorithm",
+"name": "Expectation-Maximization (EM) Algorithm",
+"source": "lb1"
+},
+{
+"description": "",
+"id": "first_order_logic",
+"name": "First-order logic",
+"source": "lb1"
+},
+{
+"description": "",
+"id": "svm",
+"name": "SVM",
+"source": "lb1"
+},
+{
+"description": "",
+"id": "word2vec",
+"name": "Word2Vec",
+"source": "lb1"
+},
+{
+"description": "",
+"id": "bayesian_network",
+"name": "Bayesian network",
+"source": "lb1"
+},
+{
+"description": "",
+"id": "graphical_model",
+"name": "Graphical models",
+"source": "lb1"
+},
+{
+"description": "",
+"id": "earley_parsing",
+"name": "Earley parsing",
+"source": "lb1"
+},
+{
+"description": "",
+"id": "textual_entailment",
+"name": "Textual entailment",
+"source": "lb1"
+},
+{
+"description": "",
+"id": "constraint_satisfaction",
+"name": "Constraint satisfaction",
+"source": "lb1"
+},
+{
+"description": "",
+"id": "facial_recognition_system",
+"name": "Facial Recognition Systems",
+"source": "lb1"
+},
+{
+"description": "",
+"id": "caption_generation",
+"name": "Caption generation",
+"source": "lb1"
+},
+{
+"description": "",
+"id": "paraphrasing",
+"name": "Paraphrasing",
+"source": "lb1"
+},
+{
+"description": "",
+"id": "gibbs_sampling",
+"name": "Gibbs sampling",
+"source": "lb1"
+},
+{
+"description": "",
+"id": "statistical_machine_translation",
+"name": "Statistical machine translation",
+"source": "lb1"
+},
+{
+"description": "",
+"id": "regular_expression",
+"name": "Regular expressions",
+"source": "lb1"
+},
+{
+"description": "",
+"id": "hierarchical_model",
+"name": "Hierarchical models",
+"source": "lb1"
+},
+{
+"description": "",
+"id": "crawling_the_web",
+"name": "Crawling the Web",
+"source": "lb1"
+},
+{
+"description": "",
+"id": "game_playing_in_ai",
+"name": "Game playing in AI",
+"source": "lb1"
+},
+{
+"description": "",
+"id": "lambda_calculus",
+"name": "Lambda calculus",
+"source": "lb1"
+},
+{
+"description": "",
+"id": "probability",
+"name": "Probability",
+"source": "lb1"
+}
+],
+"edges": [
+{
+"dependent_id": "backpropagation",
+"label": 0,
+"prereq_id": "automated_essay_scoring",
+"source": "lb1"
+},
+{
+"dependent_id": "bayesian_network",
+"label": 0,
+"prereq_id": "automated_essay_scoring",
+"source": "lb1"
+},
+{
+"dependent_id": "bootstrapping",
+"label": 0,
+"prereq_id": "automated_essay_scoring",
+"source": "lb1"
+},
+{
+"dependent_id": "caption_generation",
+"label": 0,
+"prereq_id": "automated_essay_scoring",
+"source": "lb1"
+},
+{
+"dependent_id": "combinatory_categorial_grammar",
+"label": 0,
+"prereq_id": "automated_essay_scoring",
+"source": "lb1"
+},
+{
+"dependent_id": "constraint_satisfaction",
+"label": 0,
+"prereq_id": "automated_essay_scoring",
+"source": "lb1"
+},
+{
+"dependent_id": "context_free_grammar",
+"label": 0,
+"prereq_id": "automated_essay_scoring",
+"source": "lb1"
+},
+{
+"dependent_id": "crawling_the_web",
+"label": 0,
+"prereq_id": "automated_essay_scoring",
+"source": "lb1"
+},
+{
+"dependent_id": "deep_belief_network",
+"label": 0,
+"prereq_id": "automated_essay_scoring",
+"source": "lb1"
+},
+{
+"dependent_id": "domain_adaptation",
+"label": 0,
+"prereq_id": "automated_essay_scoring",
+"source": "lb1"
+},
+{
+"dependent_id": "earley_parsing",
+"label": 0,
+"prereq_id": "automated_essay_scoring",
+"source": "lb1"
+},
+{
+"dependent_id": "expectation_maximization_em_algorithm",
+"label": 0,
+"prereq_id": "automated_essay_scoring",
+"source": "lb1"
+},
+{
+"dependent_id": "facial_recognition_system",
+"label": 0,
+"prereq_id": "automated_essay_scoring",
+"source": "lb1"
+},
+{
+"dependent_id": "first_order_logic",
+"label": 0,
+"prereq_id": "automated_essay_scoring",
+"source": "lb1"
+},
+{
+"dependent_id": "game_playing_in_ai",
+"label": 0,
+"prereq_id": "automated_essay_scoring",
+"source": "lb1"
+},
+{
+"dependent_id": "gibbs_sampling",
+"label": 0,
+"prereq_id": "automated_essay_scoring",
+"source": "lb1"
+},
+{
+"dependent_id": "graphical_model",
+"label": 0,
+"prereq_id": "automated_essay_scoring",
+"source": "lb1"
+},
+{
+"dependent_id": "hidden_markov_model",
+"label": 0,
+"prereq_id": "automated_essay_scoring",
+"source": "lb1"
+},
+{
+"dependent_id": "hierarchical_model",
+"label": 0,
+"prereq_id": "automated_essay_scoring",
+"source": "lb1"
+},
+{
+"dependent_id": "ibm_translation_model",
+"label": 0,
+"prereq_id": "automated_essay_scoring",
+"source": "lb1"
+},
+{
+"dependent_id": "kernel_function",
+"label": 0,
+"prereq_id": "automated_essay_scoring",
+"source": "lb1"
+},
+{
+"dependent_id": "lambda_calculus",
+"label": 0,
+"prereq_id": "automated_essay_scoring",
+"source": "lb1"
+},
+{
+"dependent_id": "latent_semantic_indexing",
+"label": 0,
+"prereq_id": "automated_essay_scoring",
+"source": "lb1"
+},
+{
+"dependent_id": "lexicography",
+"label": 0,
+"prereq_id": "automated_essay_scoring",
+"source": "lb1"
+},
+{
+"dependent_id": "logistic_regression",
+"label": 0,
+"prereq_id": "automated_essay_scoring",
+"source": "lb1"
+},
+{
+"dependent_id": "multi_document_summarization",
+"label": 0,
+"prereq_id": "automated_essay_scoring",
+"source": "lb1"
+},
+{
+"dependent_id": "multilingual_word",
+"label": 0,
+"prereq_id": "automated_essay_scoring",
+"source": "lb1"
+},
+{
+"dependent_id": "neural_machine_translation",
+"label": 0,
+"prereq_id": "automated_essay_scoring",
+"source": "lb1"
+},
+{
+"dependent_id": "one_shot_learning",
+"label": 0,
+"prereq_id": "automated_essay_scoring",
+"source": "lb1"
+},
+{
+"dependent_id": "open_information_extraction",
+"label": 0,
+"prereq_id": "automated_essay_scoring",
+"source": "lb1"
+},
+{
+"dependent_id": "paraphrasing",
+"label": 0,
+"prereq_id": "automated_essay_scoring",
+"source": "lb1"
+},
+{
+"dependent_id": "part_of_speech_tagging",
+"label": 0,
+"prereq_id": "automated_essay_scoring",
+"source": "lb1"
+},
+{
+"dependent_id": "probability",
+"label": 0,
+"prereq_id": "automated_essay_scoring",
+"source": "lb1"
+},
+{
+"dependent_id": "radial_basis_function_network",
+"label": 0,
+"prereq_id": "automated_essay_scoring",
+"source": "lb1"
+},
+{
+"dependent_id": "rouge",
+"label": 0,
+"prereq_id": "automated_essay_scoring",
+"source": "lb1"
+},
+{
+"dependent_id": "semantic_role_labeling",
+"label": 0,
+"prereq_id": "automated_essay_scoring",
+"source": "lb1"
+},
+{
+"dependent_id": "statistical_machine_translation",
+"label": 0,
+"prereq_id": "automated_essay_scoring",
+"source": "lb1"
+},
+{
+"dependent_id": "svm",
+"label": 0,
+"prereq_id": "automated_essay_scoring",
+"source": "lb1"
+},
+{
+"dependent_id": "textual_entailment",
+"label": 0,
+"prereq_id": "automated_essay_scoring",
+"source": "lb1"
+},
+{
+"dependent_id": "word2vec",
+"label": 0,
+"prereq_id": "automated_essay_scoring",
+"source": "lb1"
+},
+{
+"dependent_id": "automated_essay_scoring",
+"label": 0,
+"prereq_id": "backpropagation",
+"source": "lb1"
+},
+{
+"dependent_id": "bayesian_network",
+"label": 0,
+"prereq_id": "backpropagation",
+"source": "lb1"
+},
+{
+"dependent_id": "bootstrapping",
+"label": 0,
+"prereq_id": "backpropagation",
+"source": "lb1"
+},
+{
+"dependent_id": "caption_generation",
+"label": 0,
+"prereq_id": "backpropagation",
+"source": "lb1"
+},
+{
+"dependent_id": "combinatory_categorial_grammar",
+"label": 0,
+"prereq_id": "backpropagation",
+"source": "lb1"
+},
+{
+"dependent_id": "constraint_satisfaction",
+"label": 0,
+"prereq_id": "backpropagation",
+"source": "lb1"
+},
+{
+"dependent_id": "context_free_grammar",
+"label": 0,
+"prereq_id": "backpropagation",
+"source": "lb1"
+},
+{
+"dependent_id": "crawling_the_web",
+"label": 0,
+"prereq_id": "backpropagation",
+"source": "lb1"
+},
+{
+"dependent_id": "domain_adaptation",
+"label": 0,
+"prereq_id": "backpropagation",
+"source": "lb1"
+},
+{
+"dependent_id": "earley_parsing",
+"label": 0,
+"prereq_id": "backpropagation",
+"source": "lb1"
+},
+{
+"dependent_id": "expectation_maximization_em_algorithm",
+"label": 0,
+"prereq_id": "backpropagation",
+"source": "lb1"
+},
+{
+"dependent_id": "facial_recognition_system",
+"label": 0,
+"prereq_id": "backpropagation",
+"source": "lb1"
+},
+{
+"dependent_id": "first_order_logic",
+"label": 0,
+"prereq_id": "backpropagation",
+"source": "lb1"
+},
+{
+"dependent_id": "game_playing_in_ai",
+"label": 0,
+"prereq_id": "backpropagation",
+"source": "lb1"
+},
+{
+"dependent_id": "gibbs_sampling",
+"label": 0,
+"prereq_id": "backpropagation",
+"source": "lb1"
+},
+{
+"dependent_id": "graphical_model",
+"label": 0,
+"prereq_id": "backpropagation",
+"source": "lb1"
+},
+{
+"dependent_id": "hidden_markov_model",
+"label": 0,
+"prereq_id": "backpropagation",
+"source": "lb1"
+},
+{
+"dependent_id": "hierarchical_model",
+"label": 0,
+"prereq_id": "backpropagation",
+"source": "lb1"
+},
+{
+"dependent_id": "ibm_translation_model",
+"label": 0,
+"prereq_id": "backpropagation",
+"source": "lb1"
+},
+{
+"dependent_id": "kernel_function",
+"label": 0,
+"prereq_id": "backpropagation",
+"source": "lb1"
+},
+{
+"dependent_id": "lambda_calculus",
+"label": 0,
+"prereq_id": "backpropagation",
+"source": "lb1"
+},
+{
+"dependent_id": "latent_semantic_indexing",
+"label": 0,
+"prereq_id": "backpropagation",
+"source": "lb1"
+},
+{
+"dependent_id": "lexicography",
+"label": 0,
+"prereq_id": "backpropagation",
+"source": "lb1"
+},
+{
+"dependent_id": "logistic_regression",
+"label": 0,
+"prereq_id": "backpropagation",
+"source": "lb1"
+},
+{
+"dependent_id": "multi_document_summarization",
+"label": 0,
+"prereq_id": "backpropagation",
+"source": "lb1"
+},
+{
+"dependent_id": "multilingual_word",
+"label": 1,
+"prereq_id": "backpropagation",
+"source": "lb1"
+},
+{
+"dependent_id": "neural_machine_translation",
+"label": 1,
+"prereq_id": "backpropagation",
+"source": "lb1"
+},
+{
+"dependent_id": "one_shot_learning",
+"label": 0,
+"prereq_id": "backpropagation",
+"source": "lb1"
+},
+{
+"dependent_id": "open_information_extraction",
+"label": 0,
+"prereq_id": "backpropagation",
+"source": "lb1"
+},
+{
+"dependent_id": "paraphrasing",
+"label": 0,
+"prereq_id": "backpropagation",
+"source": "lb1"
+},
+{
+"dependent_id": "part_of_speech_tagging",
+"label": 0,
+"prereq_id": "backpropagation",
+"source": "lb1"
+},
+{
+"dependent_id": "probability",
+"label": 0,
+"prereq_id": "backpropagation",
+"source": "lb1"
+},
+{
+"dependent_id": "radial_basis_function_network",
+"label": 0,
+"prereq_id": "backpropagation",
+"source": "lb1"
+},
+{
+"dependent_id": "rouge",
+"label": 0,
+"prereq_id": "backpropagation",
+"source": "lb1"
+},
+{
+"dependent_id": "statistical_machine_translation",
+"label": 0,
+"prereq_id": "backpropagation",
+"source": "lb1"
+},
+{
+"dependent_id": "svm",
+"label": 0,
+"prereq_id": "backpropagation",
+"source": "lb1"
+},
+{
+"dependent_id": "textual_entailment",
+"label": 0,
+"prereq_id": "backpropagation",
+"source": "lb1"
+},
+{
+"dependent_id": "word2vec",
+"label": 1,
+"prereq_id": "backpropagation",
+"source": "lb1"
+},
+{
+"dependent_id": "automated_essay_scoring",
+"label": 0,
+"prereq_id": "bayesian_network",
+"source": "lb1"
+},
+{
+"dependent_id": "backpropagation",
+"label": 0,
+"prereq_id": "bayesian_network",
+"source": "lb1"
+},
+{
+"dependent_id": "bootstrapping",
+"label": 0,
+"prereq_id": "bayesian_network",
+"source": "lb1"
+},
+{
+"dependent_id": "caption_generation",
+"label": 0,
+"prereq_id": "bayesian_network",
+"source": "lb1"
+},
+{
+"dependent_id": "combinatory_categorial_grammar",
+"label": 0,
+"prereq_id": "bayesian_network",
+"source": "lb1"
+},
+{
+"dependent_id": "constraint_satisfaction",
+"label": 0,
+"prereq_id": "bayesian_network",
+"source": "lb1"
+},
+{
+"dependent_id": "context_free_grammar",
+"label": 0,
+"prereq_id": "bayesian_network",
+"source": "lb1"
+},
+{
+"dependent_id": "crawling_the_web",
+"label": 0,
+"prereq_id": "bayesian_network",
+"source": "lb1"
+},
+{
+"dependent_id": "deep_belief_network",
+"label": 1,
+"prereq_id": "bayesian_network",
+"source": "lb1"
+},
+{
+"dependent_id": "domain_adaptation",
+"label": 0,
+"prereq_id": "bayesian_network",
+"source": "lb1"
+},
+{
+"dependent_id": "earley_parsing",
+"label": 0,
+"prereq_id": "bayesian_network",
+"source": "lb1"
+},
+{
+"dependent_id": "expectation_maximization_em_algorithm",
+"label": 0,
+"prereq_id": "bayesian_network",
+"source": "lb1"
+},
+{
+"dependent_id": "facial_recognition_system",
+"label": 0,
+"prereq_id": "bayesian_network",
+"source": "lb1"
+},
+{
+"dependent_id": "first_order_logic",
+"label": 0,
+"prereq_id": "bayesian_network",
+"source": "lb1"
+},
+{
+"dependent_id": "game_playing_in_ai",
+"label": 0,
+"prereq_id": "bayesian_network",
+"source": "lb1"
+},
+{
+"dependent_id": "gibbs_sampling",
+"label": 0,
+"prereq_id": "bayesian_network",
+"source": "lb1"
+},
+{
+"dependent_id": "graphical_model",
+"label": 0,
+"prereq_id": "bayesian_network",
+"source": "lb1"
+},
+{
+"dependent_id": "hidden_markov_model",
+"label": 0,
+"prereq_id": "bayesian_network",
+"source": "lb1"
+},
+{
+"dependent_id": "hierarchical_model",
+"label": 0,
+"prereq_id": "bayesian_network",
+"source": "lb1"
+},
+{
+"dependent_id": "ibm_translation_model",
+"label": 0,
+"prereq_id": "bayesian_network",
+"source": "lb1"
+},
+{
+"dependent_id": "kernel_function",
+"label": 0,
+"prereq_id": "bayesian_network",
+"source": "lb1"
+},
+{
+"dependent_id": "lambda_calculus",
+"label": 0,
+"prereq_id": "bayesian_network",
+"source": "lb1"
+},
+{
+"dependent_id": "latent_semantic_indexing",
+"label": 0,
+"prereq_id": "bayesian_network",
+"source": "lb1"
+},
+{
+"dependent_id": "lexicography",
+"label": 0,
+"prereq_id": "bayesian_network",
+"source": "lb1"
+},
+{
+"dependent_id": "logistic_regression",
+"label": 0,
+"prereq_id": "bayesian_network",
+"source": "lb1"
+},
+{
+"dependent_id": "multi_document_summarization",
+"label": 0,
+"prereq_id": "bayesian_network",
+"source": "lb1"
+},
+{
+"dependent_id": "multilingual_word",
+"label": 0,
+"prereq_id": "bayesian_network",
+"source": "lb1"
+},
+{
+"dependent_id": "neural_machine_translation",
+"label": 0,
+"prereq_id": "bayesian_network",
+"source": "lb1"
+},
+{
+"dependent_id": "one_shot_learning",
+"label": 0,
+"prereq_id": "bayesian_network",
+"source": "lb1"
+},
+{
+"dependent_id": "open_information_extraction",
+"label": 0,
+"prereq_id": "bayesian_network",
+"source": "lb1"
+},
+{
+"dependent_id": "paraphrasing",
+"label": 0,
+"prereq_id": "bayesian_network",
+"source": "lb1"
+},
+{
+"dependent_id": "part_of_speech_tagging",
+"label": 0,
+"prereq_id": "bayesian_network",
+"source": "lb1"
+},
+{
+"dependent_id": "probability",
+"label": 0,
+"prereq_id": "bayesian_network",
+"source": "lb1"
+},
+{
+"dependent_id": "radial_basis_function_network",
+"label": 0,
+"prereq_id": "bayesian_network",
+"source": "lb1"
+},
+{
+"dependent_id": "rouge",
+"label": 0,
+"prereq_id": "bayesian_network",
+"source": "lb1"
+},
+{
+"dependent_id": "semantic_role_labeling",
+"label": 0,
+"prereq_id": "bayesian_network",
+"source": "lb1"
+},
+{
+"dependent_id": "statistical_machine_translation",
+"label": 0,
+"prereq_id": "bayesian_network",
+"source": "lb1"
+},
+{
+"dependent_id": "svm",
+"label": 0,
+"prereq_id": "bayesian_network",
+"source": "lb1"
+},
+{
+"dependent_id": "textual_entailment",
+"label": 0,
+"prereq_id": "bayesian_network",
+"source": "lb1"
+},
+{
+"dependent_id": "word2vec",
+"label": 0,
+"prereq_id": "bayesian_network",
+"source": "lb1"
+},
+{
+"dependent_id": "automated_essay_scoring",
+"label": 0,
+"prereq_id": "bootstrapping",
+"source": "lb1"
+},
+{
+"dependent_id": "backpropagation",
+"label": 0,
+"prereq_id": "bootstrapping",
+"source": "lb1"
+},
+{
+"dependent_id": "bayesian_network",
+"label": 0,
+"prereq_id": "bootstrapping",
+"source": "lb1"
+},
+{
+"dependent_id": "caption_generation",
+"label": 0,
+"prereq_id": "bootstrapping",
+"source": "lb1"
+},
+{
+"dependent_id": "combinatory_categorial_grammar",
+"label": 0,
+"prereq_id": "bootstrapping",
+"source": "lb1"
+},
+{
+"dependent_id": "constraint_satisfaction",
+"label": 0,
+"prereq_id": "bootstrapping",
+"source": "lb1"
+},
+{
+"dependent_id": "context_free_grammar",
+"label": 0,
+"prereq_id": "bootstrapping",
+"source": "lb1"
+},
+{
+"dependent_id": "crawling_the_web",
+"label": 0,
+"prereq_id": "bootstrapping",
+"source": "lb1"
+},
+{
+"dependent_id": "deep_belief_network",
+"label": 0,
+"prereq_id": "bootstrapping",
+"source": "lb1"
+},
+{
+"dependent_id": "domain_adaptation",
+"label": 0,
+"prereq_id": "bootstrapping",
+"source": "lb1"
+},
+{
+"dependent_id": "earley_parsing",
+"label": 0,
+"prereq_id": "bootstrapping",
+"source": "lb1"
+},
+{
+"dependent_id": "expectation_maximization_em_algorithm",
+"label": 0,
+"prereq_id": "bootstrapping",
+"source": "lb1"
+},
+{
+"dependent_id": "facial_recognition_system",
+"label": 0,
+"prereq_id": "bootstrapping",
+"source": "lb1"
+},
+{
+"dependent_id": "first_order_logic",
+"label": 0,
+"prereq_id": "bootstrapping",
+"source": "lb1"
+},
+{
+"dependent_id": "game_playing_in_ai",
+"label": 0,
+"prereq_id": "bootstrapping",
+"source": "lb1"
+},
+{
+"dependent_id": "gibbs_sampling",
+"label": 0,
+"prereq_id": "bootstrapping",
+"source": "lb1"
+},
+{
+"dependent_id": "graphical_model",
+"label": 0,
+"prereq_id": "bootstrapping",
+"source": "lb1"
+},
+{
+"dependent_id": "hidden_markov_model",
+"label": 0,
+"prereq_id": "bootstrapping",
+"source": "lb1"
+},
+{
+"dependent_id": "hierarchical_model",
+"label": 0,
+"prereq_id": "bootstrapping",
+"source": "lb1"
+},
+{
+"dependent_id": "ibm_translation_model",
+"label": 0,
+"prereq_id": "bootstrapping",
+"source": "lb1"
+},
+{
+"dependent_id": "kernel_function",
+"label": 0,
+"prereq_id": "bootstrapping",
+"source": "lb1"
+},
+{
+"dependent_id": "lambda_calculus",
+"label": 0,
+"prereq_id": "bootstrapping",
+"source": "lb1"
+},
+{
+"dependent_id": "latent_semantic_indexing",
+"label": 0,
+"prereq_id": "bootstrapping",
+"source": "lb1"
+},
+{
+"dependent_id": "lexicography",
+"label": 0,
+"prereq_id": "bootstrapping",
+"source": "lb1"
+},
+{
+"dependent_id": "logistic_regression",
+"label": 0,
+"prereq_id": "bootstrapping",
+"source": "lb1"
+},
+{
+"dependent_id": "multi_document_summarization",
+"label": 0,
+"prereq_id": "bootstrapping",
+"source": "lb1"
+},
+{
+"dependent_id": "multilingual_word",
+"label": 0,
+"prereq_id": "bootstrapping",
+"source": "lb1"
+},
+{
+"dependent_id": "neural_machine_translation",
+"label": 0,
+"prereq_id": "bootstrapping",
+"source": "lb1"
+},
+{
+"dependent_id": "one_shot_learning",
+"label": 0,
+"prereq_id": "bootstrapping",
+"source": "lb1"
+},
+{
+"dependent_id": "open_information_extraction",
+"label": 0,
+"prereq_id": "bootstrapping",
+"source": "lb1"
+},
+{
+"dependent_id": "paraphrasing",
+"label": 0,
+"prereq_id": "bootstrapping",
+"source": "lb1"
+},
+{
+"dependent_id": "part_of_speech_tagging",
+"label": 0,
+"prereq_id": "bootstrapping",
+"source": "lb1"
+},
+{
+"dependent_id": "probability",
+"label": 0,
+"prereq_id": "bootstrapping",
+"source": "lb1"
+},
+{
+"dependent_id": "radial_basis_function_network",
+"label": 0,
+"prereq_id": "bootstrapping",
+"source": "lb1"
+},
+{
+"dependent_id": "rouge",
+"label": 0,
+"prereq_id": "bootstrapping",
+"source": "lb1"
+},
+{
+"dependent_id": "semantic_role_labeling",
+"label": 0,
+"prereq_id": "bootstrapping",
+"source": "lb1"
+},
+{
+"dependent_id": "statistical_machine_translation",
+"label": 0,
+"prereq_id": "bootstrapping",
+"source": "lb1"
+},
+{
+"dependent_id": "svm",
+"label": 0,
+"prereq_id": "bootstrapping",
+"source": "lb1"
+},
+{
+"dependent_id": "textual_entailment",
+"label": 0,
+"prereq_id": "bootstrapping",
+"source": "lb1"
+},
+{
+"dependent_id": "word2vec",
+"label": 0,
+"prereq_id": "bootstrapping",
+"source": "lb1"
+},
+{
+"dependent_id": "automated_essay_scoring",
+"label": 0,
+"prereq_id": "caption_generation",
+"source": "lb1"
+},
+{
+"dependent_id": "backpropagation",
+"label": 0,
+"prereq_id": "caption_generation",
+"source": "lb1"
+},
+{
+"dependent_id": "bayesian_network",
+"label": 0,
+"prereq_id": "caption_generation",
+"source": "lb1"
+},
+{
+"dependent_id": "bootstrapping",
+"label": 0,
+"prereq_id": "caption_generation",
+"source": "lb1"
+},
+{
+"dependent_id": "combinatory_categorial_grammar",
+"label": 0,
+"prereq_id": "caption_generation",
+"source": "lb1"
+},
+{
+"dependent_id": "constraint_satisfaction",
+"label": 0,
+"prereq_id": "caption_generation",
+"source": "lb1"
+},
+{
+"dependent_id": "context_free_grammar",
+"label": 0,
+"prereq_id": "caption_generation",
+"source": "lb1"
+},
+{
+"dependent_id": "crawling_the_web",
+"label": 0,
+"prereq_id": "caption_generation",
+"source": "lb1"
+},
+{
+"dependent_id": "deep_belief_network",
+"label": 0,
+"prereq_id": "caption_generation",
+"source": "lb1"
+},
+{
+"dependent_id": "domain_adaptation",
+"label": 0,
+"prereq_id": "caption_generation",
+"source": "lb1"
+},
+{
+"dependent_id": "earley_parsing",
+"label": 0,
+"prereq_id": "caption_generation",
+"source": "lb1"
+},
+{
+"dependent_id": "expectation_maximization_em_algorithm",
+"label": 0,
+"prereq_id": "caption_generation",
+"source": "lb1"
+},
+{
+"dependent_id": "facial_recognition_system",
+"label": 0,
+"prereq_id": "caption_generation",
+"source": "lb1"
+},
+{
+"dependent_id": "first_order_logic",
+"label": 0,
+"prereq_id": "caption_generation",
+"source": "lb1"
+},
+{
+"dependent_id": "game_playing_in_ai",
+"label": 0,
+"prereq_id": "caption_generation",
+"source": "lb1"
+},
+{
+"dependent_id": "gibbs_sampling",
+"label": 0,
+"prereq_id": "caption_generation",
+"source": "lb1"
+},
+{
+"dependent_id": "graphical_model",
+"label": 0,
+"prereq_id": "caption_generation",
+"source": "lb1"
+},
+{
+"dependent_id": "hidden_markov_model",
+"label": 0,
+"prereq_id": "caption_generation",
+"source": "lb1"
+},
+{
+"dependent_id": "hierarchical_model",
+"label": 0,
+"prereq_id": "caption_generation",
+"source": "lb1"
+},
+{
+"dependent_id": "ibm_translation_model",
+"label": 0,
+"prereq_id": "caption_generation",
+"source": "lb1"
+},
+{
+"dependent_id": "kernel_function",
+"label": 0,
+"prereq_id": "caption_generation",
+"source": "lb1"
+},
+{
+"dependent_id": "lambda_calculus",
+"label": 0,
+"prereq_id": "caption_generation",
+"source": "lb1"
+},
+{
+"dependent_id": "latent_semantic_indexing",
+"label": 0,
+"prereq_id": "caption_generation",
+"source": "lb1"
+},
+{
+"dependent_id": "lexicography",
+"label": 0,
+"prereq_id": "caption_generation",
+"source": "lb1"
+},
+{
+"dependent_id": "logistic_regression",
+"label": 0,
+"prereq_id": "caption_generation",
+"source": "lb1"
+},
+{
+"dependent_id": "multi_document_summarization",
+"label": 0,
+"prereq_id": "caption_generation",
+"source": "lb1"
+},
+{
+"dependent_id": "multilingual_word",
+"label": 0,
+"prereq_id": "caption_generation",
+"source": "lb1"
+},
+{
+"dependent_id": "neural_machine_translation",
+"label": 0,
+"prereq_id": "caption_generation",
+"source": "lb1"
+},
+{
+"dependent_id": "one_shot_learning",
+"label": 0,
+"prereq_id": "caption_generation",
+"source": "lb1"
+},
+{
+"dependent_id": "open_information_extraction",
+"label": 0,
+"prereq_id": "caption_generation",
+"source": "lb1"
+},
+{
+"dependent_id": "paraphrasing",
+"label": 0,
+"prereq_id": "caption_generation",
+"source": "lb1"
+},
+{
+"dependent_id": "part_of_speech_tagging",
+"label": 0,
+"prereq_id": "caption_generation",
+"source": "lb1"
+},
+{
+"dependent_id": "probability",
+"label": 0,
+"prereq_id": "caption_generation",
+"source": "lb1"
+},
+{
+"dependent_id": "radial_basis_function_network",
+"label": 0,
+"prereq_id": "caption_generation",
+"source": "lb1"
+},
+{
+"dependent_id": "rouge",
+"label": 0,
+"prereq_id": "caption_generation",
+"source": "lb1"
+},
+{
+"dependent_id": "semantic_role_labeling",
+"label": 0,
+"prereq_id": "caption_generation",
+"source": "lb1"
+},
+{
+"dependent_id": "statistical_machine_translation",
+"label": 0,
+"prereq_id": "caption_generation",
+"source": "lb1"
+},
+{
+"dependent_id": "svm",
+"label": 0,
+"prereq_id": "caption_generation",
+"source": "lb1"
+},
+{
+"dependent_id": "textual_entailment",
+"label": 0,
+"prereq_id": "caption_generation",
+"source": "lb1"
+},
+{
+"dependent_id": "word2vec",
+"label": 0,
+"prereq_id": "caption_generation",
+"source": "lb1"
+},
+{
+"dependent_id": "automated_essay_scoring",
+"label": 0,
+"prereq_id": "combinatory_categorial_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "backpropagation",
+"label": 0,
+"prereq_id": "combinatory_categorial_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "bayesian_network",
+"label": 0,
+"prereq_id": "combinatory_categorial_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "bootstrapping",
+"label": 0,
+"prereq_id": "combinatory_categorial_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "caption_generation",
+"label": 0,
+"prereq_id": "combinatory_categorial_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "constraint_satisfaction",
+"label": 0,
+"prereq_id": "combinatory_categorial_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "context_free_grammar",
+"label": 0,
+"prereq_id": "combinatory_categorial_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "crawling_the_web",
+"label": 0,
+"prereq_id": "combinatory_categorial_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "deep_belief_network",
+"label": 0,
+"prereq_id": "combinatory_categorial_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "domain_adaptation",
+"label": 0,
+"prereq_id": "combinatory_categorial_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "earley_parsing",
+"label": 0,
+"prereq_id": "combinatory_categorial_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "expectation_maximization_em_algorithm",
+"label": 0,
+"prereq_id": "combinatory_categorial_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "facial_recognition_system",
+"label": 0,
+"prereq_id": "combinatory_categorial_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "first_order_logic",
+"label": 0,
+"prereq_id": "combinatory_categorial_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "game_playing_in_ai",
+"label": 0,
+"prereq_id": "combinatory_categorial_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "gibbs_sampling",
+"label": 0,
+"prereq_id": "combinatory_categorial_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "graphical_model",
+"label": 0,
+"prereq_id": "combinatory_categorial_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "hidden_markov_model",
+"label": 0,
+"prereq_id": "combinatory_categorial_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "hierarchical_model",
+"label": 0,
+"prereq_id": "combinatory_categorial_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "ibm_translation_model",
+"label": 0,
+"prereq_id": "combinatory_categorial_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "kernel_function",
+"label": 0,
+"prereq_id": "combinatory_categorial_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "lambda_calculus",
+"label": 0,
+"prereq_id": "combinatory_categorial_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "latent_semantic_indexing",
+"label": 0,
+"prereq_id": "combinatory_categorial_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "lexicography",
+"label": 0,
+"prereq_id": "combinatory_categorial_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "logistic_regression",
+"label": 0,
+"prereq_id": "combinatory_categorial_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "multi_document_summarization",
+"label": 0,
+"prereq_id": "combinatory_categorial_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "multilingual_word",
+"label": 0,
+"prereq_id": "combinatory_categorial_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "neural_machine_translation",
+"label": 0,
+"prereq_id": "combinatory_categorial_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "one_shot_learning",
+"label": 0,
+"prereq_id": "combinatory_categorial_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "open_information_extraction",
+"label": 0,
+"prereq_id": "combinatory_categorial_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "paraphrasing",
+"label": 0,
+"prereq_id": "combinatory_categorial_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "part_of_speech_tagging",
+"label": 0,
+"prereq_id": "combinatory_categorial_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "probability",
+"label": 0,
+"prereq_id": "combinatory_categorial_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "radial_basis_function_network",
+"label": 0,
+"prereq_id": "combinatory_categorial_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "rouge",
+"label": 0,
+"prereq_id": "combinatory_categorial_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "semantic_role_labeling",
+"label": 0,
+"prereq_id": "combinatory_categorial_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "statistical_machine_translation",
+"label": 0,
+"prereq_id": "combinatory_categorial_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "svm",
+"label": 0,
+"prereq_id": "combinatory_categorial_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "textual_entailment",
+"label": 0,
+"prereq_id": "combinatory_categorial_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "word2vec",
+"label": 0,
+"prereq_id": "combinatory_categorial_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "automated_essay_scoring",
+"label": 0,
+"prereq_id": "constraint_satisfaction",
+"source": "lb1"
+},
+{
+"dependent_id": "backpropagation",
+"label": 0,
+"prereq_id": "constraint_satisfaction",
+"source": "lb1"
+},
+{
+"dependent_id": "bayesian_network",
+"label": 0,
+"prereq_id": "constraint_satisfaction",
+"source": "lb1"
+},
+{
+"dependent_id": "bootstrapping",
+"label": 0,
+"prereq_id": "constraint_satisfaction",
+"source": "lb1"
+},
+{
+"dependent_id": "caption_generation",
+"label": 0,
+"prereq_id": "constraint_satisfaction",
+"source": "lb1"
+},
+{
+"dependent_id": "combinatory_categorial_grammar",
+"label": 0,
+"prereq_id": "constraint_satisfaction",
+"source": "lb1"
+},
+{
+"dependent_id": "context_free_grammar",
+"label": 0,
+"prereq_id": "constraint_satisfaction",
+"source": "lb1"
+},
+{
+"dependent_id": "crawling_the_web",
+"label": 0,
+"prereq_id": "constraint_satisfaction",
+"source": "lb1"
+},
+{
+"dependent_id": "deep_belief_network",
+"label": 0,
+"prereq_id": "constraint_satisfaction",
+"source": "lb1"
+},
+{
+"dependent_id": "domain_adaptation",
+"label": 0,
+"prereq_id": "constraint_satisfaction",
+"source": "lb1"
+},
+{
+"dependent_id": "earley_parsing",
+"label": 0,
+"prereq_id": "constraint_satisfaction",
+"source": "lb1"
+},
+{
+"dependent_id": "expectation_maximization_em_algorithm",
+"label": 0,
+"prereq_id": "constraint_satisfaction",
+"source": "lb1"
+},
+{
+"dependent_id": "facial_recognition_system",
+"label": 0,
+"prereq_id": "constraint_satisfaction",
+"source": "lb1"
+},
+{
+"dependent_id": "first_order_logic",
+"label": 0,
+"prereq_id": "constraint_satisfaction",
+"source": "lb1"
+},
+{
+"dependent_id": "game_playing_in_ai",
+"label": 0,
+"prereq_id": "constraint_satisfaction",
+"source": "lb1"
+},
+{
+"dependent_id": "gibbs_sampling",
+"label": 0,
+"prereq_id": "constraint_satisfaction",
+"source": "lb1"
+},
+{
+"dependent_id": "graphical_model",
+"label": 0,
+"prereq_id": "constraint_satisfaction",
+"source": "lb1"
+},
+{
+"dependent_id": "hidden_markov_model",
+"label": 0,
+"prereq_id": "constraint_satisfaction",
+"source": "lb1"
+},
+{
+"dependent_id": "hierarchical_model",
+"label": 0,
+"prereq_id": "constraint_satisfaction",
+"source": "lb1"
+},
+{
+"dependent_id": "ibm_translation_model",
+"label": 0,
+"prereq_id": "constraint_satisfaction",
+"source": "lb1"
+},
+{
+"dependent_id": "kernel_function",
+"label": 0,
+"prereq_id": "constraint_satisfaction",
+"source": "lb1"
+},
+{
+"dependent_id": "lambda_calculus",
+"label": 0,
+"prereq_id": "constraint_satisfaction",
+"source": "lb1"
+},
+{
+"dependent_id": "latent_semantic_indexing",
+"label": 0,
+"prereq_id": "constraint_satisfaction",
+"source": "lb1"
+},
+{
+"dependent_id": "lexicography",
+"label": 0,
+"prereq_id": "constraint_satisfaction",
+"source": "lb1"
+},
+{
+"dependent_id": "logistic_regression",
+"label": 0,
+"prereq_id": "constraint_satisfaction",
+"source": "lb1"
+},
+{
+"dependent_id": "multi_document_summarization",
+"label": 0,
+"prereq_id": "constraint_satisfaction",
+"source": "lb1"
+},
+{
+"dependent_id": "multilingual_word",
+"label": 0,
+"prereq_id": "constraint_satisfaction",
+"source": "lb1"
+},
+{
+"dependent_id": "neural_machine_translation",
+"label": 0,
+"prereq_id": "constraint_satisfaction",
+"source": "lb1"
+},
+{
+"dependent_id": "one_shot_learning",
+"label": 0,
+"prereq_id": "constraint_satisfaction",
+"source": "lb1"
+},
+{
+"dependent_id": "open_information_extraction",
+"label": 0,
+"prereq_id": "constraint_satisfaction",
+"source": "lb1"
+},
+{
+"dependent_id": "paraphrasing",
+"label": 0,
+"prereq_id": "constraint_satisfaction",
+"source": "lb1"
+},
+{
+"dependent_id": "part_of_speech_tagging",
+"label": 0,
+"prereq_id": "constraint_satisfaction",
+"source": "lb1"
+},
+{
+"dependent_id": "probability",
+"label": 0,
+"prereq_id": "constraint_satisfaction",
+"source": "lb1"
+},
+{
+"dependent_id": "radial_basis_function_network",
+"label": 0,
+"prereq_id": "constraint_satisfaction",
+"source": "lb1"
+},
+{
+"dependent_id": "rouge",
+"label": 0,
+"prereq_id": "constraint_satisfaction",
+"source": "lb1"
+},
+{
+"dependent_id": "semantic_role_labeling",
+"label": 0,
+"prereq_id": "constraint_satisfaction",
+"source": "lb1"
+},
+{
+"dependent_id": "statistical_machine_translation",
+"label": 0,
+"prereq_id": "constraint_satisfaction",
+"source": "lb1"
+},
+{
+"dependent_id": "svm",
+"label": 0,
+"prereq_id": "constraint_satisfaction",
+"source": "lb1"
+},
+{
+"dependent_id": "textual_entailment",
+"label": 0,
+"prereq_id": "constraint_satisfaction",
+"source": "lb1"
+},
+{
+"dependent_id": "word2vec",
+"label": 0,
+"prereq_id": "constraint_satisfaction",
+"source": "lb1"
+},
+{
+"dependent_id": "automated_essay_scoring",
+"label": 0,
+"prereq_id": "context_free_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "backpropagation",
+"label": 0,
+"prereq_id": "context_free_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "bayesian_network",
+"label": 0,
+"prereq_id": "context_free_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "bootstrapping",
+"label": 0,
+"prereq_id": "context_free_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "caption_generation",
+"label": 0,
+"prereq_id": "context_free_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "combinatory_categorial_grammar",
+"label": 1,
+"prereq_id": "context_free_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "constraint_satisfaction",
+"label": 0,
+"prereq_id": "context_free_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "crawling_the_web",
+"label": 0,
+"prereq_id": "context_free_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "deep_belief_network",
+"label": 0,
+"prereq_id": "context_free_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "domain_adaptation",
+"label": 0,
+"prereq_id": "context_free_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "earley_parsing",
+"label": 1,
+"prereq_id": "context_free_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "expectation_maximization_em_algorithm",
+"label": 0,
+"prereq_id": "context_free_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "facial_recognition_system",
+"label": 0,
+"prereq_id": "context_free_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "first_order_logic",
+"label": 0,
+"prereq_id": "context_free_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "game_playing_in_ai",
+"label": 0,
+"prereq_id": "context_free_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "gibbs_sampling",
+"label": 0,
+"prereq_id": "context_free_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "graphical_model",
+"label": 0,
+"prereq_id": "context_free_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "hidden_markov_model",
+"label": 0,
+"prereq_id": "context_free_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "hierarchical_model",
+"label": 0,
+"prereq_id": "context_free_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "ibm_translation_model",
+"label": 0,
+"prereq_id": "context_free_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "kernel_function",
+"label": 0,
+"prereq_id": "context_free_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "lambda_calculus",
+"label": 0,
+"prereq_id": "context_free_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "latent_semantic_indexing",
+"label": 0,
+"prereq_id": "context_free_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "lexicography",
+"label": 0,
+"prereq_id": "context_free_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "logistic_regression",
+"label": 0,
+"prereq_id": "context_free_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "multi_document_summarization",
+"label": 0,
+"prereq_id": "context_free_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "multilingual_word",
+"label": 0,
+"prereq_id": "context_free_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "neural_machine_translation",
+"label": 0,
+"prereq_id": "context_free_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "one_shot_learning",
+"label": 0,
+"prereq_id": "context_free_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "open_information_extraction",
+"label": 0,
+"prereq_id": "context_free_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "paraphrasing",
+"label": 0,
+"prereq_id": "context_free_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "part_of_speech_tagging",
+"label": 0,
+"prereq_id": "context_free_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "probability",
+"label": 0,
+"prereq_id": "context_free_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "radial_basis_function_network",
+"label": 0,
+"prereq_id": "context_free_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "rouge",
+"label": 0,
+"prereq_id": "context_free_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "semantic_role_labeling",
+"label": 0,
+"prereq_id": "context_free_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "statistical_machine_translation",
+"label": 0,
+"prereq_id": "context_free_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "svm",
+"label": 0,
+"prereq_id": "context_free_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "textual_entailment",
+"label": 0,
+"prereq_id": "context_free_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "word2vec",
+"label": 0,
+"prereq_id": "context_free_grammar",
+"source": "lb1"
+},
+{
+"dependent_id": "automated_essay_scoring",
+"label": 0,
+"prereq_id": "crawling_the_web",
+"source": "lb1"
+},
+{
+"dependent_id": "backpropagation",
+"label": 0,
+"prereq_id": "crawling_the_web",
+"source": "lb1"
+},
+{
+"dependent_id": "bayesian_network",
+"label": 0,
+"prereq_id": "crawling_the_web",
+"source": "lb1"
+},
+{
+"dependent_id": "bootstrapping",
+"label": 0,
+"prereq_id": "crawling_the_web",
+"source": "lb1"
+},
+{
+"dependent_id": "caption_generation",
+"label": 0,
+"prereq_id": "crawling_the_web",
+"source": "lb1"
+},
+{
+"dependent_id": "combinatory_categorial_grammar",
+"label": 0,
+"prereq_id": "crawling_the_web",
+"source": "lb1"
+},
+{
+"dependent_id": "constraint_satisfaction",
+"label": 0,
+"prereq_id": "crawling_the_web",
+"source": "lb1"
+},
+{
+"dependent_id": "context_free_grammar",
+"label": 0,
+"prereq_id": "crawling_the_web",
+"source": "lb1"
+},
+{
+"dependent_id": "deep_belief_network",
+"label": 0,
+"prereq_id": "crawling_the_web",
+"source": "lb1"
+},
+{
+"dependent_id": "domain_adaptation",
+"label": 0,
+"prereq_id": "crawling_the_web",
+"source": "lb1"
+},
+{
+"dependent_id": "earley_parsing",
+"label": 0,
+"prereq_id": "crawling_the_web",
+"source": "lb1"
+},
+{
+"dependent_id": "expectation_maximization_em_algorithm",
+"label": 0,
+"prereq_id": "crawling_the_web",
+"source": "lb1"
+},
+{
+"dependent_id": "facial_recognition_system",
+"label": 0,
+"prereq_id": "crawling_the_web",
+"source": "lb1"
+},
+{
+"dependent_id": "first_order_logic",
+"label": 0,
+"prereq_id": "crawling_the_web",
+"source": "lb1"
+},
+{
+"dependent_id": "game_playing_in_ai",
+"label": 0,
+"prereq_id": "crawling_the_web",
+"source": "lb1"
+},
+{
+"dependent_id": "gibbs_sampling",
+"label": 0,
+"prereq_id": "crawling_the_web",
+"source": "lb1"
+},
+{
+"dependent_id": "graphical_model",
+"label": 0,
+"prereq_id": "crawling_the_web",
+"source": "lb1"
+},
+{
+"dependent_id": "hidden_markov_model",
+"label": 0,
+"prereq_id": "crawling_the_web",
+"source": "lb1"
+},
+{
+"dependent_id": "hierarchical_model",
+"label": 0,
+"prereq_id": "crawling_the_web",
+"source": "lb1"
+},
+{
+"dependent_id": "ibm_translation_model",
+"label": 0,
+"prereq_id": "crawling_the_web",
+"source": "lb1"
+},
+{
+"dependent_id": "kernel_function",
+"label": 0,
+"prereq_id": "crawling_the_web",
+"source": "lb1"
+},
+{
+"dependent_id": "lambda_calculus",
+"label": 0,
+"prereq_id": "crawling_the_web",
+"source": "lb1"
+},
+{
+"dependent_id": "latent_semantic_indexing",
+"label": 0,
+"prereq_id": "crawling_the_web",
+"source": "lb1"
+},
+{
+"dependent_id": "lexicography",
+"label": 0,
+"prereq_id": "crawling_the_web",
+"source": "lb1"
+},
+{
+"dependent_id": "logistic_regression",
+"label": 0,
+"prereq_id": "crawling_the_web",
+"source": "lb1"
+},
+{
+"dependent_id": "multi_document_summarization",
+"label": 0,
+"prereq_id": "crawling_the_web",
+"source": "lb1"
+},
+{
+"dependent_id": "multilingual_word",
+"label": 0,
+"prereq_id": "crawling_the_web",
+"source": "lb1"
+},
+{
+"dependent_id": "neural_machine_translation",
+"label": 0,
+"prereq_id": "crawling_the_web",
+"source": "lb1"
+},
+{
+"dependent_id": "one_shot_learning",
+"label": 0,
+"prereq_id": "crawling_the_web",
+"source": "lb1"
+},
+{
+"dependent_id": "paraphrasing",
+"label": 0,
+"prereq_id": "crawling_the_web",
+"source": "lb1"
+},
+{
+"dependent_id": "part_of_speech_tagging",
+"label": 0,
+"prereq_id": "crawling_the_web",
+"source": "lb1"
+},
+{
+"dependent_id": "probability",
+"label": 0,
+"prereq_id": "crawling_the_web",
+"source": "lb1"
+},
+{
+"dependent_id": "radial_basis_function_network",
+"label": 0,
+"prereq_id": "crawling_the_web",
+"source": "lb1"
+},
+{
+"dependent_id": "rouge",
+"label": 0,
+"prereq_id": "crawling_the_web",
+"source": "lb1"
+},
+{
+"dependent_id": "semantic_role_labeling",
+"label": 0,
+"prereq_id": "crawling_the_web",
+"source": "lb1"
+},
+{
+"dependent_id": "statistical_machine_translation",
+"label": 0,
+"prereq_id": "crawling_the_web",
+"source": "lb1"
+},
+{
+"dependent_id": "svm",
+"label": 0,
+"prereq_id": "crawling_the_web",
+"source": "lb1"
+},
+{
+"dependent_id": "textual_entailment",
+"label": 0,
+"prereq_id": "crawling_the_web",
+"source": "lb1"
+},
+{
+"dependent_id": "word2vec",
+"label": 0,
+"prereq_id": "crawling_the_web",
+"source": "lb1"
+},
+{
+"dependent_id": "automated_essay_scoring",
+"label": 0,
+"prereq_id": "deep_belief_network",
+"source": "lb1"
+},
+{
+"dependent_id": "backpropagation",
+"label": 0,
+"prereq_id": "deep_belief_network",
+"source": "lb1"
+},
+{
+"dependent_id": "bayesian_network",
+"label": 0,
+"prereq_id": "deep_belief_network",
+"source": "lb1"
+},
+{
+"dependent_id": "bootstrapping",
+"label": 0,
+"prereq_id": "deep_belief_network",
+"source": "lb1"
+},
+{
+"dependent_id": "caption_generation",
+"label": 0,
+"prereq_id": "deep_belief_network",
+"source": "lb1"
+},
+{
+"dependent_id": "combinatory_categorial_grammar",
+"label": 0,
+"prereq_id": "deep_belief_network",
+"source": "lb1"
+},
+{
+"dependent_id": "constraint_satisfaction",
+"label": 0,
+"prereq_id": "deep_belief_network",
+"source": "lb1"
+},
+{
+"dependent_id": "context_free_grammar",
+"label": 0,
+"prereq_id": "deep_belief_network",
+"source": "lb1"
+},
+{
+"dependent_id": "crawling_the_web",
+"label": 0,
+"prereq_id": "deep_belief_network",
+"source": "lb1"
+},
+{
+"dependent_id": "domain_adaptation",
+"label": 0,
+"prereq_id": "deep_belief_network",
+"source": "lb1"
+},
+{
+"dependent_id": "earley_parsing",
+"label": 0,
+"prereq_id": "deep_belief_network",
+"source": "lb1"
+},
+{
+"dependent_id": "expectation_maximization_em_algorithm",
+"label": 0,
+"prereq_id": "deep_belief_network",
+"source": "lb1"
+},
+{
+"dependent_id": "facial_recognition_system",
+"label": 0,
+"prereq_id": "deep_belief_network",
+"source": "lb1"
+},
+{
+"dependent_id": "first_order_logic",
+"label": 0,
+"prereq_id": "deep_belief_network",
+"source": "lb1"
+},
+{
+"dependent_id": "game_playing_in_ai",
+"label": 0,
+"prereq_id": "deep_belief_network",
+"source": "lb1"
+},
+{
+"dependent_id": "gibbs_sampling",
+"label": 0,
+"prereq_id": "deep_belief_network",
+"source": "lb1"
+},
+{
+"dependent_id": "graphical_model",
+"label": 0,
+"prereq_id": "deep_belief_network",
+"source": "lb1"
+},
+{
+"dependent_id": "hidden_markov_model",
+"label": 0,
+"prereq_id": "deep_belief_network",
+"source": "lb1"
+},
+{
+"dependent_id": "hierarchical_model",
+"label": 0,
+"prereq_id": "deep_belief_network",
+"source": "lb1"
+},
+{
+"dependent_id": "ibm_translation_model",
+"label": 0,
+"prereq_id": "deep_belief_network",
+"source": "lb1"
+},
+{
+"dependent_id": "kernel_function",
+"label": 0,
+"prereq_id": "deep_belief_network",
+"source": "lb1"
+},
+{
+"dependent_id": "lambda_calculus",
+"label": 0,
+"prereq_id": "deep_belief_network",
+"source": "lb1"
+},
+{
+"dependent_id": "latent_semantic_indexing",
+"label": 0,
+"prereq_id": "deep_belief_network",
+"source": "lb1"
+},
+{
+"dependent_id": "lexicography",
+"label": 0,
+"prereq_id": "deep_belief_network",
+"source": "lb1"
+},
+{
+"dependent_id": "logistic_regression",
+"label": 0,
+"prereq_id": "deep_belief_network",
+"source": "lb1"
+},
+{
+"dependent_id": "multi_document_summarization",
+"label": 0,
+"prereq_id": "deep_belief_network",
+"source": "lb1"
+},
+{
+"dependent_id": "multilingual_word",
+"label": 0,
+"prereq_id": "deep_belief_network",
+"source": "lb1"
+},
+{
+"dependent_id": "neural_machine_translation",
+"label": 0,
+"prereq_id": "deep_belief_network",
+"source": "lb1"
+},
+{
+"dependent_id": "one_shot_learning",
+"label": 0,
+"prereq_id": "deep_belief_network",
+"source": "lb1"
+},
+{
+"dependent_id": "open_information_extraction",
+"label": 0,
+"prereq_id": "deep_belief_network",
+"source": "lb1"
+},
+{
+"dependent_id": "paraphrasing",
+"label": 0,
+"prereq_id": "deep_belief_network",
+"source": "lb1"
+},
+{
+"dependent_id": "part_of_speech_tagging",
+"label": 0,
+"prereq_id": "deep_belief_network",
+"source": "lb1"
+},
+{
+"dependent_id": "probability",
+"label": 0,
+"prereq_id": "deep_belief_network",
+"source": "lb1"
+},
+{
+"dependent_id": "radial_basis_function_network",
+"label": 0,
+"prereq_id": "deep_belief_network",
+"source": "lb1"
+},
+{
+"dependent_id": "rouge",
+"label": 0,
+"prereq_id": "deep_belief_network",
+"source": "lb1"
+},
+{
+"dependent_id": "semantic_role_labeling",
+"label": 0,
+"prereq_id": "deep_belief_network",
+"source": "lb1"
+},
+{
+"dependent_id": "statistical_machine_translation",
+"label": 0,
+"prereq_id": "deep_belief_network",
+"source": "lb1"
+},
+{
+"dependent_id": "svm",
+"label": 0,
+"prereq_id": "deep_belief_network",
+"source": "lb1"
+},
+{
+"dependent_id": "textual_entailment",
+"label": 0,
+"prereq_id": "deep_belief_network",
+"source": "lb1"
+},
+{
+"dependent_id": "word2vec",
+"label": 0,
+"prereq_id": "deep_belief_network",
+"source": "lb1"
+},
+{
+"dependent_id": "automated_essay_scoring",
+"label": 0,
+"prereq_id": "domain_adaptation",
+"source": "lb1"
+},
+{
+"dependent_id": "backpropagation",
+"label": 0,
+"prereq_id": "domain_adaptation",
+"source": "lb1"
+},
+{
+"dependent_id": "bayesian_network",
+"label": 0,
+"prereq_id": "domain_adaptation",
+"source": "lb1"
+},
+{
+"dependent_id": "bootstrapping",
+"label": 0,
+"prereq_id": "domain_adaptation",
+"source": "lb1"
+},
+{
+"dependent_id": "caption_generation",
+"label": 0,
+"prereq_id": "domain_adaptation",
+"source": "lb1"
+},
+{
+"dependent_id": "combinatory_categorial_grammar",
+"label": 0,
+"prereq_id": "domain_adaptation",
+"source": "lb1"
+},
+{
+"dependent_id": "constraint_satisfaction",
+"label": 0,
+"prereq_id": "domain_adaptation",
+"source": "lb1"
+},
+{
+"dependent_id": "context_free_grammar",
+"label": 0,
+"prereq_id": "domain_adaptation",
+"source": "lb1"
+},
+{
+"dependent_id": "crawling_the_web",
+"label": 0,
+"prereq_id": "domain_adaptation",
+"source": "lb1"
+},
+{
+"dependent_id": "deep_belief_network",
+"label": 0,
+"prereq_id": "domain_adaptation",
+"source": "lb1"
+},
+{
+"dependent_id": "earley_parsing",
+"label": 0,
+"prereq_id": "domain_adaptation",
+"source": "lb1"
+},
+{
+"dependent_id": "expectation_maximization_em_algorithm",
+"label": 0,
+"prereq_id": "domain_adaptation",
+"source": "lb1"
+},
+{
+"dependent_id": "facial_recognition_system",
+"label": 0,
+"prereq_id": "domain_adaptation",
+"source": "lb1"
+},
+{
+"dependent_id": "first_order_logic",
+"label": 0,
+"prereq_id": "domain_adaptation",
+"source": "lb1"
+},
+{
+"dependent_id": "game_playing_in_ai",
+"label": 0,
+"prereq_id": "domain_adaptation",
+"source": "lb1"
+},
+{
+"dependent_id": "gibbs_sampling",
+"label": 0,
+"prereq_id": "domain_adaptation",
+"source": "lb1"
+},
+{
+"dependent_id": "graphical_model",
+"label": 0,
+"prereq_id": "domain_adaptation",
+"source": "lb1"
+},
+{
+"dependent_id": "hidden_markov_model",
+"label": 0,
+"prereq_id": "domain_adaptation",
+"source": "lb1"
+},
+{
+"dependent_id": "hierarchical_model",
+"label": 0,
+"prereq_id": "domain_adaptation",
+"source": "lb1"
+},
+{
+"dependent_id": "ibm_translation_model",
+"label": 0,
+"prereq_id": "domain_adaptation",
+"source": "lb1"
+},
+{
+"dependent_id": "kernel_function",
+"label": 0,
+"prereq_id": "domain_adaptation",
+"source": "lb1"
+},
+{
+"dependent_id": "lambda_calculus",
+"label": 0,
+"prereq_id": "domain_adaptation",
+"source": "lb1"
+},
+{
+"dependent_id": "latent_semantic_indexing",
+"label": 0,
+"prereq_id": "domain_adaptation",
+"source": "lb1"
+},
+{
+"dependent_id": "lexicography",
+"label": 0,
+"prereq_id": "domain_adaptation",
+"source": "lb1"
+},
+{
+"dependent_id": "logistic_regression",
+"label": 0,
+"prereq_id": "domain_adaptation",
+"source": "lb1"
+},
+{
+"dependent_id": "multi_document_summarization",
+"label": 0,
+"prereq_id": "domain_adaptation",
+"source": "lb1"
+},
+{
+"dependent_id": "multilingual_word",
+"label": 0,
+"prereq_id": "domain_adaptation",
+"source": "lb1"
+},
+{
+"dependent_id": "neural_machine_translation",
+"label": 0,
+"prereq_id": "domain_adaptation",
+"source": "lb1"
+},
+{
+"dependent_id": "one_shot_learning",
+"label": 1,
+"prereq_id": "domain_adaptation",
+"source": "lb1"
+},
+{
+"dependent_id": "open_information_extraction",
+"label": 0,
+"prereq_id": "domain_adaptation",
+"source": "lb1"
+},
+{
+"dependent_id": "paraphrasing",
+"label": 0,
+"prereq_id": "domain_adaptation",
+"source": "lb1"
+},
+{
+"dependent_id": "part_of_speech_tagging",
+"label": 0,
+"prereq_id": "domain_adaptation",
+"source": "lb1"
+},
+{
+"dependent_id": "probability",
+"label": 0,
+"prereq_id": "domain_adaptation",
+"source": "lb1"
+},
+{
+"dependent_id": "radial_basis_function_network",
+"label": 0,
+"prereq_id": "domain_adaptation",
+"source": "lb1"
+},
+{
+"dependent_id": "rouge",
+"label": 0,
+"prereq_id": "domain_adaptation",
+"source": "lb1"
+},
+{
+"dependent_id": "semantic_role_labeling",
+"label": 0,
+"prereq_id": "domain_adaptation",
+"source": "lb1"
+},
+{
+"dependent_id": "statistical_machine_translation",
+"label": 0,
+"prereq_id": "domain_adaptation",
+"source": "lb1"
+},
+{
+"dependent_id": "svm",
+"label": 0,
+"prereq_id": "domain_adaptation",
+"source": "lb1"
+},
+{
+"dependent_id": "textual_entailment",
+"label": 0,
+"prereq_id": "domain_adaptation",
+"source": "lb1"
+},
+{
+"dependent_id": "word2vec",
+"label": 0,
+"prereq_id": "domain_adaptation",
+"source": "lb1"
+},
+{
+"dependent_id": "automated_essay_scoring",
+"label": 0,
+"prereq_id": "earley_parsing",
+"source": "lb1"
+},
+{
+"dependent_id": "backpropagation",
+"label": 0,
+"prereq_id": "earley_parsing",
+"source": "lb1"
+},
+{
+"dependent_id": "bayesian_network",
+"label": 0,
+"prereq_id": "earley_parsing",
+"source": "lb1"
+},
+{
+"dependent_id": "bootstrapping",
+"label": 0,
+"prereq_id": "earley_parsing",
+"source": "lb1"
+},
+{
+"dependent_id": "caption_generation",
+"label": 0,
+"prereq_id": "earley_parsing",
+"source": "lb1"
+},
+{
+"dependent_id": "combinatory_categorial_grammar",
+"label": 0,
+"prereq_id": "earley_parsing",
+"source": "lb1"
+},
+{
+"dependent_id": "constraint_satisfaction",
+"label": 0,
+"prereq_id": "earley_parsing",
+"source": "lb1"
+},
+{
+"dependent_id": "context_free_grammar",
+"label": 0,
+"prereq_id": "earley_parsing",
+"source": "lb1"
+},
+{
+"dependent_id": "crawling_the_web",
+"label": 0,
+"prereq_id": "earley_parsing",
+"source": "lb1"
+},
+{
+"dependent_id": "deep_belief_network",
+"label": 0,
+"prereq_id": "earley_parsing",
+"source": "lb1"
+},
+{
+"dependent_id": "domain_adaptation",
+"label": 0,
+"prereq_id": "earley_parsing",
+"source": "lb1"
+},
+{
+"dependent_id": "expectation_maximization_em_algorithm",
+"label": 0,
+"prereq_id": "earley_parsing",
+"source": "lb1"
+},
+{
+"dependent_id": "facial_recognition_system",
+"label": 0,
+"prereq_id": "earley_parsing",
+"source": "lb1"
+},
+{
+"dependent_id": "first_order_logic",
+"label": 0,
+"prereq_id": "earley_parsing",
+"source": "lb1"
+},
+{
+"dependent_id": "game_playing_in_ai",
+"label": 0,
+"prereq_id": "earley_parsing",
+"source": "lb1"
+},
+{
+"dependent_id": "gibbs_sampling",
+"label": 0,
+"prereq_id": "earley_parsing",
+"source": "lb1"
+},
+{
+"dependent_id": "graphical_model",
+"label": 0,
+"prereq_id": "earley_parsing",
+"source": "lb1"
+},
+{
+"dependent_id": "hidden_markov_model",
+"label": 0,
+"prereq_id": "earley_parsing",
+"source": "lb1"
+},
+{
+"dependent_id": "hierarchical_model",
+"label": 0,
+"prereq_id": "earley_parsing",
+"source": "lb1"
+},
+{
+"dependent_id": "ibm_translation_model",
+"label": 0,
+"prereq_id": "earley_parsing",
+"source": "lb1"
+},
+{
+"dependent_id": "kernel_function",
+"label": 0,
+"prereq_id": "earley_parsing",
+"source": "lb1"
+},
+{
+"dependent_id": "lambda_calculus",
+"label": 0,
+"prereq_id": "earley_parsing",
+"source": "lb1"
+},
+{
+"dependent_id": "latent_semantic_indexing",
+"label": 0,
+"prereq_id": "earley_parsing",
+"source": "lb1"
+},
+{
+"dependent_id": "lexicography",
+"label": 0,
+"prereq_id": "earley_parsing",
+"source": "lb1"
+},
+{
+"dependent_id": "logistic_regression",
+"label": 0,
+"prereq_id": "earley_parsing",
+"source": "lb1"
+},
+{
+"dependent_id": "multi_document_summarization",
+"label": 0,
+"prereq_id": "earley_parsing",
+"source": "lb1"
+},
+{
+"dependent_id": "multilingual_word",
+"label": 0,
+"prereq_id": "earley_parsing",
+"source": "lb1"
+},
+{
+"dependent_id": "neural_machine_translation",
+"label": 0,
+"prereq_id": "earley_parsing",
+"source": "lb1"
+},
+{
+"dependent_id": "one_shot_learning",
+"label": 0,
+"prereq_id": "earley_parsing",
+"source": "lb1"
+},
+{
+"dependent_id": "open_information_extraction",
+"label": 0,
+"prereq_id": "earley_parsing",
+"source": "lb1"
+},
+{
+"dependent_id": "paraphrasing",
+"label": 0,
+"prereq_id": "earley_parsing",
+"source": "lb1"
+},
+{
+"dependent_id": "part_of_speech_tagging",
+"label": 0,
+"prereq_id": "earley_parsing",
+"source": "lb1"
+},
+{
+"dependent_id": "probability",
+"label": 0,
+"prereq_id": "earley_parsing",
+"source": "lb1"
+},
+{
+"dependent_id": "radial_basis_function_network",
+"label": 0,
+"prereq_id": "earley_parsing",
+"source": "lb1"
+},
+{
+"dependent_id": "rouge",
+"label": 0,
+"prereq_id": "earley_parsing",
+"source": "lb1"
+},
+{
+"dependent_id": "semantic_role_labeling",
+"label": 0,
+"prereq_id": "earley_parsing",
+"source": "lb1"
+},
+{
+"dependent_id": "statistical_machine_translation",
+"label": 0,
+"prereq_id": "earley_parsing",
+"source": "lb1"
+},
+{
+"dependent_id": "svm",
+"label": 0,
+"prereq_id": "earley_parsing",
+"source": "lb1"
+},
+{
+"dependent_id": "textual_entailment",
+"label": 0,
+"prereq_id": "earley_parsing",
+"source": "lb1"
+},
+{
+"dependent_id": "word2vec",
+"label": 0,
+"prereq_id": "earley_parsing",
+"source": "lb1"
+},
+{
+"dependent_id": "automated_essay_scoring",
+"label": 0,
+"prereq_id": "expectation_maximization_em_algorithm",
+"source": "lb1"
+},
+{
+"dependent_id": "backpropagation",
+"label": 0,
+"prereq_id": "expectation_maximization_em_algorithm",
+"source": "lb1"
+},
+{
+"dependent_id": "bayesian_network",
+"label": 0,
+"prereq_id": "expectation_maximization_em_algorithm",
+"source": "lb1"
+},
+{
+"dependent_id": "bootstrapping",
+"label": 0,
+"prereq_id": "expectation_maximization_em_algorithm",
+"source": "lb1"
+},
+{
+"dependent_id": "caption_generation",
+"label": 0,
+"prereq_id": "expectation_maximization_em_algorithm",
+"source": "lb1"
+},
+{
+"dependent_id": "combinatory_categorial_grammar",
+"label": 0,
+"prereq_id": "expectation_maximization_em_algorithm",
+"source": "lb1"
+},
+{
+"dependent_id": "constraint_satisfaction",
+"label": 0,
+"prereq_id": "expectation_maximization_em_algorithm",
+"source": "lb1"
+},
+{
+"dependent_id": "context_free_grammar",
+"label": 0,
+"prereq_id": "expectation_maximization_em_algorithm",
+"source": "lb1"
+},
+{
+"dependent_id": "crawling_the_web",
+"label": 0,
+"prereq_id": "expectation_maximization_em_algorithm",
+"source": "lb1"
+},
+{
+"dependent_id": "deep_belief_network",
+"label": 0,
+"prereq_id": "expectation_maximization_em_algorithm",
+"source": "lb1"
+},
+{
+"dependent_id": "domain_adaptation",
+"label": 0,
+"prereq_id": "expectation_maximization_em_algorithm",
+"source": "lb1"
+},
+{
+"dependent_id": "earley_parsing",
+"label": 0,
+"prereq_id": "expectation_maximization_em_algorithm",
+"source": "lb1"
+},
+{
+"dependent_id": "facial_recognition_system",
+"label": 0,
+"prereq_id": "expectation_maximization_em_algorithm",
+"source": "lb1"
+},
+{
+"dependent_id": "first_order_logic",
+"label": 0,
+"prereq_id": "expectation_maximization_em_algorithm",
+"source": "lb1"
+},
+{
+"dependent_id": "game_playing_in_ai",
+"label": 0,
+"prereq_id": "expectation_maximization_em_algorithm",
+"source": "lb1"
+},
+{
+"dependent_id": "gibbs_sampling",
+"label": 0,
+"prereq_id": "expectation_maximization_em_algorithm",
+"source": "lb1"
+},
+{
+"dependent_id": "graphical_model",
+"label": 0,
+"prereq_id": "expectation_maximization_em_algorithm",
+"source": "lb1"
+},
+{
+"dependent_id": "hidden_markov_model",
+"label": 0,
+"prereq_id": "expectation_maximization_em_algorithm",
+"source": "lb1"
+},
+{
+"dependent_id": "hierarchical_model",
+"label": 0,
+"prereq_id": "expectation_maximization_em_algorithm",
+"source": "lb1"
+},
+{
+"dependent_id": "ibm_translation_model",
+"label": 0,
+"prereq_id": "expectation_maximization_em_algorithm",
+"source": "lb1"
+},
+{
+"dependent_id": "kernel_function",
+"label": 0,
+"prereq_id": "expectation_maximization_em_algorithm",
+"source": "lb1"
+},
+{
+"dependent_id": "lambda_calculus",
+"label": 0,
+"prereq_id": "expectation_maximization_em_algorithm",
+"source": "lb1"
+},
+{
+"dependent_id": "latent_semantic_indexing",
+"label": 0,
+"prereq_id": "expectation_maximization_em_algorithm",
+"source": "lb1"
+},
+{
+"dependent_id": "lexicography",
+"label": 0,
+"prereq_id": "expectation_maximization_em_algorithm",
+"source": "lb1"
+},
+{
+"dependent_id": "logistic_regression",
+"label": 0,
+"prereq_id": "expectation_maximization_em_algorithm",
+"source": "lb1"
+},
+{
+"dependent_id": "multi_document_summarization",
+"label": 0,
+"prereq_id": "expectation_maximization_em_algorithm",
+"source": "lb1"
+},
+{
+"dependent_id": "multilingual_word",
+"label": 0,
+"prereq_id": "expectation_maximization_em_algorithm",
+"source": "lb1"
+},
+{
+"dependent_id": "neural_machine_translation",
+"label": 0,
+"prereq_id": "expectation_maximization_em_algorithm",
+"source": "lb1"
+},
+{
+"dependent_id": "one_shot_learning",
+"label": 0,
+"prereq_id": "expectation_maximization_em_algorithm",
+"source": "lb1"
+},
+{
+"dependent_id": "open_information_extraction",
+"label": 0,
+"prereq_id": "expectation_maximization_em_algorithm",
+"source": "lb1"
+},
+{
+"dependent_id": "paraphrasing",
+"label": 0,
+"prereq_id": "expectation_maximization_em_algorithm",
+"source": "lb1"
+},
+{
+"dependent_id": "part_of_speech_tagging",
+"label": 0,
+"prereq_id": "expectation_maximization_em_algorithm",
+"source": "lb1"
+},
+{
+"dependent_id": "probability",
+"label": 0,
+"prereq_id": "expectation_maximization_em_algorithm",
+"source": "lb1"
+},
+{
+"dependent_id": "radial_basis_function_network",
+"label": 0,
+"prereq_id": "expectation_maximization_em_algorithm",
+"source": "lb1"
+},
+{
+"dependent_id": "rouge",
+"label": 0,
+"prereq_id": "expectation_maximization_em_algorithm",
+"source": "lb1"
+},
+{
+"dependent_id": "semantic_role_labeling",
+"label": 0,
+"prereq_id": "expectation_maximization_em_algorithm",
+"source": "lb1"
+},
+{
+"dependent_id": "statistical_machine_translation",
+"label": 0,
+"prereq_id": "expectation_maximization_em_algorithm",
+"source": "lb1"
+},
+{
+"dependent_id": "svm",
+"label": 0,
+"prereq_id": "expectation_maximization_em_algorithm",
+"source": "lb1"
+},
+{
+"dependent_id": "textual_entailment",
+"label": 0,
+"prereq_id": "expectation_maximization_em_algorithm",
+"source": "lb1"
+},
+{
+"dependent_id": "word2vec",
+"label": 0,
+"prereq_id": "expectation_maximization_em_algorithm",
+"source": "lb1"
+},
+{
+"dependent_id": "automated_essay_scoring",
+"label": 0,
+"prereq_id": "facial_recognition_system",
+"source": "lb1"
+},
+{
+"dependent_id": "backpropagation",
+"label": 0,
+"prereq_id": "facial_recognition_system",
+"source": "lb1"
+},
+{
+"dependent_id": "bayesian_network",
+"label": 0,
+"prereq_id": "facial_recognition_system",
+"source": "lb1"
+},
+{
+"dependent_id": "bootstrapping",
+"label": 0,
+"prereq_id": "facial_recognition_system",
+"source": "lb1"
+},
+{
+"dependent_id": "caption_generation",
+"label": 0,
+"prereq_id": "facial_recognition_system",
+"source": "lb1"
+},
+{
+"dependent_id": "combinatory_categorial_grammar",
+"label": 0,
+"prereq_id": "facial_recognition_system",
+"source": "lb1"
+},
+{
+"dependent_id": "constraint_satisfaction",
+"label": 0,
+"prereq_id": "facial_recognition_system",
+"source": "lb1"
+},
+{
+"dependent_id": "context_free_grammar",
+"label": 0,
+"prereq_id": "facial_recognition_system",
+"source": "lb1"
+},
+{
+"dependent_id": "crawling_the_web",
+"label": 0,
+"prereq_id": "facial_recognition_system",
+"source": "lb1"
+},
+{
+"dependent_id": "deep_belief_network",
+"label": 0,
+"prereq_id": "facial_recognition_system",
+"source": "lb1"
+},
+{
+"dependent_id": "domain_adaptation",
+"label": 0,
+"prereq_id": "facial_recognition_system",
+"source": "lb1"
+},
+{
+"dependent_id": "earley_parsing",
+"label": 0,
+"prereq_id": "facial_recognition_system",
+"source": "lb1"
+},
+{
+"dependent_id": "expectation_maximization_em_algorithm",
+"label": 0,
+"prereq_id": "facial_recognition_system",
+"source": "lb1"
+},
+{
+"dependent_id": "first_order_logic",
+"label": 0,
+"prereq_id": "facial_recognition_system",
+"source": "lb1"
+},
+{
+"dependent_id": "game_playing_in_ai",
+"label": 0,
+"prereq_id": "facial_recognition_system",
+"source": "lb1"
+},
+{
+"dependent_id": "gibbs_sampling",
+"label": 0,
+"prereq_id": "facial_recognition_system",
+"source": "lb1"
+},
+{
+"dependent_id": "graphical_model",
+"label": 0,
+"prereq_id": "facial_recognition_system",
+"source": "lb1"
+},
+{
+"dependent_id": "hidden_markov_model",
+"label": 0,
+"prereq_id": "facial_recognition_system",
+"source": "lb1"
+},
+{
+"dependent_id": "hierarchical_model",
+"label": 0,
+"prereq_id": "facial_recognition_system",
+"source": "lb1"
+},
+{
+"dependent_id": "ibm_translation_model",
+"label": 0,
+"prereq_id": "facial_recognition_system",
+"source": "lb1"
+},
+{
+"dependent_id": "kernel_function",
+"label": 0,
+"prereq_id": "facial_recognition_system",
+"source": "lb1"
+},
+{
+"dependent_id": "lambda_calculus",
+"label": 0,
+"prereq_id": "facial_recognition_system",
+"source": "lb1"
+},
+{
+"dependent_id": "latent_semantic_indexing",
+"label": 0,
+"prereq_id": "facial_recognition_system",
+"source": "lb1"
+},
+{
+"dependent_id": "lexicography",
+"label": 0,
+"prereq_id": "facial_recognition_system",
+"source": "lb1"
+},
+{
+"dependent_id": "logistic_regression",
+"label": 0,
+"prereq_id": "facial_recognition_system",
+"source": "lb1"
+},
+{
+"dependent_id": "multi_document_summarization",
+"label": 0,
+"prereq_id": "facial_recognition_system",
+"source": "lb1"
+},
+{
+"dependent_id": "multilingual_word",
+"label": 0,
+"prereq_id": "facial_recognition_system",
+"source": "lb1"
+},
+{
+"dependent_id": "neural_machine_translation",
+"label": 0,
+"prereq_id": "facial_recognition_system",
+"source": "lb1"
+},
+{
+"dependent_id": "one_shot_learning",
+"label": 0,
+"prereq_id": "facial_recognition_system",
+"source": "lb1"
+},
+{
+"dependent_id": "open_information_extraction",
+"label": 0,
+"prereq_id": "facial_recognition_system",
+"source": "lb1"
+},
+{
+"dependent_id": "paraphrasing",
+"label": 0,
+"prereq_id": "facial_recognition_system",
+"source": "lb1"
+},
+{
+"dependent_id": "part_of_speech_tagging",
+"label": 0,
+"prereq_id": "facial_recognition_system",
+"source": "lb1"
+},
+{
+"dependent_id": "probability",
+"label": 0,
+"prereq_id": "facial_recognition_system",
+"source": "lb1"
+},
+{
+"dependent_id": "radial_basis_function_network",
+"label": 0,
+"prereq_id": "facial_recognition_system",
+"source": "lb1"
+},
+{
+"dependent_id": "rouge",
+"label": 0,
+"prereq_id": "facial_recognition_system",
+"source": "lb1"
+},
+{
+"dependent_id": "semantic_role_labeling",
+"label": 0,
+"prereq_id": "facial_recognition_system",
+"source": "lb1"
+},
+{
+"dependent_id": "statistical_machine_translation",
+"label": 0,
+"prereq_id": "facial_recognition_system",
+"source": "lb1"
+},
+{
+"dependent_id": "svm",
+"label": 0,
+"prereq_id": "facial_recognition_system",
+"source": "lb1"
+},
+{
+"dependent_id": "textual_entailment",
+"label": 0,
+"prereq_id": "facial_recognition_system",
+"source": "lb1"
+},
+{
+"dependent_id": "word2vec",
+"label": 0,
+"prereq_id": "facial_recognition_system",
+"source": "lb1"
+},
+{
+"dependent_id": "automated_essay_scoring",
+"label": 0,
+"prereq_id": "first_order_logic",
+"source": "lb1"
+},
+{
+"dependent_id": "backpropagation",
+"label": 0,
+"prereq_id": "first_order_logic",
+"source": "lb1"
+},
+{
+"dependent_id": "bayesian_network",
+"label": 0,
+"prereq_id": "first_order_logic",
+"source": "lb1"
+},
+{
+"dependent_id": "bootstrapping",
+"label": 0,
+"prereq_id": "first_order_logic",
+"source": "lb1"
+},
+{
+"dependent_id": "caption_generation",
+"label": 0,
+"prereq_id": "first_order_logic",
+"source": "lb1"
+},
+{
+"dependent_id": "combinatory_categorial_grammar",
+"label": 0,
+"prereq_id": "first_order_logic",
+"source": "lb1"
+},
+{
+"dependent_id": "constraint_satisfaction",
+"label": 0,
+"prereq_id": "first_order_logic",
+"source": "lb1"
+},
+{
+"dependent_id": "context_free_grammar",
+"label": 0,
+"prereq_id": "first_order_logic",
+"source": "lb1"
+},
+{
+"dependent_id": "crawling_the_web",
+"label": 0,
+"prereq_id": "first_order_logic",
+"source": "lb1"
+},
+{
+"dependent_id": "deep_belief_network",
+"label": 0,
+"prereq_id": "first_order_logic",
+"source": "lb1"
+},
+{
+"dependent_id": "domain_adaptation",
+"label": 0,
+"prereq_id": "first_order_logic",
+"source": "lb1"
+},
+{
+"dependent_id": "earley_parsing",
+"label": 0,
+"prereq_id": "first_order_logic",
+"source": "lb1"
+},
+{
+"dependent_id": "expectation_maximization_em_algorithm",
+"label": 0,
+"prereq_id": "first_order_logic",
+"source": "lb1"
+},
+{
+"dependent_id": "facial_recognition_system",
+"label": 0,
+"prereq_id": "first_order_logic",
+"source": "lb1"
+},
+{
+"dependent_id": "game_playing_in_ai",
+"label": 0,
+"prereq_id": "first_order_logic",
+"source": "lb1"
+},
+{
+"dependent_id": "gibbs_sampling",
+"label": 0,
+"prereq_id": "first_order_logic",
+"source": "lb1"
+},
+{
+"dependent_id": "graphical_model",
+"label": 0,
+"prereq_id": "first_order_logic",
+"source": "lb1"
+},
+{
+"dependent_id": "hidden_markov_model",
+"label": 0,
+"prereq_id": "first_order_logic",
+"source": "lb1"
+},
+{
+"dependent_id": "hierarchical_model",
+"label": 0,
+"prereq_id": "first_order_logic",
+"source": "lb1"
+},
+{
+"dependent_id": "ibm_translation_model",
+"label": 0,
+"prereq_id": "first_order_logic",
+"source": "lb1"
+},
+{
+"dependent_id": "kernel_function",
+"label": 0,
+"prereq_id": "first_order_logic",
+"source": "lb1"
+},
+{
+"dependent_id": "lambda_calculus",
+"label": 1,
+"prereq_id": "first_order_logic",
+"source": "lb1"
+},
+{
+"dependent_id": "latent_semantic_indexing",
+"label": 0,
+"prereq_id": "first_order_logic",
+"source": "lb1"
+},
+{
+"dependent_id": "lexicography",
+"label": 0,
+"prereq_id": "first_order_logic",
+"source": "lb1"
+},
+{
+"dependent_id": "logistic_regression",
+"label": 0,
+"prereq_id": "first_order_logic",
+"source": "lb1"
+},
+{
+"dependent_id": "multi_document_summarization",
+"label": 0,
+"prereq_id": "first_order_logic",
+"source": "lb1"
+},
+{
+"dependent_id": "multilingual_word",
+"label": 0,
+"prereq_id": "first_order_logic",
+"source": "lb1"
+},
+{
+"dependent_id": "neural_machine_translation",
+"label": 0,
+"prereq_id": "first_order_logic",
+"source": "lb1"
+},
+{
+"dependent_id": "one_shot_learning",
+"label": 0,
+"prereq_id": "first_order_logic",
+"source": "lb1"
+},
+{
+"dependent_id": "open_information_extraction",
+"label": 0,
+"prereq_id": "first_order_logic",
+"source": "lb1"
+},
+{
+"dependent_id": "paraphrasing",
+"label": 0,
+"prereq_id": "first_order_logic",
+"source": "lb1"
+},
+{
+"dependent_id": "part_of_speech_tagging",
+"label": 0,
+"prereq_id": "first_order_logic",
+"source": "lb1"
+},
+{
+"dependent_id": "probability",
+"label": 0,
+"prereq_id": "first_order_logic",
+"source": "lb1"
+},
+{
+"dependent_id": "radial_basis_function_network",
+"label": 0,
+"prereq_id": "first_order_logic",
+"source": "lb1"
+},
+{
+"dependent_id": "rouge",
+"label": 0,
+"prereq_id": "first_order_logic",
+"source": "lb1"
+},
+{
+"dependent_id": "semantic_role_labeling",
+"label": 0,
+"prereq_id": "first_order_logic",
+"source": "lb1"
+},
+{
+"dependent_id": "statistical_machine_translation",
+"label": 0,
+"prereq_id": "first_order_logic",
+"source": "lb1"
+},
+{
+"dependent_id": "svm",
+"label": 0,
+"prereq_id": "first_order_logic",
+"source": "lb1"
+},
+{
+"dependent_id": "textual_entailment",
+"label": 1,
+"prereq_id": "first_order_logic",
+"source": "lb1"
+},
+{
+"dependent_id": "word2vec",
+"label": 0,
+"prereq_id": "first_order_logic",
+"source": "lb1"
+},
+{
+"dependent_id": "automated_essay_scoring",
+"label": 0,
+"prereq_id": "game_playing_in_ai",
+"source": "lb1"
+},
+{
+"dependent_id": "backpropagation",
+"label": 0,
+"prereq_id": "game_playing_in_ai",
+"source": "lb1"
+},
+{
+"dependent_id": "bayesian_network",
+"label": 0,
+"prereq_id": "game_playing_in_ai",
+"source": "lb1"
+},
+{
+"dependent_id": "bootstrapping",
+"label": 0,
+"prereq_id": "game_playing_in_ai",
+"source": "lb1"
+},
+{
+"dependent_id": "caption_generation",
+"label": 0,
+"prereq_id": "game_playing_in_ai",
+"source": "lb1"
+},
+{
+"dependent_id": "combinatory_categorial_grammar",
+"label": 0,
+"prereq_id": "game_playing_in_ai",
+"source": "lb1"
+},
+{
+"dependent_id": "constraint_satisfaction",
+"label": 0,
+"prereq_id": "game_playing_in_ai",
+"source": "lb1"
+},
+{
+"dependent_id": "context_free_grammar",
+"label": 0,
+"prereq_id": "game_playing_in_ai",
+"source": "lb1"
+},
+{
+"dependent_id": "crawling_the_web",
+"label": 0,
+"prereq_id": "game_playing_in_ai",
+"source": "lb1"
+},
+{
+"dependent_id": "deep_belief_network",
+"label": 0,
+"prereq_id": "game_playing_in_ai",
+"source": "lb1"
+},
+{
+"dependent_id": "domain_adaptation",
+"label": 0,
+"prereq_id": "game_playing_in_ai",
+"source": "lb1"
+},
+{
+"dependent_id": "earley_parsing",
+"label": 0,
+"prereq_id": "game_playing_in_ai",
+"source": "lb1"
+},
+{
+"dependent_id": "expectation_maximization_em_algorithm",
+"label": 0,
+"prereq_id": "game_playing_in_ai",
+"source": "lb1"
+},
+{
+"dependent_id": "facial_recognition_system",
+"label": 0,
+"prereq_id": "game_playing_in_ai",
+"source": "lb1"
+},
+{
+"dependent_id": "first_order_logic",
+"label": 0,
+"prereq_id": "game_playing_in_ai",
+"source": "lb1"
+},
+{
+"dependent_id": "gibbs_sampling",
+"label": 0,
+"prereq_id": "game_playing_in_ai",
+"source": "lb1"
+},
+{
+"dependent_id": "graphical_model",
+"label": 0,
+"prereq_id": "game_playing_in_ai",
+"source": "lb1"
+},
+{
+"dependent_id": "hidden_markov_model",
+"label": 0,
+"prereq_id": "game_playing_in_ai",
+"source": "lb1"
+},
+{
+"dependent_id": "hierarchical_model",
+"label": 0,
+"prereq_id": "game_playing_in_ai",
+"source": "lb1"
+},
+{
+"dependent_id": "ibm_translation_model",
+"label": 0,
+"prereq_id": "game_playing_in_ai",
+"source": "lb1"
+},
+{
+"dependent_id": "kernel_function",
+"label": 0,
+"prereq_id": "game_playing_in_ai",
+"source": "lb1"
+},
+{
+"dependent_id": "lambda_calculus",
+"label": 0,
+"prereq_id": "game_playing_in_ai",
+"source": "lb1"
+},
+{
+"dependent_id": "latent_semantic_indexing",
+"label": 0,
+"prereq_id": "game_playing_in_ai",
+"source": "lb1"
+},
+{
+"dependent_id": "lexicography",
+"label": 0,
+"prereq_id": "game_playing_in_ai",
+"source": "lb1"
+},
+{
+"dependent_id": "logistic_regression",
+"label": 0,
+"prereq_id": "game_playing_in_ai",
+"source": "lb1"
+},
+{
+"dependent_id": "multi_document_summarization",
+"label": 0,
+"prereq_id": "game_playing_in_ai",
+"source": "lb1"
+},
+{
+"dependent_id": "multilingual_word",
+"label": 0,
+"prereq_id": "game_playing_in_ai",
+"source": "lb1"
+},
+{
+"dependent_id": "neural_machine_translation",
+"label": 0,
+"prereq_id": "game_playing_in_ai",
+"source": "lb1"
+},
+{
+"dependent_id": "one_shot_learning",
+"label": 0,
+"prereq_id": "game_playing_in_ai",
+"source": "lb1"
+},
+{
+"dependent_id": "open_information_extraction",
+"label": 0,
+"prereq_id": "game_playing_in_ai",
+"source": "lb1"
+},
+{
+"dependent_id": "paraphrasing",
+"label": 0,
+"prereq_id": "game_playing_in_ai",
+"source": "lb1"
+},
+{
+"dependent_id": "part_of_speech_tagging",
+"label": 0,
+"prereq_id": "game_playing_in_ai",
+"source": "lb1"
+},
+{
+"dependent_id": "probability",
+"label": 0,
+"prereq_id": "game_playing_in_ai",
+"source": "lb1"
+},
+{
+"dependent_id": "radial_basis_function_network",
+"label": 0,
+"prereq_id": "game_playing_in_ai",
+"source": "lb1"
+},
+{
+"dependent_id": "rouge",
+"label": 0,
+"prereq_id": "game_playing_in_ai",
+"source": "lb1"
+},
+{
+"dependent_id": "semantic_role_labeling",
+"label": 0,
+"prereq_id": "game_playing_in_ai",
+"source": "lb1"
+},
+{
+"dependent_id": "statistical_machine_translation",
+"label": 0,
+"prereq_id": "game_playing_in_ai",
+"source": "lb1"
+},
+{
+"dependent_id": "svm",
+"label": 0,
+"prereq_id": "game_playing_in_ai",
+"source": "lb1"
+},
+{
+"dependent_id": "textual_entailment",
+"label": 0,
+"prereq_id": "game_playing_in_ai",
+"source": "lb1"
+},
+{
+"dependent_id": "word2vec",
+"label": 0,
+"prereq_id": "game_playing_in_ai",
+"source": "lb1"
+},
+{
+"dependent_id": "automated_essay_scoring",
+"label": 0,
+"prereq_id": "gibbs_sampling",
+"source": "lb1"
+},
+{
+"dependent_id": "backpropagation",
+"label": 0,
+"prereq_id": "gibbs_sampling",
+"source": "lb1"
+},
+{
+"dependent_id": "bayesian_network",
+"label": 0,
+"prereq_id": "gibbs_sampling",
+"source": "lb1"
+},
+{
+"dependent_id": "bootstrapping",
+"label": 0,
+"prereq_id": "gibbs_sampling",
+"source": "lb1"
+},
+{
+"dependent_id": "caption_generation",
+"label": 0,
+"prereq_id": "gibbs_sampling",
+"source": "lb1"
+},
+{
+"dependent_id": "combinatory_categorial_grammar",
+"label": 0,
+"prereq_id": "gibbs_sampling",
+"source": "lb1"
+},
+{
+"dependent_id": "constraint_satisfaction",
+"label": 0,
+"prereq_id": "gibbs_sampling",
+"source": "lb1"
+},
+{
+"dependent_id": "context_free_grammar",
+"label": 0,
+"prereq_id": "gibbs_sampling",
+"source": "lb1"
+},
+{
+"dependent_id": "crawling_the_web",
+"label": 0,
+"prereq_id": "gibbs_sampling",
+"source": "lb1"
+},
+{
+"dependent_id": "deep_belief_network",
+"label": 0,
+"prereq_id": "gibbs_sampling",
+"source": "lb1"
+},
+{
+"dependent_id": "domain_adaptation",
+"label": 0,
+"prereq_id": "gibbs_sampling",
+"source": "lb1"
+},
+{
+"dependent_id": "earley_parsing",
+"label": 0,
+"prereq_id": "gibbs_sampling",
+"source": "lb1"
+},
+{
+"dependent_id": "expectation_maximization_em_algorithm",
+"label": 0,
+"prereq_id": "gibbs_sampling",
+"source": "lb1"
+},
+{
+"dependent_id": "facial_recognition_system",
+"label": 0,
+"prereq_id": "gibbs_sampling",
+"source": "lb1"
+},
+{
+"dependent_id": "first_order_logic",
+"label": 0,
+"prereq_id": "gibbs_sampling",
+"source": "lb1"
+},
+{
+"dependent_id": "game_playing_in_ai",
+"label": 0,
+"prereq_id": "gibbs_sampling",
+"source": "lb1"
+},
+{
+"dependent_id": "graphical_model",
+"label": 0,
+"prereq_id": "gibbs_sampling",
+"source": "lb1"
+},
+{
+"dependent_id": "hidden_markov_model",
+"label": 0,
+"prereq_id": "gibbs_sampling",
+"source": "lb1"
+},
+{
+"dependent_id": "hierarchical_model",
+"label": 0,
+"prereq_id": "gibbs_sampling",
+"source": "lb1"
+},
+{
+"dependent_id": "ibm_translation_model",
+"label": 0,
+"prereq_id": "gibbs_sampling",
+"source": "lb1"
+},
+{
+"dependent_id": "kernel_function",
+"label": 0,
+"prereq_id": "gibbs_sampling",
+"source": "lb1"
+},
+{
+"dependent_id": "lambda_calculus",
+"label": 0,
+"prereq_id": "gibbs_sampling",
+"source": "lb1"
+},
+{
+"dependent_id": "latent_semantic_indexing",
+"label": 0,
+"prereq_id": "gibbs_sampling",
+"source": "lb1"
+},
+{
+"dependent_id": "lexicography",
+"label": 0,
+"prereq_id": "gibbs_sampling",
+"source": "lb1"
+},
+{
+"dependent_id": "logistic_regression",
+"label": 0,
+"prereq_id": "gibbs_sampling",
+"source": "lb1"
+},
+{
+"dependent_id": "multi_document_summarization",
+"label": 0,
+"prereq_id": "gibbs_sampling",
+"source": "lb1"
+},
+{
+"dependent_id": "multilingual_word",
+"label": 0,
+"prereq_id": "gibbs_sampling",
+"source": "lb1"
+},
+{
+"dependent_id": "neural_machine_translation",
+"label": 0,
+"prereq_id": "gibbs_sampling",
+"source": "lb1"
+},
+{
+"dependent_id": "one_shot_learning",
+"label": 0,
+"prereq_id": "gibbs_sampling",
+"source": "lb1"
+},
+{
+"dependent_id": "open_information_extraction",
+"label": 0,
+"prereq_id": "gibbs_sampling",
+"source": "lb1"
+},
+{
+"dependent_id": "paraphrasing",
+"label": 0,
+"prereq_id": "gibbs_sampling",
+"source": "lb1"
+},
+{
+"dependent_id": "part_of_speech_tagging",
+"label": 0,
+"prereq_id": "gibbs_sampling",
+"source": "lb1"
+},
+{
+"dependent_id": "probability",
+"label": 0,
+"prereq_id": "gibbs_sampling",
+"source": "lb1"
+},
+{
+"dependent_id": "radial_basis_function_network",
+"label": 0,
+"prereq_id": "gibbs_sampling",
+"source": "lb1"
+},
+{
+"dependent_id": "rouge",
+"label": 0,
+"prereq_id": "gibbs_sampling",
+"source": "lb1"
+},
+{
+"dependent_id": "semantic_role_labeling",
+"label": 0,
+"prereq_id": "gibbs_sampling",
+"source": "lb1"
+},
+{
+"dependent_id": "statistical_machine_translation",
+"label": 0,
+"prereq_id": "gibbs_sampling",
+"source": "lb1"
+},
+{
+"dependent_id": "svm",
+"label": 0,
+"prereq_id": "gibbs_sampling",
+"source": "lb1"
+},
+{
+"dependent_id": "textual_entailment",
+"label": 0,
+"prereq_id": "gibbs_sampling",
+"source": "lb1"
+},
+{
+"dependent_id": "word2vec",
+"label": 0,
+"prereq_id": "gibbs_sampling",
+"source": "lb1"
+},
+{
+"dependent_id": "automated_essay_scoring",
+"label": 0,
+"prereq_id": "graphical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "backpropagation",
+"label": 0,
+"prereq_id": "graphical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "bayesian_network",
+"label": 0,
+"prereq_id": "graphical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "bootstrapping",
+"label": 0,
+"prereq_id": "graphical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "caption_generation",
+"label": 0,
+"prereq_id": "graphical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "combinatory_categorial_grammar",
+"label": 0,
+"prereq_id": "graphical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "constraint_satisfaction",
+"label": 0,
+"prereq_id": "graphical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "context_free_grammar",
+"label": 0,
+"prereq_id": "graphical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "crawling_the_web",
+"label": 0,
+"prereq_id": "graphical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "domain_adaptation",
+"label": 0,
+"prereq_id": "graphical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "earley_parsing",
+"label": 0,
+"prereq_id": "graphical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "expectation_maximization_em_algorithm",
+"label": 0,
+"prereq_id": "graphical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "facial_recognition_system",
+"label": 0,
+"prereq_id": "graphical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "first_order_logic",
+"label": 0,
+"prereq_id": "graphical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "game_playing_in_ai",
+"label": 0,
+"prereq_id": "graphical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "gibbs_sampling",
+"label": 0,
+"prereq_id": "graphical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "hierarchical_model",
+"label": 0,
+"prereq_id": "graphical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "ibm_translation_model",
+"label": 0,
+"prereq_id": "graphical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "kernel_function",
+"label": 0,
+"prereq_id": "graphical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "lambda_calculus",
+"label": 0,
+"prereq_id": "graphical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "latent_semantic_indexing",
+"label": 0,
+"prereq_id": "graphical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "lexicography",
+"label": 0,
+"prereq_id": "graphical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "logistic_regression",
+"label": 0,
+"prereq_id": "graphical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "multi_document_summarization",
+"label": 0,
+"prereq_id": "graphical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "multilingual_word",
+"label": 0,
+"prereq_id": "graphical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "neural_machine_translation",
+"label": 0,
+"prereq_id": "graphical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "one_shot_learning",
+"label": 0,
+"prereq_id": "graphical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "open_information_extraction",
+"label": 0,
+"prereq_id": "graphical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "paraphrasing",
+"label": 0,
+"prereq_id": "graphical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "part_of_speech_tagging",
+"label": 0,
+"prereq_id": "graphical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "probability",
+"label": 0,
+"prereq_id": "graphical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "radial_basis_function_network",
+"label": 0,
+"prereq_id": "graphical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "rouge",
+"label": 0,
+"prereq_id": "graphical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "semantic_role_labeling",
+"label": 0,
+"prereq_id": "graphical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "statistical_machine_translation",
+"label": 0,
+"prereq_id": "graphical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "svm",
+"label": 0,
+"prereq_id": "graphical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "textual_entailment",
+"label": 0,
+"prereq_id": "graphical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "word2vec",
+"label": 0,
+"prereq_id": "graphical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "automated_essay_scoring",
+"label": 0,
+"prereq_id": "hidden_markov_model",
+"source": "lb1"
+},
+{
+"dependent_id": "backpropagation",
+"label": 0,
+"prereq_id": "hidden_markov_model",
+"source": "lb1"
+},
+{
+"dependent_id": "bayesian_network",
+"label": 0,
+"prereq_id": "hidden_markov_model",
+"source": "lb1"
+},
+{
+"dependent_id": "bootstrapping",
+"label": 0,
+"prereq_id": "hidden_markov_model",
+"source": "lb1"
+},
+{
+"dependent_id": "caption_generation",
+"label": 0,
+"prereq_id": "hidden_markov_model",
+"source": "lb1"
+},
+{
+"dependent_id": "combinatory_categorial_grammar",
+"label": 0,
+"prereq_id": "hidden_markov_model",
+"source": "lb1"
+},
+{
+"dependent_id": "constraint_satisfaction",
+"label": 0,
+"prereq_id": "hidden_markov_model",
+"source": "lb1"
+},
+{
+"dependent_id": "context_free_grammar",
+"label": 0,
+"prereq_id": "hidden_markov_model",
+"source": "lb1"
+},
+{
+"dependent_id": "crawling_the_web",
+"label": 0,
+"prereq_id": "hidden_markov_model",
+"source": "lb1"
+},
+{
+"dependent_id": "deep_belief_network",
+"label": 0,
+"prereq_id": "hidden_markov_model",
+"source": "lb1"
+},
+{
+"dependent_id": "domain_adaptation",
+"label": 0,
+"prereq_id": "hidden_markov_model",
+"source": "lb1"
+},
+{
+"dependent_id": "earley_parsing",
+"label": 0,
+"prereq_id": "hidden_markov_model",
+"source": "lb1"
+},
+{
+"dependent_id": "expectation_maximization_em_algorithm",
+"label": 0,
+"prereq_id": "hidden_markov_model",
+"source": "lb1"
+},
+{
+"dependent_id": "facial_recognition_system",
+"label": 0,
+"prereq_id": "hidden_markov_model",
+"source": "lb1"
+},
+{
+"dependent_id": "first_order_logic",
+"label": 0,
+"prereq_id": "hidden_markov_model",
+"source": "lb1"
+},
+{
+"dependent_id": "game_playing_in_ai",
+"label": 0,
+"prereq_id": "hidden_markov_model",
+"source": "lb1"
+},
+{
+"dependent_id": "gibbs_sampling",
+"label": 1,
+"prereq_id": "hidden_markov_model",
+"source": "lb1"
+},
+{
+"dependent_id": "graphical_model",
+"label": 0,
+"prereq_id": "hidden_markov_model",
+"source": "lb1"
+},
+{
+"dependent_id": "hierarchical_model",
+"label": 0,
+"prereq_id": "hidden_markov_model",
+"source": "lb1"
+},
+{
+"dependent_id": "ibm_translation_model",
+"label": 0,
+"prereq_id": "hidden_markov_model",
+"source": "lb1"
+},
+{
+"dependent_id": "kernel_function",
+"label": 0,
+"prereq_id": "hidden_markov_model",
+"source": "lb1"
+},
+{
+"dependent_id": "lambda_calculus",
+"label": 0,
+"prereq_id": "hidden_markov_model",
+"source": "lb1"
+},
+{
+"dependent_id": "latent_semantic_indexing",
+"label": 0,
+"prereq_id": "hidden_markov_model",
+"source": "lb1"
+},
+{
+"dependent_id": "lexicography",
+"label": 0,
+"prereq_id": "hidden_markov_model",
+"source": "lb1"
+},
+{
+"dependent_id": "logistic_regression",
+"label": 0,
+"prereq_id": "hidden_markov_model",
+"source": "lb1"
+},
+{
+"dependent_id": "multi_document_summarization",
+"label": 0,
+"prereq_id": "hidden_markov_model",
+"source": "lb1"
+},
+{
+"dependent_id": "multilingual_word",
+"label": 0,
+"prereq_id": "hidden_markov_model",
+"source": "lb1"
+},
+{
+"dependent_id": "neural_machine_translation",
+"label": 0,
+"prereq_id": "hidden_markov_model",
+"source": "lb1"
+},
+{
+"dependent_id": "one_shot_learning",
+"label": 0,
+"prereq_id": "hidden_markov_model",
+"source": "lb1"
+},
+{
+"dependent_id": "open_information_extraction",
+"label": 0,
+"prereq_id": "hidden_markov_model",
+"source": "lb1"
+},
+{
+"dependent_id": "paraphrasing",
+"label": 0,
+"prereq_id": "hidden_markov_model",
+"source": "lb1"
+},
+{
+"dependent_id": "probability",
+"label": 0,
+"prereq_id": "hidden_markov_model",
+"source": "lb1"
+},
+{
+"dependent_id": "radial_basis_function_network",
+"label": 0,
+"prereq_id": "hidden_markov_model",
+"source": "lb1"
+},
+{
+"dependent_id": "rouge",
+"label": 0,
+"prereq_id": "hidden_markov_model",
+"source": "lb1"
+},
+{
+"dependent_id": "semantic_role_labeling",
+"label": 0,
+"prereq_id": "hidden_markov_model",
+"source": "lb1"
+},
+{
+"dependent_id": "statistical_machine_translation",
+"label": 0,
+"prereq_id": "hidden_markov_model",
+"source": "lb1"
+},
+{
+"dependent_id": "svm",
+"label": 0,
+"prereq_id": "hidden_markov_model",
+"source": "lb1"
+},
+{
+"dependent_id": "textual_entailment",
+"label": 0,
+"prereq_id": "hidden_markov_model",
+"source": "lb1"
+},
+{
+"dependent_id": "word2vec",
+"label": 0,
+"prereq_id": "hidden_markov_model",
+"source": "lb1"
+},
+{
+"dependent_id": "automated_essay_scoring",
+"label": 0,
+"prereq_id": "hierarchical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "backpropagation",
+"label": 0,
+"prereq_id": "hierarchical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "bayesian_network",
+"label": 0,
+"prereq_id": "hierarchical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "bootstrapping",
+"label": 0,
+"prereq_id": "hierarchical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "caption_generation",
+"label": 0,
+"prereq_id": "hierarchical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "combinatory_categorial_grammar",
+"label": 0,
+"prereq_id": "hierarchical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "constraint_satisfaction",
+"label": 0,
+"prereq_id": "hierarchical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "context_free_grammar",
+"label": 0,
+"prereq_id": "hierarchical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "crawling_the_web",
+"label": 0,
+"prereq_id": "hierarchical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "deep_belief_network",
+"label": 0,
+"prereq_id": "hierarchical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "domain_adaptation",
+"label": 0,
+"prereq_id": "hierarchical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "earley_parsing",
+"label": 0,
+"prereq_id": "hierarchical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "expectation_maximization_em_algorithm",
+"label": 0,
+"prereq_id": "hierarchical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "facial_recognition_system",
+"label": 0,
+"prereq_id": "hierarchical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "first_order_logic",
+"label": 0,
+"prereq_id": "hierarchical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "game_playing_in_ai",
+"label": 0,
+"prereq_id": "hierarchical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "gibbs_sampling",
+"label": 0,
+"prereq_id": "hierarchical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "graphical_model",
+"label": 0,
+"prereq_id": "hierarchical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "hidden_markov_model",
+"label": 0,
+"prereq_id": "hierarchical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "ibm_translation_model",
+"label": 0,
+"prereq_id": "hierarchical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "kernel_function",
+"label": 0,
+"prereq_id": "hierarchical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "lambda_calculus",
+"label": 0,
+"prereq_id": "hierarchical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "latent_semantic_indexing",
+"label": 0,
+"prereq_id": "hierarchical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "lexicography",
+"label": 0,
+"prereq_id": "hierarchical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "logistic_regression",
+"label": 0,
+"prereq_id": "hierarchical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "multi_document_summarization",
+"label": 0,
+"prereq_id": "hierarchical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "multilingual_word",
+"label": 0,
+"prereq_id": "hierarchical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "neural_machine_translation",
+"label": 0,
+"prereq_id": "hierarchical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "one_shot_learning",
+"label": 0,
+"prereq_id": "hierarchical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "open_information_extraction",
+"label": 0,
+"prereq_id": "hierarchical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "paraphrasing",
+"label": 0,
+"prereq_id": "hierarchical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "part_of_speech_tagging",
+"label": 0,
+"prereq_id": "hierarchical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "probability",
+"label": 0,
+"prereq_id": "hierarchical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "radial_basis_function_network",
+"label": 0,
+"prereq_id": "hierarchical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "rouge",
+"label": 0,
+"prereq_id": "hierarchical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "semantic_role_labeling",
+"label": 0,
+"prereq_id": "hierarchical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "statistical_machine_translation",
+"label": 0,
+"prereq_id": "hierarchical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "svm",
+"label": 0,
+"prereq_id": "hierarchical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "textual_entailment",
+"label": 0,
+"prereq_id": "hierarchical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "word2vec",
+"label": 0,
+"prereq_id": "hierarchical_model",
+"source": "lb1"
+},
+{
+"dependent_id": "automated_essay_scoring",
+"label": 0,
+"prereq_id": "ibm_translation_model",
+"source": "lb1"
+},
+{
+"dependent_id": "backpropagation",
+"label": 0,
+"prereq_id": "ibm_translation_model",
+"source": "lb1"
+},
+{
+"dependent_id": "bayesian_network",
+"label": 0,
+"prereq_id": "ibm_translation_model",
+"source": "lb1"
+},
+{
+"dependent_id": "bootstrapping",
+"label": 0,
+"prereq_id": "ibm_translation_model",
+"source": "lb1"
+},
+{
+"dependent_id": "caption_generation",
+"label": 0,
+"prereq_id": "ibm_translation_model",
+"source": "lb1"
+},
+{
+"dependent_id": "combinatory_categorial_grammar",
+"label": 0,
+"prereq_id": "ibm_translation_model",
+"source": "lb1"
+},
+{
+"dependent_id": "constraint_satisfaction",
+"label": 0,
+"prereq_id": "ibm_translation_model",
+"source": "lb1"
+},
+{
+"dependent_id": "context_free_grammar",
+"label": 0,
+"prereq_id": "ibm_translation_model",
+"source": "lb1"
+},
+{
+"dependent_id": "crawling_the_web",
+"label": 0,
+"prereq_id": "ibm_translation_model",
+"source": "lb1"
+},
+{
+"dependent_id": "deep_belief_network",
+"label": 0,
+"prereq_id": "ibm_translation_model",
+"source": "lb1"
+},
+{
+"dependent_id": "domain_adaptation",
+"label": 0,
+"prereq_id": "ibm_translation_model",
+"source": "lb1"
+},
+{
+"dependent_id": "earley_parsing",
+"label": 0,
+"prereq_id": "ibm_translation_model",
+"source": "lb1"
+},
+{
+"dependent_id": "expectation_maximization_em_algorithm",
+"label": 0,
+"prereq_id": "ibm_translation_model",
+"source": "lb1"
+},
+{
+"dependent_id": "facial_recognition_system",
+"label": 0,
+"prereq_id": "ibm_translation_model",
+"source": "lb1"
+},
+{
+"dependent_id": "first_order_logic",
+"label": 0,
+"prereq_id": "ibm_translation_model",
+"source": "lb1"
+},
+{
+"dependent_id": "game_playing_in_ai",
+"label": 0,
+"prereq_id": "ibm_translation_model",
+"source": "lb1"
+},
+{
+"dependent_id": "gibbs_sampling",
+"label": 0,
+"prereq_id": "ibm_translation_model",
+"source": "lb1"
+},
+{
+"dependent_id": "graphical_model",
+"label": 0,
+"prereq_id": "ibm_translation_model",
+"source": "lb1"
+},
+{
+"dependent_id": "hidden_markov_model",
+"label": 0,
+"prereq_id": "ibm_translation_model",
+"source": "lb1"
+},
+{
+"dependent_id": "hierarchical_model",
+"label": 0,
+"prereq_id": "ibm_translation_model",
+"source": "lb1"
+},
+{
+"dependent_id": "kernel_function",
+"label": 0,
+"prereq_id": "ibm_translation_model",
+"source": "lb1"
+},
+{
+"dependent_id": "lambda_calculus",
+"label": 0,
+"prereq_id": "ibm_translation_model",
+"source": "lb1"
+},
+{
+"dependent_id": "latent_semantic_indexing",
+"label": 0,
+"prereq_id": "ibm_translation_model",
+"source": "lb1"
+},
+{
+"dependent_id": "lexicography",
+"label": 0,
+"prereq_id": "ibm_translation_model",
+"source": "lb1"
+},
+{
+"dependent_id": "logistic_regression",
+"label": 0,
+"prereq_id": "ibm_translation_model",
+"source": "lb1"
+},
+{
+"dependent_id": "multilingual_word",
+"label": 0,
+"prereq_id": "ibm_translation_model",
+"source": "lb1"
+},
+{
+"dependent_id": "neural_machine_translation",
+"label": 1,
+"prereq_id": "ibm_translation_model",
+"source": "lb1"
+},
+{
+"dependent_id": "one_shot_learning",
+"label": 0,
+"prereq_id": "ibm_translation_model",
+"source": "lb1"
+},
+{
+"dependent_id": "open_information_extraction",
+"label": 0,
+"prereq_id": "ibm_translation_model",
+"source": "lb1"
+},
+{
+"dependent_id": "paraphrasing",
+"label": 0,
+"prereq_id": "ibm_translation_model",
+"source": "lb1"
+},
+{
+"dependent_id": "part_of_speech_tagging",
+"label": 0,
+"prereq_id": "ibm_translation_model",
+"source": "lb1"
+},
+{
+"dependent_id": "probability",
+"label": 0,
+"prereq_id": "ibm_translation_model",
+"source": "lb1"
+},
+{
+"dependent_id": "radial_basis_function_network",
+"label": 0,
+"prereq_id": "ibm_translation_model",
+"source": "lb1"
+},
+{
+"dependent_id": "semantic_role_labeling",
+"label": 0,
+"prereq_id": "ibm_translation_model",
+"source": "lb1"
+},
+{
+"dependent_id": "statistical_machine_translation",
+"label": 0,
+"prereq_id": "ibm_translation_model",
+"source": "lb1"
+},
+{
+"dependent_id": "svm",
+"label": 0,
+"prereq_id": "ibm_translation_model",
+"source": "lb1"
+},
+{
+"dependent_id": "textual_entailment",
+"label": 0,
+"prereq_id": "ibm_translation_model",
+"source": "lb1"
+},
+{
+"dependent_id": "word2vec",
+"label": 0,
+"prereq_id": "ibm_translation_model",
+"source": "lb1"
+},
+{
+"dependent_id": "automated_essay_scoring",
+"label": 0,
+"prereq_id": "kernel_function",
+"source": "lb1"
+},
+{
+"dependent_id": "backpropagation",
+"label": 0,
+"prereq_id": "kernel_function",
+"source": "lb1"
+},
+{
+"dependent_id": "bayesian_network",
+"label": 0,
+"prereq_id": "kernel_function",
+"source": "lb1"
+},
+{
+"dependent_id": "bootstrapping",
+"label": 0,
+"prereq_id": "kernel_function",
+"source": "lb1"
+},
+{
+"dependent_id": "caption_generation",
+"label": 0,
+"prereq_id": "kernel_function",
+"source": "lb1"
+},
+{
+"dependent_id": "combinatory_categorial_grammar",
+"label": 0,
+"prereq_id": "kernel_function",
+"source": "lb1"
+},
+{
+"dependent_id": "constraint_satisfaction",
+"label": 0,
+"prereq_id": "kernel_function",
+"source": "lb1"
+},
+{
+"dependent_id": "context_free_grammar",
+"label": 0,
+"prereq_id": "kernel_function",
+"source": "lb1"
+},
+{
+"dependent_id": "crawling_the_web",
+"label": 0,
+"prereq_id": "kernel_function",
+"source": "lb1"
+},
+{
+"dependent_id": "deep_belief_network",
+"label": 0,
+"prereq_id": "kernel_function",
+"source": "lb1"
+},
+{
+"dependent_id": "domain_adaptation",
+"label": 0,
+"prereq_id": "kernel_function",
+"source": "lb1"
+},
+{
+"dependent_id": "earley_parsing",
+"label": 0,
+"prereq_id": "kernel_function",
+"source": "lb1"
+},
+{
+"dependent_id": "expectation_maximization_em_algorithm",
+"label": 0,
+"prereq_id": "kernel_function",
+"source": "lb1"
+},
+{
+"dependent_id": "facial_recognition_system",
+"label": 0,
+"prereq_id": "kernel_function",
+"source": "lb1"
+},
+{
+"dependent_id": "first_order_logic",
+"label": 0,
+"prereq_id": "kernel_function",
+"source": "lb1"
+},
+{
+"dependent_id": "game_playing_in_ai",
+"label": 0,
+"prereq_id": "kernel_function",
+"source": "lb1"
+},
+{
+"dependent_id": "gibbs_sampling",
+"label": 0,
+"prereq_id": "kernel_function",
+"source": "lb1"
+},
+{
+"dependent_id": "graphical_model",
+"label": 0,
+"prereq_id": "kernel_function",
+"source": "lb1"
+},
+{
+"dependent_id": "hidden_markov_model",
+"label": 0,
+"prereq_id": "kernel_function",
+"source": "lb1"
+},
+{
+"dependent_id": "hierarchical_model",
+"label": 0,
+"prereq_id": "kernel_function",
+"source": "lb1"
+},
+{
+"dependent_id": "ibm_translation_model",
+"label": 0,
+"prereq_id": "kernel_function",
+"source": "lb1"
+},
+{
+"dependent_id": "lambda_calculus",
+"label": 0,
+"prereq_id": "kernel_function",
+"source": "lb1"
+},
+{
+"dependent_id": "latent_semantic_indexing",
+"label": 0,
+"prereq_id": "kernel_function",
+"source": "lb1"
+},
+{
+"dependent_id": "lexicography",
+"label": 0,
+"prereq_id": "kernel_function",
+"source": "lb1"
+},
+{
+"dependent_id": "logistic_regression",
+"label": 0,
+"prereq_id": "kernel_function",
+"source": "lb1"
+},
+{
+"dependent_id": "multi_document_summarization",
+"label": 0,
+"prereq_id": "kernel_function",
+"source": "lb1"
+},
+{
+"dependent_id": "multilingual_word",
+"label": 0,
+"prereq_id": "kernel_function",
+"source": "lb1"
+},
+{
+"dependent_id": "neural_machine_translation",
+"label": 0,
+"prereq_id": "kernel_function",
+"source": "lb1"
+},
+{
+"dependent_id": "one_shot_learning",
+"label": 0,
+"prereq_id": "kernel_function",
+"source": "lb1"
+},
+{
+"dependent_id": "open_information_extraction",
+"label": 0,
+"prereq_id": "kernel_function",
+"source": "lb1"
+},
+{
+"dependent_id": "paraphrasing",
+"label": 0,
+"prereq_id": "kernel_function",
+"source": "lb1"
+},
+{
+"dependent_id": "part_of_speech_tagging",
+"label": 0,
+"prereq_id": "kernel_function",
+"source": "lb1"
+},
+{
+"dependent_id": "probability",
+"label": 0,
+"prereq_id": "kernel_function",
+"source": "lb1"
+},
+{
+"dependent_id": "radial_basis_function_network",
+"label": 1,
+"prereq_id": "kernel_function",
+"source": "lb1"
+},
+{
+"dependent_id": "rouge",
+"label": 0,
+"prereq_id": "kernel_function",
+"source": "lb1"
+},
+{
+"dependent_id": "semantic_role_labeling",
+"label": 0,
+"prereq_id": "kernel_function",
+"source": "lb1"
+},
+{
+"dependent_id": "statistical_machine_translation",
+"label": 0,
+"prereq_id": "kernel_function",
+"source": "lb1"
+},
+{
+"dependent_id": "svm",
+"label": 0,
+"prereq_id": "kernel_function",
+"source": "lb1"
+},
+{
+"dependent_id": "textual_entailment",
+"label": 0,
+"prereq_id": "kernel_function",
+"source": "lb1"
+},
+{
+"dependent_id": "word2vec",
+"label": 0,
+"prereq_id": "kernel_function",
+"source": "lb1"
+},
+{
+"dependent_id": "automated_essay_scoring",
+"label": 0,
+"prereq_id": "lambda_calculus",
+"source": "lb1"
+},
+{
+"dependent_id": "backpropagation",
+"label": 0,
+"prereq_id": "lambda_calculus",
+"source": "lb1"
+},
+{
+"dependent_id": "bayesian_network",
+"label": 0,
+"prereq_id": "lambda_calculus",
+"source": "lb1"
+},
+{
+"dependent_id": "bootstrapping",
+"label": 0,
+"prereq_id": "lambda_calculus",
+"source": "lb1"
+},
+{
+"dependent_id": "caption_generation",
+"label": 0,
+"prereq_id": "lambda_calculus",
+"source": "lb1"
+},
+{
+"dependent_id": "combinatory_categorial_grammar",
+"label": 0,
+"prereq_id": "lambda_calculus",
+"source": "lb1"
+},
+{
+"dependent_id": "constraint_satisfaction",
+"label": 0,
+"prereq_id": "lambda_calculus",
+"source": "lb1"
+},
+{
+"dependent_id": "context_free_grammar",
+"label": 0,
+"prereq_id": "lambda_calculus",
+"source": "lb1"
+},
+{
+"dependent_id": "crawling_the_web",
+"label": 0,
+"prereq_id": "lambda_calculus",
+"source": "lb1"
+},
+{
+"dependent_id": "deep_belief_network",
+"label": 0,
+"prereq_id": "lambda_calculus",
+"source": "lb1"
+},
+{
+"dependent_id": "domain_adaptation",
+"label": 0,
+"prereq_id": "lambda_calculus",
+"source": "lb1"
+},
+{
+"dependent_id": "earley_parsing",
+"label": 0,
+"prereq_id": "lambda_calculus",
+"source": "lb1"
+},
+{
+"dependent_id": "expectation_maximization_em_algorithm",
+"label": 0,
+"prereq_id": "lambda_calculus",
+"source": "lb1"
+},
+{
+"dependent_id": "facial_recognition_system",
+"label": 0,
+"prereq_id": "lambda_calculus",
+"source": "lb1"
+},
+{
+"dependent_id": "first_order_logic",
+"label": 0,
+"prereq_id": "lambda_calculus",
+"source": "lb1"
+},
+{
+"dependent_id": "game_playing_in_ai",
+"label": 0,
+"prereq_id": "lambda_calculus",
+"source": "lb1"
+},
+{
+"dependent_id": "gibbs_sampling",
+"label": 0,
+"prereq_id": "lambda_calculus",
+"source": "lb1"
+},
+{
+"dependent_id": "graphical_model",
+"label": 0,
+"prereq_id": "lambda_calculus",
+"source": "lb1"
+},
+{
+"dependent_id": "hidden_markov_model",
+"label": 0,
+"prereq_id": "lambda_calculus",
+"source": "lb1"
+},
+{
+"dependent_id": "hierarchical_model",
+"label": 0,
+"prereq_id": "lambda_calculus",
+"source": "lb1"
+},
+{
+"dependent_id": "ibm_translation_model",
+"label": 0,
+"prereq_id": "lambda_calculus",
+"source": "lb1"
+},
+{
+"dependent_id": "kernel_function",
+"label": 0,
+"prereq_id": "lambda_calculus",
+"source": "lb1"
+},
+{
+"dependent_id": "latent_semantic_indexing",
+"label": 0,
+"prereq_id": "lambda_calculus",
+"source": "lb1"
+},
+{
+"dependent_id": "lexicography",
+"label": 0,
+"prereq_id": "lambda_calculus",
+"source": "lb1"
+},
+{
+"dependent_id": "logistic_regression",
+"label": 0,
+"prereq_id": "lambda_calculus",
+"source": "lb1"
+},
+{
+"dependent_id": "multi_document_summarization",
+"label": 0,
+"prereq_id": "lambda_calculus",
+"source": "lb1"
+},
+{
+"dependent_id": "multilingual_word",
+"label": 0,
+"prereq_id": "lambda_calculus",
+"source": "lb1"
+},
+{
+"dependent_id": "neural_machine_translation",
+"label": 0,
+"prereq_id": "lambda_calculus",
+"source": "lb1"
+},
+{
+"dependent_id": "one_shot_learning",
+"label": 0,
+"prereq_id": "lambda_calculus",
+"source": "lb1"
+},
+{
+"dependent_id": "open_information_extraction",
+"label": 0,
+"prereq_id": "lambda_calculus",
+"source": "lb1"
+},
+{
+"dependent_id": "paraphrasing",
+"label": 0,
+"prereq_id": "lambda_calculus",
+"source": "lb1"
+},
+{
+"dependent_id": "part_of_speech_tagging",
+"label": 0,
+"prereq_id": "lambda_calculus",
+"source": "lb1"
+},
+{
+"dependent_id": "probability",
+"label": 0,
+"prereq_id": "lambda_calculus",
+"source": "lb1"
+},
+{
+"dependent_id": "radial_basis_function_network",
+"label": 0,
+"prereq_id": "lambda_calculus",
+"source": "lb1"
+},
+{
+"dependent_id": "rouge",
+"label": 0,
+"prereq_id": "lambda_calculus",
+"source": "lb1"
+},
+{
+"dependent_id": "semantic_role_labeling",
+"label": 0,
+"prereq_id": "lambda_calculus",
+"source": "lb1"
+},
+{
+"dependent_id": "statistical_machine_translation",
+"label": 0,
+"prereq_id": "lambda_calculus",
+"source": "lb1"
+},
+{
+"dependent_id": "svm",
+"label": 0,
+"prereq_id": "lambda_calculus",
+"source": "lb1"
+},
+{
+"dependent_id": "textual_entailment",
+"label": 0,
+"prereq_id": "lambda_calculus",
+"source": "lb1"
+},
+{
+"dependent_id": "word2vec",
+"label": 0,
+"prereq_id": "lambda_calculus",
+"source": "lb1"
+},
+{
+"dependent_id": "automated_essay_scoring",
+"label": 0,
+"prereq_id": "latent_semantic_indexing",
+"source": "lb1"
+},
+{
+"dependent_id": "backpropagation",
+"label": 0,
+"prereq_id": "latent_semantic_indexing",
+"source": "lb1"
+},
+{
+"dependent_id": "bayesian_network",
+"label": 0,
+"prereq_id": "latent_semantic_indexing",
+"source": "lb1"
+},
+{
+"dependent_id": "bootstrapping",
+"label": 0,
+"prereq_id": "latent_semantic_indexing",
+"source": "lb1"
+},
+{
+"dependent_id": "caption_generation",
+"label": 0,
+"prereq_id": "latent_semantic_indexing",
+"source": "lb1"
+},
+{
+"dependent_id": "combinatory_categorial_grammar",
+"label": 0,
+"prereq_id": "latent_semantic_indexing",
+"source": "lb1"
+},
+{
+"dependent_id": "constraint_satisfaction",
+"label": 0,
+"prereq_id": "latent_semantic_indexing",
+"source": "lb1"
+},
+{
+"dependent_id": "context_free_grammar",
+"label": 0,
+"prereq_id": "latent_semantic_indexing",
+"source": "lb1"
+},
+{
+"dependent_id": "crawling_the_web",
+"label": 0,
+"prereq_id": "latent_semantic_indexing",
+"source": "lb1"
+},
+{
+"dependent_id": "deep_belief_network",
+"label": 0,
+"prereq_id": "latent_semantic_indexing",
+"source": "lb1"
+},
+{
+"dependent_id": "domain_adaptation",
+"label": 0,
+"prereq_id": "latent_semantic_indexing",
+"source": "lb1"
+},
+{
+"dependent_id": "earley_parsing",
+"label": 0,
+"prereq_id": "latent_semantic_indexing",
+"source": "lb1"
+},
+{
+"dependent_id": "expectation_maximization_em_algorithm",
+"label": 0,
+"prereq_id": "latent_semantic_indexing",
+"source": "lb1"
+},
+{
+"dependent_id": "facial_recognition_system",
+"label": 0,
+"prereq_id": "latent_semantic_indexing",
+"source": "lb1"
+},
+{
+"dependent_id": "first_order_logic",
+"label": 0,
+"prereq_id": "latent_semantic_indexing",
+"source": "lb1"
+},
+{
+"dependent_id": "game_playing_in_ai",
+"label": 0,
+"prereq_id": "latent_semantic_indexing",
+"source": "lb1"
+},
+{
+"dependent_id": "gibbs_sampling",
+"label": 0,
+"prereq_id": "latent_semantic_indexing",
+"source": "lb1"
+},
+{
+"dependent_id": "graphical_model",
+"label": 0,
+"prereq_id": "latent_semantic_indexing",
+"source": "lb1"
+},
+{
+"dependent_id": "hidden_markov_model",
+"label": 0,
+"prereq_id": "latent_semantic_indexing",
+"source": "lb1"
+},
+{
+"dependent_id": "hierarchical_model",
+"label": 0,
+"prereq_id": "latent_semantic_indexing",
+"source": "lb1"
+},
+{
+"dependent_id": "ibm_translation_model",
+"label": 0,
+"prereq_id": "latent_semantic_indexing",
+"source": "lb1"
+},
+{
+"dependent_id": "kernel_function",
+"label": 0,
+"prereq_id": "latent_semantic_indexing",
+"source": "lb1"
+},
+{
+"dependent_id": "lambda_calculus",
+"label": 0,
+"prereq_id": "latent_semantic_indexing",
+"source": "lb1"
+},
+{
+"dependent_id": "lexicography",
+"label": 0,
+"prereq_id": "latent_semantic_indexing",
+"source": "lb1"
+},
+{
+"dependent_id": "logistic_regression",
+"label": 0,
+"prereq_id": "latent_semantic_indexing",
+"source": "lb1"
+},
+{
+"dependent_id": "multi_document_summarization",
+"label": 0,
+"prereq_id": "latent_semantic_indexing",
+"source": "lb1"
+},
+{
+"dependent_id": "multilingual_word",
+"label": 0,
+"prereq_id": "latent_semantic_indexing",
+"source": "lb1"
+},
+{
+"dependent_id": "neural_machine_translation",
+"label": 0,
+"prereq_id": "latent_semantic_indexing",
+"source": "lb1"
+},
+{
+"dependent_id": "one_shot_learning",
+"label": 0,
+"prereq_id": "latent_semantic_indexing",
+"source": "lb1"
+},
+{
+"dependent_id": "open_information_extraction",
+"label": 0,
+"prereq_id": "latent_semantic_indexing",
+"source": "lb1"
+},
+{
+"dependent_id": "paraphrasing",
+"label": 0,
+"prereq_id": "latent_semantic_indexing",
+"source": "lb1"
+},
+{
+"dependent_id": "part_of_speech_tagging",
+"label": 0,
+"prereq_id": "latent_semantic_indexing",
+"source": "lb1"
+},
+{
+"dependent_id": "probability",
+"label": 0,
+"prereq_id": "latent_semantic_indexing",
+"source": "lb1"
+},
+{
+"dependent_id": "radial_basis_function_network",
+"label": 0,
+"prereq_id": "latent_semantic_indexing",
+"source": "lb1"
+},
+{
+"dependent_id": "rouge",
+"label": 0,
+"prereq_id": "latent_semantic_indexing",
+"source": "lb1"
+},
+{
+"dependent_id": "semantic_role_labeling",
+"label": 0,
+"prereq_id": "latent_semantic_indexing",
+"source": "lb1"
+},
+{
+"dependent_id": "statistical_machine_translation",
+"label": 0,
+"prereq_id": "latent_semantic_indexing",
+"source": "lb1"
+},
+{
+"dependent_id": "svm",
+"label": 0,
+"prereq_id": "latent_semantic_indexing",
+"source": "lb1"
+},
+{
+"dependent_id": "textual_entailment",
+"label": 0,
+"prereq_id": "latent_semantic_indexing",
+"source": "lb1"
+},
+{
+"dependent_id": "word2vec",
+"label": 0,
+"prereq_id": "latent_semantic_indexing",
+"source": "lb1"
+},
+{
+"dependent_id": "automated_essay_scoring",
+"label": 0,
+"prereq_id": "lexicography",
+"source": "lb1"
+},
+{
+"dependent_id": "backpropagation",
+"label": 0,
+"prereq_id": "lexicography",
+"source": "lb1"
+},
+{
+"dependent_id": "bayesian_network",
+"label": 0,
+"prereq_id": "lexicography",
+"source": "lb1"
+},
+{
+"dependent_id": "bootstrapping",
+"label": 0,
+"prereq_id": "lexicography",
+"source": "lb1"
+},
+{
+"dependent_id": "caption_generation",
+"label": 0,
+"prereq_id": "lexicography",
+"source": "lb1"
+},
+{
+"dependent_id": "combinatory_categorial_grammar",
+"label": 0,
+"prereq_id": "lexicography",
+"source": "lb1"
+},
+{
+"dependent_id": "constraint_satisfaction",
+"label": 0,
+"prereq_id": "lexicography",
+"source": "lb1"
+},
+{
+"dependent_id": "context_free_grammar",
+"label": 0,
+"prereq_id": "lexicography",
+"source": "lb1"
+},
+{
+"dependent_id": "crawling_the_web",
+"label": 0,
+"prereq_id": "lexicography",
+"source": "lb1"
+},
+{
+"dependent_id": "deep_belief_network",
+"label": 0,
+"prereq_id": "lexicography",
+"source": "lb1"
+},
+{
+"dependent_id": "domain_adaptation",
+"label": 0,
+"prereq_id": "lexicography",
+"source": "lb1"
+},
+{
+"dependent_id": "earley_parsing",
+"label": 0,
+"prereq_id": "lexicography",
+"source": "lb1"
+},
+{
+"dependent_id": "expectation_maximization_em_algorithm",
+"label": 0,
+"prereq_id": "lexicography",
+"source": "lb1"
+},
+{
+"dependent_id": "facial_recognition_system",
+"label": 0,
+"prereq_id": "lexicography",
+"source": "lb1"
+},
+{
+"dependent_id": "first_order_logic",
+"label": 0,
+"prereq_id": "lexicography",
+"source": "lb1"
+},
+{
+"dependent_id": "game_playing_in_ai",
+"label": 0,
+"prereq_id": "lexicography",
+"source": "lb1"
+},
+{
+"dependent_id": "gibbs_sampling",
+"label": 0,
+"prereq_id": "lexicography",
+"source": "lb1"
+},
+{
+"dependent_id": "graphical_model",
+"label": 0,
+"prereq_id": "lexicography",
+"source": "lb1"
+},
+{
+"dependent_id": "hidden_markov_model",
+"label": 0,
+"prereq_id": "lexicography",
+"source": "lb1"
+},
+{
+"dependent_id": "hierarchical_model",
+"label": 0,
+"prereq_id": "lexicography",
+"source": "lb1"
+},
+{
+"dependent_id": "ibm_translation_model",
+"label": 0,
+"prereq_id": "lexicography",
+"source": "lb1"
+},
+{
+"dependent_id": "kernel_function",
+"label": 0,
+"prereq_id": "lexicography",
+"source": "lb1"
+},
+{
+"dependent_id": "lambda_calculus",
+"label": 0,
+"prereq_id": "lexicography",
+"source": "lb1"
+},
+{
+"dependent_id": "latent_semantic_indexing",
+"label": 0,
+"prereq_id": "lexicography",
+"source": "lb1"
+},
+{
+"dependent_id": "logistic_regression",
+"label": 0,
+"prereq_id": "lexicography",
+"source": "lb1"
+},
+{
+"dependent_id": "multi_document_summarization",
+"label": 0,
+"prereq_id": "lexicography",
+"source": "lb1"
+},
+{
+"dependent_id": "multilingual_word",
+"label": 0,
+"prereq_id": "lexicography",
+"source": "lb1"
+},
+{
+"dependent_id": "neural_machine_translation",
+"label": 0,
+"prereq_id": "lexicography",
+"source": "lb1"
+},
+{
+"dependent_id": "one_shot_learning",
+"label": 0,
+"prereq_id": "lexicography",
+"source": "lb1"
+},
+{
+"dependent_id": "open_information_extraction",
+"label": 0,
+"prereq_id": "lexicography",
+"source": "lb1"
+},
+{
+"dependent_id": "paraphrasing",
+"label": 0,
+"prereq_id": "lexicography",
+"source": "lb1"
+},
+{
+"dependent_id": "part_of_speech_tagging",
+"label": 0,
+"prereq_id": "lexicography",
+"source": "lb1"
+},
+{
+"dependent_id": "probability",
+"label": 0,
+"prereq_id": "lexicography",
+"source": "lb1"
+},
+{
+"dependent_id": "radial_basis_function_network",
+"label": 0,
+"prereq_id": "lexicography",
+"source": "lb1"
+},
+{
+"dependent_id": "rouge",
+"label": 0,
+"prereq_id": "lexicography",
+"source": "lb1"
+},
+{
+"dependent_id": "semantic_role_labeling",
+"label": 0,
+"prereq_id": "lexicography",
+"source": "lb1"
+},
+{
+"dependent_id": "statistical_machine_translation",
+"label": 0,
+"prereq_id": "lexicography",
+"source": "lb1"
+},
+{
+"dependent_id": "svm",
+"label": 0,
+"prereq_id": "lexicography",
+"source": "lb1"
+},
+{
+"dependent_id": "textual_entailment",
+"label": 0,
+"prereq_id": "lexicography",
+"source": "lb1"
+},
+{
+"dependent_id": "word2vec",
+"label": 0,
+"prereq_id": "lexicography",
+"source": "lb1"
+},
+{
+"dependent_id": "automated_essay_scoring",
+"label": 0,
+"prereq_id": "logistic_regression",
+"source": "lb1"
+},
+{
+"dependent_id": "backpropagation",
+"label": 0,
+"prereq_id": "logistic_regression",
+"source": "lb1"
+},
+{
+"dependent_id": "bayesian_network",
+"label": 0,
+"prereq_id": "logistic_regression",
+"source": "lb1"
+},
+{
+"dependent_id": "bootstrapping",
+"label": 0,
+"prereq_id": "logistic_regression",
+"source": "lb1"
+},
+{
+"dependent_id": "caption_generation",
+"label": 0,
+"prereq_id": "logistic_regression",
+"source": "lb1"
+},
+{
+"dependent_id": "combinatory_categorial_grammar",
+"label": 0,
+"prereq_id": "logistic_regression",
+"source": "lb1"
+},
+{
+"dependent_id": "constraint_satisfaction",
+"label": 0,
+"prereq_id": "logistic_regression",
+"source": "lb1"
+},
+{
+"dependent_id": "context_free_grammar",
+"label": 0,
+"prereq_id": "logistic_regression",
+"source": "lb1"
+},
+{
+"dependent_id": "crawling_the_web",
+"label": 0,
+"prereq_id": "logistic_regression",
+"source": "lb1"
+},
+{
+"dependent_id": "deep_belief_network",
+"label": 0,
+"prereq_id": "logistic_regression",
+"source": "lb1"
+},
+{
+"dependent_id": "domain_adaptation",
+"label": 0,
+"prereq_id": "logistic_regression",
+"source": "lb1"
+},
+{
+"dependent_id": "earley_parsing",
+"label": 0,
+"prereq_id": "logistic_regression",
+"source": "lb1"
+},
+{
+"dependent_id": "expectation_maximization_em_algorithm",
+"label": 0,
+"prereq_id": "logistic_regression",
+"source": "lb1"
+},
+{
+"dependent_id": "facial_recognition_system",
+"label": 0,
+"prereq_id": "logistic_regression",
+"source": "lb1"
+},
+{
+"dependent_id": "first_order_logic",
+"label": 0,
+"prereq_id": "logistic_regression",
+"source": "lb1"
+},
+{
+"dependent_id": "game_playing_in_ai",
+"label": 0,
+"prereq_id": "logistic_regression",
+"source": "lb1"
+},
+{
+"dependent_id": "gibbs_sampling",
+"label": 0,
+"prereq_id": "logistic_regression",
+"source": "lb1"
+},
+{
+"dependent_id": "graphical_model",
+"label": 0,
+"prereq_id": "logistic_regression",
+"source": "lb1"
+},
+{
+"dependent_id": "hidden_markov_model",
+"label": 0,
+"prereq_id": "logistic_regression",
+"source": "lb1"
+},
+{
+"dependent_id": "hierarchical_model",
+"label": 0,
+"prereq_id": "logistic_regression",
+"source": "lb1"
+},
+{
+"dependent_id": "ibm_translation_model",
+"label": 0,
+"prereq_id": "logistic_regression",
+"source": "lb1"
+},
+{
+"dependent_id": "kernel_function",
+"label": 0,
+"prereq_id": "logistic_regression",
+"source": "lb1"
+},
+{
+"dependent_id": "lambda_calculus",
+"label": 0,
+"prereq_id": "logistic_regression",
+"source": "lb1"
+},
+{
+"dependent_id": "latent_semantic_indexing",
+"label": 0,
+"prereq_id": "logistic_regression",
+"source": "lb1"
+},
+{
+"dependent_id": "lexicography",
+"label": 0,
+"prereq_id": "logistic_regression",
+"source": "lb1"
+},
+{
+"dependent_id": "multi_document_summarization",
+"label": 0,
+"prereq_id": "logistic_regression",
+"source": "lb1"
+},
+{
+"dependent_id": "multilingual_word",
+"label": 0,
+"prereq_id": "logistic_regression",
+"source": "lb1"
+},
+{
+"dependent_id": "neural_machine_translation",
+"label": 0,
+"prereq_id": "logistic_regression",
+"source": "lb1"
+},
+{
+"dependent_id": "one_shot_learning",
+"label": 0,
+"prereq_id": "logistic_regression",
+"source": "lb1"
+},
+{
+"dependent_id": "open_information_extraction",
+"label": 0,
+"prereq_id": "logistic_regression",
+"source": "lb1"
+},
+{
+"dependent_id": "paraphrasing",
+"label": 0,
+"prereq_id": "logistic_regression",
+"source": "lb1"
+},
+{
+"dependent_id": "part_of_speech_tagging",
+"label": 0,
+"prereq_id": "logistic_regression",
+"source": "lb1"
+},
+{
+"dependent_id": "probability",
+"label": 0,
+"prereq_id": "logistic_regression",
+"source": "lb1"
+},
+{
+"dependent_id": "radial_basis_function_network",
+"label": 0,
+"prereq_id": "logistic_regression",
+"source": "lb1"
+},
+{
+"dependent_id": "rouge",
+"label": 0,
+"prereq_id": "logistic_regression",
+"source": "lb1"
+},
+{
+"dependent_id": "semantic_role_labeling",
+"label": 0,
+"prereq_id": "logistic_regression",
+"source": "lb1"
+},
+{
+"dependent_id": "statistical_machine_translation",
+"label": 0,
+"prereq_id": "logistic_regression",
+"source": "lb1"
+},
+{
+"dependent_id": "svm",
+"label": 0,
+"prereq_id": "logistic_regression",
+"source": "lb1"
+},
+{
+"dependent_id": "textual_entailment",
+"label": 0,
+"prereq_id": "logistic_regression",
+"source": "lb1"
+},
+{
+"dependent_id": "word2vec",
+"label": 0,
+"prereq_id": "logistic_regression",
+"source": "lb1"
+},
+{
+"dependent_id": "automated_essay_scoring",
+"label": 0,
+"prereq_id": "multi_document_summarization",
+"source": "lb1"
+},
+{
+"dependent_id": "backpropagation",
+"label": 0,
+"prereq_id": "multi_document_summarization",
+"source": "lb1"
+},
+{
+"dependent_id": "bayesian_network",
+"label": 0,
+"prereq_id": "multi_document_summarization",
+"source": "lb1"
+},
+{
+"dependent_id": "bootstrapping",
+"label": 0,
+"prereq_id": "multi_document_summarization",
+"source": "lb1"
+},
+{
+"dependent_id": "caption_generation",
+"label": 0,
+"prereq_id": "multi_document_summarization",
+"source": "lb1"
+},
+{
+"dependent_id": "combinatory_categorial_grammar",
+"label": 0,
+"prereq_id": "multi_document_summarization",
+"source": "lb1"
+},
+{
+"dependent_id": "constraint_satisfaction",
+"label": 0,
+"prereq_id": "multi_document_summarization",
+"source": "lb1"
+},
+{
+"dependent_id": "context_free_grammar",
+"label": 0,
+"prereq_id": "multi_document_summarization",
+"source": "lb1"
+},
+{
+"dependent_id": "crawling_the_web",
+"label": 0,
+"prereq_id": "multi_document_summarization",
+"source": "lb1"
+},
+{
+"dependent_id": "deep_belief_network",
+"label": 0,
+"prereq_id": "multi_document_summarization",
+"source": "lb1"
+},
+{
+"dependent_id": "domain_adaptation",
+"label": 0,
+"prereq_id": "multi_document_summarization",
+"source": "lb1"
+},
+{
+"dependent_id": "earley_parsing",
+"label": 0,
+"prereq_id": "multi_document_summarization",
+"source": "lb1"
+},
+{
+"dependent_id": "expectation_maximization_em_algorithm",
+"label": 0,
+"prereq_id": "multi_document_summarization",
+"source": "lb1"
+},
+{
+"dependent_id": "facial_recognition_system",
+"label": 0,
+"prereq_id": "multi_document_summarization",
+"source": "lb1"
+},
+{
+"dependent_id": "first_order_logic",
+"label": 0,
+"prereq_id": "multi_document_summarization",
+"source": "lb1"
+},
+{
+"dependent_id": "game_playing_in_ai",
+"label": 0,
+"prereq_id": "multi_document_summarization",
+"source": "lb1"
+},
+{
+"dependent_id": "gibbs_sampling",
+"label": 0,
+"prereq_id": "multi_document_summarization",
+"source": "lb1"
+},
+{
+"dependent_id": "graphical_model",
+"label": 0,
+"prereq_id": "multi_document_summarization",
+"source": "lb1"
+},
+{
+"dependent_id": "hidden_markov_model",
+"label": 0,
+"prereq_id": "multi_document_summarization",
+"source": "lb1"
+},
+{
+"dependent_id": "hierarchical_model",
+"label": 0,
+"prereq_id": "multi_document_summarization",
+"source": "lb1"
+},
+{
+"dependent_id": "ibm_translation_model",
+"label": 0,
+"prereq_id": "multi_document_summarization",
+"source": "lb1"
+},
+{
+"dependent_id": "kernel_function",
+"label": 0,
+"prereq_id": "multi_document_summarization",
+"source": "lb1"
+},
+{
+"dependent_id": "lambda_calculus",
+"label": 0,
+"prereq_id": "multi_document_summarization",
+"source": "lb1"
+},
+{
+"dependent_id": "latent_semantic_indexing",
+"label": 0,
+"prereq_id": "multi_document_summarization",
+"source": "lb1"
+},
+{
+"dependent_id": "lexicography",
+"label": 0,
+"prereq_id": "multi_document_summarization",
+"source": "lb1"
+},
+{
+"dependent_id": "logistic_regression",
+"label": 0,
+"prereq_id": "multi_document_summarization",
+"source": "lb1"
+},
+{
+"dependent_id": "multilingual_word",
+"label": 0,
+"prereq_id": "multi_document_summarization",
+"source": "lb1"
+},
+{
+"dependent_id": "neural_machine_translation",
+"label": 0,
+"prereq_id": "multi_document_summarization",
+"source": "lb1"
+},
+{
+"dependent_id": "one_shot_learning",
+"label": 0,
+"prereq_id": "multi_document_summarization",
+"source": "lb1"
+},
+{
+"dependent_id": "open_information_extraction",
+"label": 0,
+"prereq_id": "multi_document_summarization",
+"source": "lb1"
+},
+{
+"dependent_id": "paraphrasing",
+"label": 0,
+"prereq_id": "multi_document_summarization",
+"source": "lb1"
+},
+{
+"dependent_id": "part_of_speech_tagging",
+"label": 0,
+"prereq_id": "multi_document_summarization",
+"source": "lb1"
+},
+{
+"dependent_id": "probability",
+"label": 0,
+"prereq_id": "multi_document_summarization",
+"source": "lb1"
+},
+{
+"dependent_id": "radial_basis_function_network",
+"label": 0,
+"prereq_id": "multi_document_summarization",
+"source": "lb1"
+},
+{
+"dependent_id": "semantic_role_labeling",
+"label": 0,
+"prereq_id": "multi_document_summarization",
+"source": "lb1"
+},
+{
+"dependent_id": "statistical_machine_translation",
+"label": 0,
+"prereq_id": "multi_document_summarization",
+"source": "lb1"
+},
+{
+"dependent_id": "svm",
+"label": 0,
+"prereq_id": "multi_document_summarization",
+"source": "lb1"
+},
+{
+"dependent_id": "textual_entailment",
+"label": 0,
+"prereq_id": "multi_document_summarization",
+"source": "lb1"
+},
+{
+"dependent_id": "word2vec",
+"label": 0,
+"prereq_id": "multi_document_summarization",
+"source": "lb1"
+},
+{
+"dependent_id": "automated_essay_scoring",
+"label": 0,
+"prereq_id": "multilingual_word",
+"source": "lb1"
+},
+{
+"dependent_id": "backpropagation",
+"label": 0,
+"prereq_id": "multilingual_word",
+"source": "lb1"
+},
+{
+"dependent_id": "bayesian_network",
+"label": 0,
+"prereq_id": "multilingual_word",
+"source": "lb1"
+},
+{
+"dependent_id": "bootstrapping",
+"label": 0,
+"prereq_id": "multilingual_word",
+"source": "lb1"
+},
+{
+"dependent_id": "caption_generation",
+"label": 0,
+"prereq_id": "multilingual_word",
+"source": "lb1"
+},
+{
+"dependent_id": "combinatory_categorial_grammar",
+"label": 0,
+"prereq_id": "multilingual_word",
+"source": "lb1"
+},
+{
+"dependent_id": "constraint_satisfaction",
+"label": 0,
+"prereq_id": "multilingual_word",
+"source": "lb1"
+},
+{
+"dependent_id": "context_free_grammar",
+"label": 0,
+"prereq_id": "multilingual_word",
+"source": "lb1"
+},
+{
+"dependent_id": "crawling_the_web",
+"label": 0,
+"prereq_id": "multilingual_word",
+"source": "lb1"
+},
+{
+"dependent_id": "deep_belief_network",
+"label": 0,
+"prereq_id": "multilingual_word",
+"source": "lb1"
+},
+{
+"dependent_id": "domain_adaptation",
+"label": 0,
+"prereq_id": "multilingual_word",
+"source": "lb1"
+},
+{
+"dependent_id": "earley_parsing",
+"label": 0,
+"prereq_id": "multilingual_word",
+"source": "lb1"
+},
+{
+"dependent_id": "expectation_maximization_em_algorithm",
+"label": 0,
+"prereq_id": "multilingual_word",
+"source": "lb1"
+},
+{
+"dependent_id": "facial_recognition_system",
+"label": 0,
+"prereq_id": "multilingual_word",
+"source": "lb1"
+},
+{
+"dependent_id": "first_order_logic",
+"label": 0,
+"prereq_id": "multilingual_word",
+"source": "lb1"
+},
+{
+"dependent_id": "game_playing_in_ai",
+"label": 0,
+"prereq_id": "multilingual_word",
+"source": "lb1"
+},
+{
+"dependent_id": "gibbs_sampling",
+"label": 0,
+"prereq_id": "multilingual_word",
+"source": "lb1"
+},
+{
+"dependent_id": "graphical_model",
+"label": 0,
+"prereq_id": "multilingual_word",
+"source": "lb1"
+},
+{
+"dependent_id": "hidden_markov_model",
+"label": 0,
+"prereq_id": "multilingual_word",
+"source": "lb1"
+},
+{
+"dependent_id": "hierarchical_model",
+"label": 0,
+"prereq_id": "multilingual_word",
+"source": "lb1"
+},
+{
+"dependent_id": "ibm_translation_model",
+"label": 0,
+"prereq_id": "multilingual_word",
+"source": "lb1"
+},
+{
+"dependent_id": "kernel_function",
+"label": 0,
+"prereq_id": "multilingual_word",
+"source": "lb1"
+},
+{
+"dependent_id": "lambda_calculus",
+"label": 0,
+"prereq_id": "multilingual_word",
+"source": "lb1"
+},
+{
+"dependent_id": "latent_semantic_indexing",
+"label": 0,
+"prereq_id": "multilingual_word",
+"source": "lb1"
+},
+{
+"dependent_id": "lexicography",
+"label": 0,
+"prereq_id": "multilingual_word",
+"source": "lb1"
+},
+{
+"dependent_id": "logistic_regression",
+"label": 0,
+"prereq_id": "multilingual_word",
+"source": "lb1"
+},
+{
+"dependent_id": "multi_document_summarization",
+"label": 0,
+"prereq_id": "multilingual_word",
+"source": "lb1"
+},
+{
+"dependent_id": "neural_machine_translation",
+"label": 0,
+"prereq_id": "multilingual_word",
+"source": "lb1"
+},
+{
+"dependent_id": "one_shot_learning",
+"label": 0,
+"prereq_id": "multilingual_word",
+"source": "lb1"
+},
+{
+"dependent_id": "open_information_extraction",
+"label": 0,
+"prereq_id": "multilingual_word",
+"source": "lb1"
+},
+{
+"dependent_id": "paraphrasing",
+"label": 0,
+"prereq_id": "multilingual_word",
+"source": "lb1"
+},
+{
+"dependent_id": "part_of_speech_tagging",
+"label": 0,
+"prereq_id": "multilingual_word",
+"source": "lb1"
+},
+{
+"dependent_id": "probability",
+"label": 0,
+"prereq_id": "multilingual_word",
+"source": "lb1"
+},
+{
+"dependent_id": "radial_basis_function_network",
+"label": 0,
+"prereq_id": "multilingual_word",
+"source": "lb1"
+},
+{
+"dependent_id": "rouge",
+"label": 0,
+"prereq_id": "multilingual_word",
+"source": "lb1"
+},
+{
+"dependent_id": "semantic_role_labeling",
+"label": 0,
+"prereq_id": "multilingual_word",
+"source": "lb1"
+},
+{
+"dependent_id": "statistical_machine_translation",
+"label": 0,
+"prereq_id": "multilingual_word",
+"source": "lb1"
+},
+{
+"dependent_id": "svm",
+"label": 0,
+"prereq_id": "multilingual_word",
+"source": "lb1"
+},
+{
+"dependent_id": "textual_entailment",
+"label": 0,
+"prereq_id": "multilingual_word",
+"source": "lb1"
+},
+{
+"dependent_id": "word2vec",
+"label": 0,
+"prereq_id": "multilingual_word",
+"source": "lb1"
+},
+{
+"dependent_id": "automated_essay_scoring",
+"label": 0,
+"prereq_id": "neural_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "backpropagation",
+"label": 0,
+"prereq_id": "neural_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "bayesian_network",
+"label": 0,
+"prereq_id": "neural_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "bootstrapping",
+"label": 0,
+"prereq_id": "neural_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "caption_generation",
+"label": 0,
+"prereq_id": "neural_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "combinatory_categorial_grammar",
+"label": 0,
+"prereq_id": "neural_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "constraint_satisfaction",
+"label": 0,
+"prereq_id": "neural_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "context_free_grammar",
+"label": 0,
+"prereq_id": "neural_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "crawling_the_web",
+"label": 0,
+"prereq_id": "neural_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "deep_belief_network",
+"label": 0,
+"prereq_id": "neural_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "domain_adaptation",
+"label": 0,
+"prereq_id": "neural_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "earley_parsing",
+"label": 0,
+"prereq_id": "neural_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "expectation_maximization_em_algorithm",
+"label": 0,
+"prereq_id": "neural_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "facial_recognition_system",
+"label": 0,
+"prereq_id": "neural_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "first_order_logic",
+"label": 0,
+"prereq_id": "neural_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "game_playing_in_ai",
+"label": 0,
+"prereq_id": "neural_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "gibbs_sampling",
+"label": 0,
+"prereq_id": "neural_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "graphical_model",
+"label": 0,
+"prereq_id": "neural_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "hidden_markov_model",
+"label": 0,
+"prereq_id": "neural_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "hierarchical_model",
+"label": 0,
+"prereq_id": "neural_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "ibm_translation_model",
+"label": 0,
+"prereq_id": "neural_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "kernel_function",
+"label": 0,
+"prereq_id": "neural_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "lambda_calculus",
+"label": 0,
+"prereq_id": "neural_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "latent_semantic_indexing",
+"label": 0,
+"prereq_id": "neural_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "lexicography",
+"label": 0,
+"prereq_id": "neural_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "logistic_regression",
+"label": 0,
+"prereq_id": "neural_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "multi_document_summarization",
+"label": 0,
+"prereq_id": "neural_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "multilingual_word",
+"label": 0,
+"prereq_id": "neural_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "one_shot_learning",
+"label": 0,
+"prereq_id": "neural_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "open_information_extraction",
+"label": 0,
+"prereq_id": "neural_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "paraphrasing",
+"label": 0,
+"prereq_id": "neural_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "part_of_speech_tagging",
+"label": 0,
+"prereq_id": "neural_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "probability",
+"label": 0,
+"prereq_id": "neural_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "radial_basis_function_network",
+"label": 0,
+"prereq_id": "neural_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "semantic_role_labeling",
+"label": 0,
+"prereq_id": "neural_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "statistical_machine_translation",
+"label": 0,
+"prereq_id": "neural_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "svm",
+"label": 0,
+"prereq_id": "neural_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "textual_entailment",
+"label": 0,
+"prereq_id": "neural_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "word2vec",
+"label": 0,
+"prereq_id": "neural_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "automated_essay_scoring",
+"label": 0,
+"prereq_id": "one_shot_learning",
+"source": "lb1"
+},
+{
+"dependent_id": "backpropagation",
+"label": 0,
+"prereq_id": "one_shot_learning",
+"source": "lb1"
+},
+{
+"dependent_id": "bayesian_network",
+"label": 0,
+"prereq_id": "one_shot_learning",
+"source": "lb1"
+},
+{
+"dependent_id": "bootstrapping",
+"label": 0,
+"prereq_id": "one_shot_learning",
+"source": "lb1"
+},
+{
+"dependent_id": "caption_generation",
+"label": 0,
+"prereq_id": "one_shot_learning",
+"source": "lb1"
+},
+{
+"dependent_id": "combinatory_categorial_grammar",
+"label": 0,
+"prereq_id": "one_shot_learning",
+"source": "lb1"
+},
+{
+"dependent_id": "constraint_satisfaction",
+"label": 0,
+"prereq_id": "one_shot_learning",
+"source": "lb1"
+},
+{
+"dependent_id": "context_free_grammar",
+"label": 0,
+"prereq_id": "one_shot_learning",
+"source": "lb1"
+},
+{
+"dependent_id": "crawling_the_web",
+"label": 0,
+"prereq_id": "one_shot_learning",
+"source": "lb1"
+},
+{
+"dependent_id": "deep_belief_network",
+"label": 0,
+"prereq_id": "one_shot_learning",
+"source": "lb1"
+},
+{
+"dependent_id": "earley_parsing",
+"label": 0,
+"prereq_id": "one_shot_learning",
+"source": "lb1"
+},
+{
+"dependent_id": "expectation_maximization_em_algorithm",
+"label": 0,
+"prereq_id": "one_shot_learning",
+"source": "lb1"
+},
+{
+"dependent_id": "facial_recognition_system",
+"label": 0,
+"prereq_id": "one_shot_learning",
+"source": "lb1"
+},
+{
+"dependent_id": "first_order_logic",
+"label": 0,
+"prereq_id": "one_shot_learning",
+"source": "lb1"
+},
+{
+"dependent_id": "game_playing_in_ai",
+"label": 0,
+"prereq_id": "one_shot_learning",
+"source": "lb1"
+},
+{
+"dependent_id": "gibbs_sampling",
+"label": 0,
+"prereq_id": "one_shot_learning",
+"source": "lb1"
+},
+{
+"dependent_id": "graphical_model",
+"label": 0,
+"prereq_id": "one_shot_learning",
+"source": "lb1"
+},
+{
+"dependent_id": "hidden_markov_model",
+"label": 0,
+"prereq_id": "one_shot_learning",
+"source": "lb1"
+},
+{
+"dependent_id": "hierarchical_model",
+"label": 0,
+"prereq_id": "one_shot_learning",
+"source": "lb1"
+},
+{
+"dependent_id": "ibm_translation_model",
+"label": 0,
+"prereq_id": "one_shot_learning",
+"source": "lb1"
+},
+{
+"dependent_id": "kernel_function",
+"label": 0,
+"prereq_id": "one_shot_learning",
+"source": "lb1"
+},
+{
+"dependent_id": "lambda_calculus",
+"label": 0,
+"prereq_id": "one_shot_learning",
+"source": "lb1"
+},
+{
+"dependent_id": "latent_semantic_indexing",
+"label": 0,
+"prereq_id": "one_shot_learning",
+"source": "lb1"
+},
+{
+"dependent_id": "lexicography",
+"label": 0,
+"prereq_id": "one_shot_learning",
+"source": "lb1"
+},
+{
+"dependent_id": "logistic_regression",
+"label": 0,
+"prereq_id": "one_shot_learning",
+"source": "lb1"
+},
+{
+"dependent_id": "multi_document_summarization",
+"label": 0,
+"prereq_id": "one_shot_learning",
+"source": "lb1"
+},
+{
+"dependent_id": "multilingual_word",
+"label": 0,
+"prereq_id": "one_shot_learning",
+"source": "lb1"
+},
+{
+"dependent_id": "neural_machine_translation",
+"label": 0,
+"prereq_id": "one_shot_learning",
+"source": "lb1"
+},
+{
+"dependent_id": "open_information_extraction",
+"label": 0,
+"prereq_id": "one_shot_learning",
+"source": "lb1"
+},
+{
+"dependent_id": "paraphrasing",
+"label": 0,
+"prereq_id": "one_shot_learning",
+"source": "lb1"
+},
+{
+"dependent_id": "part_of_speech_tagging",
+"label": 0,
+"prereq_id": "one_shot_learning",
+"source": "lb1"
+},
+{
+"dependent_id": "probability",
+"label": 0,
+"prereq_id": "one_shot_learning",
+"source": "lb1"
+},
+{
+"dependent_id": "radial_basis_function_network",
+"label": 0,
+"prereq_id": "one_shot_learning",
+"source": "lb1"
+},
+{
+"dependent_id": "rouge",
+"label": 0,
+"prereq_id": "one_shot_learning",
+"source": "lb1"
+},
+{
+"dependent_id": "semantic_role_labeling",
+"label": 0,
+"prereq_id": "one_shot_learning",
+"source": "lb1"
+},
+{
+"dependent_id": "statistical_machine_translation",
+"label": 0,
+"prereq_id": "one_shot_learning",
+"source": "lb1"
+},
+{
+"dependent_id": "svm",
+"label": 0,
+"prereq_id": "one_shot_learning",
+"source": "lb1"
+},
+{
+"dependent_id": "textual_entailment",
+"label": 0,
+"prereq_id": "one_shot_learning",
+"source": "lb1"
+},
+{
+"dependent_id": "word2vec",
+"label": 0,
+"prereq_id": "one_shot_learning",
+"source": "lb1"
+},
+{
+"dependent_id": "automated_essay_scoring",
+"label": 0,
+"prereq_id": "open_information_extraction",
+"source": "lb1"
+},
+{
+"dependent_id": "backpropagation",
+"label": 0,
+"prereq_id": "open_information_extraction",
+"source": "lb1"
+},
+{
+"dependent_id": "bayesian_network",
+"label": 0,
+"prereq_id": "open_information_extraction",
+"source": "lb1"
+},
+{
+"dependent_id": "bootstrapping",
+"label": 0,
+"prereq_id": "open_information_extraction",
+"source": "lb1"
+},
+{
+"dependent_id": "caption_generation",
+"label": 0,
+"prereq_id": "open_information_extraction",
+"source": "lb1"
+},
+{
+"dependent_id": "combinatory_categorial_grammar",
+"label": 0,
+"prereq_id": "open_information_extraction",
+"source": "lb1"
+},
+{
+"dependent_id": "constraint_satisfaction",
+"label": 0,
+"prereq_id": "open_information_extraction",
+"source": "lb1"
+},
+{
+"dependent_id": "context_free_grammar",
+"label": 0,
+"prereq_id": "open_information_extraction",
+"source": "lb1"
+},
+{
+"dependent_id": "crawling_the_web",
+"label": 1,
+"prereq_id": "open_information_extraction",
+"source": "lb1"
+},
+{
+"dependent_id": "deep_belief_network",
+"label": 0,
+"prereq_id": "open_information_extraction",
+"source": "lb1"
+},
+{
+"dependent_id": "domain_adaptation",
+"label": 0,
+"prereq_id": "open_information_extraction",
+"source": "lb1"
+},
+{
+"dependent_id": "earley_parsing",
+"label": 0,
+"prereq_id": "open_information_extraction",
+"source": "lb1"
+},
+{
+"dependent_id": "expectation_maximization_em_algorithm",
+"label": 0,
+"prereq_id": "open_information_extraction",
+"source": "lb1"
+},
+{
+"dependent_id": "facial_recognition_system",
+"label": 0,
+"prereq_id": "open_information_extraction",
+"source": "lb1"
+},
+{
+"dependent_id": "first_order_logic",
+"label": 0,
+"prereq_id": "open_information_extraction",
+"source": "lb1"
+},
+{
+"dependent_id": "game_playing_in_ai",
+"label": 0,
+"prereq_id": "open_information_extraction",
+"source": "lb1"
+},
+{
+"dependent_id": "gibbs_sampling",
+"label": 0,
+"prereq_id": "open_information_extraction",
+"source": "lb1"
+},
+{
+"dependent_id": "graphical_model",
+"label": 0,
+"prereq_id": "open_information_extraction",
+"source": "lb1"
+},
+{
+"dependent_id": "hidden_markov_model",
+"label": 0,
+"prereq_id": "open_information_extraction",
+"source": "lb1"
+},
+{
+"dependent_id": "hierarchical_model",
+"label": 0,
+"prereq_id": "open_information_extraction",
+"source": "lb1"
+},
+{
+"dependent_id": "ibm_translation_model",
+"label": 0,
+"prereq_id": "open_information_extraction",
+"source": "lb1"
+},
+{
+"dependent_id": "kernel_function",
+"label": 0,
+"prereq_id": "open_information_extraction",
+"source": "lb1"
+},
+{
+"dependent_id": "lambda_calculus",
+"label": 0,
+"prereq_id": "open_information_extraction",
+"source": "lb1"
+},
+{
+"dependent_id": "latent_semantic_indexing",
+"label": 0,
+"prereq_id": "open_information_extraction",
+"source": "lb1"
+},
+{
+"dependent_id": "lexicography",
+"label": 0,
+"prereq_id": "open_information_extraction",
+"source": "lb1"
+},
+{
+"dependent_id": "logistic_regression",
+"label": 0,
+"prereq_id": "open_information_extraction",
+"source": "lb1"
+},
+{
+"dependent_id": "multi_document_summarization",
+"label": 0,
+"prereq_id": "open_information_extraction",
+"source": "lb1"
+},
+{
+"dependent_id": "multilingual_word",
+"label": 0,
+"prereq_id": "open_information_extraction",
+"source": "lb1"
+},
+{
+"dependent_id": "neural_machine_translation",
+"label": 0,
+"prereq_id": "open_information_extraction",
+"source": "lb1"
+},
+{
+"dependent_id": "one_shot_learning",
+"label": 0,
+"prereq_id": "open_information_extraction",
+"source": "lb1"
+},
+{
+"dependent_id": "paraphrasing",
+"label": 0,
+"prereq_id": "open_information_extraction",
+"source": "lb1"
+},
+{
+"dependent_id": "part_of_speech_tagging",
+"label": 0,
+"prereq_id": "open_information_extraction",
+"source": "lb1"
+},
+{
+"dependent_id": "probability",
+"label": 0,
+"prereq_id": "open_information_extraction",
+"source": "lb1"
+},
+{
+"dependent_id": "radial_basis_function_network",
+"label": 0,
+"prereq_id": "open_information_extraction",
+"source": "lb1"
+},
+{
+"dependent_id": "rouge",
+"label": 0,
+"prereq_id": "open_information_extraction",
+"source": "lb1"
+},
+{
+"dependent_id": "semantic_role_labeling",
+"label": 0,
+"prereq_id": "open_information_extraction",
+"source": "lb1"
+},
+{
+"dependent_id": "statistical_machine_translation",
+"label": 0,
+"prereq_id": "open_information_extraction",
+"source": "lb1"
+},
+{
+"dependent_id": "svm",
+"label": 0,
+"prereq_id": "open_information_extraction",
+"source": "lb1"
+},
+{
+"dependent_id": "textual_entailment",
+"label": 0,
+"prereq_id": "open_information_extraction",
+"source": "lb1"
+},
+{
+"dependent_id": "word2vec",
+"label": 0,
+"prereq_id": "open_information_extraction",
+"source": "lb1"
+},
+{
+"dependent_id": "automated_essay_scoring",
+"label": 0,
+"prereq_id": "paraphrasing",
+"source": "lb1"
+},
+{
+"dependent_id": "backpropagation",
+"label": 0,
+"prereq_id": "paraphrasing",
+"source": "lb1"
+},
+{
+"dependent_id": "bayesian_network",
+"label": 0,
+"prereq_id": "paraphrasing",
+"source": "lb1"
+},
+{
+"dependent_id": "bootstrapping",
+"label": 0,
+"prereq_id": "paraphrasing",
+"source": "lb1"
+},
+{
+"dependent_id": "caption_generation",
+"label": 0,
+"prereq_id": "paraphrasing",
+"source": "lb1"
+},
+{
+"dependent_id": "combinatory_categorial_grammar",
+"label": 0,
+"prereq_id": "paraphrasing",
+"source": "lb1"
+},
+{
+"dependent_id": "constraint_satisfaction",
+"label": 0,
+"prereq_id": "paraphrasing",
+"source": "lb1"
+},
+{
+"dependent_id": "context_free_grammar",
+"label": 0,
+"prereq_id": "paraphrasing",
+"source": "lb1"
+},
+{
+"dependent_id": "crawling_the_web",
+"label": 0,
+"prereq_id": "paraphrasing",
+"source": "lb1"
+},
+{
+"dependent_id": "deep_belief_network",
+"label": 0,
+"prereq_id": "paraphrasing",
+"source": "lb1"
+},
+{
+"dependent_id": "domain_adaptation",
+"label": 0,
+"prereq_id": "paraphrasing",
+"source": "lb1"
+},
+{
+"dependent_id": "earley_parsing",
+"label": 0,
+"prereq_id": "paraphrasing",
+"source": "lb1"
+},
+{
+"dependent_id": "expectation_maximization_em_algorithm",
+"label": 0,
+"prereq_id": "paraphrasing",
+"source": "lb1"
+},
+{
+"dependent_id": "facial_recognition_system",
+"label": 0,
+"prereq_id": "paraphrasing",
+"source": "lb1"
+},
+{
+"dependent_id": "first_order_logic",
+"label": 0,
+"prereq_id": "paraphrasing",
+"source": "lb1"
+},
+{
+"dependent_id": "game_playing_in_ai",
+"label": 0,
+"prereq_id": "paraphrasing",
+"source": "lb1"
+},
+{
+"dependent_id": "gibbs_sampling",
+"label": 0,
+"prereq_id": "paraphrasing",
+"source": "lb1"
+},
+{
+"dependent_id": "graphical_model",
+"label": 0,
+"prereq_id": "paraphrasing",
+"source": "lb1"
+},
+{
+"dependent_id": "hidden_markov_model",
+"label": 0,
+"prereq_id": "paraphrasing",
+"source": "lb1"
+},
+{
+"dependent_id": "hierarchical_model",
+"label": 0,
+"prereq_id": "paraphrasing",
+"source": "lb1"
+},
+{
+"dependent_id": "ibm_translation_model",
+"label": 0,
+"prereq_id": "paraphrasing",
+"source": "lb1"
+},
+{
+"dependent_id": "kernel_function",
+"label": 0,
+"prereq_id": "paraphrasing",
+"source": "lb1"
+},
+{
+"dependent_id": "lambda_calculus",
+"label": 0,
+"prereq_id": "paraphrasing",
+"source": "lb1"
+},
+{
+"dependent_id": "latent_semantic_indexing",
+"label": 0,
+"prereq_id": "paraphrasing",
+"source": "lb1"
+},
+{
+"dependent_id": "lexicography",
+"label": 0,
+"prereq_id": "paraphrasing",
+"source": "lb1"
+},
+{
+"dependent_id": "logistic_regression",
+"label": 0,
+"prereq_id": "paraphrasing",
+"source": "lb1"
+},
+{
+"dependent_id": "multi_document_summarization",
+"label": 0,
+"prereq_id": "paraphrasing",
+"source": "lb1"
+},
+{
+"dependent_id": "multilingual_word",
+"label": 0,
+"prereq_id": "paraphrasing",
+"source": "lb1"
+},
+{
+"dependent_id": "neural_machine_translation",
+"label": 0,
+"prereq_id": "paraphrasing",
+"source": "lb1"
+},
+{
+"dependent_id": "one_shot_learning",
+"label": 0,
+"prereq_id": "paraphrasing",
+"source": "lb1"
+},
+{
+"dependent_id": "open_information_extraction",
+"label": 0,
+"prereq_id": "paraphrasing",
+"source": "lb1"
+},
+{
+"dependent_id": "part_of_speech_tagging",
+"label": 0,
+"prereq_id": "paraphrasing",
+"source": "lb1"
+},
+{
+"dependent_id": "probability",
+"label": 0,
+"prereq_id": "paraphrasing",
+"source": "lb1"
+},
+{
+"dependent_id": "radial_basis_function_network",
+"label": 0,
+"prereq_id": "paraphrasing",
+"source": "lb1"
+},
+{
+"dependent_id": "rouge",
+"label": 0,
+"prereq_id": "paraphrasing",
+"source": "lb1"
+},
+{
+"dependent_id": "semantic_role_labeling",
+"label": 0,
+"prereq_id": "paraphrasing",
+"source": "lb1"
+},
+{
+"dependent_id": "statistical_machine_translation",
+"label": 0,
+"prereq_id": "paraphrasing",
+"source": "lb1"
+},
+{
+"dependent_id": "svm",
+"label": 0,
+"prereq_id": "paraphrasing",
+"source": "lb1"
+},
+{
+"dependent_id": "textual_entailment",
+"label": 0,
+"prereq_id": "paraphrasing",
+"source": "lb1"
+},
+{
+"dependent_id": "word2vec",
+"label": 0,
+"prereq_id": "paraphrasing",
+"source": "lb1"
+},
+{
+"dependent_id": "automated_essay_scoring",
+"label": 0,
+"prereq_id": "part_of_speech_tagging",
+"source": "lb1"
+},
+{
+"dependent_id": "backpropagation",
+"label": 0,
+"prereq_id": "part_of_speech_tagging",
+"source": "lb1"
+},
+{
+"dependent_id": "bayesian_network",
+"label": 0,
+"prereq_id": "part_of_speech_tagging",
+"source": "lb1"
+},
+{
+"dependent_id": "bootstrapping",
+"label": 0,
+"prereq_id": "part_of_speech_tagging",
+"source": "lb1"
+},
+{
+"dependent_id": "caption_generation",
+"label": 0,
+"prereq_id": "part_of_speech_tagging",
+"source": "lb1"
+},
+{
+"dependent_id": "combinatory_categorial_grammar",
+"label": 1,
+"prereq_id": "part_of_speech_tagging",
+"source": "lb1"
+},
+{
+"dependent_id": "constraint_satisfaction",
+"label": 0,
+"prereq_id": "part_of_speech_tagging",
+"source": "lb1"
+},
+{
+"dependent_id": "context_free_grammar",
+"label": 0,
+"prereq_id": "part_of_speech_tagging",
+"source": "lb1"
+},
+{
+"dependent_id": "crawling_the_web",
+"label": 0,
+"prereq_id": "part_of_speech_tagging",
+"source": "lb1"
+},
+{
+"dependent_id": "deep_belief_network",
+"label": 0,
+"prereq_id": "part_of_speech_tagging",
+"source": "lb1"
+},
+{
+"dependent_id": "domain_adaptation",
+"label": 0,
+"prereq_id": "part_of_speech_tagging",
+"source": "lb1"
+},
+{
+"dependent_id": "earley_parsing",
+"label": 0,
+"prereq_id": "part_of_speech_tagging",
+"source": "lb1"
+},
+{
+"dependent_id": "expectation_maximization_em_algorithm",
+"label": 0,
+"prereq_id": "part_of_speech_tagging",
+"source": "lb1"
+},
+{
+"dependent_id": "facial_recognition_system",
+"label": 0,
+"prereq_id": "part_of_speech_tagging",
+"source": "lb1"
+},
+{
+"dependent_id": "first_order_logic",
+"label": 0,
+"prereq_id": "part_of_speech_tagging",
+"source": "lb1"
+},
+{
+"dependent_id": "game_playing_in_ai",
+"label": 0,
+"prereq_id": "part_of_speech_tagging",
+"source": "lb1"
+},
+{
+"dependent_id": "gibbs_sampling",
+"label": 0,
+"prereq_id": "part_of_speech_tagging",
+"source": "lb1"
+},
+{
+"dependent_id": "graphical_model",
+"label": 0,
+"prereq_id": "part_of_speech_tagging",
+"source": "lb1"
+},
+{
+"dependent_id": "hidden_markov_model",
+"label": 0,
+"prereq_id": "part_of_speech_tagging",
+"source": "lb1"
+},
+{
+"dependent_id": "hierarchical_model",
+"label": 0,
+"prereq_id": "part_of_speech_tagging",
+"source": "lb1"
+},
+{
+"dependent_id": "ibm_translation_model",
+"label": 0,
+"prereq_id": "part_of_speech_tagging",
+"source": "lb1"
+},
+{
+"dependent_id": "kernel_function",
+"label": 0,
+"prereq_id": "part_of_speech_tagging",
+"source": "lb1"
+},
+{
+"dependent_id": "lambda_calculus",
+"label": 0,
+"prereq_id": "part_of_speech_tagging",
+"source": "lb1"
+},
+{
+"dependent_id": "latent_semantic_indexing",
+"label": 0,
+"prereq_id": "part_of_speech_tagging",
+"source": "lb1"
+},
+{
+"dependent_id": "lexicography",
+"label": 0,
+"prereq_id": "part_of_speech_tagging",
+"source": "lb1"
+},
+{
+"dependent_id": "logistic_regression",
+"label": 0,
+"prereq_id": "part_of_speech_tagging",
+"source": "lb1"
+},
+{
+"dependent_id": "multi_document_summarization",
+"label": 0,
+"prereq_id": "part_of_speech_tagging",
+"source": "lb1"
+},
+{
+"dependent_id": "multilingual_word",
+"label": 0,
+"prereq_id": "part_of_speech_tagging",
+"source": "lb1"
+},
+{
+"dependent_id": "neural_machine_translation",
+"label": 0,
+"prereq_id": "part_of_speech_tagging",
+"source": "lb1"
+},
+{
+"dependent_id": "one_shot_learning",
+"label": 0,
+"prereq_id": "part_of_speech_tagging",
+"source": "lb1"
+},
+{
+"dependent_id": "open_information_extraction",
+"label": 0,
+"prereq_id": "part_of_speech_tagging",
+"source": "lb1"
+},
+{
+"dependent_id": "paraphrasing",
+"label": 0,
+"prereq_id": "part_of_speech_tagging",
+"source": "lb1"
+},
+{
+"dependent_id": "probability",
+"label": 0,
+"prereq_id": "part_of_speech_tagging",
+"source": "lb1"
+},
+{
+"dependent_id": "radial_basis_function_network",
+"label": 0,
+"prereq_id": "part_of_speech_tagging",
+"source": "lb1"
+},
+{
+"dependent_id": "rouge",
+"label": 0,
+"prereq_id": "part_of_speech_tagging",
+"source": "lb1"
+},
+{
+"dependent_id": "statistical_machine_translation",
+"label": 0,
+"prereq_id": "part_of_speech_tagging",
+"source": "lb1"
+},
+{
+"dependent_id": "svm",
+"label": 0,
+"prereq_id": "part_of_speech_tagging",
+"source": "lb1"
+},
+{
+"dependent_id": "textual_entailment",
+"label": 0,
+"prereq_id": "part_of_speech_tagging",
+"source": "lb1"
+},
+{
+"dependent_id": "word2vec",
+"label": 0,
+"prereq_id": "part_of_speech_tagging",
+"source": "lb1"
+},
+{
+"dependent_id": "automated_essay_scoring",
+"label": 1,
+"prereq_id": "probability",
+"source": "lb1"
+},
+{
+"dependent_id": "backpropagation",
+"label": 1,
+"prereq_id": "probability",
+"source": "lb1"
+},
+{
+"dependent_id": "bootstrapping",
+"label": 1,
+"prereq_id": "probability",
+"source": "lb1"
+},
+{
+"dependent_id": "caption_generation",
+"label": 0,
+"prereq_id": "probability",
+"source": "lb1"
+},
+{
+"dependent_id": "combinatory_categorial_grammar",
+"label": 1,
+"prereq_id": "probability",
+"source": "lb1"
+},
+{
+"dependent_id": "constraint_satisfaction",
+"label": 0,
+"prereq_id": "probability",
+"source": "lb1"
+},
+{
+"dependent_id": "context_free_grammar",
+"label": 1,
+"prereq_id": "probability",
+"source": "lb1"
+},
+{
+"dependent_id": "crawling_the_web",
+"label": 0,
+"prereq_id": "probability",
+"source": "lb1"
+},
+{
+"dependent_id": "deep_belief_network",
+"label": 1,
+"prereq_id": "probability",
+"source": "lb1"
+},
+{
+"dependent_id": "domain_adaptation",
+"label": 1,
+"prereq_id": "probability",
+"source": "lb1"
+},
+{
+"dependent_id": "earley_parsing",
+"label": 0,
+"prereq_id": "probability",
+"source": "lb1"
+},
+{
+"dependent_id": "expectation_maximization_em_algorithm",
+"label": 1,
+"prereq_id": "probability",
+"source": "lb1"
+},
+{
+"dependent_id": "facial_recognition_system",
+"label": 0,
+"prereq_id": "probability",
+"source": "lb1"
+},
+{
+"dependent_id": "first_order_logic",
+"label": 0,
+"prereq_id": "probability",
+"source": "lb1"
+},
+{
+"dependent_id": "game_playing_in_ai",
+"label": 0,
+"prereq_id": "probability",
+"source": "lb1"
+},
+{
+"dependent_id": "gibbs_sampling",
+"label": 1,
+"prereq_id": "probability",
+"source": "lb1"
+},
+{
+"dependent_id": "graphical_model",
+"label": 1,
+"prereq_id": "probability",
+"source": "lb1"
+},
+{
+"dependent_id": "hidden_markov_model",
+"label": 1,
+"prereq_id": "probability",
+"source": "lb1"
+},
+{
+"dependent_id": "hierarchical_model",
+"label": 0,
+"prereq_id": "probability",
+"source": "lb1"
+},
+{
+"dependent_id": "ibm_translation_model",
+"label": 1,
+"prereq_id": "probability",
+"source": "lb1"
+},
+{
+"dependent_id": "kernel_function",
+"label": 0,
+"prereq_id": "probability",
+"source": "lb1"
+},
+{
+"dependent_id": "lambda_calculus",
+"label": 0,
+"prereq_id": "probability",
+"source": "lb1"
+},
+{
+"dependent_id": "latent_semantic_indexing",
+"label": 1,
+"prereq_id": "probability",
+"source": "lb1"
+},
+{
+"dependent_id": "lexicography",
+"label": 0,
+"prereq_id": "probability",
+"source": "lb1"
+},
+{
+"dependent_id": "logistic_regression",
+"label": 1,
+"prereq_id": "probability",
+"source": "lb1"
+},
+{
+"dependent_id": "multi_document_summarization",
+"label": 1,
+"prereq_id": "probability",
+"source": "lb1"
+},
+{
+"dependent_id": "multilingual_word",
+"label": 1,
+"prereq_id": "probability",
+"source": "lb1"
+},
+{
+"dependent_id": "neural_machine_translation",
+"label": 1,
+"prereq_id": "probability",
+"source": "lb1"
+},
+{
+"dependent_id": "open_information_extraction",
+"label": 1,
+"prereq_id": "probability",
+"source": "lb1"
+},
+{
+"dependent_id": "paraphrasing",
+"label": 0,
+"prereq_id": "probability",
+"source": "lb1"
+},
+{
+"dependent_id": "part_of_speech_tagging",
+"label": 1,
+"prereq_id": "probability",
+"source": "lb1"
+},
+{
+"dependent_id": "radial_basis_function_network",
+"label": 0,
+"prereq_id": "probability",
+"source": "lb1"
+},
+{
+"dependent_id": "semantic_role_labeling",
+"label": 1,
+"prereq_id": "probability",
+"source": "lb1"
+},
+{
+"dependent_id": "statistical_machine_translation",
+"label": 1,
+"prereq_id": "probability",
+"source": "lb1"
+},
+{
+"dependent_id": "svm",
+"label": 0,
+"prereq_id": "probability",
+"source": "lb1"
+},
+{
+"dependent_id": "textual_entailment",
+"label": 0,
+"prereq_id": "probability",
+"source": "lb1"
+},
+{
+"dependent_id": "automated_essay_scoring",
+"label": 0,
+"prereq_id": "radial_basis_function_network",
+"source": "lb1"
+},
+{
+"dependent_id": "backpropagation",
+"label": 0,
+"prereq_id": "radial_basis_function_network",
+"source": "lb1"
+},
+{
+"dependent_id": "bayesian_network",
+"label": 0,
+"prereq_id": "radial_basis_function_network",
+"source": "lb1"
+},
+{
+"dependent_id": "bootstrapping",
+"label": 0,
+"prereq_id": "radial_basis_function_network",
+"source": "lb1"
+},
+{
+"dependent_id": "caption_generation",
+"label": 0,
+"prereq_id": "radial_basis_function_network",
+"source": "lb1"
+},
+{
+"dependent_id": "combinatory_categorial_grammar",
+"label": 0,
+"prereq_id": "radial_basis_function_network",
+"source": "lb1"
+},
+{
+"dependent_id": "constraint_satisfaction",
+"label": 0,
+"prereq_id": "radial_basis_function_network",
+"source": "lb1"
+},
+{
+"dependent_id": "context_free_grammar",
+"label": 0,
+"prereq_id": "radial_basis_function_network",
+"source": "lb1"
+},
+{
+"dependent_id": "crawling_the_web",
+"label": 0,
+"prereq_id": "radial_basis_function_network",
+"source": "lb1"
+},
+{
+"dependent_id": "deep_belief_network",
+"label": 0,
+"prereq_id": "radial_basis_function_network",
+"source": "lb1"
+},
+{
+"dependent_id": "domain_adaptation",
+"label": 0,
+"prereq_id": "radial_basis_function_network",
+"source": "lb1"
+},
+{
+"dependent_id": "earley_parsing",
+"label": 0,
+"prereq_id": "radial_basis_function_network",
+"source": "lb1"
+},
+{
+"dependent_id": "expectation_maximization_em_algorithm",
+"label": 0,
+"prereq_id": "radial_basis_function_network",
+"source": "lb1"
+},
+{
+"dependent_id": "facial_recognition_system",
+"label": 0,
+"prereq_id": "radial_basis_function_network",
+"source": "lb1"
+},
+{
+"dependent_id": "first_order_logic",
+"label": 0,
+"prereq_id": "radial_basis_function_network",
+"source": "lb1"
+},
+{
+"dependent_id": "game_playing_in_ai",
+"label": 0,
+"prereq_id": "radial_basis_function_network",
+"source": "lb1"
+},
+{
+"dependent_id": "gibbs_sampling",
+"label": 0,
+"prereq_id": "radial_basis_function_network",
+"source": "lb1"
+},
+{
+"dependent_id": "graphical_model",
+"label": 0,
+"prereq_id": "radial_basis_function_network",
+"source": "lb1"
+},
+{
+"dependent_id": "hidden_markov_model",
+"label": 0,
+"prereq_id": "radial_basis_function_network",
+"source": "lb1"
+},
+{
+"dependent_id": "hierarchical_model",
+"label": 0,
+"prereq_id": "radial_basis_function_network",
+"source": "lb1"
+},
+{
+"dependent_id": "ibm_translation_model",
+"label": 0,
+"prereq_id": "radial_basis_function_network",
+"source": "lb1"
+},
+{
+"dependent_id": "kernel_function",
+"label": 0,
+"prereq_id": "radial_basis_function_network",
+"source": "lb1"
+},
+{
+"dependent_id": "lambda_calculus",
+"label": 0,
+"prereq_id": "radial_basis_function_network",
+"source": "lb1"
+},
+{
+"dependent_id": "latent_semantic_indexing",
+"label": 0,
+"prereq_id": "radial_basis_function_network",
+"source": "lb1"
+},
+{
+"dependent_id": "lexicography",
+"label": 0,
+"prereq_id": "radial_basis_function_network",
+"source": "lb1"
+},
+{
+"dependent_id": "logistic_regression",
+"label": 0,
+"prereq_id": "radial_basis_function_network",
+"source": "lb1"
+},
+{
+"dependent_id": "multi_document_summarization",
+"label": 0,
+"prereq_id": "radial_basis_function_network",
+"source": "lb1"
+},
+{
+"dependent_id": "multilingual_word",
+"label": 0,
+"prereq_id": "radial_basis_function_network",
+"source": "lb1"
+},
+{
+"dependent_id": "neural_machine_translation",
+"label": 0,
+"prereq_id": "radial_basis_function_network",
+"source": "lb1"
+},
+{
+"dependent_id": "one_shot_learning",
+"label": 0,
+"prereq_id": "radial_basis_function_network",
+"source": "lb1"
+},
+{
+"dependent_id": "open_information_extraction",
+"label": 0,
+"prereq_id": "radial_basis_function_network",
+"source": "lb1"
+},
+{
+"dependent_id": "paraphrasing",
+"label": 0,
+"prereq_id": "radial_basis_function_network",
+"source": "lb1"
+},
+{
+"dependent_id": "part_of_speech_tagging",
+"label": 0,
+"prereq_id": "radial_basis_function_network",
+"source": "lb1"
+},
+{
+"dependent_id": "probability",
+"label": 0,
+"prereq_id": "radial_basis_function_network",
+"source": "lb1"
+},
+{
+"dependent_id": "rouge",
+"label": 0,
+"prereq_id": "radial_basis_function_network",
+"source": "lb1"
+},
+{
+"dependent_id": "semantic_role_labeling",
+"label": 0,
+"prereq_id": "radial_basis_function_network",
+"source": "lb1"
+},
+{
+"dependent_id": "statistical_machine_translation",
+"label": 0,
+"prereq_id": "radial_basis_function_network",
+"source": "lb1"
+},
+{
+"dependent_id": "svm",
+"label": 0,
+"prereq_id": "radial_basis_function_network",
+"source": "lb1"
+},
+{
+"dependent_id": "textual_entailment",
+"label": 0,
+"prereq_id": "radial_basis_function_network",
+"source": "lb1"
+},
+{
+"dependent_id": "word2vec",
+"label": 0,
+"prereq_id": "radial_basis_function_network",
+"source": "lb1"
+},
+{
+"dependent_id": "automated_essay_scoring",
+"label": 0,
+"prereq_id": "rouge",
+"source": "lb1"
+},
+{
+"dependent_id": "backpropagation",
+"label": 0,
+"prereq_id": "rouge",
+"source": "lb1"
+},
+{
+"dependent_id": "bayesian_network",
+"label": 0,
+"prereq_id": "rouge",
+"source": "lb1"
+},
+{
+"dependent_id": "bootstrapping",
+"label": 0,
+"prereq_id": "rouge",
+"source": "lb1"
+},
+{
+"dependent_id": "caption_generation",
+"label": 0,
+"prereq_id": "rouge",
+"source": "lb1"
+},
+{
+"dependent_id": "combinatory_categorial_grammar",
+"label": 0,
+"prereq_id": "rouge",
+"source": "lb1"
+},
+{
+"dependent_id": "constraint_satisfaction",
+"label": 0,
+"prereq_id": "rouge",
+"source": "lb1"
+},
+{
+"dependent_id": "context_free_grammar",
+"label": 0,
+"prereq_id": "rouge",
+"source": "lb1"
+},
+{
+"dependent_id": "crawling_the_web",
+"label": 0,
+"prereq_id": "rouge",
+"source": "lb1"
+},
+{
+"dependent_id": "deep_belief_network",
+"label": 0,
+"prereq_id": "rouge",
+"source": "lb1"
+},
+{
+"dependent_id": "domain_adaptation",
+"label": 0,
+"prereq_id": "rouge",
+"source": "lb1"
+},
+{
+"dependent_id": "earley_parsing",
+"label": 0,
+"prereq_id": "rouge",
+"source": "lb1"
+},
+{
+"dependent_id": "expectation_maximization_em_algorithm",
+"label": 0,
+"prereq_id": "rouge",
+"source": "lb1"
+},
+{
+"dependent_id": "facial_recognition_system",
+"label": 0,
+"prereq_id": "rouge",
+"source": "lb1"
+},
+{
+"dependent_id": "first_order_logic",
+"label": 0,
+"prereq_id": "rouge",
+"source": "lb1"
+},
+{
+"dependent_id": "game_playing_in_ai",
+"label": 0,
+"prereq_id": "rouge",
+"source": "lb1"
+},
+{
+"dependent_id": "gibbs_sampling",
+"label": 0,
+"prereq_id": "rouge",
+"source": "lb1"
+},
+{
+"dependent_id": "graphical_model",
+"label": 0,
+"prereq_id": "rouge",
+"source": "lb1"
+},
+{
+"dependent_id": "hidden_markov_model",
+"label": 0,
+"prereq_id": "rouge",
+"source": "lb1"
+},
+{
+"dependent_id": "hierarchical_model",
+"label": 0,
+"prereq_id": "rouge",
+"source": "lb1"
+},
+{
+"dependent_id": "kernel_function",
+"label": 0,
+"prereq_id": "rouge",
+"source": "lb1"
+},
+{
+"dependent_id": "lambda_calculus",
+"label": 0,
+"prereq_id": "rouge",
+"source": "lb1"
+},
+{
+"dependent_id": "latent_semantic_indexing",
+"label": 0,
+"prereq_id": "rouge",
+"source": "lb1"
+},
+{
+"dependent_id": "lexicography",
+"label": 0,
+"prereq_id": "rouge",
+"source": "lb1"
+},
+{
+"dependent_id": "logistic_regression",
+"label": 0,
+"prereq_id": "rouge",
+"source": "lb1"
+},
+{
+"dependent_id": "multilingual_word",
+"label": 0,
+"prereq_id": "rouge",
+"source": "lb1"
+},
+{
+"dependent_id": "one_shot_learning",
+"label": 0,
+"prereq_id": "rouge",
+"source": "lb1"
+},
+{
+"dependent_id": "open_information_extraction",
+"label": 0,
+"prereq_id": "rouge",
+"source": "lb1"
+},
+{
+"dependent_id": "paraphrasing",
+"label": 0,
+"prereq_id": "rouge",
+"source": "lb1"
+},
+{
+"dependent_id": "part_of_speech_tagging",
+"label": 0,
+"prereq_id": "rouge",
+"source": "lb1"
+},
+{
+"dependent_id": "probability",
+"label": 0,
+"prereq_id": "rouge",
+"source": "lb1"
+},
+{
+"dependent_id": "radial_basis_function_network",
+"label": 0,
+"prereq_id": "rouge",
+"source": "lb1"
+},
+{
+"dependent_id": "semantic_role_labeling",
+"label": 0,
+"prereq_id": "rouge",
+"source": "lb1"
+},
+{
+"dependent_id": "statistical_machine_translation",
+"label": 0,
+"prereq_id": "rouge",
+"source": "lb1"
+},
+{
+"dependent_id": "svm",
+"label": 0,
+"prereq_id": "rouge",
+"source": "lb1"
+},
+{
+"dependent_id": "textual_entailment",
+"label": 0,
+"prereq_id": "rouge",
+"source": "lb1"
+},
+{
+"dependent_id": "word2vec",
+"label": 0,
+"prereq_id": "rouge",
+"source": "lb1"
+},
+{
+"dependent_id": "automated_essay_scoring",
+"label": 0,
+"prereq_id": "semantic_role_labeling",
+"source": "lb1"
+},
+{
+"dependent_id": "backpropagation",
+"label": 0,
+"prereq_id": "semantic_role_labeling",
+"source": "lb1"
+},
+{
+"dependent_id": "bayesian_network",
+"label": 0,
+"prereq_id": "semantic_role_labeling",
+"source": "lb1"
+},
+{
+"dependent_id": "bootstrapping",
+"label": 0,
+"prereq_id": "semantic_role_labeling",
+"source": "lb1"
+},
+{
+"dependent_id": "caption_generation",
+"label": 0,
+"prereq_id": "semantic_role_labeling",
+"source": "lb1"
+},
+{
+"dependent_id": "combinatory_categorial_grammar",
+"label": 0,
+"prereq_id": "semantic_role_labeling",
+"source": "lb1"
+},
+{
+"dependent_id": "constraint_satisfaction",
+"label": 0,
+"prereq_id": "semantic_role_labeling",
+"source": "lb1"
+},
+{
+"dependent_id": "context_free_grammar",
+"label": 0,
+"prereq_id": "semantic_role_labeling",
+"source": "lb1"
+},
+{
+"dependent_id": "crawling_the_web",
+"label": 0,
+"prereq_id": "semantic_role_labeling",
+"source": "lb1"
+},
+{
+"dependent_id": "deep_belief_network",
+"label": 0,
+"prereq_id": "semantic_role_labeling",
+"source": "lb1"
+},
+{
+"dependent_id": "domain_adaptation",
+"label": 0,
+"prereq_id": "semantic_role_labeling",
+"source": "lb1"
+},
+{
+"dependent_id": "earley_parsing",
+"label": 0,
+"prereq_id": "semantic_role_labeling",
+"source": "lb1"
+},
+{
+"dependent_id": "expectation_maximization_em_algorithm",
+"label": 0,
+"prereq_id": "semantic_role_labeling",
+"source": "lb1"
+},
+{
+"dependent_id": "facial_recognition_system",
+"label": 0,
+"prereq_id": "semantic_role_labeling",
+"source": "lb1"
+},
+{
+"dependent_id": "first_order_logic",
+"label": 0,
+"prereq_id": "semantic_role_labeling",
+"source": "lb1"
+},
+{
+"dependent_id": "game_playing_in_ai",
+"label": 0,
+"prereq_id": "semantic_role_labeling",
+"source": "lb1"
+},
+{
+"dependent_id": "gibbs_sampling",
+"label": 0,
+"prereq_id": "semantic_role_labeling",
+"source": "lb1"
+},
+{
+"dependent_id": "graphical_model",
+"label": 0,
+"prereq_id": "semantic_role_labeling",
+"source": "lb1"
+},
+{
+"dependent_id": "hidden_markov_model",
+"label": 0,
+"prereq_id": "semantic_role_labeling",
+"source": "lb1"
+},
+{
+"dependent_id": "hierarchical_model",
+"label": 0,
+"prereq_id": "semantic_role_labeling",
+"source": "lb1"
+},
+{
+"dependent_id": "ibm_translation_model",
+"label": 0,
+"prereq_id": "semantic_role_labeling",
+"source": "lb1"
+},
+{
+"dependent_id": "kernel_function",
+"label": 0,
+"prereq_id": "semantic_role_labeling",
+"source": "lb1"
+},
+{
+"dependent_id": "lambda_calculus",
+"label": 0,
+"prereq_id": "semantic_role_labeling",
+"source": "lb1"
+},
+{
+"dependent_id": "latent_semantic_indexing",
+"label": 0,
+"prereq_id": "semantic_role_labeling",
+"source": "lb1"
+},
+{
+"dependent_id": "lexicography",
+"label": 0,
+"prereq_id": "semantic_role_labeling",
+"source": "lb1"
+},
+{
+"dependent_id": "logistic_regression",
+"label": 0,
+"prereq_id": "semantic_role_labeling",
+"source": "lb1"
+},
+{
+"dependent_id": "multi_document_summarization",
+"label": 0,
+"prereq_id": "semantic_role_labeling",
+"source": "lb1"
+},
+{
+"dependent_id": "multilingual_word",
+"label": 0,
+"prereq_id": "semantic_role_labeling",
+"source": "lb1"
+},
+{
+"dependent_id": "neural_machine_translation",
+"label": 0,
+"prereq_id": "semantic_role_labeling",
+"source": "lb1"
+},
+{
+"dependent_id": "one_shot_learning",
+"label": 0,
+"prereq_id": "semantic_role_labeling",
+"source": "lb1"
+},
+{
+"dependent_id": "open_information_extraction",
+"label": 0,
+"prereq_id": "semantic_role_labeling",
+"source": "lb1"
+},
+{
+"dependent_id": "paraphrasing",
+"label": 0,
+"prereq_id": "semantic_role_labeling",
+"source": "lb1"
+},
+{
+"dependent_id": "part_of_speech_tagging",
+"label": 0,
+"prereq_id": "semantic_role_labeling",
+"source": "lb1"
+},
+{
+"dependent_id": "probability",
+"label": 0,
+"prereq_id": "semantic_role_labeling",
+"source": "lb1"
+},
+{
+"dependent_id": "radial_basis_function_network",
+"label": 0,
+"prereq_id": "semantic_role_labeling",
+"source": "lb1"
+},
+{
+"dependent_id": "rouge",
+"label": 0,
+"prereq_id": "semantic_role_labeling",
+"source": "lb1"
+},
+{
+"dependent_id": "statistical_machine_translation",
+"label": 0,
+"prereq_id": "semantic_role_labeling",
+"source": "lb1"
+},
+{
+"dependent_id": "svm",
+"label": 0,
+"prereq_id": "semantic_role_labeling",
+"source": "lb1"
+},
+{
+"dependent_id": "textual_entailment",
+"label": 0,
+"prereq_id": "semantic_role_labeling",
+"source": "lb1"
+},
+{
+"dependent_id": "word2vec",
+"label": 0,
+"prereq_id": "semantic_role_labeling",
+"source": "lb1"
+},
+{
+"dependent_id": "automated_essay_scoring",
+"label": 0,
+"prereq_id": "statistical_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "backpropagation",
+"label": 0,
+"prereq_id": "statistical_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "bayesian_network",
+"label": 0,
+"prereq_id": "statistical_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "bootstrapping",
+"label": 0,
+"prereq_id": "statistical_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "caption_generation",
+"label": 0,
+"prereq_id": "statistical_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "combinatory_categorial_grammar",
+"label": 0,
+"prereq_id": "statistical_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "constraint_satisfaction",
+"label": 0,
+"prereq_id": "statistical_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "context_free_grammar",
+"label": 0,
+"prereq_id": "statistical_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "crawling_the_web",
+"label": 0,
+"prereq_id": "statistical_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "deep_belief_network",
+"label": 0,
+"prereq_id": "statistical_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "domain_adaptation",
+"label": 0,
+"prereq_id": "statistical_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "earley_parsing",
+"label": 0,
+"prereq_id": "statistical_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "expectation_maximization_em_algorithm",
+"label": 0,
+"prereq_id": "statistical_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "facial_recognition_system",
+"label": 0,
+"prereq_id": "statistical_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "first_order_logic",
+"label": 0,
+"prereq_id": "statistical_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "game_playing_in_ai",
+"label": 0,
+"prereq_id": "statistical_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "gibbs_sampling",
+"label": 0,
+"prereq_id": "statistical_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "graphical_model",
+"label": 0,
+"prereq_id": "statistical_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "hidden_markov_model",
+"label": 0,
+"prereq_id": "statistical_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "hierarchical_model",
+"label": 0,
+"prereq_id": "statistical_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "kernel_function",
+"label": 0,
+"prereq_id": "statistical_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "lambda_calculus",
+"label": 0,
+"prereq_id": "statistical_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "latent_semantic_indexing",
+"label": 0,
+"prereq_id": "statistical_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "lexicography",
+"label": 0,
+"prereq_id": "statistical_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "logistic_regression",
+"label": 0,
+"prereq_id": "statistical_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "multi_document_summarization",
+"label": 0,
+"prereq_id": "statistical_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "multilingual_word",
+"label": 0,
+"prereq_id": "statistical_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "one_shot_learning",
+"label": 0,
+"prereq_id": "statistical_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "open_information_extraction",
+"label": 0,
+"prereq_id": "statistical_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "paraphrasing",
+"label": 0,
+"prereq_id": "statistical_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "part_of_speech_tagging",
+"label": 0,
+"prereq_id": "statistical_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "probability",
+"label": 0,
+"prereq_id": "statistical_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "radial_basis_function_network",
+"label": 0,
+"prereq_id": "statistical_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "rouge",
+"label": 0,
+"prereq_id": "statistical_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "semantic_role_labeling",
+"label": 0,
+"prereq_id": "statistical_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "svm",
+"label": 0,
+"prereq_id": "statistical_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "textual_entailment",
+"label": 0,
+"prereq_id": "statistical_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "word2vec",
+"label": 0,
+"prereq_id": "statistical_machine_translation",
+"source": "lb1"
+},
+{
+"dependent_id": "automated_essay_scoring",
+"label": 0,
+"prereq_id": "svm",
+"source": "lb1"
+},
+{
+"dependent_id": "backpropagation",
+"label": 0,
+"prereq_id": "svm",
+"source": "lb1"
+},
+{
+"dependent_id": "bayesian_network",
+"label": 0,
+"prereq_id": "svm",
+"source": "lb1"
+},
+{
+"dependent_id": "bootstrapping",
+"label": 0,
+"prereq_id": "svm",
+"source": "lb1"
+},
+{
+"dependent_id": "caption_generation",
+"label": 0,
+"prereq_id": "svm",
+"source": "lb1"
+},
+{
+"dependent_id": "combinatory_categorial_grammar",
+"label": 0,
+"prereq_id": "svm",
+"source": "lb1"
+},
+{
+"dependent_id": "constraint_satisfaction",
+"label": 0,
+"prereq_id": "svm",
+"source": "lb1"
+},
+{
+"dependent_id": "context_free_grammar",
+"label": 0,
+"prereq_id": "svm",
+"source": "lb1"
+},
+{
+"dependent_id": "crawling_the_web",
+"label": 0,
+"prereq_id": "svm",
+"source": "lb1"
+},
+{
+"dependent_id": "deep_belief_network",
+"label": 0,
+"prereq_id": "svm",
+"source": "lb1"
+},
+{
+"dependent_id": "domain_adaptation",
+"label": 0,
+"prereq_id": "svm",
+"source": "lb1"
+},
+{
+"dependent_id": "earley_parsing",
+"label": 0,
+"prereq_id": "svm",
+"source": "lb1"
+},
+{
+"dependent_id": "expectation_maximization_em_algorithm",
+"label": 0,
+"prereq_id": "svm",
+"source": "lb1"
+},
+{
+"dependent_id": "facial_recognition_system",
+"label": 0,
+"prereq_id": "svm",
+"source": "lb1"
+},
+{
+"dependent_id": "first_order_logic",
+"label": 0,
+"prereq_id": "svm",
+"source": "lb1"
+},
+{
+"dependent_id": "game_playing_in_ai",
+"label": 0,
+"prereq_id": "svm",
+"source": "lb1"
+},
+{
+"dependent_id": "gibbs_sampling",
+"label": 0,
+"prereq_id": "svm",
+"source": "lb1"
+},
+{
+"dependent_id": "graphical_model",
+"label": 0,
+"prereq_id": "svm",
+"source": "lb1"
+},
+{
+"dependent_id": "hidden_markov_model",
+"label": 0,
+"prereq_id": "svm",
+"source": "lb1"
+},
+{
+"dependent_id": "hierarchical_model",
+"label": 0,
+"prereq_id": "svm",
+"source": "lb1"
+},
+{
+"dependent_id": "ibm_translation_model",
+"label": 0,
+"prereq_id": "svm",
+"source": "lb1"
+},
+{
+"dependent_id": "kernel_function",
+"label": 0,
+"prereq_id": "svm",
+"source": "lb1"
+},
+{
+"dependent_id": "lambda_calculus",
+"label": 0,
+"prereq_id": "svm",
+"source": "lb1"
+},
+{
+"dependent_id": "latent_semantic_indexing",
+"label": 0,
+"prereq_id": "svm",
+"source": "lb1"
+},
+{
+"dependent_id": "lexicography",
+"label": 0,
+"prereq_id": "svm",
+"source": "lb1"
+},
+{
+"dependent_id": "logistic_regression",
+"label": 0,
+"prereq_id": "svm",
+"source": "lb1"
+},
+{
+"dependent_id": "multi_document_summarization",
+"label": 0,
+"prereq_id": "svm",
+"source": "lb1"
+},
+{
+"dependent_id": "multilingual_word",
+"label": 0,
+"prereq_id": "svm",
+"source": "lb1"
+},
+{
+"dependent_id": "neural_machine_translation",
+"label": 0,
+"prereq_id": "svm",
+"source": "lb1"
+},
+{
+"dependent_id": "one_shot_learning",
+"label": 0,
+"prereq_id": "svm",
+"source": "lb1"
+},
+{
+"dependent_id": "open_information_extraction",
+"label": 0,
+"prereq_id": "svm",
+"source": "lb1"
+},
+{
+"dependent_id": "paraphrasing",
+"label": 0,
+"prereq_id": "svm",
+"source": "lb1"
+},
+{
+"dependent_id": "part_of_speech_tagging",
+"label": 0,
+"prereq_id": "svm",
+"source": "lb1"
+},
+{
+"dependent_id": "probability",
+"label": 0,
+"prereq_id": "svm",
+"source": "lb1"
+},
+{
+"dependent_id": "radial_basis_function_network",
+"label": 0,
+"prereq_id": "svm",
+"source": "lb1"
+},
+{
+"dependent_id": "rouge",
+"label": 0,
+"prereq_id": "svm",
+"source": "lb1"
+},
+{
+"dependent_id": "semantic_role_labeling",
+"label": 0,
+"prereq_id": "svm",
+"source": "lb1"
+},
+{
+"dependent_id": "statistical_machine_translation",
+"label": 0,
+"prereq_id": "svm",
+"source": "lb1"
+},
+{
+"dependent_id": "textual_entailment",
+"label": 0,
+"prereq_id": "svm",
+"source": "lb1"
+},
+{
+"dependent_id": "word2vec",
+"label": 0,
+"prereq_id": "svm",
+"source": "lb1"
+},
+{
+"dependent_id": "automated_essay_scoring",
+"label": 0,
+"prereq_id": "textual_entailment",
+"source": "lb1"
+},
+{
+"dependent_id": "backpropagation",
+"label": 0,
+"prereq_id": "textual_entailment",
+"source": "lb1"
+},
+{
+"dependent_id": "bayesian_network",
+"label": 0,
+"prereq_id": "textual_entailment",
+"source": "lb1"
+},
+{
+"dependent_id": "bootstrapping",
+"label": 0,
+"prereq_id": "textual_entailment",
+"source": "lb1"
+},
+{
+"dependent_id": "caption_generation",
+"label": 0,
+"prereq_id": "textual_entailment",
+"source": "lb1"
+},
+{
+"dependent_id": "combinatory_categorial_grammar",
+"label": 0,
+"prereq_id": "textual_entailment",
+"source": "lb1"
+},
+{
+"dependent_id": "constraint_satisfaction",
+"label": 0,
+"prereq_id": "textual_entailment",
+"source": "lb1"
+},
+{
+"dependent_id": "context_free_grammar",
+"label": 0,
+"prereq_id": "textual_entailment",
+"source": "lb1"
+},
+{
+"dependent_id": "crawling_the_web",
+"label": 0,
+"prereq_id": "textual_entailment",
+"source": "lb1"
+},
+{
+"dependent_id": "deep_belief_network",
+"label": 0,
+"prereq_id": "textual_entailment",
+"source": "lb1"
+},
+{
+"dependent_id": "domain_adaptation",
+"label": 0,
+"prereq_id": "textual_entailment",
+"source": "lb1"
+},
+{
+"dependent_id": "earley_parsing",
+"label": 0,
+"prereq_id": "textual_entailment",
+"source": "lb1"
+},
+{
+"dependent_id": "expectation_maximization_em_algorithm",
+"label": 0,
+"prereq_id": "textual_entailment",
+"source": "lb1"
+},
+{
+"dependent_id": "facial_recognition_system",
+"label": 0,
+"prereq_id": "textual_entailment",
+"source": "lb1"
+},
+{
+"dependent_id": "first_order_logic",
+"label": 0,
+"prereq_id": "textual_entailment",
+"source": "lb1"
+},
+{
+"dependent_id": "game_playing_in_ai",
+"label": 0,
+"prereq_id": "textual_entailment",
+"source": "lb1"
+},
+{
+"dependent_id": "gibbs_sampling",
+"label": 0,
+"prereq_id": "textual_entailment",
+"source": "lb1"
+},
+{
+"dependent_id": "graphical_model",
+"label": 0,
+"prereq_id": "textual_entailment",
+"source": "lb1"
+},
+{
+"dependent_id": "hidden_markov_model",
+"label": 0,
+"prereq_id": "textual_entailment",
+"source": "lb1"
+},
+{
+"dependent_id": "hierarchical_model",
+"label": 0,
+"prereq_id": "textual_entailment",
+"source": "lb1"
+},
+{
+"dependent_id": "ibm_translation_model",
+"label": 0,
+"prereq_id": "textual_entailment",
+"source": "lb1"
+},
+{
+"dependent_id": "kernel_function",
+"label": 0,
+"prereq_id": "textual_entailment",
+"source": "lb1"
+},
+{
+"dependent_id": "lambda_calculus",
+"label": 0,
+"prereq_id": "textual_entailment",
+"source": "lb1"
+},
+{
+"dependent_id": "latent_semantic_indexing",
+"label": 0,
+"prereq_id": "textual_entailment",
+"source": "lb1"
+},
+{
+"dependent_id": "lexicography",
+"label": 0,
+"prereq_id": "textual_entailment",
+"source": "lb1"
+},
+{
+"dependent_id": "logistic_regression",
+"label": 0,
+"prereq_id": "textual_entailment",
+"source": "lb1"
+},
+{
+"dependent_id": "multi_document_summarization",
+"label": 0,
+"prereq_id": "textual_entailment",
+"source": "lb1"
+},
+{
+"dependent_id": "multilingual_word",
+"label": 0,
+"prereq_id": "textual_entailment",
+"source": "lb1"
+},
+{
+"dependent_id": "neural_machine_translation",
+"label": 0,
+"prereq_id": "textual_entailment",
+"source": "lb1"
+},
+{
+"dependent_id": "one_shot_learning",
+"label": 0,
+"prereq_id": "textual_entailment",
+"source": "lb1"
+},
+{
+"dependent_id": "open_information_extraction",
+"label": 0,
+"prereq_id": "textual_entailment",
+"source": "lb1"
+},
+{
+"dependent_id": "paraphrasing",
+"label": 0,
+"prereq_id": "textual_entailment",
+"source": "lb1"
+},
+{
+"dependent_id": "part_of_speech_tagging",
+"label": 0,
+"prereq_id": "textual_entailment",
+"source": "lb1"
+},
+{
+"dependent_id": "probability",
+"label": 0,
+"prereq_id": "textual_entailment",
+"source": "lb1"
+},
+{
+"dependent_id": "radial_basis_function_network",
+"label": 0,
+"prereq_id": "textual_entailment",
+"source": "lb1"
+},
+{
+"dependent_id": "rouge",
+"label": 0,
+"prereq_id": "textual_entailment",
+"source": "lb1"
+},
+{
+"dependent_id": "semantic_role_labeling",
+"label": 0,
+"prereq_id": "textual_entailment",
+"source": "lb1"
+},
+{
+"dependent_id": "statistical_machine_translation",
+"label": 0,
+"prereq_id": "textual_entailment",
+"source": "lb1"
+},
+{
+"dependent_id": "svm",
+"label": 0,
+"prereq_id": "textual_entailment",
+"source": "lb1"
+},
+{
+"dependent_id": "word2vec",
+"label": 0,
+"prereq_id": "textual_entailment",
+"source": "lb1"
+},
+{
+"dependent_id": "automated_essay_scoring",
+"label": 0,
+"prereq_id": "word2vec",
+"source": "lb1"
+},
+{
+"dependent_id": "backpropagation",
+"label": 0,
+"prereq_id": "word2vec",
+"source": "lb1"
+},
+{
+"dependent_id": "bayesian_network",
+"label": 0,
+"prereq_id": "word2vec",
+"source": "lb1"
+},
+{
+"dependent_id": "bootstrapping",
+"label": 0,
+"prereq_id": "word2vec",
+"source": "lb1"
+},
+{
+"dependent_id": "caption_generation",
+"label": 0,
+"prereq_id": "word2vec",
+"source": "lb1"
+},
+{
+"dependent_id": "combinatory_categorial_grammar",
+"label": 0,
+"prereq_id": "word2vec",
+"source": "lb1"
+},
+{
+"dependent_id": "constraint_satisfaction",
+"label": 0,
+"prereq_id": "word2vec",
+"source": "lb1"
+},
+{
+"dependent_id": "context_free_grammar",
+"label": 0,
+"prereq_id": "word2vec",
+"source": "lb1"
+},
+{
+"dependent_id": "crawling_the_web",
+"label": 0,
+"prereq_id": "word2vec",
+"source": "lb1"
+},
+{
+"dependent_id": "deep_belief_network",
+"label": 0,
+"prereq_id": "word2vec",
+"source": "lb1"
+},
+{
+"dependent_id": "domain_adaptation",
+"label": 0,
+"prereq_id": "word2vec",
+"source": "lb1"
+},
+{
+"dependent_id": "earley_parsing",
+"label": 0,
+"prereq_id": "word2vec",
+"source": "lb1"
+},
+{
+"dependent_id": "expectation_maximization_em_algorithm",
+"label": 0,
+"prereq_id": "word2vec",
+"source": "lb1"
+},
+{
+"dependent_id": "facial_recognition_system",
+"label": 0,
+"prereq_id": "word2vec",
+"source": "lb1"
+},
+{
+"dependent_id": "first_order_logic",
+"label": 0,
+"prereq_id": "word2vec",
+"source": "lb1"
+},
+{
+"dependent_id": "game_playing_in_ai",
+"label": 0,
+"prereq_id": "word2vec",
+"source": "lb1"
+},
+{
+"dependent_id": "gibbs_sampling",
+"label": 0,
+"prereq_id": "word2vec",
+"source": "lb1"
+},
+{
+"dependent_id": "graphical_model",
+"label": 0,
+"prereq_id": "word2vec",
+"source": "lb1"
+},
+{
+"dependent_id": "hidden_markov_model",
+"label": 0,
+"prereq_id": "word2vec",
+"source": "lb1"
+},
+{
+"dependent_id": "hierarchical_model",
+"label": 0,
+"prereq_id": "word2vec",
+"source": "lb1"
+},
+{
+"dependent_id": "ibm_translation_model",
+"label": 0,
+"prereq_id": "word2vec",
+"source": "lb1"
+},
+{
+"dependent_id": "kernel_function",
+"label": 0,
+"prereq_id": "word2vec",
+"source": "lb1"
+},
+{
+"dependent_id": "lambda_calculus",
+"label": 0,
+"prereq_id": "word2vec",
+"source": "lb1"
+},
+{
+"dependent_id": "latent_semantic_indexing",
+"label": 0,
+"prereq_id": "word2vec",
+"source": "lb1"
+},
+{
+"dependent_id": "lexicography",
+"label": 0,
+"prereq_id": "word2vec",
+"source": "lb1"
+},
+{
+"dependent_id": "logistic_regression",
+"label": 0,
+"prereq_id": "word2vec",
+"source": "lb1"
+},
+{
+"dependent_id": "multi_document_summarization",
+"label": 0,
+"prereq_id": "word2vec",
+"source": "lb1"
+},
+{
+"dependent_id": "multilingual_word",
+"label": 1,
+"prereq_id": "word2vec",
+"source": "lb1"
+},
+{
+"dependent_id": "one_shot_learning",
+"label": 0,
+"prereq_id": "word2vec",
+"source": "lb1"
+},
+{
+"dependent_id": "open_information_extraction",
+"label": 0,
+"prereq_id": "word2vec",
+"source": "lb1"
+},
+{
+"dependent_id": "paraphrasing",
+"label": 0,
+"prereq_id": "word2vec",
+"source": "lb1"
+},
+{
+"dependent_id": "part_of_speech_tagging",
+"label": 0,
+"prereq_id": "word2vec",
+"source": "lb1"
+},
+{
+"dependent_id": "probability",
+"label": 0,
+"prereq_id": "word2vec",
+"source": "lb1"
+},
+{
+"dependent_id": "radial_basis_function_network",
+"label": 0,
+"prereq_id": "word2vec",
+"source": "lb1"
+},
+{
+"dependent_id": "rouge",
+"label": 0,
+"prereq_id": "word2vec",
+"source": "lb1"
+},
+{
+"dependent_id": "semantic_role_labeling",
+"label": 0,
+"prereq_id": "word2vec",
+"source": "lb1"
+},
+{
+"dependent_id": "statistical_machine_translation",
+"label": 0,
+"prereq_id": "word2vec",
+"source": "lb1"
+},
+{
+"dependent_id": "svm",
+"label": 0,
+"prereq_id": "word2vec",
+"source": "lb1"
+},
+{
+"dependent_id": "textual_entailment",
+"label": 0,
+"prereq_id": "word2vec",
+"source": "lb1"
+}
+]
+}
