@@ -22,12 +22,15 @@ _cache = None
 
 
 def _load():
+    """Load once, publishing only the full cache. The first answer for a key is the answer of record."""
     global _cache
-    if _cache is None:
-        _cache = {}
-        if CACHE.exists():
-            for row in map(json.loads, CACHE.open()):
-                _cache[row["key"]] = row
+    with _lock:
+        if _cache is None:
+            cache = {}
+            if CACHE.exists():
+                for row in map(json.loads, CACHE.open()):
+                    cache.setdefault(row["key"], row)
+            _cache = cache
     return _cache
 
 
@@ -66,10 +69,13 @@ def ask_json(system, user, ledger=None, model=MUSE_MODEL):
                 time.sleep(2**attempt)
         row = dict(key=key, out=out, tokens=r.usage.total_tokens)
         with _lock:
-            _cache[key] = row
-            RUNS.mkdir(exist_ok=True)
-            with CACHE.open("a") as f:
-                f.write(json.dumps(row) + "\n")
+            if key in _cache:
+                row = _cache[key]
+            else:
+                _cache[key] = row
+                RUNS.mkdir(exist_ok=True)
+                with CACHE.open("a") as f:
+                    f.write(json.dumps(row) + "\n")
     if ledger:
         ledger.add(row["tokens"])
     return row["out"]

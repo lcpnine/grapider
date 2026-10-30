@@ -1,11 +1,14 @@
 """Parse question pools and diff two versions. No LLM in this module."""
 import difflib
+import html
 import re
 import subprocess
+import zipfile
 
-from .schema import ROOT
+from .schema import ROOT, TEST_DIR, guard_test_path
 
 CIVICS = ROOT / "data" / "revision" / "civics"
+HAM = TEST_DIR / "raw" / "ham"
 MODIFIED_THRESHOLD = 0.75
 
 
@@ -37,6 +40,44 @@ def load_civics():
     new = subprocess.run(["pdftotext", "-layout", str(CIVICS / "civics_2025.pdf"), "-"],
                          capture_output=True, text=True, check=True).stdout
     return parse_questions(old, "2008"), parse_questions(new, "2025")
+
+
+def docx_text(path):
+    """Paragraph text of a .docx, one paragraph per line."""
+    with zipfile.ZipFile(path) as z:
+        xml = z.read("word/document.xml").decode("utf8")
+    return "\n".join(html.unescape("".join(re.findall(r"<w:t(?: [^>]*)?>([^<]*)</w:t>", p)))
+                     for p in xml.split("</w:p>"))
+
+
+def parse_ham(text, version):
+    """Parse NCVEC pool text: 'T1A01 (C) [97.1]', the question, options A. to D., then '~~'."""
+    questions, current = [], None
+    for raw in text.replace("\r", "").split("\n"):
+        line = raw.strip()
+        m = re.match(r"^([TGE]\d[A-Z]\d{2})\s*\(([A-D])\)(?:\s*\[[^\]]*\])?\s*(.*)$", line)
+        option = re.match(r"^([A-D])\.\s*(.*)$", line)
+        if m:
+            current = dict(number=m[1], key=m[2], question=m[3], answers=[])
+            questions.append(current)
+        elif current is None or line.startswith("~~"):
+            current = None
+        elif option:
+            if option[1] == current["key"]:
+                current["answers"].append(option[2])
+        elif line and not current["answers"]:
+            current["question"] = (current["question"] + " " + line).strip()
+    for q in questions:
+        q["id"] = f"{version}:{q['number']}"
+        q["text"] = q["question"] + " Answers: " + "; ".join(q["answers"])
+    return questions
+
+
+def load_ham():
+    old, new = HAM / "tech_2022_2026.docx", HAM / "tech_2026_2030.docx"
+    guard_test_path(old)
+    guard_test_path(new)
+    return parse_ham(docx_text(old), "2022"), parse_ham(docx_text(new), "2026")
 
 
 def _norm(s):

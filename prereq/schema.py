@@ -119,3 +119,9 @@ def load_dbe(path):
     names = {n.get("id"): n.get("id") for n in graph.iterfind(".//g:node", ns)}
     rows = [(e.get("target"), e.get("source"), 1) for e in graph.iterfind(".//g:edge", ns)]
     return normalize(names, rows, "dbe")
+
+
+def load_lbcd(root, domain):
+    """Written at 'run test': the data stays closed until then, so its format is still unseen."""
+    guard_test_path(root)
+    raise NotImplementedError("LectureBankCD loader is written when the test run is unlocked")

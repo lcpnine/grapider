@@ -1,3 +1,5 @@
+import json
+
 import pytest
 
 from prereq.dag import PrereqDAG
@@ -144,3 +146,20 @@ def test_json_round_trip(tmp_path):
     dag.add_node("a", provenance=["q1"], valid_versions=["v1"])
     dag.save(tmp_path / "d.json")
     assert PrereqDAG.load(tmp_path / "d.json").to_json() == dag.to_json()
+
+
+def test_retired_node_is_recorded_survives_json_and_keeps_history_when_revived():
+    dag = PrereqDAG()
+    dag.add_node("a", "A", ["v1:q1"], ["v1"])
+    dag.add_node("b", "B", ["v1:q2"], ["v1"])
+    dag.add_edge("a", "b", "needed")
+    dag.retire("b", "v2")
+    assert "b" not in dag.g
+    loaded = PrereqDAG.from_json(json.loads(json.dumps(dag.to_json())))
+    assert loaded.retired["b"] == dict(name="B", provenance=["v1:q2"], valid_versions=["v1"], retired_in="v2",
+                                       parents=["a"], children=[])
+    loaded.add_node("b", provenance=["v3:q9"], valid_versions=["v3"])
+    assert "b" not in loaded.retired
+    assert loaded.g.nodes["b"]["name"] == "B"
+    assert loaded.g.nodes["b"]["provenance"] == {"v3:q9"}
+    assert loaded.g.nodes["b"]["valid_versions"] == {"v1", "v3"}

@@ -4,8 +4,17 @@
    "id": "14th_amendment",
    "name": "14th Amendment",
    "provenance": [
-    "2025:q102",
     "2025:q97"
+   ],
+   "valid_versions": [
+    "2025"
+   ]
+  },
+  {
+   "id": "19th_amendment",
+   "name": "19th Amendment",
+   "provenance": [
+    "2025:q102"
    ],
    "valid_versions": [
     "2025"
@@ -1944,337 +1953,332 @@
   {
    "prereq": "14th_amendment",
    "dependent": "citizenship_clause",
-   "reason": "The Citizenship Clause is Section 1 of the 14th Amendment, so the amendment context must be understood first."
+   "reason": "The Citizenship Clause is Section 1 of the 14th Amendment"
   },
   {
    "prereq": "19th_century_war",
    "dependent": "20th_century_war",
-   "reason": "Prior-century warfare provides essential historical context for causes and evolution of 20th-century conflicts."
+   "reason": "Provides prior-era warfare background needed to understand origins and evolution of 20th-century wars."
+  },
+  {
+   "prereq": "20th_century_war",
+   "dependent": "nuclear_warfare",
+   "reason": "Provides the modern warfare context in which nuclear warfare emerged."
   },
   {
    "prereq": "20th_century_war",
    "dependent": "united_states_military_history",
-   "reason": "Covers World Wars and Cold War-era conflicts central to modern U.S. military history."
+   "reason": "Covers World Wars, Cold War, and modern conflicts central to military history."
   },
   {
    "prereq": "20th_century_war",
    "dependent": "unrestricted_submarine_warfare",
-   "reason": "Provides the WWI-era naval conflict context where the tactic was used."
+   "reason": "Provides the WWI context in which unrestricted submarine warfare occurred"
   },
   {
    "prereq": "22nd_amendment",
    "dependent": "presidential_term_limit",
-   "reason": "Establishes the two-term limit that defines presidential term limits."
+   "reason": "Establishes the two-term legal limit on presidents."
+  },
+  {
+   "prereq": "abolition_of_slavery",
+   "dependent": "fifteenth_amendment",
+   "reason": "The 'previous condition of servitude' clause refers to formerly enslaved people freed by abolition"
   },
   {
    "prereq": "abolition_of_slavery",
    "dependent": "reconstruction_era",
-   "reason": "Abolition ended slavery and made defining rights and citizenship for formerly enslaved people central to Reconstruction."
+   "reason": "Reconstruction policies centered on the status of formerly enslaved people after abolition."
   },
   {
    "prereq": "abraham_lincoln",
-   "dependent": "american_civil_war_major_event",
-   "reason": "Lincoln's election and wartime leadership directly triggered and shaped major Civil War events."
-  },
-  {
-   "prereq": "abraham_lincoln",
-   "dependent": "emancipation_proclamation",
-   "reason": "Was the president who issued the Emancipation Proclamation in 1863."
+   "dependent": "american_civil_war",
+   "reason": "Lincoln's 1860 election triggered Southern secession that started the war."
   },
   {
    "prereq": "alexander_hamilton",
    "dependent": "federalist_papers_authorship",
-   "reason": "Hamilton was a principal author whose identity must be known to attribute authorship."
-  },
-  {
-   "prereq": "allied_power",
-   "dependent": "pearl_harbor_attack",
-   "reason": "The U.S. was attacked as a member of the Allied Powers, explaining the defender side."
+   "reason": "Primary author whose identity is central to the authorship fact."
   },
   {
    "prereq": "allied_power",
    "dependent": "unrestricted_submarine_warfare",
-   "reason": "Identifies the opposing nations and shipping targeted by U-boats."
+   "reason": "The policy targeted Allied Powers shipping and provoked U.S. entry"
   },
   {
    "prereq": "allied_power",
    "dependent": "world_war_ii_leadership",
-   "reason": "Must know the Allied coalition to identify the leaders on that side."
+   "reason": "Must know the Allied coalition to understand who its leaders led"
   },
   {
    "prereq": "amendment_process",
    "dependent": "constitutional_amendment",
-   "reason": "Understanding that the Constitution can be formally changed and how is needed to grasp what amendments are."
+   "reason": "The formal method for proposing and ratifying changes must be understood to grasp what an amendment is"
   },
   {
    "prereq": "american_civil_war",
-   "dependent": "abraham_lincoln",
-   "reason": "Lincoln was president during the Civil War, so its context is needed to understand his leadership."
+   "dependent": "abolition_of_slavery",
+   "reason": "Provides the conflict context in which abolition was achieved."
+  },
+  {
+   "prereq": "american_civil_war",
+   "dependent": "american_civil_war_major_event",
+   "reason": "Must know what the Civil War was, its sides and timeframe, before learning its major events."
+  },
+  {
+   "prereq": "american_civil_war",
+   "dependent": "emancipation_proclamation",
+   "reason": "The Proclamation was a wartime measure issued during the Civil War."
+  },
+  {
+   "prereq": "american_founding_father",
+   "dependent": "james_madison",
+   "reason": "Must understand the Founding Fathers group to understand Madison as a member."
   },
   {
    "prereq": "american_independence",
    "dependent": "constitutional_convention",
-   "reason": "The establishment of sovereign states that sent delegates to the Convention."
+   "reason": "Independence left the new nation needing the unified framework debated at the Convention."
   },
   {
    "prereq": "american_independence",
    "dependent": "louisiana_purchase",
-   "reason": "Independence established the United States as a sovereign nation able to acquire territory."
+   "reason": "Establishes the United States as a sovereign nation that could acquire new territory."
   },
   {
    "prereq": "american_independence",
    "dependent": "u_s_territorial_expansion",
-   "reason": "Establishes the independent United States as the entity that expanded."
+   "reason": "An independent United States had to exist before it could acquire and govern new territory."
   },
   {
    "prereq": "american_revolution",
-   "dependent": "american_independence",
-   "reason": "The war and movement through which independence was achieved."
-  },
-  {
-   "prereq": "american_revolution",
-   "dependent": "united_states_military_history",
-   "reason": "Founding war that created the United States and its military tradition."
+   "dependent": "constitutional_convention",
+   "reason": "The Revolution ended British rule and created the need for a new American government."
   },
   {
    "prereq": "axis_power",
    "dependent": "pearl_harbor_attack",
-   "reason": "Japan attacked as a member of the Axis Powers, explaining the attacker side."
+   "reason": "The attack was carried out by Japan as a member of the Axis Powers."
   },
   {
    "prereq": "axis_power",
    "dependent": "world_war_ii_leadership",
-   "reason": "Must know the Axis coalition to identify the opposing leaders."
+   "reason": "Must know the Axis coalition to understand who its leaders led"
   },
   {
    "prereq": "bicameral_legislature",
    "dependent": "u_s_congress",
-   "reason": "Must understand a two-chamber legislature to grasp Congress as House plus Senate."
+   "reason": "Congress has two chambers, which requires understanding bicameralism."
   },
   {
    "prereq": "bill_of_right",
    "dependent": "constitutional_right",
-   "reason": "The Bill of Rights enumerates the core constitutional rights."
+   "reason": "The Bill of Rights enumerates the core constitutional protections and defines what those rights are."
   },
   {
    "prereq": "bill_of_right",
    "dependent": "first_amendment_freedom",
-   "reason": "The First Amendment is the first part of the Bill of Rights that must be understood as its container."
+   "reason": "First Amendment freedoms are the protections in the First Amendment, which is part of the Bill of Rights."
   },
   {
    "prereq": "birthright_citizenship",
    "dependent": "derived_citizenship",
-   "reason": "Establishes citizenship by birth in the U.S. as contrast to citizenship via parents abroad."
+   "reason": "Derived citizenship is the alternative path for those who do not acquire citizenship by birth in the U.S., so birthright must be understood first."
   },
   {
    "prereq": "branches_of_government",
    "dependent": "separation_of_power",
-   "reason": "Separation of powers is the division of authority among the branches, so the branches must be known first."
-  },
-  {
-   "prereq": "branches_of_government",
-   "dependent": "structure_of_government",
-   "reason": "Structure describes how the branches are organized, so branches must be known first."
+   "reason": "Separation of powers divides authority among the branches, so learner must know what the branches are first."
   },
   {
    "prereq": "british_colonial_grievance",
    "dependent": "causes_of_the_american_revolution",
-   "reason": "Covers taxation, representation, and other disputes that directly caused the Revolution."
-  },
-  {
-   "prereq": "capitalism",
-   "dependent": "cold_war",
-   "reason": "US capitalism was the opposing system to Soviet communism in the conflict."
+   "reason": "Taxation and representation grievances directly explain why the revolution occurred."
   },
   {
    "prereq": "capitalism",
    "dependent": "wall_street_crash",
-   "reason": "Stock market crash presupposes capitalist markets with private stock ownership"
+   "reason": "Wall Street Crash is a collapse of capitalist stock markets and private investment"
   },
   {
    "prereq": "causes_of_the_american_revolution",
    "dependent": "american_revolution",
-   "reason": "Explains the taxation and representation disputes that triggered the revolt."
+   "reason": "The specific causes explain why the Revolution began."
   },
   {
    "prereq": "causes_of_the_american_revolution",
    "dependent": "declaration_of_independence",
-   "reason": "The Declaration was issued in response to the political conflict that caused the Revolution."
-  },
-  {
-   "prereq": "causes_of_the_american_revolution",
-   "dependent": "u_s_founding_history",
-   "reason": "Understanding why colonists sought independence is required to understand the founding."
+   "reason": "Provides the political conflict and motivation that led to declaring separation."
   },
   {
    "prereq": "central_power",
    "dependent": "unrestricted_submarine_warfare",
-   "reason": "Identifies the Germany-led alliance that adopted unrestricted submarine warfare."
+   "reason": "Germany as the leading Central Power initiated unrestricted submarine warfare in WWI"
   },
   {
    "prereq": "checks_and_balance",
    "dependent": "judicial_independence",
-   "reason": "Must know branches limit each other to understand independence operating within mutual accountability."
-  },
-  {
-   "prereq": "checks_and_balance",
-   "dependent": "veto_power",
-   "reason": "Veto is a core example of the executive checking legislative power."
+   "reason": "Independence must be understood as operating within a system of mutual checks among branches."
   },
   {
    "prereq": "citizenship_clause",
    "dependent": "birthright_citizenship",
-   "reason": "Contains the specific 'born or naturalized in the United States' language that defines birthright citizenship."
-  },
-  {
-   "prereq": "citizenship_clause",
-   "dependent": "naturalization",
-   "reason": "Defines U.S. citizenship that naturalization confers"
+   "reason": "Defines that all persons born in the U.S. are U.S. citizens."
   },
   {
    "prereq": "citizenship_clause",
    "dependent": "u_s_citizenship_right",
-   "reason": "Defines who is a U.S. citizen and therefore who holds citizenship rights"
+   "reason": "Defines who is a U.S. citizen, the holder of citizenship rights."
   },
   {
    "prereq": "civic_duty",
-   "dependent": "military_draft",
-   "reason": "The draft is justified as a duty owed to the country, so civic duty must be understood first."
+   "dependent": "civic_responsibility",
+   "reason": "Civic responsibilities are specific applications of the general idea of civic duty."
   },
   {
-   "prereq": "civic_duty",
-   "dependent": "u_s_citizenship_responsibility",
-   "reason": "Understanding the general idea of duties owed as a citizen underlies specific U.S. responsibilities."
+   "prereq": "civic_responsibility",
+   "dependent": "civic_participation",
+   "reason": "Knowing core responsibilities like voting and community engagement defines what participation means."
   },
   {
    "prereq": "civic_responsibility",
    "dependent": "u_s_citizenship_responsibility",
-   "reason": "General civic responsibilities provide the broad concept specialized into U.S. citizenship responsibilities."
+   "reason": "General idea of civic responsibilities underlies the U.S.-specific citizenship responsibilities."
+  },
+  {
+   "prereq": "civil_rights_movement",
+   "dependent": "martin_luther_king_jr",
+   "reason": "Martin Luther King Jr. was a leader within the civil rights movement, so the movement provides necessary context."
+  },
+  {
+   "prereq": "civil_rights_movement",
+   "dependent": "voting_right",
+   "reason": "Movement that secured enforcement of voting rights culminating in the Voting Rights Act"
   },
   {
    "prereq": "cold_war",
    "dependent": "superpower_rivalry",
-   "reason": "Provides the post-WWII U.S.-USSR bipolar conflict framework that defines superpower rivalry."
-  },
-  {
-   "prereq": "colonial_history",
-   "dependent": "benjamin_franklin",
-   "reason": "Franklin lived and worked within the British colonial period that must be understood first."
+   "reason": "Provides the post-WWII U.S.-Soviet confrontation framework in which the rivalry occurred."
   },
   {
    "prereq": "colonial_history",
    "dependent": "british_colonial_grievance",
-   "reason": "Must understand British colonial rule context before understanding colonists' complaints against it."
+   "reason": "Provides the context of British rule from which the grievances arose."
   },
   {
    "prereq": "communism",
    "dependent": "cold_war",
-   "reason": "Soviet communism was the ideology the US opposed during the Cold War."
+   "reason": "Cold War was driven by opposition to Soviet communist ideology and expansion."
   },
   {
    "prereq": "congressional_term",
-   "dependent": "senate_term_length",
-   "reason": "Learner must understand the concept of a congressional term before learning the specific Senate duration"
+   "dependent": "legislative_election",
+   "reason": "Term lengths determine the timing and cycle of legislative elections."
   },
   {
    "prereq": "constitutional_amendment",
    "dependent": "14th_amendment",
-   "reason": "The 14th Amendment is a constitutional amendment, so learners must first understand what amendments are"
+   "reason": "Must understand what a constitutional amendment is before understanding this specific amendment."
+  },
+  {
+   "prereq": "constitutional_amendment",
+   "dependent": "19th_amendment",
+   "reason": "The 19th Amendment is a constitutional amendment, so learners must understand what amendments are first."
   },
   {
    "prereq": "constitutional_amendment",
    "dependent": "22nd_amendment",
-   "reason": "The 22nd Amendment is an amendment, so learner must know what constitutional amendments are."
+   "reason": "The 22nd Amendment is a change to the Constitution, so the concept of constitutional amendments must be understood."
   },
   {
    "prereq": "constitutional_amendment",
    "dependent": "bill_of_right",
-   "reason": "The Bill of Rights cannot be understood without understanding what a constitutional amendment is."
+   "reason": "The Bill of Rights requires understanding what a constitutional amendment is and how it changes the Constitution."
+  },
+  {
+   "prereq": "constitutional_amendment",
+   "dependent": "fifteenth_amendment",
+   "reason": "Learner must know what a constitutional amendment is to understand a specific amendment"
+  },
+  {
+   "prereq": "constitutional_convention",
+   "dependent": "federalist_paper",
+   "reason": "The Federalist Papers were written to defend the Constitution drafted at the Convention."
   },
   {
    "prereq": "constitutional_convention",
    "dependent": "great_compromise",
-   "reason": "Great Compromise was the deadlock-breaking agreement reached during the Constitutional Convention"
+   "reason": "The Great Compromise was the deadlock-breaking agreement reached at the Constitutional Convention."
+  },
+  {
+   "prereq": "constitutional_convention",
+   "dependent": "james_madison",
+   "reason": "Must understand the Convention to understand Madison's role in framing the Constitution."
   },
   {
    "prereq": "constitutional_convention",
    "dependent": "u_s_constitution_ratification",
-   "reason": "The Convention drafted the Constitution that was then sent to the states for ratification."
+   "reason": "Convention drafted the proposed Constitution that was then sent to states for ratification."
   },
   {
    "prereq": "constitutional_right",
    "dependent": "u_s_citizenship_right",
-   "reason": "Establishes the general framework of rights that citizenship rights are part of"
+   "reason": "Establishes the general framework of constitutionally guaranteed rights that citizenship rights specialize."
+  },
+  {
+   "prereq": "containment_policy",
+   "dependent": "domino_theory",
+   "reason": "Describes the U.S. goal of stopping communist expansion that domino theory justified."
+  },
+  {
+   "prereq": "declaration_of_independence",
+   "dependent": "american_independence",
+   "reason": "Formal proclamation that declared American independence from Britain."
   },
   {
    "prereq": "district_of_columbia_status",
    "dependent": "district_of_columbia_government",
-   "reason": "Must know DC is a federal district and national capital, not a state, to understand its unique local government and congressional oversight"
+   "reason": "Must know DC is a federal district, not a state, before understanding its unique mayor-council government under Congress."
   },
   {
    "prereq": "economic_recession",
-   "dependent": "wall_street_crash",
-   "reason": "Crash is a sudden market downturn requiring the concept of recession to understand"
+   "dependent": "great_depression",
+   "reason": "The Great Depression was a severe prolonged economic recession"
   },
   {
    "prereq": "economic_system",
    "dependent": "capitalism",
-   "reason": "Capitalism is a specific type of economic system, so the general concept must be understood first."
+   "reason": "Capitalism is one type of economic system, so the general concept must be understood first."
   },
   {
    "prereq": "economic_system",
    "dependent": "communism",
-   "reason": "Communism is a specific economic system, so understanding what an economic system is comes first."
+   "reason": "Communism is a specific type of economic system"
   },
   {
    "prereq": "economic_system",
    "dependent": "economic_recession",
-   "reason": "Understanding a decline in economic activity requires first understanding what an economic system is."
-  },
-  {
-   "prereq": "economic_system",
-   "dependent": "federal_taxe",
-   "reason": "Must understand how governments fund operations through taxation in an economy."
+   "reason": "A recession is a contraction in an economy, so learners must first understand what economic systems are."
   },
   {
    "prereq": "electoral_college",
    "dependent": "presidential_election_process",
-   "reason": "The presidential election is decided by Electoral College votes, not direct popular vote."
+   "reason": "Presidential winner is determined by Electoral College votes, not direct popular vote."
   },
   {
    "prereq": "emancipation_proclamation",
-   "dependent": "abolition_of_slavery",
-   "reason": "Must understand the executive action that initiated legal abolition."
+   "dependent": "reconstruction_era",
+   "reason": "It declared freedom for enslaved people in Confederate states, setting the stage for Reconstruction."
   },
   {
    "prereq": "equal_state_representation",
    "dependent": "great_compromise",
-   "reason": "Small-state demand for equal state representation was the other side resolved by the compromise"
-  },
-  {
-   "prereq": "equal_state_representation",
-   "dependent": "u_s_senate_structure",
-   "reason": "Must understand equal representation to explain two senators per state."
+   "reason": "The compromise retained equal state representation in the Senate to satisfy small states."
   },
   {
    "prereq": "equality",
    "dependent": "racial_discrimination",
-   "reason": "Racial discrimination is unequal treatment by race, so equality must be understood first."
-  },
-  {
-   "prereq": "equality",
-   "dependent": "racial_equality",
-   "reason": "Racial equality applies the general principle of equality specifically to race."
-  },
-  {
-   "prereq": "equality",
-   "dependent": "women_s_rights_movement",
-   "reason": "The movement sought gender equality, so the concept of equality must be understood first."
-  },
-  {
-   "prereq": "exclusive_federal_power",
-   "dependent": "state_power",
-   "reason": "Identifies federal-only powers that bound what remains for states."
+   "reason": "Racial discrimination is unequal treatment by race, which requires understanding equality first."
   },
   {
    "prereq": "executive_branch",
@@ -2289,112 +2293,137 @@
   {
    "prereq": "executive_branch",
    "dependent": "executive_branch_structure",
-   "reason": "Must know what the executive branch is before learning its internal structure."
+   "reason": "Must know what the executive branch is before learning how it is organized."
   },
   {
    "prereq": "executive_branch",
    "dependent": "state_governor",
-   "reason": "Governors serve as chief executives at the state level, so learners must understand the executive function first."
+   "reason": "Governors serve as chief executives, requiring prior understanding of the executive branch function."
   },
   {
    "prereq": "executive_branch",
    "dependent": "u_s_presidency",
-   "reason": "The presidency is the head of the executive branch."
+   "reason": "The presidency heads the executive branch, so the branch concept must be understood first."
   },
   {
-   "prereq": "executive_branch",
-   "dependent": "veto_power",
-   "reason": "Veto is exercised by the president as head of the executive branch."
+   "prereq": "executive_branch_power",
+   "dependent": "presidential_power",
+   "reason": "Describes broader executive authority of which presidential powers are the specific exercise."
   },
   {
    "prereq": "executive_branch_structure",
    "dependent": "presidential_cabinet",
-   "reason": "Understanding where the Cabinet fits requires knowledge of executive branch organization."
+   "reason": "Shows where the Cabinet fits within the organization of the executive."
+  },
+  {
+   "prereq": "executive_branch_structure",
+   "dependent": "vice_president",
+   "reason": "Structure shows where Vice President fits among President and Cabinet."
+  },
+  {
+   "prereq": "federal_judiciary",
+   "dependent": "judicial_branch_leadership",
+   "reason": "Must know the federal judiciary system that the leadership oversees."
   },
   {
    "prereq": "federal_judiciary",
    "dependent": "judicial_tenure",
-   "reason": "U.S. judicial tenure refers to federal judges serving during good behavior, requiring knowledge of the federal judiciary."
+   "reason": "U.S. judicial tenure rules apply to federal judges, so learner must first understand the federal judiciary."
   },
   {
    "prereq": "federal_judiciary",
    "dependent": "supreme_court_structure",
-   "reason": "Must understand the federal judiciary to contextualize the Supreme Court's position and composition."
-  },
-  {
-   "prereq": "federalism",
-   "dependent": "american_civil_war",
-   "reason": "The conflict over federal authority versus state powers underlies secession and states-rights claims."
+   "reason": "Learner must understand the federal court hierarchy to contextualize the Supreme Court's position and composition."
   },
   {
    "prereq": "federalism",
    "dependent": "district_of_columbia_status",
-   "reason": "Learner must understand federal versus state jurisdiction to grasp exclusive federal control of DC."
+   "reason": "Understanding division between federal and state authority is needed to grasp federal control of DC."
   },
   {
    "prereq": "federalism",
-   "dependent": "exclusive_federal_power",
-   "reason": "Exclusive federal powers are the national share of authority in the federal division between national and state governments."
+   "dependent": "federal_judiciary",
+   "reason": "Must understand federal vs. state division to understand what makes courts federal."
+  },
+  {
+   "prereq": "federalism",
+   "dependent": "federal_taxe",
+   "reason": "Federalism defines the federal level of government distinct from states, needed to understand federal taxes."
+  },
+  {
+   "prereq": "federalism",
+   "dependent": "state_power",
+   "reason": "State powers only make sense within federalism's division of authority between national and state governments."
   },
   {
    "prereq": "federalism",
    "dependent": "structure_of_government",
-   "reason": "U.S. structure divides power between national and state levels defined by federalism."
-  },
-  {
-   "prereq": "federalism",
-   "dependent": "u_s_court_system",
-   "reason": "Must understand federal-state division to understand dual federal and state courts."
+   "reason": "Structure includes national-state division so federal power-sharing must be understood first"
   },
   {
    "prereq": "federalist_paper",
    "dependent": "federalist_papers_authorship",
-   "reason": "Authorship cannot be understood without knowing what the Federalist Papers essays are."
+   "reason": "Must know what the essays are before learning who wrote them."
+  },
+  {
+   "prereq": "forms_of_government",
+   "dependent": "limited_government",
+   "reason": "Must understand what government power is before understanding limiting it."
   },
   {
    "prereq": "forms_of_government",
    "dependent": "representative_democracy",
-   "reason": "Provides the broader categories like democracy, monarchy that representative democracy is classified within."
+   "reason": "Must understand types of government systems to place representative democracy among them."
   },
   {
    "prereq": "forms_of_government",
    "dependent": "republic",
-   "reason": "A republic is one specific form of government, so forms must be understood first."
+   "reason": "A republic is one specific form of government, so the general concept of forms of government must be understood first."
+  },
+  {
+   "prereq": "great_depression",
+   "dependent": "world_war_ii",
+   "reason": "Worldwide economic collapse created instability that helped enable the aggressive regimes that started WWII"
   },
   {
    "prereq": "history_of_slavery",
-   "dependent": "transatlantic_slave_trade",
-   "reason": "Must understand the institution of slavery before understanding the transatlantic system of capture, transport, and enslavement."
+   "dependent": "slavery_in_the_united_state",
+   "reason": "Provides the general definition and origins of slavery needed to understand its U.S. form"
   },
   {
    "prereq": "house_of_representative",
    "dependent": "congressional_term",
-   "reason": "Must know the House chamber to understand its distinct 2-year term."
+   "reason": "Must know the House as one chamber of Congress to understand its 2-year term."
   },
   {
    "prereq": "house_of_representative",
    "dependent": "population_based_representation",
-   "reason": "Population-based representation describes how seats in the House are apportioned among states."
+   "reason": "Population-based representation describes how seats in the House are apportioned, so the House must be understood first."
   },
   {
    "prereq": "house_of_representative",
    "dependent": "speaker_of_the_house",
-   "reason": "The Speaker is the presiding officer and leader of the House of Representatives."
+   "reason": "The Speaker is the presiding leader of the House of Representatives."
+  },
+  {
+   "prereq": "indigenous_people",
+   "dependent": "colonial_history",
+   "reason": "Identifies the original inhabitants encountered by colonists."
   },
   {
    "prereq": "indigenous_people",
    "dependent": "native_american_tribe",
-   "reason": "Native American tribes are a specific subset of Indigenous peoples of North America."
+   "reason": "Native American tribes are specific groups within the broader category of Indigenous peoples."
   },
   {
    "prereq": "individual_right",
-   "dependent": "constitutional_right",
-   "reason": "Constitutional rights are the legal codification of underlying individual rights."
+   "dependent": "bill_of_right",
+   "reason": "The Bill of Rights enumerates protections for individual rights, so the concept of individual rights must come first."
   },
   {
    "prereq": "individual_right",
-   "dependent": "first_amendment_freedom",
-   "reason": "First Amendment freedoms are specific individual rights protecting speech, religion, press, assembly and petition."
+   "dependent": "limited_government",
+   "reason": "Limits on government exist to protect rights held by individuals."
   },
   {
    "prereq": "iraqi_invasion_of_kuwait",
@@ -2404,607 +2433,618 @@
   {
    "prereq": "james_madison",
    "dependent": "federalist_papers_authorship",
-   "reason": "Madison was a principal author whose identity must be known to attribute authorship."
+   "reason": "Co-author whose identity is central to the authorship fact."
   },
   {
    "prereq": "judicial_branch",
    "dependent": "federal_judiciary",
-   "reason": "The federal judiciary is the federal implementation of the judicial branch, so the general judicial branch concept must come first."
+   "reason": "Federal judiciary is the federal-level component of the judicial branch."
   },
   {
    "prereq": "judicial_branch",
    "dependent": "judicial_independence",
-   "reason": "Must know what the judiciary is before understanding what its independence means."
+   "reason": "Learner must know what the judiciary is and does before understanding its independence."
   },
   {
    "prereq": "judicial_branch",
    "dependent": "u_s_court_system",
-   "reason": "The court system is the institutional implementation of the judicial branch."
+   "reason": "Must understand the judicial function before learning how courts are organized."
+  },
+  {
+   "prereq": "legal_obligation",
+   "dependent": "civic_responsibility",
+   "reason": "Many civic responsibilities are legal obligations, so that concept must be understood first."
   },
   {
    "prereq": "legal_obligation",
    "dependent": "military_draft",
-   "reason": "A draft is enforceable by law with penalties, so the idea of a legal obligation must be understood first."
-  },
-  {
-   "prereq": "legal_obligation",
-   "dependent": "oath_of_allegiance",
-   "reason": "The oath is a binding legal promise that requires understanding legal obligation."
-  },
-  {
-   "prereq": "legal_obligation",
-   "dependent": "u_s_citizenship_responsibility",
-   "reason": "Many citizenship responsibilities are legally required actions, so obligation must be understood first."
+   "reason": "A draft is enforceable by law, so the concept of a legal obligation must be understood first."
   },
   {
    "prereq": "legislative_branch",
    "dependent": "bicameral_legislature",
-   "reason": "A bicameral legislature is the two-chamber form of the legislative branch, so the legislative branch concept must be understood first."
+   "reason": "Bicameral describes the two-chamber structure of a legislative branch."
   },
   {
    "prereq": "legislative_branch",
-   "dependent": "veto_power",
-   "reason": "Veto rejects legislation passed by the legislative branch."
-  },
-  {
-   "prereq": "legislative_election",
-   "dependent": "congressional_district",
-   "reason": "Districts function as the electoral units for choosing legislators."
+   "dependent": "state_representation",
+   "reason": "Must know the legislature as the body where state representation occurs."
   },
   {
    "prereq": "legislative_election",
    "dependent": "legislative_responsiveness",
-   "reason": "Provides the electoral accountability mechanism that incentivizes legislators to respond to voters."
+   "reason": "Must understand electoral accountability as the mechanism driving responsiveness."
+  },
+  {
+   "prereq": "legislative_process",
+   "dependent": "veto_power",
+   "reason": "Veto occurs as a step after a bill passes and before it becomes law."
+  },
+  {
+   "prereq": "migration_motive",
+   "dependent": "colonial_history",
+   "reason": "Explains why Europeans left to establish colonies."
   },
   {
    "prereq": "military_service",
    "dependent": "memorial_day",
-   "reason": "Memorial Day honors those who died in military service."
+   "reason": "Memorial Day honors military personnel who died in service, requiring understanding of military service."
   },
   {
    "prereq": "military_service",
    "dependent": "military_draft",
-   "reason": "A draft is compulsory induction into military service, so the concept of service must be understood first."
+   "reason": "A draft is compulsory induction into military service, so service must be understood first."
   },
   {
    "prereq": "military_service",
    "dependent": "veterans_day",
-   "reason": "Veterans Day honors veterans, so learners must understand military service to know who is being honored."
+   "reason": "Veterans Day honors military veterans, so learner must understand what military service is."
   },
   {
    "prereq": "national_capital",
    "dependent": "district_of_columbia_status",
-   "reason": "DC's special status is defined by its role as the national capital."
-  },
-  {
-   "prereq": "national_capital",
-   "dependent": "state_capital",
-   "reason": "Understanding what a capital city is provides the core concept needed for state-level capitals."
-  },
-  {
-   "prereq": "national_symbol",
-   "dependent": "u_s_national_motto",
-   "reason": "The national motto is a type of national symbol, so the category must be understood first"
+   "reason": "DC is the U.S. national capital, which is the basis for its special federal district designation."
   },
   {
    "prereq": "natural_right",
-   "dependent": "unalienable_right",
-   "reason": "Unalienable rights are the subset of natural rights that cannot be surrendered, so natural rights must be understood first."
+   "dependent": "individual_right",
+   "reason": "Individual rights stem from the idea of natural rights inherent to all people"
   },
   {
    "prereq": "naturalization",
    "dependent": "derived_citizenship",
-   "reason": "Explains how parents become citizens through which children can derive citizenship."
+   "reason": "Derived citizenship is automatic citizenship through a parent's naturalization or U.S. citizen status, so naturalization must be understood first."
   },
   {
    "prereq": "naturalization",
    "dependent": "oath_of_allegiance",
-   "reason": "The oath is taken as the final step of naturalization to become a U.S. citizen."
+   "reason": "The Oath of Allegiance is the final step taken to complete naturalization as a U.S. citizen."
   },
   {
    "prereq": "persian_gulf_war_cause",
    "dependent": "war_in_iraq",
-   "reason": "The earlier U.S.-Iraq conflict over Kuwait explains continued tensions with Saddam Hussein leading to 2003."
+   "reason": "Explains prior U.S.-Iraq conflict and unresolved tensions leading to the 2003 invasion."
   },
   {
    "prereq": "popular_sovereignty",
-   "dependent": "representative_democracy",
-   "reason": "Establishes that power comes from the people who delegate it to elected representatives."
+   "dependent": "self_government",
+   "reason": "Self-government requires understanding that political authority comes from the people."
   },
   {
    "prereq": "population_based_representation",
    "dependent": "congressional_district",
-   "reason": "Districts are apportioned and redrawn to provide roughly equal population per representative."
+   "reason": "Districts implement population-based representation with roughly equal population per district."
   },
   {
    "prereq": "population_based_representation",
    "dependent": "great_compromise",
-   "reason": "Large-state demand for population-based representation was one side resolved by the compromise"
+   "reason": "The compromise adopted population-based representation in the House to satisfy large states."
   },
   {
    "prereq": "powers_of_congress",
    "dependent": "federal_taxe",
-   "reason": "Must understand Congress has power to lay and collect taxes."
-  },
-  {
-   "prereq": "powers_of_congress",
-   "dependent": "naturalization",
-   "reason": "Congress has constitutional power to establish uniform naturalization rules"
+   "reason": "Congress holds the power to lay and collect taxes, which directly creates federal taxes."
   },
   {
    "prereq": "pre_columbian_era",
    "dependent": "colonial_history",
-   "reason": "Establishes what existed in the Americas before European contact to understand colonization."
+   "reason": "Describes the Americas before European colonization began."
+  },
+  {
+   "prereq": "presidential_election_process",
+   "dependent": "u_s_president",
+   "reason": "Must understand how presidents are chosen before studying the presidents themselves."
+  },
+  {
+   "prereq": "presidential_power",
+   "dependent": "veto_power",
+   "reason": "Veto is a core presidential power, so the broader powers must be understood first."
+  },
+  {
+   "prereq": "presidential_succession",
+   "dependent": "vice_presidency",
+   "reason": "A core role of the vice presidency is first in line in presidential succession."
   },
   {
    "prereq": "purpose_of_the_u_s_constitution",
-   "dependent": "branches_of_government",
-   "reason": "The Constitution establishes the government framework that creates the three branches."
+   "dependent": "federalist_paper",
+   "reason": "Knowing why the Constitution was created provides context for the Papers' arguments."
   },
   {
    "prereq": "racial_discrimination",
-   "dependent": "civil_rights_movement",
-   "reason": "The movement cannot be understood without understanding the discrimination it opposed."
-  },
-  {
-   "prereq": "racial_discrimination",
-   "dependent": "martin_luther_king_jr",
-   "reason": "MLK Jr.'s leadership was a direct response to segregation and discrimination against Black Americans."
+   "dependent": "racial_equality",
+   "reason": "Racial equality is defined as the absence and remedy of racial discrimination."
   },
   {
    "prereq": "racial_equality",
-   "dependent": "martin_luther_king_jr",
-   "reason": "His speeches and activism cannot be understood without the goal of equal rights regardless of race."
+   "dependent": "civil_rights_movement",
+   "reason": "The movement's goal was achieving racial equality under law."
   },
   {
    "prereq": "reconstruction_era",
    "dependent": "14th_amendment",
-   "reason": "The 14th Amendment was enacted during Reconstruction to secure rights of formerly enslaved people"
-  },
-  {
-   "prereq": "reconstruction_era",
-   "dependent": "civil_rights_movement",
-   "reason": "Failure of Reconstruction led to Jim Crow segregation that the movement fought."
+   "reason": "The 14th Amendment was enacted during Reconstruction to redefine citizenship and protect freed people."
   },
   {
    "prereq": "representative_democracy",
-   "dependent": "legislative_election",
-   "reason": "Legislative elections are the process by which voters choose representatives in a representative democracy."
+   "dependent": "electoral_college",
+   "reason": "The Electoral College is indirect election through electors, requiring understanding of representative democracy."
+  },
+  {
+   "prereq": "representative_democracy",
+   "dependent": "legislative_responsiveness",
+   "reason": "Must understand representatives act on behalf of citizens to grasp responsiveness."
   },
   {
    "prereq": "representative_democracy",
    "dependent": "u_s_democracy",
-   "reason": "U.S. democracy is an instance of representative democracy via elected officials."
+   "reason": "U.S. democracy is defined as a representative democracy with elected officials."
   },
   {
    "prereq": "republic",
    "dependent": "pledge_of_allegiance",
-   "reason": "The pledge is to 'the Republic for which it stands,' so the idea of a republic must be understood first."
+   "reason": "The Pledge pledges allegiance to the Republic for which the flag stands"
   },
   {
    "prereq": "republic",
    "dependent": "u_s_democracy",
-   "reason": "U.S. democracy functions as a republic with rule of law and representation."
+   "reason": "U.S. democracy operates as a republic with rule of law and no monarch."
   },
   {
    "prereq": "rule_of_law",
    "dependent": "limited_government",
-   "reason": "Limited government requires that government power is constrained by law, which presupposes understanding rule of law."
+   "reason": "Limited government requires understanding that rulers are constrained by law."
   },
   {
    "prereq": "self_government",
    "dependent": "representative_democracy",
-   "reason": "Introduces the principle of people governing themselves that representative democracy implements."
+   "reason": "Must understand the idea of people governing themselves to understand doing so via elected representatives."
   },
   {
    "prereq": "separation_of_power",
    "dependent": "checks_and_balance",
-   "reason": "Checks and balances is the mechanism that enforces separated powers, so learner must understand separation of powers first."
-  },
-  {
-   "prereq": "separation_of_power",
-   "dependent": "executive_branch",
-   "reason": "Explains the division of authority that creates a distinct executive."
+   "reason": "Must understand divided powers before learning how those powers check and balance each other."
   },
   {
    "prereq": "separation_of_power",
    "dependent": "judicial_branch",
-   "reason": "Must understand power is divided among branches to grasp the judicial role."
+   "reason": "Explains why judicial power is divided from legislative and executive power."
   },
   {
    "prereq": "separation_of_power",
    "dependent": "legislative_branch",
-   "reason": "Establishes the principle of dividing power that creates a separate legislative branch."
+   "reason": "Must understand power is divided into distinct branches to grasp the legislative's separate law-making role."
+  },
+  {
+   "prereq": "separation_of_power",
+   "dependent": "structure_of_government",
+   "reason": "Structure implements divided powers so the division principle must be understood first"
   },
   {
    "prereq": "september_11_attack",
    "dependent": "war_on_terror",
-   "reason": "The War on Terror was launched as a direct U.S. response to the September 11 attacks."
+   "reason": "The September 11 attacks directly triggered the U.S. launch of the War on Terror."
   },
   {
    "prereq": "slavery_in_the_united_state",
-   "dependent": "american_civil_war",
-   "reason": "The war was fought primarily over the institution of slavery in the South versus the North."
+   "dependent": "abraham_lincoln",
+   "reason": "Lincoln's Civil War leadership and abolition significance require prior slavery context"
   },
   {
    "prereq": "slavery_in_the_united_state",
-   "dependent": "martin_luther_king_jr",
-   "reason": "Provides the historical origin of the systemic racial inequality he fought against."
+   "dependent": "civil_rights_movement",
+   "reason": "Slavery created the historical system of racial oppression the movement confronted."
   },
   {
-   "prereq": "speaker_of_the_house",
-   "dependent": "presidential_succession",
-   "reason": "Speaker is next in line after the Vice President in the succession order."
-  },
-  {
-   "prereq": "state_capital",
-   "dependent": "u_s_territory_capital",
-   "reason": "Must understand U.S. subnational capitals as the direct model for territory capitals."
+   "prereq": "state_power",
+   "dependent": "amendment_process",
+   "reason": "Ratification requires approval by the states, so state authority must be understood first."
   },
   {
    "prereq": "state_power",
    "dependent": "state_governor",
-   "reason": "Governors exercise authority reserved to states, so learners must understand state powers first."
+   "reason": "Governor authority derives from reserved state powers, so state powers must be understood first."
   },
   {
    "prereq": "state_power",
    "dependent": "supremacy_clause",
-   "reason": "Learners must understand that states have lawmaking powers that can conflict with federal law."
+   "reason": "Learners must know states have separate laws and powers that can conflict with federal law."
   },
   {
    "prereq": "state_power",
    "dependent": "tenth_amendment",
-   "reason": "Tenth Amendment reserves undelegated powers to the states."
-  },
-  {
-   "prereq": "state_representation",
-   "dependent": "electoral_college",
-   "reason": "Electors are allocated to states based on their congressional representation."
+   "reason": "The amendment reserves undelegated powers to the states respectively."
   },
   {
    "prereq": "state_representation",
    "dependent": "equal_state_representation",
-   "reason": "Must understand general state representation before understanding its equal form."
+   "reason": "Must understand general concept of states having representation before equal apportionment"
   },
   {
    "prereq": "state_representation",
    "dependent": "population_based_representation",
-   "reason": "It establishes the general idea of states having representatives that a population basis then quantifies."
+   "reason": "Learner must understand the general concept of state representation before learning the population-based method."
   },
   {
    "prereq": "structure_of_government",
-   "dependent": "legislative_branch",
-   "reason": "Provides the overall organizational context in which the legislative branch operates."
+   "dependent": "executive_branch",
+   "reason": "Must understand overall organization of government to locate the executive branch."
   },
   {
    "prereq": "superpower_rivalry",
    "dependent": "containment_policy",
-   "reason": "Containment aimed to check Soviet power in the U.S.-USSR bipolar rivalry."
-  },
-  {
-   "prereq": "superpower_rivalry",
-   "dependent": "domino_theory",
-   "reason": "Explains U.S. fear that Soviet-aligned influence would expand from one nation to neighbors."
+   "reason": "Explains the U.S. vs. Soviet competition motivating a containment strategy."
   },
   {
    "prereq": "supreme_court",
    "dependent": "judicial_branch_leadership",
-   "reason": "Judicial leadership is exercised through the Chief Justice heading the Supreme Court."
+   "reason": "Must know the Supreme Court as the highest court headed by the branch leader."
   },
   {
    "prereq": "supreme_court",
    "dependent": "supreme_court_structure",
-   "reason": "Must know what the Supreme Court is before learning how it is structured."
+   "reason": "Learner must know what the Supreme Court is and its role before learning how it is structured."
   },
   {
    "prereq": "supreme_court_structure",
    "dependent": "supreme_court_membership",
-   "reason": "Structure defines the size and Chief versus Associate roles that membership fills."
+   "reason": "Must know the Court's size and chief vs associate roles to understand its membership."
   },
   {
-   "prereq": "thirteen_colony",
-   "dependent": "benjamin_franklin",
-   "reason": "Franklin's Boston birth and Philadelphia career require knowing the colonies context."
+   "prereq": "tenth_amendment",
+   "dependent": "exclusive_federal_power",
+   "reason": "Establishes delegated vs reserved powers distinction underlying exclusive federal powers"
   },
   {
    "prereq": "thirteen_colony",
    "dependent": "british_colonial_grievance",
-   "reason": "Must know the British colonies in America that held grievances against Britain."
+   "reason": "Identifies the colonies that held grievances against Britain."
+  },
+  {
+   "prereq": "thirteen_original_colony",
+   "dependent": "constitutional_convention",
+   "reason": "The Convention was a meeting of delegates from these states to form a common government."
+  },
+  {
+   "prereq": "thirteen_original_colony",
+   "dependent": "louisiana_purchase",
+   "reason": "Defines the original U.S. extent before the purchase doubled its size."
   },
   {
    "prereq": "thirteen_original_colony",
    "dependent": "u_s_flag_symbolism",
-   "reason": "The 13 stripes directly represent the thirteen original colonies."
+   "reason": "Stripes symbolize the 13 original colonies, so colonies must be understood first."
   },
   {
    "prereq": "thirteen_original_colony",
    "dependent": "u_s_territorial_expansion",
-   "reason": "Defines the original territorial baseline from which expansion occurred."
+   "reason": "The original colonies define the starting boundaries that later expansion grew from."
   },
   {
    "prereq": "thomas_jefferson",
    "dependent": "louisiana_purchase",
-   "reason": "Jefferson was the president who authorized and negotiated the purchase."
+   "reason": "He was the president who authorized and completed the 1803 purchase."
   },
   {
    "prereq": "transatlantic_slave_trade",
    "dependent": "slavery_in_the_united_state",
-   "reason": "Explains the forced transport of Africans to North America that created slavery in the United States."
+   "reason": "Explains how enslaved Africans were brought to the colonies that became the United States"
   },
   {
-   "prereq": "u_s_citizenship_right",
-   "dependent": "voting_right",
-   "reason": "Voting is a fundamental right of U.S. citizens."
+   "prereq": "u_s_congress",
+   "dependent": "amendment_process",
+   "reason": "Proposals require a two-thirds vote of Congress, so Congress must be understood first."
   },
   {
    "prereq": "u_s_congress",
    "dependent": "house_of_representative",
-   "reason": "The House is one chamber of Congress, so Congress must be understood first."
-  },
-  {
-   "prereq": "u_s_congress",
-   "dependent": "legislative_election",
-   "reason": "U.S. legislative elections elect members of the U.S. Congress as the national legislature."
+   "reason": "The House is one of the two chambers that make up Congress."
   },
   {
    "prereq": "u_s_congress",
    "dependent": "legislative_process",
-   "reason": "Identifies the federal institution where bills are introduced, debated, and voted on."
+   "reason": "Identifies the specific body that introduces, debates, and votes in the process."
   },
   {
    "prereq": "u_s_congress",
    "dependent": "powers_of_congress",
-   "reason": "Identifies the institution whose powers are being studied"
+   "reason": "Identifies the institution whose enumerated powers are being studied"
   },
   {
    "prereq": "u_s_congress",
    "dependent": "u_s_senate",
-   "reason": "The Senate is one chamber of Congress, so the overall Congress must be understood first."
+   "reason": "The Senate is one chamber of the U.S. Congress, so Congress must be understood first."
   },
   {
    "prereq": "u_s_constitution",
-   "dependent": "amendment_process",
-   "reason": "The amendment process is the method for changing the U.S. Constitution, so the Constitution must be understood first."
+   "dependent": "judicial_branch",
+   "reason": "Establishes the judicial branch and is the source of its authority."
   },
   {
    "prereq": "u_s_constitution",
-   "dependent": "exclusive_federal_power",
-   "reason": "The Constitution is the source that delegates enumerated powers to the federal government."
+   "dependent": "legislative_branch",
+   "reason": "The Constitution establishes and defines the legislative branch, so it must be understood first."
   },
   {
    "prereq": "u_s_constitution",
    "dependent": "purpose_of_the_u_s_constitution",
-   "reason": "Must know what the Constitution is before understanding its purpose."
+   "reason": "Must know what the Constitution is before learning why it was created."
+  },
+  {
+   "prereq": "u_s_constitution",
+   "dependent": "supremacy_clause",
+   "reason": "The Supremacy Clause is an Article VI provision of the U.S. Constitution."
+  },
+  {
+   "prereq": "u_s_constitution",
+   "dependent": "tenth_amendment",
+   "reason": "The amendment defines powers not delegated by the Constitution to the United States."
   },
   {
    "prereq": "u_s_constitution",
    "dependent": "u_s_constitution_ratification",
-   "reason": "Ratification was the process of approving the U.S. Constitution itself."
+   "reason": "Learner must know the document being debated and approved to understand its ratification."
   },
   {
-   "prereq": "u_s_constitution_ratification",
-   "dependent": "federalist_paper",
-   "reason": "Papers were written to persuade states during the ratification debate."
+   "prereq": "u_s_court_system",
+   "dependent": "judicial_tenure",
+   "reason": "Learner must understand the court system to contextualize which judges tenure applies to."
   },
   {
    "prereq": "u_s_court_system",
    "dependent": "supreme_court",
-   "reason": "The Supreme Court is the final appellate court in the U.S. court system"
+   "reason": "The Supreme Court sits at the top of the U.S. court system hierarchy."
   },
   {
    "prereq": "u_s_federal_holiday",
    "dependent": "memorial_day",
-   "reason": "Memorial Day is a federal holiday, so the concept of federal holidays must be understood first."
+   "reason": "Memorial Day is a U.S. federal holiday, so the category must be understood first."
   },
   {
    "prereq": "u_s_federal_holiday",
    "dependent": "veterans_day",
-   "reason": "Veterans Day is a federal holiday, so learners must understand federal holidays to know what kind of observance it is."
-  },
-  {
-   "prereq": "u_s_flag",
-   "dependent": "pledge_of_allegiance",
-   "reason": "The pledge is a vow of loyalty to the flag, so the flag must be understood first."
+   "reason": "Veterans Day is a U.S. federal holiday, so learner must understand the federal holidays category."
   },
   {
    "prereq": "u_s_flag",
    "dependent": "u_s_flag_symbolism",
-   "reason": "Must know the flag's design before interpreting what its elements symbolize."
+   "reason": "Must know the flag's stars and stripes design before learning what they symbolize."
+  },
+  {
+   "prereq": "u_s_flag_symbolism",
+   "dependent": "pledge_of_allegiance",
+   "reason": "Understanding the Pledge requires knowing what the flag represents"
+  },
+  {
+   "prereq": "u_s_founding_history",
+   "dependent": "united_states_military_history",
+   "reason": "Provides Revolutionary origins and formation of the U.S. military."
   },
   {
    "prereq": "u_s_national_holiday",
-   "dependent": "u_s_federal_holiday",
-   "reason": "Federal holidays are the federally designated subset of U.S. national holidays."
+   "dependent": "memorial_day",
+   "reason": "Memorial Day is a national holiday commemorated across the U.S., so that concept is prerequisite."
   },
   {
    "prereq": "u_s_presidency",
    "dependent": "abraham_lincoln",
-   "reason": "Lincoln was a U.S. president, so the role and powers of the presidency must be understood first."
+   "reason": "Lincoln is defined as the 16th president, so the office must be understood first"
   },
   {
    "prereq": "u_s_presidency",
    "dependent": "electoral_college",
-   "reason": "The Electoral College exists to elect the President and Vice President."
+   "reason": "The Electoral College exists to select the president, so the office must be understood first."
   },
   {
    "prereq": "u_s_presidency",
    "dependent": "presidential_cabinet",
-   "reason": "The Cabinet exists to advise the president, so the presidency role must be understood first."
+   "reason": "Cabinet members serve as advisors to the president."
   },
   {
    "prereq": "u_s_presidency",
    "dependent": "presidential_power",
-   "reason": "Must know what the presidency is before learning its specific powers."
+   "reason": "Defines the presidential office before learning its specific powers."
   },
   {
    "prereq": "u_s_presidency",
    "dependent": "u_s_cabinet",
-   "reason": "The Cabinet advises and serves the president, so the presidency must be understood first."
-  },
-  {
-   "prereq": "u_s_presidency",
-   "dependent": "u_s_president",
-   "reason": "U.S. presidents are the individuals who held the U.S. presidency office, so the office must be understood first."
+   "reason": "The Cabinet functions as the President's advisory group of department heads."
   },
   {
    "prereq": "u_s_presidency",
    "dependent": "u_s_presidential_term",
-   "reason": "Must understand what the presidency is before learning the length of its term."
+   "reason": "Must know what the presidency office is before learning how long its term lasts"
   },
   {
    "prereq": "u_s_presidency",
-   "dependent": "vice_presidency",
-   "reason": "The vice presidency is defined as second to and backup for the presidency"
+   "dependent": "vice_president",
+   "reason": "Vice President is defined as second to and backup for the President."
+  },
+  {
+   "prereq": "u_s_president",
+   "dependent": "james_madison",
+   "reason": "Must understand the presidency to understand Madison as the 4th president."
   },
   {
    "prereq": "u_s_presidential_term",
    "dependent": "22nd_amendment",
-   "reason": "The amendment sets a two-term limit, so learner must understand what a presidential term is."
+   "reason": "The amendment limits number of terms served, requiring understanding of what a presidential term is."
   },
   {
    "prereq": "u_s_senate",
    "dependent": "congressional_term",
-   "reason": "Must know the Senate chamber to understand its distinct 6-year term."
+   "reason": "Must know the Senate as the other chamber of Congress to understand its 6-year term."
   },
   {
    "prereq": "u_s_senate",
    "dependent": "equal_state_representation",
-   "reason": "Must know the Senate is the legislative body where equal state representation applies."
+   "reason": "Must know the Senate is the chamber where equal state representation applies"
+  },
+  {
+   "prereq": "u_s_senate",
+   "dependent": "senate_term_length",
+   "reason": "Must know what the Senate is before learning how long its members serve."
+  },
+  {
+   "prereq": "u_s_senate",
+   "dependent": "u_s_senate_structure",
+   "reason": "Must know what the Senate is before understanding its internal structure."
   },
   {
    "prereq": "u_s_state",
    "dependent": "district_of_columbia_status",
-   "reason": "Learner must contrast states with a federal district to understand DC is not a state."
+   "reason": "DC status is defined in contrast to states as a non-state without full state rights."
   },
   {
    "prereq": "u_s_state",
-   "dependent": "new_york_geography",
-   "reason": "Must understand what a U.S. state is to understand New York as a state."
+   "dependent": "interstate_highway_system",
+   "reason": "Interstate means connecting states, so learner must know what U.S. states are first."
   },
   {
    "prereq": "u_s_state",
    "dependent": "state_capital",
-   "reason": "State capitals are defined as the capitals of the U.S. states, so the states must be understood first."
+   "reason": "State capitals are defined as the capital cities of the U.S. states, so states must be understood first."
   },
   {
    "prereq": "u_s_state",
    "dependent": "state_governor",
-   "reason": "Governors are the leaders of individual states, so learners must know what U.S. states are first."
+   "reason": "A governor leads an individual U.S. state, so learners must know what states are first."
   },
   {
    "prereq": "u_s_state",
    "dependent": "state_representation",
-   "reason": "Must know what U.S. states are before understanding how they are represented."
+   "reason": "Must know what states are to understand how they are represented."
   },
   {
    "prereq": "u_s_state",
    "dependent": "u_s_flag_symbolism",
-   "reason": "The 50 stars directly represent the 50 current states."
+   "reason": "Stars symbolize the 50 states, so states must be understood first."
+  },
+  {
+   "prereq": "u_s_state",
+   "dependent": "u_s_landmark",
+   "reason": "Landmarks are located and described by the state they are in"
   },
   {
    "prereq": "u_s_territorial_expansion",
-   "dependent": "american_civil_war",
-   "reason": "Disputes over extending slavery into new western territories precipitated sectional conflict."
+   "dependent": "19th_century_war",
+   "reason": "Westward expansion created the territorial disputes behind most 19th-century U.S. wars."
   },
   {
    "prereq": "unalienable_right",
    "dependent": "individual_right",
-   "reason": "Unalienable rights explain why individual rights cannot be taken away or surrendered."
+   "reason": "Unalienable rights define which individual rights cannot be taken away"
   },
   {
    "prereq": "united_states_geography",
-   "dependent": "louisiana_purchase",
-   "reason": "Geography provides context for the location and scale of the Louisiana territory."
+   "dependent": "interstate_highway_system",
+   "reason": "The system is a national network spanning the country, requiring understanding of U.S. geography."
   },
   {
    "prereq": "united_states_geography",
    "dependent": "new_york_geography",
-   "reason": "Must understand broader U.S. geographic context to locate and situate New York."
+   "reason": "New York is a state within the U.S., so overall U.S. geography must be understood first"
+  },
+  {
+   "prereq": "united_states_geography",
+   "dependent": "u_s_landmark",
+   "reason": "Landmarks are physical locations that require U.S. geographic context to identify"
   },
   {
    "prereq": "united_states_geography",
    "dependent": "u_s_territorial_expansion",
-   "reason": "Provides the spatial context needed to understand territorial growth."
-  },
-  {
-   "prereq": "united_states_geography",
-   "dependent": "u_s_territory_capital",
-   "reason": "Must know the geographic context and location of U.S. territories."
-  },
-  {
-   "prereq": "vice_presidency",
-   "dependent": "vice_president",
-   "reason": "The vice-presidency as an office defines the role held by the Vice President."
+   "reason": "Knowledge of North American geography is needed to understand directions and areas of expansion."
   },
   {
    "prereq": "vice_president",
    "dependent": "presidential_succession",
-   "reason": "Vice President is first in line to assume the presidency upon vacancy."
+   "reason": "The Vice President is first in the line of succession and assumes the presidency."
   },
   {
    "prereq": "voting_right",
    "dependent": "fifteenth_amendment",
-   "reason": "The Fifteenth Amendment prohibits denying voting rights based on race, so voting rights must be understood first."
+   "reason": "The 15th Amendment protects voting rights, so the general right to vote must be understood first"
   },
   {
    "prereq": "voting_right",
    "dependent": "presidential_election_process",
-   "reason": "Learner must know who is eligible to vote to understand participation in the election."
+   "reason": "Must know who is eligible to vote to understand the election process."
   },
   {
    "prereq": "voting_right",
    "dependent": "women_s_rights_movement",
-   "reason": "A central goal was securing equal voting rights, requiring prior understanding of what voting rights are."
-  },
-  {
-   "prereq": "voting_right",
-   "dependent": "women_s_suffrage",
-   "reason": "Women's suffrage is the extension of voting rights to women"
+   "reason": "A central goal was securing the vote, requiring prior understanding of what voting rights are."
   },
   {
    "prereq": "wall_street_crash",
    "dependent": "great_depression",
-   "reason": "The 1929 stock market crash triggered the onset of the Great Depression."
+   "reason": "The 1929 stock market crash triggered the onset of the Great Depression"
   },
   {
    "prereq": "war_on_terror",
    "dependent": "war_in_afghanistan",
-   "reason": "The Afghanistan war was launched as a central operation of the broader War on Terror."
+   "reason": "The War in Afghanistan was conducted as the central early operation of the broader War on Terror."
   },
   {
    "prereq": "war_on_terror",
    "dependent": "war_in_iraq",
-   "reason": "The Iraq invasion was launched as a major operation within the U.S.-led War on Terror."
+   "reason": "Provides the broader campaign and doctrine under which the War in Iraq was launched."
   },
   {
    "prereq": "women_s_rights_movement",
-   "dependent": "suffragist_leader",
-   "reason": "Suffragist leaders acted within the broader women's rights movement that gives their work context."
+   "dependent": "women_s_suffrage",
+   "reason": "Suffrage was a central campaign within the broader women's rights movement"
+  },
+  {
+   "prereq": "women_s_suffrage",
+   "dependent": "19th_amendment",
+   "reason": "The 19th Amendment legalized women's suffrage, so learners must understand what women's suffrage means."
   },
   {
    "prereq": "women_s_suffrage",
    "dependent": "suffragist_leader",
-   "reason": "Suffragist leaders are defined by leading the campaign for women's suffrage."
+   "reason": "Suffragist leaders campaigned for women's suffrage, so that goal must be understood first."
   },
   {
    "prereq": "world_war_ii",
    "dependent": "allied_power",
-   "reason": "The Allied Powers were the coalition that fought in World War II, so that war must be understood first."
+   "reason": "Allied Powers were the coalition that fought in World War II"
   },
   {
    "prereq": "world_war_ii",
    "dependent": "axis_power",
-   "reason": "Axis Powers were the Germany-Italy-Japan coalition that fought in World War II."
+   "reason": "The Axis Powers are defined as the Germany-Italy-Japan coalition in World War II."
   },
   {
    "prereq": "world_war_ii",
    "dependent": "cold_war",
-   "reason": "Cold War emerged directly from the post-WWII power vacuum and US-Soviet split."
+   "reason": "Cold War emerged directly from the aftermath and U.S.-Soviet alliance breakdown of WWII."
   },
   {
    "prereq": "world_war_ii",
    "dependent": "nuclear_warfare",
-   "reason": "Nuclear weapons were first developed and used in combat during World War II."
+   "reason": "Nuclear weapons were first developed and used during World War II."
   }
- ]
+ ],
+ "retired": {}
 }

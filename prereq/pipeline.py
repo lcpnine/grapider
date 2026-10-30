@@ -32,13 +32,13 @@ EXTRACT_SYSTEM = ('Extract the 1 to 3 core study concepts a learner must know to
                   'Reply with JSON only: {"concepts": ["..."]}.')
 MERGE_SYSTEM = ('Two concept labels come from the same study material. Decide if they mean the same concept. '
                 'Reply with JSON only: {"same": true or false}.')
-AUTO_MERGE, ASK_MERGE = 0.92, 0.80
+ASK_MERGE = 0.80
 DEFAULT_EDGE_PROMPT = "e2_strict"
 
 
-def pick_prereqs(target, names, prompt_id, ledger=None):
+def pick_prereqs(target, names, prompt_id, ledger=None, reverse=False):
     """Return [(prereq_name, reason)] chosen by Muse, limited to the given names."""
-    others = sorted(n for n in names if n != target)
+    others = sorted((n for n in names if n != target), reverse=reverse)
     user = f'Target: "{target}"\nConcepts:\n' + "\n".join(f"- {n}" for n in others)
     out = ask_json(EDGE_PROMPTS[prompt_id], user, ledger)
     known = {canon(n): n for n in others}
@@ -69,14 +69,26 @@ def break_cycles(dag, judge_cycle=None):
         removed.append(edge)
 
 
-def build_edges(dag, prompt_id=DEFAULT_EDGE_PROMPT, ledger=None, targets=None, judge_cycle=None):
-    """Ask for parents of each target, then enforce the DAG rules. Returns a small report."""
+def build_edges(dag, prompt_id=DEFAULT_EDGE_PROMPT, ledger=None, targets=None, judge_cycle=None,
+                keep=None, on_conflict=None, reverse_candidates=False):
+    """Ask for parents of each target, then enforce the DAG rules. Returns a small report.
+
+    on_conflict(prereq, dependent, reason) decides a proposal that reverses an edge already in the
+    graph: True replaces that edge. keep(prereq, dependent) can reject any other proposal.
+    """
     names = {a["name"]: n for n, a in dag.g.nodes(data=True)}
     targets = list(names) if targets is None else targets
-    picked = pmap(lambda t: pick_prereqs(t, list(names), prompt_id, ledger), targets)
+    picked = pmap(lambda t: pick_prereqs(t, list(names), prompt_id, ledger, reverse_candidates), targets)
     for target, picks in zip(targets, picked):
         for name, reason in picks:
-            dag.add_edge(names[name], names[target], reason)
+            prereq, dependent = names[name], names[target]
+            if on_conflict and dag.g.has_edge(dependent, prereq):
+                if not on_conflict(prereq, dependent, reason):
+                    continue
+                dag.g.remove_edge(dependent, prereq)
+            elif keep and not keep(prereq, dependent):
+                continue
+            dag.add_edge(prereq, dependent, reason)
     cycles = break_cycles(dag, judge_cycle)
     reduced = dag.transitive_reduce()
     return dict(cycle_edges_removed=len(cycles), redundant_edges_removed=len(reduced))
@@ -87,8 +99,11 @@ def extract_concepts(question, ledger=None):
     return [str(c).strip() for c in out.get("concepts", []) if str(c).strip()]
 
 
-def match_concept(name, existing, ledger=None):
-    """Return the id this name merges into, or None. Only close-but-unsure pairs reach the LLM."""
+def match_concept(name, existing, ledger=None, anomalies=None):
+    """Return the id this name merges into, or None. Only exact matches merge without asking.
+
+    Similarity cannot decide a merge alone: World War I and World War II score 0.97.
+    """
     cid = canon(name)
     if cid in existing:
         return cid
@@ -96,22 +111,22 @@ def match_concept(name, existing, ledger=None):
         return None
     best = max(sorted(existing), key=lambda e: difflib.SequenceMatcher(None, cid, e).ratio())
     score = difflib.SequenceMatcher(None, cid, best).ratio()
-    if score >= AUTO_MERGE:
-        return best
     if score >= ASK_MERGE:
+        if anomalies is not None:
+            anomalies["ambiguous_merge"] += 1
         out = ask_json(MERGE_SYSTEM, f'A: "{name}"\nB: "{existing[best]}"', ledger)
         return best if out.get("same") else None
     return None
 
 
-def add_questions(dag, questions, version, ledger=None):
+def add_questions(dag, questions, version, ledger=None, anomalies=None):
     """Extract concepts and attach provenance. Returns the ids of nodes these questions touch."""
     extracted = pmap(lambda q: extract_concepts(q["text"], ledger), questions)
     names = {n: a["name"] for n, a in dag.g.nodes(data=True)}
     touched = set()
     for q, concepts in zip(questions, extracted):
         for concept in concepts:
-            cid = match_concept(concept, names, ledger) or canon(concept)
+            cid = match_concept(concept, names, ledger, anomalies) or canon(concept)
             if not cid:
                 continue
             names.setdefault(cid, concept)
@@ -120,11 +135,11 @@ def add_questions(dag, questions, version, ledger=None):
     return touched
 
 
-def build_from_questions(questions, version, prompt_id=DEFAULT_EDGE_PROMPT, ledger=None):
+def build_from_questions(questions, version, prompt_id=DEFAULT_EDGE_PROMPT, ledger=None, reverse_candidates=False):
     """Full document pipeline: extract -> match -> edges -> validate."""
     dag = PrereqDAG()
     add_questions(dag, questions, version, ledger)
-    report = build_edges(dag, prompt_id, ledger)
+    report = build_edges(dag, prompt_id, ledger, reverse_candidates=reverse_candidates)
     report["validation"] = {k: len(v) for k, v in dag.validate().items()}
     return dag, report
 

@@ -9,11 +9,17 @@ MAX_PARENTS = 3
 class PrereqDAG:
     def __init__(self):
         self.g = nx.DiGraph()
+        self.retired = {}
 
     def add_node(self, node_id, name=None, provenance=(), valid_versions=()):
-        """Add a node, or merge provenance and versions into an existing one."""
+        """Add a node, or merge provenance and versions into an existing one.
+
+        A retired concept that comes back keeps its version history, but not its old edges.
+        """
         if node_id not in self.g:
-            self.g.add_node(node_id, name=name or node_id, provenance=set(), valid_versions=set())
+            prior = self.retired.pop(node_id, {})
+            self.g.add_node(node_id, name=name or prior.get("name") or node_id, provenance=set(),
+                            valid_versions=set(prior.get("valid_versions", ())))
         attrs = self.g.nodes[node_id]
         attrs["provenance"] |= set(provenance)
         attrs["valid_versions"] |= set(valid_versions)
@@ -29,6 +35,16 @@ class PrereqDAG:
         if prereq == dependent:
             raise ValueError(f"self-loop on {prereq}")
         self.g.add_edge(prereq, dependent, reason=reason)
+
+    def retire(self, node_id, version):
+        """Take a node out of the active graph, and keep a record of what it was."""
+        attrs = self.g.nodes[node_id]
+        self.retired[node_id] = dict(
+            name=attrs["name"], provenance=sorted(attrs["provenance"]),
+            valid_versions=sorted(attrs["valid_versions"]), retired_in=version,
+            parents=sorted(self.g.predecessors(node_id)), children=sorted(self.g.successors(node_id)),
+        )
+        self.g.remove_node(node_id)
 
     def validate(self):
         """Return {check: violations}. Every check is present; empty means it passed."""
@@ -70,6 +86,7 @@ class PrereqDAG:
             ],
             edges=[dict(prereq=u, dependent=v, reason=a["reason"])
                    for u, v, a in sorted(self.g.edges(data=True))],
+            retired=self.retired,
         )
 
     @classmethod
@@ -79,6 +96,7 @@ class PrereqDAG:
             dag.add_node(n["id"], n["name"], n["provenance"], n["valid_versions"])
         for e in data["edges"]:
             dag.add_edge(e["prereq"], e["dependent"], e["reason"])
+        dag.retired = json.loads(json.dumps(data.get("retired", {})))
         return dag
 
     def save(self, path):

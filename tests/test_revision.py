@@ -1,5 +1,11 @@
-from prereq.civics import diff_questions, parse_questions
+import zipfile
+
+import pytest
+
+from prereq import pipeline, revision
+from prereq.civics import diff_questions, docx_text, load_ham, parse_ham, parse_questions
 from prereq.dag import PrereqDAG
+from prereq.llm import Ledger
 from prereq.revision import gold_affected, plan_violations, retire_node, revise
 
 
@@ -43,13 +49,14 @@ def test_diff_classifies_all_four_cases():
 def test_retire_node_bridges_parents_to_children():
     dag = dag_of(("a", "b"), ("b", "c"))
     anomalies = dict(broken_path_bridged=0)
-    retire_node(dag, "b", anomalies)
+    retire_node(dag, "b", anomalies, "new")
     assert dag.g.has_edge("a", "c") and anomalies["broken_path_bridged"] == 1
+    assert "b" not in dag.g
+    assert dag.retired["b"]["retired_in"] == "new" and dag.retired["b"]["parents"] == ["a"]
     assert "\n" not in dag.g["a"]["c"]["reason"]
 
 
 def test_revise_with_no_changes_keeps_graph_and_makes_no_calls():
-    from prereq.llm import Ledger
     dag = PrereqDAG()
     dag.add_node("a", provenance=["o:q1"], valid_versions=["o"])
     dag.add_node("b", provenance=["o:q2"], valid_versions=["o"])
@@ -88,7 +95,6 @@ def test_parse_strips_page_footer():
 
 
 def test_append_only_renames_unchanged_provenance_and_keeps_removed():
-    from prereq.llm import Ledger
     from prereq.revision import append_only
     dag = PrereqDAG()
     dag.add_node("kept", provenance=["o:q1"])
@@ -97,3 +103,156 @@ def test_append_only_renames_unchanged_provenance_and_keeps_removed():
     result, _ = append_only(dag, diff, [], "n", Ledger())
     assert result.g.nodes["kept"]["provenance"] == {"n:q1"}
     assert result.g.nodes["old"]["provenance"] == {"o:q2"}
+
+
+class FakeMuse:
+    """Answers each prompt type from fixed tables, and records what the agent asked."""
+
+    def __init__(self, concepts=None, parents=None, same=(), keep="current"):
+        self.concepts, self.parents, self.same, self.keep = concepts or {}, parents or {}, set(same), keep
+        self.asked = []
+
+    def __call__(self, system, user, ledger=None, model=None):
+        self.asked.append(system)
+        if ledger:
+            ledger.add(1)
+        if system == pipeline.EXTRACT_SYSTEM:
+            return dict(concepts=self.concepts[user])
+        if system == pipeline.MERGE_SYSTEM:
+            return dict(same=user in self.same)
+        if system == revision.CONFLICT_SYSTEM:
+            return dict(keep=self.keep)
+        target = user.split('"')[1]
+        return dict(prereqs=[dict(name=p, reason="needed") for p in self.parents.get(target, [])])
+
+
+def install(monkeypatch, muse):
+    monkeypatch.setattr(pipeline, "ask_json", muse)
+    monkeypatch.setattr(revision, "ask_json", muse)
+
+
+def old_graph():
+    dag = PrereqDAG()
+    dag.add_node("a", "a", ["o:q1"], ["o"])
+    dag.add_node("b", "b", ["o:q2"], ["o"])
+    dag.add_node("c", "c", ["o:q3"], ["o"])
+    dag.add_edge("a", "b", "needed")
+    dag.add_edge("b", "c", "needed")
+    return dag
+
+
+def new_q(number, text):
+    return dict(id=f"n:q{number}", number=number, question=text, answers=[], text=text)
+
+
+def test_concept_surviving_a_modified_question_keeps_edges_and_is_not_retired(monkeypatch):
+    install(monkeypatch, FakeMuse(concepts={"q2 new": ["b"]}))
+    diff = dict(unchanged=[("o:q1", "n:q1"), ("o:q3", "n:q3")], modified=[("o:q2", "n:q2")], removed=[], added=[])
+    revised, report = revise(old_graph(), diff, [new_q(2, "q2 new")], "n", Ledger())
+    assert revised.g.has_edge("a", "b") and revised.g.has_edge("b", "c")
+    assert report["retired"] == [] and report["anomalies"]["broken_path_bridged"] == 0
+    assert revised.g.nodes["b"]["provenance"] == {"n:q2"}
+    assert revised.g.nodes["b"]["valid_versions"] == {"o", "n"}
+
+
+def test_renamed_concept_is_absorbed_and_keeps_edges(monkeypatch):
+    muse = FakeMuse(concepts={"q2 new": ["totally different"]}, same=['A: "b"\nB: "totally different"'])
+    install(monkeypatch, muse)
+    diff = dict(unchanged=[("o:q1", "n:q1"), ("o:q3", "n:q3")], modified=[("o:q2", "n:q2")], removed=[], added=[])
+    revised, report = revise(old_graph(), diff, [new_q(2, "q2 new")], "n", Ledger())
+    assert revised.g.has_edge("a", "b") and "totally_different" not in revised.g
+    assert report["absorbed"] == {"totally_different": "b"}
+    assert report["anomalies"]["ambiguous_merge"] == 1 and report["retired"] == []
+
+
+def test_removed_concept_goes_on_record_with_its_versions(monkeypatch):
+    install(monkeypatch, FakeMuse())
+    diff = dict(unchanged=[("o:q1", "n:q1"), ("o:q3", "n:q3")], modified=[], removed=["o:q2"], added=[])
+    revised, report = revise(old_graph(), diff, [], "n", Ledger())
+    assert report["retired"] == ["b"] and revised.g.has_edge("a", "c")
+    record = PrereqDAG.from_json(revised.to_json()).retired["b"]
+    assert record["provenance"] == ["o:q2"] and record["valid_versions"] == ["o"] and record["retired_in"] == "n"
+
+
+def test_new_concept_can_become_prereq_of_touched_node_but_old_nodes_do_not_rewire(monkeypatch):
+    muse = FakeMuse(concepts={"q4": ["fresh", "c"]}, parents={"c": ["fresh", "a"]})
+    install(monkeypatch, muse)
+    diff = dict(unchanged=[("o:q1", "n:q1"), ("o:q2", "n:q2"), ("o:q3", "n:q3")], modified=[], removed=[],
+                added=["n:q4"])
+    revised, _ = revise(old_graph(), diff, [new_q(4, "q4")], "n", Ledger())
+    assert revised.g.has_edge("fresh", "c")
+    assert not revised.g.has_edge("a", "c")
+
+
+def touched_b_reversing_b_to_c(keep):
+    """A new question touches b, and its parent picks say c comes before b: the reverse of b -> c."""
+    return FakeMuse(concepts={"q4": ["b"]}, parents={"b": ["c"]}, keep=keep)
+
+
+TOUCH_B = dict(unchanged=[("o:q1", "n:q1"), ("o:q2", "n:q2"), ("o:q3", "n:q3")], modified=[], removed=[],
+               added=["n:q4"])
+
+
+def test_reversing_a_retained_edge_is_a_conflict_and_the_current_edge_can_win(monkeypatch):
+    install(monkeypatch, touched_b_reversing_b_to_c("current"))
+    revised, report = revise(old_graph(), TOUCH_B, [new_q(4, "q4")], "n", Ledger())
+    assert report["anomalies"]["conflict"] == 1 and report["anomalies"]["cycle"] == 0
+    assert revised.g.has_edge("b", "c") and not revised.g.has_edge("c", "b")
+
+
+def test_reversing_a_retained_edge_can_replace_it_when_judged_right(monkeypatch):
+    install(monkeypatch, touched_b_reversing_b_to_c("proposed"))
+    revised, report = revise(old_graph(), TOUCH_B, [new_q(4, "q4")], "n", Ledger())
+    assert report["anomalies"]["conflict"] == 1
+    assert revised.g.has_edge("c", "b") and not revised.g.has_edge("b", "c")
+
+
+def test_parent_limit_drops_bridges_then_new_edges_before_old_ones():
+    dag = PrereqDAG()
+    for n in ["bridge", "fresh", "old1", "old2", "old3", "t"]:
+        dag.add_node(n)
+    dag.add_edge("bridge", "t", "bridged after retiring x")
+    dag.add_edge("fresh", "t", "needed")
+    for old in ["old1", "old2", "old3"]:
+        dag.add_edge(old, "t", "needed")
+    revision.enforce_parent_limit(dag, {("fresh", "t")})
+    assert sorted(dag.g.predecessors("t")) == ["old1", "old2", "old3"]
+
+
+def test_learner_report_uses_the_given_version_and_rates_violations():
+    old = dag_of(("a", "b"))
+    new = PrereqDAG()
+    new.add_node("x", provenance=["n:q1"], valid_versions=["n"])
+    new.add_node("y", provenance=["o:q9"], valid_versions=["o"])
+    ref = PrereqDAG()
+    ref.add_node("y", provenance=["n:q2"])
+    ref.add_node("x", provenance=["n:q1"])
+    ref.add_edge("y", "x", "needed")
+    report = revision.learner_report(old, new, ref.g, "n")
+    assert report["stale_in_remaining"] == 1
+    assert report["reference_orderings"] == 1 and report["violations_vs_reference"] == 1
+    assert report["violation_rate"] == 1.0
+
+
+def test_parse_ham_keeps_only_the_correct_answer():
+    text = ("SUBELEMENT T1\nT1A01 (C) [97.1]\nWhich part of the rules?\nA. One\nB. Two\nC. Three\nD. Four\n~~\n"
+            "T1A02 (A) [97.3] Inline question?\nA. Yes\nB. No\nC. Maybe\nD. Never\n~~\nT1B Group heading\n")
+    parsed = parse_ham(text, "2022")
+    assert [p["id"] for p in parsed] == ["2022:T1A01", "2022:T1A02"]
+    assert parsed[0]["text"] == "Which part of the rules? Answers: Three"
+    assert parsed[1]["question"] == "Inline question?" and parsed[1]["answers"] == ["Yes"]
+
+
+def test_ham_pools_stay_locked_without_the_test_unlock(monkeypatch):
+    monkeypatch.delenv("PREREQ_RUN_TEST", raising=False)
+    with pytest.raises(PermissionError):
+        load_ham()
+
+
+def test_docx_text_reads_paragraphs_and_skips_tab_elements(tmp_path):
+    path = tmp_path / "pool.docx"
+    xml = ('<w:document><w:p><w:r><w:t>T1A01 </w:t></w:r><w:r><w:tab/><w:t xml:space="preserve">(C) &amp; more</w:t>'
+           '</w:r></w:p><w:p><w:r><w:t>Next</w:t></w:r></w:p></w:document>')
+    with zipfile.ZipFile(path, "w") as z:
+        z.writestr("word/document.xml", xml)
+    assert docx_text(path).split("\n")[:2] == ["T1A01 (C) & more", "Next"]

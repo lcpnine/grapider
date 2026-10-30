@@ -37,8 +37,8 @@ def test_break_cycles_prefers_removing_least_foundational_prereq():
 
 def test_match_exact_and_no_llm_for_distant_names(monkeypatch):
     monkeypatch.setattr(pipeline, "ask_json", lambda *a, **k: 1 / 0)
-    existing = {"bill_of_rights": "Bill of Rights"}
-    assert match_concept("Bill of Rights", existing) == "bill_of_rights"
+    existing = {"bill_of_right": "Bill of Rights"}
+    assert match_concept("Bill of Rights", existing) == "bill_of_right"
     assert match_concept("photosynthesis", existing) is None
 
 
@@ -47,3 +47,24 @@ def test_match_asks_llm_only_when_ambiguous(monkeypatch):
     monkeypatch.setattr(pipeline, "ask_json", lambda *a, **k: calls.append(a) or {"same": False})
     assert match_concept("federal courts", {"federal_courtesy": "federal courtesy"}) is None
     assert len(calls) == 1
+
+
+def test_near_identical_names_are_never_merged_without_asking(monkeypatch):
+    calls = []
+    monkeypatch.setattr(pipeline, "ask_json", lambda *a, **k: calls.append(a) or {"same": False})
+    assert match_concept("World War II history", {"world_war_i_history": "World War I history"}) is None
+    assert match_concept("19th Amendment", {"14th_amendment": "14th Amendment"}) is None
+    assert len(calls) == 2
+
+
+def test_near_identical_names_merge_when_the_llm_says_same(monkeypatch):
+    monkeypatch.setattr(pipeline, "ask_json", lambda *a, **k: {"same": True})
+    existing = {"u_s_house_of_representative": "U.S. House of Representatives"}
+    assert match_concept("House of Representatives", existing) == "u_s_house_of_representative"
+
+
+def test_ambiguous_merge_is_counted_as_an_anomaly(monkeypatch):
+    monkeypatch.setattr(pipeline, "ask_json", lambda *a, **k: {"same": False})
+    anomalies = dict(ambiguous_merge=0)
+    match_concept("World War II", {"world_war_i": "World War I"}, anomalies=anomalies)
+    assert anomalies["ambiguous_merge"] == 1
