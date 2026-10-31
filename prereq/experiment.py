@@ -4,7 +4,7 @@ Every arm builds a graph over all dev concepts. Choices use pairs inside the tun
 is scored once, after those choices are written to exp_freeze.json.
 
 Usage: python -m prereq.experiment split | arm <name> <replicate> | report cap|source | signal | repair <arm>
-       | controls <arm> | uptake | votes <arm> | holdout | packet | disputes
+       | controls <arm> | uptake | votes <arm> | holdout | packet | disputes | score_reviews
 """
 import csv
 import hashlib
@@ -640,6 +640,56 @@ def disputes(per_group=22):
     show("disputes", result)
 
 
+def wilson(hits, n, z=1.96):
+    """95% interval for a proportion."""
+    if not n:
+        return (0.0, 0.0)
+    rate = hits / n
+    centre = (rate + z * z / (2 * n)) / (1 + z * z / n)
+    half = z * (rate * (1 - rate) / n + z * z / (4 * n * n)) ** 0.5 / (1 + z * z / n)
+    return (centre - half, centre + half)
+
+
+def tier_of(item, ratings):
+    return next((tier for tier in ("yes", "unclear", "no") if item in ratings[tier]), "unrated")
+
+
+def tally_arm(items, ratings):
+    """Precision of one arm's sampled edges under a strict and a lenient reading, plus a floor counting unrated as no."""
+    tiers = Counter(tier_of(i, ratings) for i in items)
+    rated = tiers["yes"] + tiers["unclear"] + tiers["no"]
+    return dict(**{t: tiers[t] for t in ("yes", "unclear", "no", "unrated")}, strict=tiers["yes"] / max(rated, 1),
+                strict_interval=wilson(tiers["yes"], rated), lenient=(tiers["yes"] + tiers["unclear"]) / max(rated, 1),
+                floor=tiers["yes"] / max(len(items), 1))
+
+
+def score_reviews():
+    """Score written reviews against the keys. The rater comes from the ratings file; AI review is not human review."""
+    ratings = json.loads((RUNS / "review_ratings.json").read_text())
+    dev = Dev()
+    key = json.loads((PRIVATE / "kappa_key.json").read_text())
+    kappa = ratings["kappa_review"]
+    tier = lambda i: "yes" if i in kappa["yes"] else "defensible" if i in kappa["defensible"] else "no"
+    outcome = defaultdict(Counter)
+    for item, v in key.items():
+        kind = "lb1_only" if v["lb1"] > v["lb2"] else "lb2_only" if v["lb2"] > v["lb1"] else "both_yes" if v["lb1"] else "both_no"
+        outcome[kind][tier(int(item))] += 1
+    packet = json.loads((PRIVATE / "review_key.json").read_text())
+    rows = list(csv.DictReader((RUNS / "review_packet.csv").open()))
+    edge = {int(r["item"]): (dev.ids[r["A"]], dev.ids[r["B"]]) for r in rows}
+    rated = ratings["review_packet"]
+    gold = lambda e: "positive" if e in dev.positive else "negative" if e in dev.negative else "unlabeled"
+    crossed = defaultdict(Counter)
+    for item, e in edge.items():
+        crossed[gold(e)][tier_of(item, rated)] += 1
+    arms = {arm: tally_arm(items, rated) for arm, items in packet.items()}
+    by_gold = {arm: dict(Counter(gold(edge[i]) for i in items)) for arm, items in packet.items()}
+    result = dict(rater=ratings["rater"], kappa_sheet={k: dict(v) for k, v in outcome.items()}, packet_arms=arms,
+                  packet_gold_counts=by_gold, packet_gold_by_tier={k: dict(v) for k, v in crossed.items()})
+    log_run("experiments", dict(stage="score_reviews", split="all dev", prompt_version=None, git=git_state(), code=code_hash()), clean(result))
+    show("reviews", result)
+
+
 def holdout():
     """One scoring of the frozen choices on concepts no choice has used."""
     if not FREEZE.exists():
@@ -679,7 +729,7 @@ def main():
     command, args = sys.argv[1], sys.argv[2:]
     if command == "arm":
         return run_arm(args[0], int(args[1]))
-    return dict(split=make_split, report=report, signal=signal, repair=repair, controls=controls, uptake=uptake, votes=votes, holdout=holdout, packet=packet, disputes=disputes)[command](*args)
+    return dict(split=make_split, report=report, signal=signal, repair=repair, controls=controls, uptake=uptake, votes=votes, holdout=holdout, packet=packet, disputes=disputes, score_reviews=score_reviews)[command](*args)
 
 
 if __name__ == "__main__":

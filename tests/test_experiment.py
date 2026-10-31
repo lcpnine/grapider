@@ -133,6 +133,20 @@ def test_dispute_groups_use_only_pairs_labeled_by_both_datasets():
     assert [p for p, _ in groups["both_no"]] == [("c", "d")]
 
 
+def test_tally_arm_keeps_unrated_out_of_precision_but_in_the_floor():
+    ratings = dict(yes=[1, 2], unclear=[3], no=[4])
+    row = ex.tally_arm([1, 2, 3, 4, 5, 6, 7, 8], ratings)
+    assert (row["yes"], row["unclear"], row["no"], row["unrated"]) == (2, 1, 1, 4)
+    assert row["strict"] == 0.5 and row["lenient"] == 0.75 and row["floor"] == 0.25
+
+
+def test_wilson_stays_inside_zero_and_one():
+    low, high = ex.wilson(0, 40)
+    assert low == pytest.approx(0, abs=1e-9) and 0 < high < 0.1
+    low, high = ex.wilson(20, 40)
+    assert low < 0.5 < high
+
+
 class Fake:
     calls = []
 

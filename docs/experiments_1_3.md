@@ -108,6 +108,35 @@ Human review is pending. No result above has been human-checked.
 
 Answer keys are local in `runs/private/`.
 
+### Written reviews of both sheets
+
+Two written reviews were scored on 2026-10-31 (`runs/review_ratings.json`, `score_reviews` in `prereq/experiment.py`). The rater was Claude Opus 5.5, as reported by the user, so this is AI review and not the independent human review the project asked for. It is also the same model that designed these experiments and sheets, though not the proposer (Muse) or the frozen judge. An AI rater may share the generator's beliefs, which would inflate agreement with its picks. The sheets did not define "needed" as direct or transitive, and this review rated only 80 of the 119 packet edges.
+
+Agreement sheet, reviewer verdict by label outcome:
+
+| LB1 / LB2 | Pairs | Yes | Defensible | No |
+|---|---|---|---|---|
+| LB1 yes, LB2 no | 24 | 6 | 4 | 14 |
+| LB1 no, LB2 yes | 1 | 0 | 1 | 0 |
+| Both yes | 3 | 2 | 1 | 0 |
+| Both no | 22 | 0 | 0 | 22 |
+
+Eight of the 14 rejected LB1 positives have Bayes theorem, Conditional probability or Matrix multiplication as the parent, which fits the earlier suspicion that a few LB1 hubs are over-labeled. The disputes are a selected set, so this does not give a label error rate.
+
+Review packet, precision of sampled edges (each arm 40 edges; strict counts only clean yes, lenient adds guideline-dependent items, the floor counts unrated edges as no):
+
+| Arm | Yes / unclear / no / unrated | Strict (rated edges) | Lenient | Floor | Gold, same sample |
+|---|---|---|---|---|---|
+| Capped | 14 / 9 / 3 / 14 | .54 [.35, .71] | .88 | .35 | 11 of 27 (.41) |
+| Uncapped | 10 / 6 / 9 / 15 | .40 [.23, .59] | .64 | .25 | 9 of 28 (.32) |
+| Source | 14 / 7 / 9 / 10 | .47 [.30, .64] | .70 | .35 | 6 of 29 (.21) |
+
+The arm intervals overlap, so this does not rank the arms. The packet has no placebo arm, so it cannot revisit the source decision, which also rested on lost recall. Gold and reviewer differ on model-emitted edges: the reviewer calls 17 of 38 rated gold negatives clean prerequisites, against 8 of 14 rated gold positives. Either gold negatives are too strict, or the reviewer is too lenient or counts transitive prerequisites.
+
+No decision above changes on this evidence.
+
+Rating rule for human raters: "Would a course on B have to teach or assume A?" Transitive prerequisites count. A broader topic counts only if a learner must understand it first.
+
 ## Next step, not started
 
 Re-rank uncapped candidates using passages that mention both concepts plus which concept comes first in a course, tested against a placebo. Then freeze that choice with the widest-edge rule and score the holdout once.
