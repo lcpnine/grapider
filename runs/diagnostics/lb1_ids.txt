@@ -1,0 +1,173 @@
+topic ids 2 209 gaps []
+annotation ids 2 211 gaps [122, 157]
+topics never annotated {122: 'Finite-state machines', 157: 'Regular expressions'}
+annotated, no topic [210, 211]
+last 12 topics [(198, 'Lambda calculus'), (199, 'Highway networks'), (200, 'Stack lstm'), (201, 'multi-modal learning'), (202, 'linear algebra'), (203, 'Probability'), (204, 'descriptive statistics and hypothesis testing'), (205, 'Information Theory: coding'), (206, 'data structures and algorithms'), (207, 'graph theory'), (208, 'relational databases'), (209, 'dual decomposition')]
+largest raw out-degree [(208, 'relational databases', 106), (203, 'Probability', 105), (202, 'linear algebra', 98), (127, 'Matrix multiplication', 72), (47, 'Bayes theorem', 59), (155, 'Conditional probability', 58), (128, 'Differential calculus', 21), (180, 'Activation functions', 20), (168, 'Loss Function', 19), (26, 'Backpropagation', 17), (174, 'Data preprocessing', 17), (178, 'Entropy', 17), (158, 'Artificial neural network', 16), (130, 'Backpropagation through time', 14)]
+children of 210 ['Knowledge representation', 'Natural Language Interfaces'] 2
+children of 211 ['SVM', 'Linear Programming'] 2
+205 Information Theory: coding out 13 in 2 children ['Generative Adversarial Networks', 'Variational Autoencoders', 'Logistic Regression', 'Language Modeling', 'One-shot learning', 'Bootstrapping', 'Dialog Systems', 'Evaluation Metrics', 'Random Forest', 'Decision Trees', 'PageRank', 'Bagging']
+206 data structures and algorithms out 0 in 0 children []
+207 graph theory out 0 in 4 children []
+208 relational databases out 106 in 0 children ['Generative Adversarial Networks', 'Neural Machine Translation', 'Variational Autoencoders', 'IBM Translation Models', 'Scientific article summarization', 'Open information extraction', 'Sentence simplification', 'Attention Models', 'Knowledge graph', 'Semantic Role Labeling', 'Abstract Meaning Representation', 'Machine Reading Comprehension']
+209 dual decomposition out 8 in 1 children ['Harmonic functions', 'PageRank', 'Expert systems', 'Graphical models', 'Spectral clustering', 'Network theory', 'citation networks', 'graph convolutional networks']
+rows per parent id, ends [(2, 208), (3, 209), (4, 208), (5, 209), (6, 206)] [(204, 188), (205, 183), (206, 207), (207, 206), (208, 181), (209, 205), (210, 208), (211, 209)]
+
+model hits by raw id band, pairs with a positive LB1 label under the file's mapping
+{0: '13/86', 40: '6/92', 80: '16/57', 120: '24/208', 160: '18/130', 200: '10/340'}
+shift -3: positives 882, model picks that hit 6
+shift -2: positives 903, model picks that hit 6
+shift -1: positives 908, model picks that hit 13
+shift +0: positives 913, model picks that hit 87
+shift +1: positives 904, model picks that hit 4
+shift +2: positives 800, model picks that hit 5
+shift +3: positives 796, model picks that hit 4
+
+parent-side shift only, for the top raw parents: which topic's name do the model's own parents suggest?
+208 relational databases children 105 model parents of those children [('classification', 12), ('recurrent neural networks', 10), ('Long Short-term memory networks', 6), ('Artificial neural network', 6), ('graph theory', 5), ('Tokenization', 5), ('Markov chains', 4), ('search', 4)]
+209 dual decomposition children 8 model parents of those children [('graph theory', 5), ('Markov chains', 1), ('Random walks', 1), ('neural networks', 1), ('convolutional neural network', 1), ('Network theory', 1), ('Clustering', 1), ('Spectral methods', 1)]
+210 None children 2 model parents of those children [('Propositional Logic', 1), ('predicate logic', 1), ('Question answering', 1), ('Semantic Parsing', 1), ('Dialog Systems', 1)]
+211 None children 2 model parents of those children [('optimization', 1), ('linear algebra', 1)]
+
+== LB-Paper/README.md rc 0
+ 
+# LectureBank: a corpus for NLP Education and Prerequisite Chain Learning
+
+This is the github page for our paper [*What Should I Learn First: Introducing LectureBank for NLP Education and Prerequisite Chain Learning*](https://arxiv.org/abs/1811.12181) in the proceedings AAAI 2019. 
+
+![An example of prerequisite relations from lecture slides depicted as a directed graph](https://github.com/Yale-LILY/LectureBank/blob/master/LB-Paper/imgs/slide_diagram_final.png)
+
+The list of descriptions can be found in the following:
+
+### LectureBank Dataset
+LectureBank Dataset is a manually-collected dataset of lecture slides. We collected 1352 online lecture files from 60 courses covering 5 different domains,  including Natural Language Processing (nlp), Machine Learning (ml), Artificial Intelligence (ai), Deep Learning (dl) and Information Retrieval (ir).  In addition, we release the corresponding annotations for each slide file to the taxonomy described below.  We also provide an additional vocabulary list of size 1221 extracted from the corpus. 
+
+### LectureBank version 3 (updated 2021-06-14)
+
+The newest release, lecturebank3.tsv, contains 5,000 entries. 
+
+The format has changed slightly from the earlier versions.
+
+`(ID, Title, URL, Topic_ID, Year, Instructor, Path, Venue)`
+
+- `Instructor`: The instructors' name(s).
+- `Path`: Path of the file
+
+### lecturebank.tsv
+Each line identifies a lecture file. Format:
+
+`(ID, Title, URL, Topic_ID, Year, Author, Domain, Venue)`
+
+
+- `ID`: Id of each line.
+- `Title`: File tile.
+- `URL`: Online URL.
+- `Topic_ID`: Classified taxonomy Topic ID, referring topics from `taxonomy.tsv`.
+- `Year`: Year of the course.
+- `Author`: The author name(s).
+- `Domain`: The domain (nlp, ir, dl, ml, ai).
+- `Venue`: Name of the university, or `GitHub`.
+
+### LectureBa 
+
+== LB-Paper/vocabulary.txt rc 0
+ probabilistic reasoning (bayesian networks)
+alpha-beta
+max-marginal
+generative and discriminative models 2
+bio tagging
+spelling correction
+automatic evaluation
+co-reference
+text categorization
+syntaxnet
+information extraction and named entity recognition
+sentiment analysis
+natural language generation
+lambda calculus
+recursive descent parsing
+nlp and humor
+generative sequence
+highway networks
+type raising
+lesk algorithm
+harmonic functions
+variable scope
+cosine measure
+continuous bag of words
+vietnamese
+eisner first-order rules
+decision boundary
+bidirectional lstms
+softmax regression
+dialog systems
+computer-aided translation
+maximum entropy
+informed search
+distance metric
+inference
+large vocabulary
+spectral methods
+skip-gram model
+natural language
+n-gram model
+neural turing machine
+graph-based nlp
+pos tagging
+backward algorithm
+synset
+ptb
+center embedding
+cnn
+directed graphical models
+decision trees
+bag-of-words
+compositionality
+heuristic search
+chain rule
+subcategorization
+greedy search
+character level language models
+unigram
+wsd
+treebank grammar
+adaptive splitting
+graph-based
+introduction to part of speech tagging
+translation model
+financial applications
+flow graph
+alternative syntactic formalisms
+planning
+k means
+web-scale n-grams
+tensorflow gotchas/debugging
+markov
+language modeling, syntax, parsing
+class logistics
+unsupervised learning
+toolkits for information retrieval
+cfg
+logistic regression 2
+bigram probabilities
+computational phonology
+post-processing
+dependency grammar
+wikification
+regular expression
+log-linear
+maximum-entropy
+natural language generation systems
+log-likelihood
+perplexity
+dependency parsing
+deep belief networks
+carlo
+pmi
+miscellaneous projects
+domain adaptation
+classication
+word embedding
+max-pooling
+phrase-based mt
+placeholders and feed dictiona 

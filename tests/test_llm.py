@@ -23,6 +23,7 @@ def cache_file(monkeypatch, tmp_path):
     FakeClient.calls = []
     path = tmp_path / "cache.jsonl"
     monkeypatch.setattr(llm, "CACHE", path)
+    monkeypatch.setattr(llm, "PRIVATE_CACHE", tmp_path / "private.jsonl")
     monkeypatch.setattr(llm, "_cache", None)
     monkeypatch.setattr(llm, "OpenAI", FakeClient)
     monkeypatch.setenv("META_API_KEY", "unused")

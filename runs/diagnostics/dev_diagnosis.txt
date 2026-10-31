@@ -1,0 +1,133 @@
+== data
+concepts 318 MAX_PARENTS 3 labeled rows 83827
+rows by source/label {('lb1', 0): 26012, ('lb1', 1): 577, ('lb2', 0): 56861, ('lb2', 1): 377}
+pairs labeled by both 1595 lb1 pos 27 lb2 pos 4 both pos 3 union 28
+  agreement: lb2 predicting lb1 P 0.750 R 0.111 F1 0.194
+  raw agreement 0.984, kappa 0.190
+direct positives 951 negatives 81281 closure 2096 universe 82676
+gold DAG False cyclic groups 1 largest 2
+labeled-0 pairs closure calls positive 701
+reverse pairs both positive after merge 1
+gold in-degree: max 14 median 3 targets with any parent 279 of 318 over cap 104
+gold out-degree top 10 [92, 84, 63, 49, 45, 45, 44, 19, 17, 16] share of positives from top 10 parents 0.498
+top gold parents [('linear algebra', 92), ('relational databases', 84), ('Matrix multiplication', 63), ('natural language processing intro', 49), ('Conditional probability', 45), ('linguistics basics', 45), ('Bayes theorem', 44), ('Loss Function', 19), ('Differential calculus', 17), ('Entropy', 16)]
+top gold targets [('Stack lstm', 14), ('Variational Autoencoders', 13), ('Relation Extraction', 12), ('Text mining', 12), ('document representation', 12), ('Seq2seq', 11), ('Highway networks', 11), ('DQN', 11), ('Event Detection', 11), ('graph convolutional networks', 11)]
+direct recall ceiling under cap 0.609
+
+== raw picks by prompt (before cycle breaking and reduction)
+e1_direct: missing cache 0, picks 879, mean per target 2.76, at cap 277, empty 12, unknown names 0
+   direct gold hit 177 (0.201); indirect but in gold closure 25 (0.028); reversed direction of closure 37 (0.042); labeled 0 and unrelated in closure 413 (0.470); unlabeled 232 (0.264)
+   direct recall 0.186; picks in closure / closure 0.096; flipped direct hits 33
+   mean list position of picks 0.484 (0.5 = no alphabetical bias)
+   picks by list decile [106, 88, 101, 86, 59, 78, 86, 127, 102, 46]
+e2_strict: missing cache 0, picks 722, mean per target 2.27, at cap 194, empty 41, unknown names 0
+   direct gold hit 169 (0.234); indirect but in gold closure 31 (0.043); reversed direction of closure 19 (0.026); labeled 0 and unrelated in closure 317 (0.439); unlabeled 188 (0.260)
+   direct recall 0.178; picks in closure / closure 0.095; flipped direct hits 17
+   mean list position of picks 0.481 (0.5 = no alphabetical bias)
+   picks by list decile [93, 69, 91, 61, 46, 70, 64, 100, 90, 38]
+e3_chain: missing cache 0, picks 805, mean per target 2.53, at cap 233, empty 20, unknown names 0
+   direct gold hit 136 (0.169); indirect but in gold closure 23 (0.029); reversed direction of closure 42 (0.052); labeled 0 and unrelated in closure 403 (0.501); unlabeled 205 (0.255)
+   direct recall 0.143; picks in closure / closure 0.076; flipped direct hits 37
+   mean list position of picks 0.490 (0.5 = no alphabetical bias)
+   picks by list decile [77, 90, 98, 81, 58, 77, 81, 97, 93, 53]
+
+== e2_strict: recall by list position of the gold parent
+['49/259=0.189', '25/142=0.176', '20/64=0.312', '47/281=0.167', '28/205=0.137']
+
+== e2_strict: recall by gold in-degree of the target, and by gold out-degree of the parent
+target in-degree ['1-2: 51/141=0.362', '3-5: 62/342=0.181', '6-10: 42/339=0.124', '11-25: 14/129=0.109', '26+: 0/0=0.000']
+parent out-degree ['1-2: 42/117=0.359', '3-5: 43/118=0.364', '6-10: 36/125=0.288', '11-25: 22/169=0.130', '26+: 26/422=0.062']
+
+== per-source scoring of raw picks, direct and via closure of raw picks
+lb1 pos 577 neg 26012 prevalence 0.0217; scored picks 188, P 0.447 R 0.146
+lb2 pos 377 neg 56861 prevalence 0.0066; scored picks 341, P 0.255 R 0.231
+
+== name ambiguity in the dev candidate list
+names of <=4 chars 4 ['BLEU', 'DQN', 'K-nn', 'tsne']
+
+== replicate answers in the cache
+keys answered more than once 7 with different answers 5
+
+== sample of 40 picks labeled 0 and outside closure
+  morphology and lexicon  ->  Stemming
+  parsing  ->  Penn Treebank
+  calculus  ->  deep learning introduction
+  K-nn  ->  Collaborative filtering
+  Question answering  ->  reading comprehension
+  problem solving and search  ->  informed search
+  Natural language generation  ->  Chat bots
+  lexical semantics  ->  semantic similarity
+  Probabilistic context-free grammars  ->  unlexicalized parsing
+  Markov Random Fields  ->  Belief Propagation
+  Speech Synthesis  ->  text to speech generation
+  graph theory  ->  Random walks
+  Prosody  ->  text to speech generation
+  dimensionality reduction  ->  Autoencoders
+  Language Identification  ->  Transliteration
+  Conditional probability  ->  N-gram
+  Tokenization  ->  Shallow parsing
+  information extraction  ->  Question answering
+  recurrent neural networks  ->  State Space Models
+  Text mining  ->  nlp for biology
+  Discourse Model  ->  Coreference and Coreference Resolution
+  lexical semantics  ->  Word sense disambiguation
+  Conditional probability  ->  probabilistic grammars
+  Compositional semantics  ->  Abstract Meaning Representation
+  Loss Function  ->  Multi-task Learning
+  Probabilistic context-free grammars  ->  cky parsing
+  Semantic Parsing  ->  nlp for databases
+  Conditional probability  ->  Variable Elimination
+  Markov Chain Monte Carlo  ->  Dirichlet Processes
+  parts of speech  ->  Morphological Disambiguation
+  Linear Regression  ->  Regularization
+  the ibm models  ->  phrase based machine translation
+  Unsupervised learning  ->  semi-supervised learning
+  Gradient descent  ->  training neural networks
+  Search Engine indexing  ->  search engines
+  parts of speech  ->  syntax
+  recurrent neural networks  ->  character level language models
+  K-nn  ->  Recommendation System
+  classification  ->  semi-supervised learning
+  search  ->  planning
+
+== sample of 40 missed gold direct positives
+  Anaphora Resolution  ->  Word sense disambiguation
+  Chomsky hierarchy  ->  Compositional semantics
+  text similarity  ->  Recommendation System
+  logic and reasoning  ->  Knowledge representation
+  structured learning  ->  Word Embedding
+  relational databases  ->  Text mining
+  relational databases  ->  graph convolutional networks
+  Activation functions  ->  Backpropagation through time
+  relational databases  ->  Conditional Random Fields
+  Matrix multiplication  ->  Speech recognition
+  linear algebra  ->  Reinforcement Learning
+  Gradient descent  ->  Gated recurrent units
+  training neural networks  ->  Stack lstm
+  linear algebra  ->  Perceptrons algorithm
+  structured learning  ->  Recommendation System
+  Bayes theorem  ->  Random walks
+  Differential calculus  ->  Dual Problems
+  Penn Treebank  ->  Shallow parsing
+  Entropy  ->  Highway networks
+  Gated recurrent units  ->  Bidirectional recurrent neural networks
+  Conditional probability  ->  Structured Prediction
+  natural language processing intro  ->  speech processing
+  Matrix multiplication  ->  Collaborative filtering
+  chinese nlp  ->  Spelling correction
+  calculus  ->  mathematical models
+  linear algebra  ->  Mixture Models
+  n-gram models  ->  word distributions
+  Matrix multiplication  ->  Sentiment Analysis
+  Conditional probability  ->  character level language models
+  linear algebra  ->  Generative Adversarial Networks
+  natural language processing intro  ->  Word sense disambiguation
+  linear algebra  ->  Dependency Parsing
+  structured learning  ->  Text mining
+  Conditional probability  ->  Monte Carlo Tree Search
+  natural language processing intro  ->  Tokenization
+  linear algebra  ->  Regularization
+  natural language processing intro  ->  Sequence to sequence
+  Distributional semantics  ->  Seq2seq
+  relational databases  ->  Bias-variance tradeoff
+  random walks and harmonic functions  ->  Weakly-supervised learning

@@ -17,6 +17,7 @@ load_dotenv(ROOT / ".env", override=True)
 MUSE_MODEL = "muse-spark-1.3"
 RUNS = ROOT / "runs"
 CACHE = RUNS / "cache_muse.jsonl"
+PRIVATE_CACHE = RUNS / "private" / "cache_muse.jsonl"
 _lock = threading.Lock()
 _cache = None
 
@@ -27,9 +28,10 @@ def _load():
     with _lock:
         if _cache is None:
             cache = {}
-            if CACHE.exists():
-                for row in map(json.loads, CACHE.open()):
-                    cache.setdefault(row["key"], row)
+            for path in (CACHE, PRIVATE_CACHE):
+                if path.exists():
+                    for row in map(json.loads, path.open()):
+                        cache.setdefault(row["key"], row)
             _cache = cache
     return _cache
 
@@ -49,15 +51,17 @@ class Ledger:
         return dict(llm_calls=self.calls, llm_tokens=self.tokens)
 
 
-def ask_json(system, user, ledger=None, model=MUSE_MODEL):
-    key = hashlib.sha256(json.dumps([model, system, user]).encode()).hexdigest()
+def ask_json(system, user, ledger=None, model=MUSE_MODEL, replicate=0, private=False):
+    """replicate > 0 asks again under its own cache key and seed. private keeps the answer out of git."""
+    parts = [model, system, user] + ([replicate] if replicate else [])
+    key = hashlib.sha256(json.dumps(parts).encode()).hexdigest()
     row = _load().get(key)
     if row is None:
         client = OpenAI(api_key=os.environ["META_API_KEY"], base_url="https://api.meta.ai/v1")
         for attempt in range(6):
             try:
                 r = client.chat.completions.create(
-                    model=model, temperature=0, seed=0, response_format={"type": "json_object"},
+                    model=model, temperature=0, seed=replicate, response_format={"type": "json_object"},
                     messages=[{"role": "system", "content": system}, {"role": "user", "content": user}],
                 )
                 out = json.loads(r.choices[0].message.content)
@@ -73,8 +77,9 @@ def ask_json(system, user, ledger=None, model=MUSE_MODEL):
                 row = _cache[key]
             else:
                 _cache[key] = row
-                RUNS.mkdir(exist_ok=True)
-                with CACHE.open("a") as f:
+                path = PRIVATE_CACHE if private else CACHE
+                path.parent.mkdir(parents=True, exist_ok=True)
+                with path.open("a") as f:
                     f.write(json.dumps(row) + "\n")
     if ledger:
         ledger.add(row["tokens"])

@@ -1,0 +1,89 @@
+== raw loader check, LB1
+first topics [['2', 'Anaphora Resolution', 'https://en.wikipedia.org/wiki/Anaphora_(linguistics)'], ['3', 'Generative Adversarial Networks', 'https://en.wikipedia.org/wiki/Generative_adversarial_network'], ['4', 'Neural Machine Translation', 'https://en.wikipedia.org/wiki/Neural_machine_translation']] last [['208', 'relational databases', 'NULL'], ['209', 'dual decomposition', 'NULL']]
+first rows [['2', '3', '0'], ['2', '4', '0'], ['2', '5', '0']]
+topic ids 208 annotation ids 208 unknown ids {'210': 415, '211': 416}
+labels Counter({'0': 41829, '1': 921})
+
+== raw loader check, LB2
+first ['1|spelling correction', '2|structured prediction', '3|pointer networks'] last ['321|Naive Bayes', '322|word embedding variations'] lines without bar 0
+first rows [['1', '6', '0'], ['1', '9', '0'], ['1', '14', '0']] labels Counter({'0': 67604, '1': 471})
+annotation ids not in topics []
+
+== hub parents: where labels come from, and the share of possible targets marked
+  linear algebra: {('lb1', 0): 69, ('lb1', 1): 81, ('lb2', 0): 111, ('lb2', 1): 13}
+     sample children ['Abstract Meaning Representation', 'Activation functions', 'Artificial neural network', 'Attention Models', 'Automatic summarization', 'Backpropagation through time', 'Bag of words model', 'Bidirectional recurrent neural networks', 'Boltzmann Machine', 'Capsule Networks', 'character level language models', 'citation networks', 'Clustering', "CNN's"]
+  relational databases: {('lb1', 1): 84, ('lb1', 0): 60}
+     sample children ['A* search', 'Abstract Meaning Representation', 'Attention Models', 'Automatic summarization', 'Backpropagation through time', 'Bag of words model', 'Bagging', 'Beam search', 'Bias-variance tradeoff', 'Bidirectional recurrent neural networks', 'Boltzmann Machine', 'Capsule Networks', 'character level language models', 'Chat bots']
+  Matrix multiplication: {('lb1', 0): 80, ('lb1', 1): 62, ('lb2', 0): 126, ('lb2', 1): 1}
+     sample children ['Activation functions', 'Backpropagation through time', 'Bidirectional recurrent neural networks', 'character level language models', 'citation networks', 'Clustering', "CNN's", 'Collaborative filtering', 'Computer Vision', 'Convex Optimization', 'Cross entropy', 'Differential calculus', 'dimensionality reduction', 'document representation']
+  natural language processing intro: {('lb2', 0): 199, ('lb2', 1): 49}
+     sample children ['Bio Text Mining', 'chinese nlp', 'Chomsky hierarchy', 'cky parsing', 'course introduction', 'Dialog Systems', 'discourse analysis', 'document representation', 'Edit distance', 'entailment', 'Event Detection', 'feature selection', 'Grammar checker', 'graph-based nlp']
+  linguistics basics: {('lb2', 0): 204, ('lb2', 1): 45}
+     sample children ['Bio Text Mining', 'Chomsky hierarchy', 'cky parsing', 'computational phonology', 'course introduction', 'Dialog Systems', 'discourse analysis', 'document representation', 'Edit distance', 'entailment', 'Event Detection', 'feature selection', 'Grammar checker', 'information extraction']
+  Conditional probability: {('lb1', 0): 80, ('lb1', 1): 45, ('lb2', 0): 136}
+     sample children ['Bayes theorem', 'Boltzmann Machine', 'character level language models', 'Chat bots', 'citation networks', 'Computer Vision', 'Conditional Random Fields', 'Dependency Parsing', 'Dialog Systems', 'Event Detection', 'Grammar checker', 'Harmonic functions', 'Inference', 'Knowledge graph']
+  Bayes theorem: {('lb1', 0): 92, ('lb1', 1): 43, ('lb2', 0): 138, ('lb2', 1): 1}
+     sample children ['Automatic summarization', 'Boltzmann Machine', 'character level language models', 'citation networks', 'Computer Vision', 'Conditional Random Fields', 'Cross entropy', 'Dialog Systems', 'Entropy', 'Event Detection', 'Grammar checker', 'Harmonic functions', 'Inference', 'Language acquisition']
+  Loss Function: {('lb1', 0): 126, ('lb1', 1): 13, ('lb2', 0): 118, ('lb2', 1): 6}
+     sample children ['Artificial neural network', 'Autoencoders', 'Backpropagation through time', 'Bias-variance tradeoff', 'Capsule Networks', 'classification', "CNN's", 'Cross entropy', 'DQN', 'Gated recurrent units', 'Gradient descent', 'Highway networks', 'latent variable models', 'Long Short-term memory networks']
+
+== is a hub's child set shared across hubs? (block annotation sign)
+  linear algebra & relational databases: overlap 53 of 92 / 84
+  linear algebra & Matrix multiplication: overlap 59 of 92 / 63
+  linear algebra & Conditional probability: overlap 25 of 92 / 45
+  linear algebra & Bayes theorem: overlap 27 of 92 / 44
+  linear algebra & Loss Function: overlap 13 of 92 / 19
+  relational databases & Matrix multiplication: overlap 39 of 84 / 63
+  relational databases & Conditional probability: overlap 27 of 84 / 45
+  relational databases & Bayes theorem: overlap 26 of 84 / 44
+  Matrix multiplication & Loss Function: overlap 10 of 63 / 19
+  natural language processing intro & linguistics basics: overlap 41 of 49 / 45
+  Conditional probability & Bayes theorem: overlap 35 of 45 / 44
+
+== LB1 raw id order of hub labels (runs of positives by id)
+  linear algebra raw ids ['253']
+  relational databases raw ids []
+  Matrix multiplication raw ids ['20']
+
+== e2_strict rebuilt from cache
+raw 722 cycle removed 16 final 485 baseline {'P': 0.305, 'R': 0.326, 'F1': 0.315, 'predicted': 2241}
+cycle-broken edges that were gold direct or in closure 3 of 16
+reduced away 221 of them gold direct 61
+
+== oracle attribution: fix one failure class with gold, keep the rest
+hubs (>=26 children) ['Bayes theorem', 'relational databases', 'linear algebra', 'natural language processing intro', 'linguistics basics', 'Conditional probability', 'Matrix multiplication'] their positives 422 of 951
+closure recall, hub-parent pairs 0.309 (809), other pairs 0.337 (1287)
+  baseline                                   {'P': 0.305, 'R': 0.326, 'F1': 0.315, 'predicted': 2241}
+  remove reversed edges                      {'P': 0.313, 'R': 0.321, 'F1': 0.317, 'predicted': 2153}
+  flip reversed edges                        {'P': 0.298, 'R': 0.333, 'F1': 0.315, 'predicted': 2348}
+  remove all labeled-wrong edges             {'P': 0.655, 'R': 0.148, 'F1': 0.242, 'predicted': 475}
+  remove labeled-wrong and unlabeled edges   {'P': 1.0, 'R': 0.079, 'F1': 0.146, 'predicted': 165}
+  add gold hub-parent edges                  {'P': 0.396, 'R': 0.543, 'F1': 0.458, 'predicted': 2873}
+  add gold non-hub edges                     {'P': 0.233, 'R': 0.771, 'F1': 0.358, 'predicted': 6935}
+  add all gold direct edges                  {'P': 0.267, 'R': 0.956, 'F1': 0.417, 'predicted': 7505}
+  gold direct only                           {'P': 1.0, 'R': 0.988, 'F1': 0.994, 'predicted': 2071}
+
+== same model output, score against a gold with the 7 hub parents removed
+  gold closure without hubs 1287 prevalence 0.0159
+  e2_strict {'P': 0.234, 'R': 0.337, 'F1': 0.276, 'predicted': 1858}
+
+== parent-cap oracle: gold direct edges, only 3 parents per target, closure scored against full gold
+  cap 1: recall 0.206, F1 0.341
+  cap 2: recall 0.433, F1 0.604
+  cap 3: recall 0.608, F1 0.756
+  cap 5: recall 0.794, F1 0.885
+  cap 8: recall 0.933, F1 0.965
+  cap 100: recall 0.988, F1 0.994
+
+== closure error amplification, e2_strict
+closure scored 2241 false 1557 from direct edges 227
+wrong final edges 363 edges with largest effect [('Word Embedding', 'document representation', 213), ('document representation', 'Bag of words model', 198), ('Distributional semantics', 'Word Embedding', 195), ('vector semantics', 'Distributional semantics', 152), ('Bag of words model', 'information retrieval', 125), ('lexical semantics', 'vector semantics', 104), ('Long Short-term memory networks', 'Sequence to sequence', 93), ('Beam search', 'Natural language generation', 89)]
+share of false closure pairs touched by top 10 wrong edges 0.841
+
+== document mode shape, Civics dev
+civics_2008 nodes 139 questions 100 edges 148 single-question nodes 103 (0.74)
+civics_2025_rebuild nodes 187 questions 128 edges 219 single-question nodes 153 (0.82)
+civics_2025_rebuild_reversed nodes 187 questions 128 edges 217 single-question nodes 153 (0.82)
+same key words 2 [('American Founding Fathers', 'Founding Fathers'), ('U.S. geography', 'United States geography')]
+one name's words inside another 16 [('American independence', 'Declaration of Independence'), ('American independence', 'U.S. Independence Day'), ('World War II', 'World War II alliances'), ('U.S. Constitution', 'U.S. Constitution ratification'), ('legislative branch', 'Legislative branch structure'), ('judicial branch', 'Judicial branch leadership'), ('New York geography', 'United States geography'), ('New York geography', 'U.S. geography'), ('U.S. Constitution', 'U.S. Constitution purpose'), ('World War II', 'World War II history'), ('Preamble to the Constitution', 'U.S. Constitution'), ('U.S. Senate', 'U.S. Senate term length'), ('U.S. flag', 'US flag symbolism'), ('U.S. presidency', 'vice presidency'), ('U.S. federal holidays', 'U.S. holidays'), ('American Civil War', 'Causes of the Civil War')]
+civics rebuild vs reversed list: edges 219 217 shared 134 jaccard 0.444
