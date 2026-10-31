@@ -1,0 +1,1457 @@
+{
+ "nodes": [
+  {
+   "id": "additive_model",
+   "name": "additive model",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "attention_model",
+   "name": "attention models",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "bayesian_inference",
+   "name": "bayesian inference",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "bayesian_network",
+   "name": "bayesian network",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "beam_search",
+   "name": "beam search",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "binding_energy",
+   "name": "binding energy",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "binding_site",
+   "name": "binding site",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "bio_text_mining",
+   "name": "bio text mining",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "blast",
+   "name": "BLAST",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "central_dogma",
+   "name": "central dogma",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "chi_square_test",
+   "name": "chi-square test",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "chip_seq",
+   "name": "ChIP-seq",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "classification",
+   "name": "classification",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "clustering",
+   "name": "clustering",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "conditional_probability",
+   "name": "conditional probability",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "conservation",
+   "name": "conservation",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "convolutional_neural_network",
+   "name": "convolutional neural network",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "cpg_island",
+   "name": "CpG island",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "cross_entropy",
+   "name": "cross entropy",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "data_structures_and_algorithm",
+   "name": "data structures and algorithms",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "de_bruijin_graph",
+   "name": "de Bruijin graph",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "decision_tree",
+   "name": "decision trees",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "deep_q_network",
+   "name": "deep Q-network",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "deseq",
+   "name": "DESeq",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "differential_expression",
+   "name": "differential expression",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "dna",
+   "name": "DNA",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "dynamic_programming",
+   "name": "dynamic programming",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "edit_distance",
+   "name": "edit distance",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "energy_minimization",
+   "name": "energy minimization",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "expectation_maximization_algorithm",
+   "name": "expectation maximization algorithm",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "false_discovery_rate",
+   "name": "false discovery rate",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "feature_learning",
+   "name": "feature learning",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "gated_recurrent_unit",
+   "name": "gated recurrent units",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "gene_finding",
+   "name": "gene finding",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "genetic_algorithm",
+   "name": "genetic algorithms",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "genome_assembly",
+   "name": "genome assembly",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "genome_wide_association_study",
+   "name": "genome-wide association studies",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "gibbs_sampling",
+   "name": "gibbs sampling",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "gradient_descent",
+   "name": "gradient descent",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "graph_theory",
+   "name": "graph theory",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "hardy_weinberg_equilibrium",
+   "name": "hardy-weinberg equilibrium",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "hidden_markov_model",
+   "name": "Hidden Markov Models",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "homology_model",
+   "name": "homology model",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "hypothesis_testing",
+   "name": "hypothesis testing",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "imagenet",
+   "name": "imagenet",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "information_theory",
+   "name": "information theory",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "irreproducible_discovery_rate",
+   "name": "irreproducible discovery rate",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "isoform",
+   "name": "isoform",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "k_mean",
+   "name": "k means",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "knowledge_graph",
+   "name": "knowledge graph",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "linear_algebra",
+   "name": "linear algebra",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "linear_regression",
+   "name": "linear regression",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "linkage_disequilibrium",
+   "name": "linkage disequilibrium",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "logistic_regression",
+   "name": "logistic regression",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "long_short_term_memory_network",
+   "name": "long short term memory networks",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "markov_chain_monte_carlo",
+   "name": "markov chain monte carlo",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "markov_clustering",
+   "name": "markov clustering",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "matrix_multiplication",
+   "name": "matrix multiplication",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "maximum_likelihood_estimation",
+   "name": "maximum likelihood estimation",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "microarray",
+   "name": "microarray",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "molecular_evolution",
+   "name": "molecular evolution",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "motif_discovery",
+   "name": "motif discovery",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "multi_task_learning",
+   "name": "multi-task learning",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "multivariate_linear_model",
+   "name": "multivariate linear model",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "mutual_information",
+   "name": "mutual information",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "naive_baye",
+   "name": "Naive Bayes",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "neural_network",
+   "name": "neural networks",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "optimization",
+   "name": "optimization",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "perceptron",
+   "name": "perceptron",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "phylogenetic_tree",
+   "name": "phylogenetic tree",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "position_weight_matrix",
+   "name": "position weight matrix",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "preprocessing",
+   "name": "preprocessing",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "principal_component_analysis",
+   "name": "Principal Component Analysis",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "protein",
+   "name": "protein",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "protein_protein_interaction",
+   "name": "protein-protein interaction",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "protein_secondary_structure",
+   "name": "protein secondary structure",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "protein_tertriary_structure",
+   "name": "protein tertriary structure",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "quantitative_trait_loci",
+   "name": "quantitative trait loci",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "recurrent_neural_network",
+   "name": "recurrent neural networks",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "regulatory_network",
+   "name": "regulatory network",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "relation_extraction",
+   "name": "relation extraction",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "rna",
+   "name": "RNA",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "rna_secondary_structure",
+   "name": "RNA secondary structure",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "rna_seq",
+   "name": "RNA-seq",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "robotic",
+   "name": "robotics",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "sampling",
+   "name": "Sampling",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "search",
+   "name": "search",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "semi_supervised_learning",
+   "name": "semi-supervised learning",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "sequence_alignment",
+   "name": "sequence alignment",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "shotgun_sequencing",
+   "name": "shotgun sequencing",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "single_nucleotide_polymorphism",
+   "name": "single nucleotide polymorphism",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "singular_value_decomposition",
+   "name": "singular value decomposition",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "support_vector_machine",
+   "name": "support vector machines",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "transcription",
+   "name": "transcription",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "transcription_factor",
+   "name": "transcription factor",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "transfer_learning",
+   "name": "transfer learning",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "translation",
+   "name": "translation",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "unsupervised_learning",
+   "name": "Unsupervised learning",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "vector_representation",
+   "name": "vector representations",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "yeast_2_hybrid",
+   "name": "yeast 2-hybrid",
+   "provenance": [
+    "lbcd_bio"
+   ],
+   "valid_versions": []
+  }
+ ],
+ "edges": [
+  {
+   "prereq": "additive_model",
+   "dependent": "quantitative_trait_loci",
+   "reason": "QTL contributions to quantitative traits are defined under an additive genetic model."
+  },
+  {
+   "prereq": "bayesian_inference",
+   "dependent": "bayesian_network",
+   "reason": "Querying the network requires updating beliefs from evidence via Bayes rule."
+  },
+  {
+   "prereq": "bayesian_inference",
+   "dependent": "naive_baye",
+   "reason": "Naive Bayes uses Bayes theorem to compute posterior class probabilities from priors and likelihoods."
+  },
+  {
+   "prereq": "binding_energy",
+   "dependent": "energy_minimization",
+   "reason": "Must understand binding energy as the quantity being minimized"
+  },
+  {
+   "prereq": "binding_site",
+   "dependent": "chip_seq",
+   "reason": "The goal of ChIP-seq is to identify genome-wide protein binding sites."
+  },
+  {
+   "prereq": "binding_site",
+   "dependent": "position_weight_matrix",
+   "reason": "A PWM is a quantitative model of the sequence pattern of a set of binding sites."
+  },
+  {
+   "prereq": "binding_site",
+   "dependent": "regulatory_network",
+   "reason": "Regulation is mediated by factors binding to DNA binding sites"
+  },
+  {
+   "prereq": "central_dogma",
+   "dependent": "gene_finding",
+   "reason": "Gene models of exons, introns and coding regions derive from transcription and translation."
+  },
+  {
+   "prereq": "central_dogma",
+   "dependent": "isoform",
+   "reason": "Explains DNA to RNA to protein flow needed to understand how one gene yields multiple products."
+  },
+  {
+   "prereq": "central_dogma",
+   "dependent": "molecular_evolution",
+   "reason": "Needed to understand how DNA mutations propagate to RNA and protein function and fitness"
+  },
+  {
+   "prereq": "central_dogma",
+   "dependent": "rna_seq",
+   "reason": "Provides DNA-to-RNA-to-protein context for why sequencing RNA measures gene expression."
+  },
+  {
+   "prereq": "chip_seq",
+   "dependent": "irreproducible_discovery_rate",
+   "reason": "IDR was developed to assess reproducibility of ranked ChIP-seq peak calls between replicates."
+  },
+  {
+   "prereq": "classification",
+   "dependent": "decision_tree",
+   "reason": "Decision trees are a supervised method for classification, so the classification task must be understood first."
+  },
+  {
+   "prereq": "classification",
+   "dependent": "logistic_regression",
+   "reason": "logistic regression is a supervised model for solving binary and multiclass classification problems"
+  },
+  {
+   "prereq": "classification",
+   "dependent": "naive_baye",
+   "reason": "Naive Bayes is a classification method so learner must understand the classification task first."
+  },
+  {
+   "prereq": "classification",
+   "dependent": "perceptron",
+   "reason": "Perceptron is a linear binary classifier, so the classification task must be understood first."
+  },
+  {
+   "prereq": "classification",
+   "dependent": "relation_extraction",
+   "reason": "Relation extraction is typically framed as classifying entity pairs into relation types."
+  },
+  {
+   "prereq": "classification",
+   "dependent": "semi_supervised_learning",
+   "reason": "Semi-supervised learning is most commonly formulated as classification with few labeled examples."
+  },
+  {
+   "prereq": "classification",
+   "dependent": "support_vector_machine",
+   "reason": "SVM is a supervised classification algorithm, so the classification task must be understood first."
+  },
+  {
+   "prereq": "clustering",
+   "dependent": "k_mean",
+   "reason": "k-means is a canonical algorithm for performing clustering"
+  },
+  {
+   "prereq": "clustering",
+   "dependent": "markov_clustering",
+   "reason": "Markov clustering is a type of clustering algorithm, so clustering concepts must come first"
+  },
+  {
+   "prereq": "conditional_probability",
+   "dependent": "bayesian_inference",
+   "reason": "Bayesian inference directly applies Bayes' rule to compute posteriors, which requires conditional probability."
+  },
+  {
+   "prereq": "conditional_probability",
+   "dependent": "information_theory",
+   "reason": "Entropy, conditional entropy and information measures are defined using conditional probability distributions."
+  },
+  {
+   "prereq": "conditional_probability",
+   "dependent": "sampling",
+   "reason": "Sampling from joint or conditional distributions requires understanding conditional probability."
+  },
+  {
+   "prereq": "data_structures_and_algorithm",
+   "dependent": "dynamic_programming",
+   "reason": "Dynamic programming is an algorithm design paradigm that requires foundational knowledge of algorithms, recursion and data structures."
+  },
+  {
+   "prereq": "data_structures_and_algorithm",
+   "dependent": "robotic",
+   "reason": "Planning and control methods require efficient algorithmic implementation."
+  },
+  {
+   "prereq": "de_bruijin_graph",
+   "dependent": "genome_assembly",
+   "reason": "Modern assemblers build a de Bruijn graph of k-mers, so learner must understand that representation first."
+  },
+  {
+   "prereq": "differential_expression",
+   "dependent": "deseq",
+   "reason": "DESeq is a method to test for differential expression, so the problem must be understood first."
+  },
+  {
+   "prereq": "dna",
+   "dependent": "binding_site",
+   "reason": "Binding sites are commonly defined as specific regions on DNA where molecules bind, so DNA must be understood first."
+  },
+  {
+   "prereq": "dna",
+   "dependent": "central_dogma",
+   "reason": "Central dogma describes information flow starting from DNA, so learner must know what DNA is."
+  },
+  {
+   "prereq": "dna",
+   "dependent": "cpg_island",
+   "reason": "A CpG island is defined as a GC-rich region of DNA with elevated CpG dinucleotide frequency."
+  },
+  {
+   "prereq": "dna",
+   "dependent": "sequence_alignment",
+   "reason": "Alignment operates on biological sequences such as DNA, so learner must know what sequences are."
+  },
+  {
+   "prereq": "dna",
+   "dependent": "shotgun_sequencing",
+   "reason": "Shotgun sequencing is random fragmentation and sequencing of DNA, so DNA must be understood first."
+  },
+  {
+   "prereq": "dna",
+   "dependent": "single_nucleotide_polymorphism",
+   "reason": "A SNP is defined as single-base variation in DNA sequence"
+  },
+  {
+   "prereq": "dna",
+   "dependent": "transcription",
+   "reason": "Transcription copies DNA as the template molecule"
+  },
+  {
+   "prereq": "dynamic_programming",
+   "dependent": "hidden_markov_model",
+   "reason": "Forward, backward, and Viterbi inference for HMMs are dynamic programming algorithms."
+  },
+  {
+   "prereq": "dynamic_programming",
+   "dependent": "sequence_alignment",
+   "reason": "Optimal Needleman-Wunsch and Smith-Waterman alignments are computed with dynamic programming."
+  },
+  {
+   "prereq": "edit_distance",
+   "dependent": "sequence_alignment",
+   "reason": "Alignment scoring generalizes edit distance to matches, mismatches and gaps."
+  },
+  {
+   "prereq": "expectation_maximization_algorithm",
+   "dependent": "hidden_markov_model",
+   "reason": "Learning HMM parameters with hidden states uses EM via the Baum-Welch algorithm."
+  },
+  {
+   "prereq": "false_discovery_rate",
+   "dependent": "irreproducible_discovery_rate",
+   "reason": "IDR adapts FDR logic to control the proportion of irreproducible findings across replicates."
+  },
+  {
+   "prereq": "feature_learning",
+   "dependent": "multi_task_learning",
+   "reason": "Multi-task learning works by learning shared features useful across tasks."
+  },
+  {
+   "prereq": "feature_learning",
+   "dependent": "transfer_learning",
+   "reason": "transfer works by reusing learned features/representations from a source task for a target task"
+  },
+  {
+   "prereq": "gradient_descent",
+   "dependent": "neural_network",
+   "reason": "Training neural networks requires gradient-based iterative weight optimization."
+  },
+  {
+   "prereq": "graph_theory",
+   "dependent": "bayesian_network",
+   "reason": "A Bayesian network is a directed acyclic graph of variables and dependency edges."
+  },
+  {
+   "prereq": "graph_theory",
+   "dependent": "de_bruijin_graph",
+   "reason": "A de Bruijn graph is a specific graph construction of k-mers, so nodes, edges and paths from graph theory must be understood first."
+  },
+  {
+   "prereq": "graph_theory",
+   "dependent": "knowledge_graph",
+   "reason": "A knowledge graph is a graph of entities and relations, requiring graph concepts of nodes and edges."
+  },
+  {
+   "prereq": "graph_theory",
+   "dependent": "markov_clustering",
+   "reason": "Markov clustering clusters graphs via random walks, so graph representations are required"
+  },
+  {
+   "prereq": "hardy_weinberg_equilibrium",
+   "dependent": "linkage_disequilibrium",
+   "reason": "LD extends single-locus Hardy-Weinberg random-mating equilibrium to joint association of alleles at two loci."
+  },
+  {
+   "prereq": "hardy_weinberg_equilibrium",
+   "dependent": "molecular_evolution",
+   "reason": "Provides the null population-genetic model of no evolution used to detect selection and drift"
+  },
+  {
+   "prereq": "hidden_markov_model",
+   "dependent": "gene_finding",
+   "reason": "Ab initio gene finders model exons, introns and intergenic states as HMMs decoded by Viterbi."
+  },
+  {
+   "prereq": "hypothesis_testing",
+   "dependent": "chi_square_test",
+   "reason": "chi-square test is a specific hypothesis test requiring null hypothesis, test statistic and p-value concepts"
+  },
+  {
+   "prereq": "hypothesis_testing",
+   "dependent": "deseq",
+   "reason": "DESeq performs statistical tests and reports p-values, requiring hypothesis testing."
+  },
+  {
+   "prereq": "hypothesis_testing",
+   "dependent": "false_discovery_rate",
+   "reason": "FDR is the expected proportion of false rejections among all rejections in multiple hypothesis testing"
+  },
+  {
+   "prereq": "information_theory",
+   "dependent": "cross_entropy",
+   "reason": "Cross entropy is an information-theoretic measure of difference between distributions based on entropy."
+  },
+  {
+   "prereq": "information_theory",
+   "dependent": "mutual_information",
+   "reason": "Provides entropy and KL-divergence foundations on which mutual information is defined"
+  },
+  {
+   "prereq": "linear_algebra",
+   "dependent": "linear_regression",
+   "reason": "Linear regression is defined as a linear combination of features requiring vectors and matrices."
+  },
+  {
+   "prereq": "linear_algebra",
+   "dependent": "perceptron",
+   "reason": "Perceptron computes a weighted sum w\u00b7x+b, which requires vectors and linear operations."
+  },
+  {
+   "prereq": "linear_algebra",
+   "dependent": "principal_component_analysis",
+   "reason": "PCA requires eigenvectors, covariance matrices, and projection in vector spaces."
+  },
+  {
+   "prereq": "linear_algebra",
+   "dependent": "robotic",
+   "reason": "Robot poses, kinematics and dynamics require vectors, matrices and transformations."
+  },
+  {
+   "prereq": "linear_algebra",
+   "dependent": "singular_value_decomposition",
+   "reason": "SVD is a matrix factorization defined within linear algebra"
+  },
+  {
+   "prereq": "linear_algebra",
+   "dependent": "support_vector_machine",
+   "reason": "SVM relies on hyperplanes, vectors and dot products in vector space."
+  },
+  {
+   "prereq": "linear_algebra",
+   "dependent": "vector_representation",
+   "reason": "Vectors, vector spaces and operations define what a vector representation is"
+  },
+  {
+   "prereq": "linear_regression",
+   "dependent": "logistic_regression",
+   "reason": "logistic regression extends a linear predictor with a logistic link function"
+  },
+  {
+   "prereq": "linear_regression",
+   "dependent": "multivariate_linear_model",
+   "reason": "Multivariate linear model directly generalizes univariate linear regression to multiple predictors/responses."
+  },
+  {
+   "prereq": "linkage_disequilibrium",
+   "dependent": "genome_wide_association_study",
+   "reason": "GWAS design and signal interpretation depend on LD correlation among nearby variants."
+  },
+  {
+   "prereq": "long_short_term_memory_network",
+   "dependent": "attention_model",
+   "reason": "Classic attention models compute weights over LSTM encoder hidden states."
+  },
+  {
+   "prereq": "markov_chain_monte_carlo",
+   "dependent": "gibbs_sampling",
+   "reason": "Gibbs sampling is a specific MCMC algorithm for sampling from distributions"
+  },
+  {
+   "prereq": "matrix_multiplication",
+   "dependent": "multivariate_linear_model",
+   "reason": "Computing predictions and coefficients via Y=XB requires matrix multiplication."
+  },
+  {
+   "prereq": "matrix_multiplication",
+   "dependent": "principal_component_analysis",
+   "reason": "PCA projects data onto principal components via matrix multiplication."
+  },
+  {
+   "prereq": "matrix_multiplication",
+   "dependent": "singular_value_decomposition",
+   "reason": "SVD expresses a matrix as product U Sigma V^T requiring matrix multiplication"
+  },
+  {
+   "prereq": "maximum_likelihood_estimation",
+   "dependent": "expectation_maximization_algorithm",
+   "reason": "EM extends MLE to incomplete data by iteratively maximizing expected complete-data likelihood"
+  },
+  {
+   "prereq": "maximum_likelihood_estimation",
+   "dependent": "logistic_regression",
+   "reason": "logistic regression parameters are learned by maximizing the Bernoulli likelihood"
+  },
+  {
+   "prereq": "microarray",
+   "dependent": "differential_expression",
+   "reason": "Microarray measures expression levels as the classic data source for differential expression."
+  },
+  {
+   "prereq": "molecular_evolution",
+   "dependent": "conservation",
+   "reason": "conservation is caused by purifying selection constraining change over evolutionary time"
+  },
+  {
+   "prereq": "molecular_evolution",
+   "dependent": "phylogenetic_tree",
+   "reason": "Phylogenetic trees model evolutionary relationships and sequence substitution processes."
+  },
+  {
+   "prereq": "multivariate_linear_model",
+   "dependent": "additive_model",
+   "reason": "Additive models extend multivariate linear models to allow additive nonlinear effects of multiple predictors."
+  },
+  {
+   "prereq": "neural_network",
+   "dependent": "convolutional_neural_network",
+   "reason": "A CNN is a specialized type of neural network using convolutional layers."
+  },
+  {
+   "prereq": "neural_network",
+   "dependent": "deep_q_network",
+   "reason": "DQN uses a neural network to approximate the Q-value function"
+  },
+  {
+   "prereq": "neural_network",
+   "dependent": "multi_task_learning",
+   "reason": "Modern multi-task learning uses shared neural network layers to represent common structure."
+  },
+  {
+   "prereq": "neural_network",
+   "dependent": "recurrent_neural_network",
+   "reason": "RNNs extend feedforward neural networks with recurrent connections to model sequential data."
+  },
+  {
+   "prereq": "neural_network",
+   "dependent": "transfer_learning",
+   "reason": "transfer learning typically reuses pretrained neural networks as the base model to fine-tune"
+  },
+  {
+   "prereq": "optimization",
+   "dependent": "energy_minimization",
+   "reason": "Energy minimization is a form of optimization seeking a minimal energy state"
+  },
+  {
+   "prereq": "optimization",
+   "dependent": "genetic_algorithm",
+   "reason": "Genetic algorithms are population-based heuristic methods for solving optimization problems."
+  },
+  {
+   "prereq": "optimization",
+   "dependent": "gradient_descent",
+   "reason": "Gradient descent is an iterative optimization algorithm for minimizing an objective function."
+  },
+  {
+   "prereq": "optimization",
+   "dependent": "maximum_likelihood_estimation",
+   "reason": "MLE requires maximizing the likelihood function over the parameter space."
+  },
+  {
+   "prereq": "optimization",
+   "dependent": "perceptron",
+   "reason": "Perceptron learning iteratively updates weights to reduce errors, which is optimization."
+  },
+  {
+   "prereq": "optimization",
+   "dependent": "robotic",
+   "reason": "Trajectory planning and control require formulating and solving optimization problems."
+  },
+  {
+   "prereq": "optimization",
+   "dependent": "support_vector_machine",
+   "reason": "SVM training is formulated as a margin-maximization optimization problem."
+  },
+  {
+   "prereq": "perceptron",
+   "dependent": "neural_network",
+   "reason": "A neural network is a multilayer extension of the perceptron unit."
+  },
+  {
+   "prereq": "position_weight_matrix",
+   "dependent": "motif_discovery",
+   "reason": "Discovered motifs are represented and scored as position weight matrices, which must be understood first."
+  },
+  {
+   "prereq": "protein",
+   "dependent": "binding_site",
+   "reason": "Many binding sites are regions on proteins where ligands bind, so protein must be understood first."
+  },
+  {
+   "prereq": "protein",
+   "dependent": "central_dogma",
+   "reason": "Central dogma describes protein as the final product, so learner must know what protein is."
+  },
+  {
+   "prereq": "protein",
+   "dependent": "protein_secondary_structure",
+   "reason": "Secondary structure describes local folding of the polypeptide chain, so must know what a protein is."
+  },
+  {
+   "prereq": "protein",
+   "dependent": "transcription_factor",
+   "reason": "A transcription factor is a type of regulatory protein"
+  },
+  {
+   "prereq": "protein",
+   "dependent": "translation",
+   "reason": "Translation produces amino-acid chains, so what a protein is must be understood first"
+  },
+  {
+   "prereq": "protein_protein_interaction",
+   "dependent": "yeast_2_hybrid",
+   "reason": "Yeast two-hybrid is an experimental assay for detecting physical protein-protein interactions."
+  },
+  {
+   "prereq": "protein_secondary_structure",
+   "dependent": "protein_tertriary_structure",
+   "reason": "Tertiary structure is the spatial arrangement of secondary structure elements like helices and sheets."
+  },
+  {
+   "prereq": "protein_tertriary_structure",
+   "dependent": "homology_model",
+   "reason": "A homology model is a predicted tertiary structure of a protein based on a homologous template."
+  },
+  {
+   "prereq": "protein_tertriary_structure",
+   "dependent": "protein_protein_interaction",
+   "reason": "Interactions are mediated by folded 3D shape and surface interfaces, requiring tertiary structure."
+  },
+  {
+   "prereq": "quantitative_trait_loci",
+   "dependent": "genome_wide_association_study",
+   "reason": "GWAS aims to map QTLs underlying phenotypic variation."
+  },
+  {
+   "prereq": "recurrent_neural_network",
+   "dependent": "gated_recurrent_unit",
+   "reason": "GRU is a gated variant that directly extends the RNN architecture"
+  },
+  {
+   "prereq": "recurrent_neural_network",
+   "dependent": "long_short_term_memory_network",
+   "reason": "LSTM is a specialized RNN architecture for learning long-term dependencies"
+  },
+  {
+   "prereq": "relation_extraction",
+   "dependent": "bio_text_mining",
+   "reason": "Bio text mining depends on extracting entities and relationships from biomedical literature."
+  },
+  {
+   "prereq": "rna",
+   "dependent": "central_dogma",
+   "reason": "Central dogma describes RNA as the intermediate carrier, so learner must know what RNA is."
+  },
+  {
+   "prereq": "rna",
+   "dependent": "rna_secondary_structure",
+   "reason": "RNA secondary structure is the base-paired folding pattern of an RNA molecule, so RNA must be understood first."
+  },
+  {
+   "prereq": "rna",
+   "dependent": "transcription",
+   "reason": "Transcription produces RNA as its output product"
+  },
+  {
+   "prereq": "rna",
+   "dependent": "translation",
+   "reason": "Translation uses mRNA as the template, so RNA must be understood first"
+  },
+  {
+   "prereq": "rna_seq",
+   "dependent": "differential_expression",
+   "reason": "RNA-seq quantifies transcript abundance to provide data for differential expression testing."
+  },
+  {
+   "prereq": "sampling",
+   "dependent": "hypothesis_testing",
+   "reason": "Hypothesis testing evaluates whether observed samples are unlikely under a null sampling distribution."
+  },
+  {
+   "prereq": "sampling",
+   "dependent": "markov_chain_monte_carlo",
+   "reason": "MCMC is a Monte Carlo method for generating samples to approximate distributions and integrals"
+  },
+  {
+   "prereq": "sampling",
+   "dependent": "maximum_likelihood_estimation",
+   "reason": "MLE estimates parameters from a random sample of observed data."
+  },
+  {
+   "prereq": "search",
+   "dependent": "beam_search",
+   "reason": "Beam search is a heuristic search algorithm that expands only the top-k most promising nodes."
+  },
+  {
+   "prereq": "search",
+   "dependent": "genetic_algorithm",
+   "reason": "Genetic algorithms perform stochastic search over solution spaces via selection, crossover and mutation."
+  },
+  {
+   "prereq": "sequence_alignment",
+   "dependent": "blast",
+   "reason": "BLAST is a heuristic method for fast local sequence alignment database search"
+  },
+  {
+   "prereq": "sequence_alignment",
+   "dependent": "conservation",
+   "reason": "conservation is defined and measured at homologous aligned positions"
+  },
+  {
+   "prereq": "sequence_alignment",
+   "dependent": "homology_model",
+   "reason": "Homology modeling requires aligning the target sequence to the template sequence to transfer coordinates."
+  },
+  {
+   "prereq": "sequence_alignment",
+   "dependent": "phylogenetic_tree",
+   "reason": "Homologous sequences must be aligned to compare differences for tree inference."
+  },
+  {
+   "prereq": "shotgun_sequencing",
+   "dependent": "genome_assembly",
+   "reason": "Assembly joins short shotgun sequencing fragments, so learner must understand how those reads are generated."
+  },
+  {
+   "prereq": "single_nucleotide_polymorphism",
+   "dependent": "hardy_weinberg_equilibrium",
+   "reason": "HWE models genotype frequencies at biallelic polymorphic loci exemplified by SNPs."
+  },
+  {
+   "prereq": "single_nucleotide_polymorphism",
+   "dependent": "quantitative_trait_loci",
+   "reason": "QTL variation is tracked via segregating polymorphisms like SNPs."
+  },
+  {
+   "prereq": "transcription",
+   "dependent": "microarray",
+   "reason": "Microarray signal reflects transcription levels, requiring understanding of RNA synthesis from genes."
+  },
+  {
+   "prereq": "transcription",
+   "dependent": "rna_seq",
+   "reason": "RNA-seq quantifies transcripts produced by transcription."
+  },
+  {
+   "prereq": "transcription",
+   "dependent": "transcription_factor",
+   "reason": "Transcription factors regulate the process of transcription"
+  },
+  {
+   "prereq": "transcription_factor",
+   "dependent": "chip_seq",
+   "reason": "ChIP typically immunoprecipitates a transcription factor to map its genomic occupancy."
+  },
+  {
+   "prereq": "transcription_factor",
+   "dependent": "motif_discovery",
+   "reason": "Most DNA motifs model transcription factor binding preferences, requiring TF knowledge first."
+  },
+  {
+   "prereq": "transcription_factor",
+   "dependent": "regulatory_network",
+   "reason": "Regulatory networks are composed of transcription factors regulating target genes"
+  },
+  {
+   "prereq": "unsupervised_learning",
+   "dependent": "clustering",
+   "reason": "Clustering is a core type of unsupervised learning, so understanding learning without labels comes first."
+  },
+  {
+   "prereq": "unsupervised_learning",
+   "dependent": "feature_learning",
+   "reason": "Feature learning is largely unsupervised discovery of useful representations from raw data."
+  },
+  {
+   "prereq": "unsupervised_learning",
+   "dependent": "principal_component_analysis",
+   "reason": "PCA is an unsupervised dimensionality reduction method with no labels."
+  },
+  {
+   "prereq": "unsupervised_learning",
+   "dependent": "semi_supervised_learning",
+   "reason": "Semi-supervised learning leverages unlabeled data methods from unsupervised learning alongside labeled data."
+  }
+ ],
+ "retired": {}
+}

@@ -1,0 +1,3000 @@
+{
+ "nodes": [
+  {
+   "id": "absolute_conic",
+   "name": "absolute conic",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "action_or_gesture_recognition",
+   "name": "action or gesture recognition",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "affine_reconstruction",
+   "name": "affine reconstruction",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "artificial_intelligence",
+   "name": "Artificial Intelligence",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "attention_model",
+   "name": "attention models",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "autonomous_driving",
+   "name": "autonomous driving",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "background_modeling_and_update",
+   "name": "background modeling and update",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "background_subtraction",
+   "name": "Background Subtraction",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "backpropagation",
+   "name": "Backpropagation",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "bas_relief_ambiguity",
+   "name": "bas relief ambiguity",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "basis_function",
+   "name": "basis function",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "bayesian_network",
+   "name": "bayesian network",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "beam_search",
+   "name": "beam search",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "bidirectional_reflectance_distribution_function",
+   "name": "Bidirectional Reflectance Distribution Function",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "bio_text_mining",
+   "name": "bio text mining",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "camera_calibration_or_resectioning",
+   "name": "Camera calibration or resectioning",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "camera_localization",
+   "name": "camera localization",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "carlsson_weinshall_duality",
+   "name": "Carlsson\u2013Weinshall duality",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "classification",
+   "name": "classification",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "clustering",
+   "name": "clustering",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "cognitive_science_and_neuroscience",
+   "name": "Cognitive Science and Neuroscience",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "color_constancy",
+   "name": "Color Constancy",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "color_histogram",
+   "name": "color histogram",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "color_space",
+   "name": "color space",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "computer_graphic",
+   "name": "Computer graphics",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "conditional_probability",
+   "name": "conditional probability",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "connected_component",
+   "name": "connected component",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "contour_and_silhouette",
+   "name": "contour and silhouette",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "contrast",
+   "name": "contrast",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "contrastive_learning",
+   "name": "contrastive learning",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "control_point",
+   "name": "control points",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "convolution",
+   "name": "convolution",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "convolutional_neural_network",
+   "name": "Convolutional Neural Network",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "corner_detection",
+   "name": "corner detection",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "cross_entropy",
+   "name": "cross entropy",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "crowd_counting",
+   "name": "crowd counting",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "data_structures_and_algorithm",
+   "name": "data structures and algorithms",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "deblurring_and_dehazing",
+   "name": "deblurring and dehazing",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "decision_tree",
+   "name": "decision trees",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "deep_q_network",
+   "name": "deep Q-network",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "denoising",
+   "name": "denoising",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "dense_depth",
+   "name": "dense depth",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "depth_estimation",
+   "name": "depth estimation",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "diffuse_surface",
+   "name": "diffuse surface",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "dimensionality_reduction",
+   "name": "dimensionality reduction",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "domain_adaptation",
+   "name": "domain adaptation",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "edge_detection",
+   "name": "edge detection",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "edit_distance",
+   "name": "edit distance",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "emotion_recognition",
+   "name": "emotion recognition",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "energy",
+   "name": "energy",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "ensemble_classifier",
+   "name": "ensemble classifier",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "entropy",
+   "name": "entropy",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "epipolar_geometry",
+   "name": "Epipolar Geometry",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "euclidean_reconstruction",
+   "name": "Euclidean reconstruction",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "eye_tracking",
+   "name": "eye tracking",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "face_alignment",
+   "name": "face alignment",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "face_detection",
+   "name": "Face detection",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "face_recognition",
+   "name": "face recognition",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "feature_extraction",
+   "name": "feature extraction",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "feature_learning",
+   "name": "feature learning",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "feature_matching",
+   "name": "feature matching",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "few_shot_learning",
+   "name": "few-shot learning",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "fourier_transform",
+   "name": "Fourier transform",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "frenet_frame_and_frenet_equation",
+   "name": "Frenet frame and Frenet equations",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "fundamental_matrix",
+   "name": "fundamental matrix",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "gated_recurrent_unit",
+   "name": "gated recurrent units",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "gaussian_mixture_model",
+   "name": "Gaussian Mixture Model",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "gaze_estimation",
+   "name": "gaze estimation",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "genetic_algorithm",
+   "name": "genetic algorithms",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "gibbs_sampling",
+   "name": "Gibbs sampling",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "gradient",
+   "name": "gradient",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "gradient_descent",
+   "name": "gradient descent",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "graph_rendering",
+   "name": "graph rendering",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "graph_theory",
+   "name": "graph theory",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "hidden_markov_model",
+   "name": "Hidden Markov Models",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "hue",
+   "name": "Hue",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "human_parsing",
+   "name": "human parsing",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "hyperspectral_image",
+   "name": "hyperspectral image",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "illumination",
+   "name": "illumination",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "image_captioning",
+   "name": "image captioning",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "image_classification",
+   "name": "image classification",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "image_compression",
+   "name": "image compression",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "image_enhancement",
+   "name": "image enhancement",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "image_generation",
+   "name": "image generation",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "image_inpainting",
+   "name": "image inpainting",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "image_matting",
+   "name": "image matting",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "image_processing",
+   "name": "Image Processing",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "image_registration",
+   "name": "Image Registration",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "image_representation",
+   "name": "Image Representation",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "image_restoration",
+   "name": "image restoration",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "image_retrieval",
+   "name": "image retrieval",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "image_thresholding",
+   "name": "Image thresholding",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "image_to_image_translation",
+   "name": "image to image translation",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "imagenet",
+   "name": "imagenet",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "imaging_geometry_and_physic",
+   "name": "Imaging Geometry and Physics",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "information_retrieval",
+   "name": "information retrieval",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "information_theory",
+   "name": "information theory",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "intensity",
+   "name": "intensity",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "inter_class_similarity",
+   "name": "inter-class similarity",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "interpolation",
+   "name": "interpolation",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "interreflection",
+   "name": "interreflection",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "intra_class_variability",
+   "name": "intra-class variability",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "irradiance",
+   "name": "irradiance",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "k_mean",
+   "name": "k means",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "keypoint_detection",
+   "name": "keypoint detection",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "knot_point",
+   "name": "knot points",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "knowledge_graph",
+   "name": "knowledge graph",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "lambertian_surface",
+   "name": "Lambertian surfaces",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "linear_algebra",
+   "name": "linear algebra",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "linear_regression",
+   "name": "linear regression",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "local_features_or_blob",
+   "name": "local features or blob",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "logistic_regression",
+   "name": "logistic regression",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "long_short_term_memory_network",
+   "name": "long short term memory networks",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "mathematical_morphology",
+   "name": "mathematical morphology",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "matrix_multiplication",
+   "name": "matrix multiplication",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "model_based_method",
+   "name": "model based methods",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "motion_detection_and_tracking",
+   "name": "Motion Detection and Tracking",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "multi_task_learning",
+   "name": "multi-task learning",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "multi_view_geometry",
+   "name": "multi view geometry",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "naive_baye",
+   "name": "Naive Bayes",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "named_entity_recognition",
+   "name": "named entity recognition",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "neural_network",
+   "name": "neural networks",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "object_detection",
+   "name": "object detection",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "object_localization",
+   "name": "Object Localization",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "object_recognition",
+   "name": "object recognition",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "occlusion",
+   "name": "occlusion",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "optical_character_recognition",
+   "name": "optical character recognition",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "optical_flow",
+   "name": "Optical flow",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "optimization",
+   "name": "optimization",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "particle_filter",
+   "name": "Particle Filters",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "passive_sensing",
+   "name": "passive sensing",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "pattern_recognition_or_machine_learning",
+   "name": "Pattern Recognition or Machine Learning",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "perceptron",
+   "name": "perceptron",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "perspective_projection",
+   "name": "Perspective projection",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "pinhole_camera_model",
+   "name": "Pinhole Camera Model",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "pose_estimation",
+   "name": "Pose Estimation",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "preprocessing",
+   "name": "preprocessing",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "projective_factorization",
+   "name": "projective factorization",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "projective_geometry",
+   "name": "Projective Geometry",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "projective_plane",
+   "name": "projective plane",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "quantization",
+   "name": "quantization",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "question_answering",
+   "name": "question answering",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "radial_distortion",
+   "name": "radial distortion",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "radiance",
+   "name": "radiance",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "rectification",
+   "name": "Rectification",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "recurrent_neural_network",
+   "name": "recurrent neural networks",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "reflectance_map",
+   "name": "Reflectance Map",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "reflectance_model",
+   "name": "Reflectance Model",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "region_adjacency_graph",
+   "name": "region adjacency graphs",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "regression",
+   "name": "Regression",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "reinforcement_learning",
+   "name": "reinforcement learning",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "relation_extraction",
+   "name": "relation extraction",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "remote_sensing",
+   "name": "remote sensing",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "representation_learning",
+   "name": "Representation Learning",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "robotic",
+   "name": "robotics",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "saliency_detection",
+   "name": "saliency detection",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "saliency_prediction",
+   "name": "saliency prediction",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "sampling",
+   "name": "Sampling",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "sampson_approximation",
+   "name": "Sampson approximation",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "saturation",
+   "name": "Saturation",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "scale_space",
+   "name": "Scale Space",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "scene_understanding_and_scene_parsing",
+   "name": "Scene understanding and scene parsing",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "search",
+   "name": "search",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "second_moment_matrix_or_autocorrelation",
+   "name": "Second moment matrix or autocorrelation",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "segmentation",
+   "name": "segmentation",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "semi_supervised_learning",
+   "name": "semi-supervised learning",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "seq2seq",
+   "name": "seq2seq",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "shading_analysis",
+   "name": "Shading Analysis",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "shape_from_texture",
+   "name": "shape from texture",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "simultaneous_localization_and_mapping",
+   "name": "Simultaneous Localization and Mapping",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "single_view_reconstruction",
+   "name": "single view reconstruction",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "singular_value_decomposition",
+   "name": "singular value decomposition",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "smoothing",
+   "name": "smoothing",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "specular_surface",
+   "name": "Specular Surfaces",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "statistical_method",
+   "name": "statistical methods",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "stereo_matching_and_3d_reconstruction",
+   "name": "Stereo Matching and 3D Reconstruction",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "structure_from_motion",
+   "name": "Structure from motion",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "structuring_element",
+   "name": "structuring elements",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "style_transfer",
+   "name": "style transfer",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "sub_sampling",
+   "name": "sub-sampling",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "support_vector_machine",
+   "name": "support vector machines",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "template_matching",
+   "name": "Template Matching",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "texture",
+   "name": "texture",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "texture_classification",
+   "name": "texture classification",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "theory_of_computation",
+   "name": "theory of computation",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "trajectory_prediction",
+   "name": "trajectory prediction",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "transfer_learning",
+   "name": "transfer learning",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "triangulation",
+   "name": "triangulation",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "trifocal_tensor",
+   "name": "trifocal tensor",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "unsupervised_learning",
+   "name": "Unsupervised learning",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "v1_visual_cortex",
+   "name": "V1 visual cortex",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "vanishing_line",
+   "name": "vanishing lines",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "vanishing_point",
+   "name": "vanishing points",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "vector_representation",
+   "name": "vector representations",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "video_and_image_augmentation",
+   "name": "Video and Image augmentation",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "video_classification",
+   "name": "video classification",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "video_prediction",
+   "name": "video prediction",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "video_summarization",
+   "name": "video summarization",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "visual_odometry",
+   "name": "Visual Odometry",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "visual_question_answering",
+   "name": "visual question answering",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "zero_shot_learning",
+   "name": "zero-shot learning",
+   "provenance": [
+    "lbcd_cv"
+   ],
+   "valid_versions": []
+  }
+ ],
+ "edges": [
+  {
+   "prereq": "absolute_conic",
+   "dependent": "euclidean_reconstruction",
+   "reason": "The absolute conic encodes Euclidean structure and its image is used to upgrade affine to Euclidean reconstruction."
+  },
+  {
+   "prereq": "action_or_gesture_recognition",
+   "dependent": "video_summarization",
+   "reason": "Must recognize key actions to identify important moments to retain in summary."
+  },
+  {
+   "prereq": "affine_reconstruction",
+   "dependent": "euclidean_reconstruction",
+   "reason": "Euclidean reconstruction is the upgrade/stratum above affine reconstruction in the projective-affine-Euclidean hierarchy."
+  },
+  {
+   "prereq": "artificial_intelligence",
+   "dependent": "neural_network",
+   "reason": "Provides the broad AI field context that neural networks operate within."
+  },
+  {
+   "prereq": "artificial_intelligence",
+   "dependent": "reinforcement_learning",
+   "reason": "Reinforcement learning formalizes AI agents taking actions in an environment to maximize reward."
+  },
+  {
+   "prereq": "attention_model",
+   "dependent": "image_captioning",
+   "reason": "Aligns words to relevant image regions for detailed descriptions."
+  },
+  {
+   "prereq": "attention_model",
+   "dependent": "saliency_detection",
+   "reason": "Saliency detection operationalizes visual attention to locate standout regions."
+  },
+  {
+   "prereq": "background_modeling_and_update",
+   "dependent": "background_subtraction",
+   "reason": "Background subtraction works by comparing the current frame to a maintained background model."
+  },
+  {
+   "prereq": "background_subtraction",
+   "dependent": "motion_detection_and_tracking",
+   "reason": "Separates moving foreground from static background to enable motion detection."
+  },
+  {
+   "prereq": "backpropagation",
+   "dependent": "convolutional_neural_network",
+   "reason": "CNN weights are learned by training with backpropagation."
+  },
+  {
+   "prereq": "backpropagation",
+   "dependent": "recurrent_neural_network",
+   "reason": "RNNs are trained with backpropagation through time, which extends backpropagation."
+  },
+  {
+   "prereq": "bayesian_network",
+   "dependent": "hidden_markov_model",
+   "reason": "An HMM is a dynamic Bayesian network with hidden states evolving over time."
+  },
+  {
+   "prereq": "beam_search",
+   "dependent": "seq2seq",
+   "reason": "beam search is the standard decoding algorithm used for seq2seq inference"
+  },
+  {
+   "prereq": "bidirectional_reflectance_distribution_function",
+   "dependent": "diffuse_surface",
+   "reason": "Diffuse reflection is defined as a BRDF that is constant across viewing directions."
+  },
+  {
+   "prereq": "camera_calibration_or_resectioning",
+   "dependent": "camera_localization",
+   "reason": "Resectioning directly solves camera pose from known 3D-2D correspondences."
+  },
+  {
+   "prereq": "camera_calibration_or_resectioning",
+   "dependent": "euclidean_reconstruction",
+   "reason": "Euclidean reconstruction requires calibrated cameras to recover metric structure up to similarity."
+  },
+  {
+   "prereq": "camera_calibration_or_resectioning",
+   "dependent": "triangulation",
+   "reason": "Triangulation assumes known camera matrices which are obtained by calibration or resectioning."
+  },
+  {
+   "prereq": "classification",
+   "dependent": "decision_tree",
+   "reason": "Decision trees are a method for classification, so the classification task must be understood first."
+  },
+  {
+   "prereq": "classification",
+   "dependent": "ensemble_classifier",
+   "reason": "An ensemble classifier combines multiple base classifiers, so classification must be understood first."
+  },
+  {
+   "prereq": "classification",
+   "dependent": "image_classification",
+   "reason": "Image classification is the application of general classification to image inputs."
+  },
+  {
+   "prereq": "classification",
+   "dependent": "inter_class_similarity",
+   "reason": "Must understand what classes are in a classification task to grasp similarity between different classes."
+  },
+  {
+   "prereq": "classification",
+   "dependent": "intra_class_variability",
+   "reason": "Must understand what a class/label means before understanding variation among instances of the same class."
+  },
+  {
+   "prereq": "classification",
+   "dependent": "logistic_regression",
+   "reason": "Logistic regression solves classification tasks, so classification must be understood first."
+  },
+  {
+   "prereq": "classification",
+   "dependent": "naive_baye",
+   "reason": "Naive Bayes is a supervised classifier for predicting discrete class labels from features."
+  },
+  {
+   "prereq": "classification",
+   "dependent": "named_entity_recognition",
+   "reason": "NER is formulated as classifying text spans/tokens into entity types."
+  },
+  {
+   "prereq": "classification",
+   "dependent": "perceptron",
+   "reason": "Perceptron is a binary linear classifier so classification must be understood first"
+  },
+  {
+   "prereq": "classification",
+   "dependent": "semi_supervised_learning",
+   "reason": "Most semi-supervised methods address classification with few labeled examples."
+  },
+  {
+   "prereq": "classification",
+   "dependent": "support_vector_machine",
+   "reason": "SVM is a supervised classifier so the classification task must be understood first"
+  },
+  {
+   "prereq": "classification",
+   "dependent": "texture_classification",
+   "reason": "Texture classification is a specific classification task so must understand classification"
+  },
+  {
+   "prereq": "clustering",
+   "dependent": "k_mean",
+   "reason": "k-means is a specific clustering algorithm, so the general clustering problem must be understood first"
+  },
+  {
+   "prereq": "clustering",
+   "dependent": "segmentation",
+   "reason": "Segmentation groups pixels into regions, which requires understanding clustering."
+  },
+  {
+   "prereq": "cognitive_science_and_neuroscience",
+   "dependent": "v1_visual_cortex",
+   "reason": "V1 is a cortical brain area that requires basic neuroscience context to understand."
+  },
+  {
+   "prereq": "color_space",
+   "dependent": "color_constancy",
+   "reason": "Requires a representation of color to define what remains constant across illuminants."
+  },
+  {
+   "prereq": "color_space",
+   "dependent": "color_histogram",
+   "reason": "A color histogram is a distribution of pixel counts over bins of a specific color space."
+  },
+  {
+   "prereq": "color_space",
+   "dependent": "hue",
+   "reason": "Hue is defined as a coordinate within color space models like HSV/HSL."
+  },
+  {
+   "prereq": "computer_graphic",
+   "dependent": "graph_rendering",
+   "reason": "Graph rendering applies rendering principles from computer graphics to display visuals."
+  },
+  {
+   "prereq": "conditional_probability",
+   "dependent": "bayesian_network",
+   "reason": "Bayesian networks encode joint distributions via conditional dependencies between variables."
+  },
+  {
+   "prereq": "conditional_probability",
+   "dependent": "sampling",
+   "reason": "Understanding sampling from joint distributions requires conditional probability."
+  },
+  {
+   "prereq": "conditional_probability",
+   "dependent": "statistical_method",
+   "reason": "Statistical methods rely on conditional probability for likelihoods, Bayes rule, and inference."
+  },
+  {
+   "prereq": "contrast",
+   "dependent": "image_enhancement",
+   "reason": "Enhancement primarily adjusts contrast to improve visibility and interpretability."
+  },
+  {
+   "prereq": "contrast",
+   "dependent": "saliency_detection",
+   "reason": "Saliency is defined by local contrast in color, intensity, and orientation."
+  },
+  {
+   "prereq": "control_point",
+   "dependent": "knot_point",
+   "reason": "Knot points define segment joins blending influence of control points, so control points must be understood first."
+  },
+  {
+   "prereq": "convolution",
+   "dependent": "convolutional_neural_network",
+   "reason": "CNN layers are built directly on the convolution operation for feature extraction."
+  },
+  {
+   "prereq": "convolution",
+   "dependent": "smoothing",
+   "reason": "Smoothing is implemented as convolution of the image with a low-pass kernel."
+  },
+  {
+   "prereq": "convolution",
+   "dependent": "template_matching",
+   "reason": "Template matching is implemented as sliding cross-correlation, requiring understanding of convolution."
+  },
+  {
+   "prereq": "convolutional_neural_network",
+   "dependent": "image_captioning",
+   "reason": "Encodes the image into visual features that the caption generator conditions on."
+  },
+  {
+   "prereq": "convolutional_neural_network",
+   "dependent": "style_transfer",
+   "reason": "Neural style transfer extracts content and style features using pretrained CNNs like VGG."
+  },
+  {
+   "prereq": "corner_detection",
+   "dependent": "local_features_or_blob",
+   "reason": "Corners introduce local features that blobs generalize to regions."
+  },
+  {
+   "prereq": "data_structures_and_algorithm",
+   "dependent": "information_retrieval",
+   "reason": "inverted indexes and efficient lookup require indexing data structures"
+  },
+  {
+   "prereq": "data_structures_and_algorithm",
+   "dependent": "knowledge_graph",
+   "reason": "Knowledge graphs must be represented, stored, and traversed as graph data structures."
+  },
+  {
+   "prereq": "data_structures_and_algorithm",
+   "dependent": "search",
+   "reason": "Search algorithms like BFS, DFS, and A* require knowledge of queues, stacks, trees and graphs."
+  },
+  {
+   "prereq": "diffuse_surface",
+   "dependent": "lambertian_surface",
+   "reason": "Lambertian describes ideal diffuse reflection, so diffuse scattering must be understood first."
+  },
+  {
+   "prereq": "edge_detection",
+   "dependent": "segmentation",
+   "reason": "Boundary-based segmentation builds directly on detecting edges."
+  },
+  {
+   "prereq": "entropy",
+   "dependent": "cross_entropy",
+   "reason": "Cross entropy directly generalizes entropy to compare a true distribution p against a predicted distribution q."
+  },
+  {
+   "prereq": "entropy",
+   "dependent": "decision_tree",
+   "reason": "Tree split selection uses entropy-based information gain."
+  },
+  {
+   "prereq": "entropy",
+   "dependent": "image_compression",
+   "reason": "Entropy coding and compression limits are defined directly by entropy."
+  },
+  {
+   "prereq": "epipolar_geometry",
+   "dependent": "fundamental_matrix",
+   "reason": "Fundamental matrix is the algebraic encoding of the epipolar constraint x'^T F x = 0."
+  },
+  {
+   "prereq": "epipolar_geometry",
+   "dependent": "multi_view_geometry",
+   "reason": "Defines two-view geometric constraints that generalize to three-view and N-view geometry."
+  },
+  {
+   "prereq": "eye_tracking",
+   "dependent": "saliency_detection",
+   "reason": "Eye-tracking fixations provide the ground truth for defining and evaluating saliency."
+  },
+  {
+   "prereq": "face_alignment",
+   "dependent": "emotion_recognition",
+   "reason": "Must normalize facial landmarks and pose to compare expressions across faces."
+  },
+  {
+   "prereq": "face_alignment",
+   "dependent": "eye_tracking",
+   "reason": "must align facial landmarks to get precise eye positions to track"
+  },
+  {
+   "prereq": "face_alignment",
+   "dependent": "face_recognition",
+   "reason": "faces must be normalized and aligned to enable robust identity matching"
+  },
+  {
+   "prereq": "face_alignment",
+   "dependent": "gaze_estimation",
+   "reason": "Must localize eye landmarks to normalize eye crops for gaze regression"
+  },
+  {
+   "prereq": "face_detection",
+   "dependent": "face_alignment",
+   "reason": "A face region must be detected and cropped before its landmarks can be aligned."
+  },
+  {
+   "prereq": "feature_extraction",
+   "dependent": "classification",
+   "reason": "Classification assigns labels based on extracted features from the input."
+  },
+  {
+   "prereq": "feature_extraction",
+   "dependent": "feature_learning",
+   "reason": "Feature learning automates discovery of features, so manual feature extraction must be understood first."
+  },
+  {
+   "prereq": "feature_extraction",
+   "dependent": "feature_matching",
+   "reason": "Features must be extracted to obtain descriptors before they can be matched."
+  },
+  {
+   "prereq": "feature_extraction",
+   "dependent": "image_retrieval",
+   "reason": "Must extract discriminative features to compute similarity between query and database images."
+  },
+  {
+   "prereq": "feature_extraction",
+   "dependent": "representation_learning",
+   "reason": "Defines manual features that representation learning aims to replace with automatically learned features."
+  },
+  {
+   "prereq": "feature_matching",
+   "dependent": "image_registration",
+   "reason": "Registration estimates the spatial transform from correspondences established by matching features across images."
+  },
+  {
+   "prereq": "fundamental_matrix",
+   "dependent": "rectification",
+   "reason": "Rectifying homographies are derived from the fundamental matrix encoding epipolar constraints."
+  },
+  {
+   "prereq": "fundamental_matrix",
+   "dependent": "sampson_approximation",
+   "reason": "Sampson error is defined as a first-order approximation to geometric error for a fundamental matrix estimate."
+  },
+  {
+   "prereq": "fundamental_matrix",
+   "dependent": "trifocal_tensor",
+   "reason": "Is the two-view relation that the trifocal tensor extends to three views."
+  },
+  {
+   "prereq": "gaussian_mixture_model",
+   "dependent": "background_modeling_and_update",
+   "reason": "Canonical Stauffer-Grimson background model represents each pixel history as GMM updated over time."
+  },
+  {
+   "prereq": "gradient",
+   "dependent": "edge_detection",
+   "reason": "Edges are defined as locations of large image gradient magnitude."
+  },
+  {
+   "prereq": "gradient",
+   "dependent": "optical_flow",
+   "reason": "The optical flow constraint Ix*u+Iy*v+It=0 is defined from spatial and temporal image gradients."
+  },
+  {
+   "prereq": "gradient",
+   "dependent": "optimization",
+   "reason": "Continuous optimization uses gradients to find directions of improvement toward minima/maxima."
+  },
+  {
+   "prereq": "gradient",
+   "dependent": "second_moment_matrix_or_autocorrelation",
+   "reason": "Matrix is built from products of image gradients Ix and Iy."
+  },
+  {
+   "prereq": "gradient_descent",
+   "dependent": "backpropagation",
+   "reason": "Backpropagation supplies gradients used by gradient descent to update parameters."
+  },
+  {
+   "prereq": "graph_theory",
+   "dependent": "bayesian_network",
+   "reason": "Bayesian networks are directed acyclic graphs with nodes and edges representing variables and dependencies."
+  },
+  {
+   "prereq": "graph_theory",
+   "dependent": "connected_component",
+   "reason": "Connected components are defined as maximal connected subgraphs, requiring graph connectivity concepts."
+  },
+  {
+   "prereq": "graph_theory",
+   "dependent": "graph_rendering",
+   "reason": "Must understand nodes, edges and graph structure before visualizing them."
+  },
+  {
+   "prereq": "graph_theory",
+   "dependent": "knowledge_graph",
+   "reason": "Knowledge graphs are graphs of entity nodes and relation edges requiring nodes, edges, and graph terminology."
+  },
+  {
+   "prereq": "graph_theory",
+   "dependent": "region_adjacency_graph",
+   "reason": "RAG represents regions as nodes and adjacencies as edges, requiring graph fundamentals."
+  },
+  {
+   "prereq": "hidden_markov_model",
+   "dependent": "particle_filter",
+   "reason": "Provides the state-transition and observation model for recursive Bayesian state estimation that particle filters solve."
+  },
+  {
+   "prereq": "illumination",
+   "dependent": "irradiance",
+   "reason": "Irradiance is the radiometric measure of illumination incident on a surface."
+  },
+  {
+   "prereq": "image_classification",
+   "dependent": "object_recognition",
+   "reason": "assigning a label to an image is the basic single-object form extended by object recognition"
+  },
+  {
+   "prereq": "image_classification",
+   "dependent": "video_classification",
+   "reason": "Video classification extends image classification from single frames to sequences of frames over time."
+  },
+  {
+   "prereq": "image_enhancement",
+   "dependent": "deblurring_and_dehazing",
+   "reason": "Deblurring and dehazing aim to improve visibility and visual quality, the core goal of enhancement."
+  },
+  {
+   "prereq": "image_generation",
+   "dependent": "image_to_image_translation",
+   "reason": "Image-to-image translation is conditional image generation mapping an input image to an output image."
+  },
+  {
+   "prereq": "image_generation",
+   "dependent": "style_transfer",
+   "reason": "Style transfer generates a new image combining content of one image with style of another."
+  },
+  {
+   "prereq": "image_processing",
+   "dependent": "background_subtraction",
+   "reason": "Requires basic understanding of image operations like differencing and pixel-wise comparison."
+  },
+  {
+   "prereq": "image_processing",
+   "dependent": "denoising",
+   "reason": "Denoising is a core image processing operation requiring basics of the field."
+  },
+  {
+   "prereq": "image_processing",
+   "dependent": "feature_extraction",
+   "reason": "Provides basic image operations on which feature computation builds."
+  },
+  {
+   "prereq": "image_processing",
+   "dependent": "image_enhancement",
+   "reason": "Image enhancement is a core task within image processing requiring its basic operations."
+  },
+  {
+   "prereq": "image_processing",
+   "dependent": "image_restoration",
+   "reason": "Image restoration is a core image processing task requiring its fundamentals first"
+  },
+  {
+   "prereq": "image_processing",
+   "dependent": "optical_character_recognition",
+   "reason": "OCR requires preprocessing and enhancement of document images before recognition"
+  },
+  {
+   "prereq": "image_processing",
+   "dependent": "structuring_element",
+   "reason": "Provides the basic notion of images and morphological processing in which structuring elements are applied."
+  },
+  {
+   "prereq": "image_processing",
+   "dependent": "template_matching",
+   "reason": "Template matching is a basic image processing operation on pixel intensities."
+  },
+  {
+   "prereq": "image_processing",
+   "dependent": "video_and_image_augmentation",
+   "reason": "Augmentation applies basic processing operations like crop, rotate, flip and color shift"
+  },
+  {
+   "prereq": "image_representation",
+   "dependent": "color_histogram",
+   "reason": "Must understand images as arrays of pixels with color values before counting their distribution."
+  },
+  {
+   "prereq": "image_representation",
+   "dependent": "hyperspectral_image",
+   "reason": "A hyperspectral image is a specific image representation with many spectral channels per pixel."
+  },
+  {
+   "prereq": "image_representation",
+   "dependent": "image_compression",
+   "reason": "Compression reduces bits of a digital image, so its pixel representation must be understood first."
+  },
+  {
+   "prereq": "image_representation",
+   "dependent": "image_processing",
+   "reason": "Image processing operates on digital pixel arrays so learner must understand image representation first."
+  },
+  {
+   "prereq": "image_representation",
+   "dependent": "image_thresholding",
+   "reason": "Thresholding operates on digital images as arrays of pixel values."
+  },
+  {
+   "prereq": "image_representation",
+   "dependent": "optical_flow",
+   "reason": "Optical flow operates on video as a spatiotemporal intensity function I(x,y,t)."
+  },
+  {
+   "prereq": "image_representation",
+   "dependent": "smoothing",
+   "reason": "Smoothing operates on pixel arrays, so image representation must be known first."
+  },
+  {
+   "prereq": "image_restoration",
+   "dependent": "deblurring_and_dehazing",
+   "reason": "Deblurring and dehazing are canonical restoration tasks recovering a clean image from blurred or hazy degradation."
+  },
+  {
+   "prereq": "image_restoration",
+   "dependent": "image_inpainting",
+   "reason": "Inpainting is a subtask of restoration focused on reconstructing damaged or missing content."
+  },
+  {
+   "prereq": "image_thresholding",
+   "dependent": "background_subtraction",
+   "reason": "The frame-to-background difference must be thresholded to obtain the foreground mask."
+  },
+  {
+   "prereq": "image_thresholding",
+   "dependent": "segmentation",
+   "reason": "Thresholding is the simplest segmentation method and basis for advanced methods."
+  },
+  {
+   "prereq": "imaging_geometry_and_physic",
+   "dependent": "hyperspectral_image",
+   "reason": "Understanding light spectrum and sensor physics is required to understand spectral image formation."
+  },
+  {
+   "prereq": "imaging_geometry_and_physic",
+   "dependent": "shape_from_texture",
+   "reason": "Image formation geometry is needed to relate 2D texture gradients to 3D surface orientation."
+  },
+  {
+   "prereq": "imaging_geometry_and_physic",
+   "dependent": "single_view_reconstruction",
+   "reason": "Provides image formation geometry needed to reason about 3D shape from one view."
+  },
+  {
+   "prereq": "information_retrieval",
+   "dependent": "bio_text_mining",
+   "reason": "Mining biomedical literature first requires retrieving relevant documents."
+  },
+  {
+   "prereq": "information_retrieval",
+   "dependent": "image_retrieval",
+   "reason": "Image retrieval applies indexing, ranking and evaluation from information retrieval to image collections."
+  },
+  {
+   "prereq": "information_retrieval",
+   "dependent": "question_answering",
+   "reason": "Question answering extends information retrieval from returning relevant documents to returning exact answers."
+  },
+  {
+   "prereq": "information_theory",
+   "dependent": "cross_entropy",
+   "reason": "Cross entropy is an information-theoretic measure of expected information content under a model distribution."
+  },
+  {
+   "prereq": "intensity",
+   "dependent": "color_space",
+   "reason": "Intensity provides the brightness channel values that color spaces encode."
+  },
+  {
+   "prereq": "intensity",
+   "dependent": "contrast",
+   "reason": "Contrast is defined as relative difference in intensity/luminance, so intensity must be understood first."
+  },
+  {
+   "prereq": "intensity",
+   "dependent": "image_thresholding",
+   "reason": "Thresholding compares each pixel's intensity against a cutoff value."
+  },
+  {
+   "prereq": "intensity",
+   "dependent": "optical_flow",
+   "reason": "Brightness constancy assumption requires understanding pixel intensity preservation across frames."
+  },
+  {
+   "prereq": "interpolation",
+   "dependent": "image_registration",
+   "reason": "Warping the moving image onto the reference coordinate system requires interpolation for resampling."
+  },
+  {
+   "prereq": "interpolation",
+   "dependent": "knot_point",
+   "reason": "Knot points are parameters for piecewise polynomial interpolation, requiring interpolation basics first."
+  },
+  {
+   "prereq": "irradiance",
+   "dependent": "bidirectional_reflectance_distribution_function",
+   "reason": "BRDF denominator is incident irradiance from the incoming direction."
+  },
+  {
+   "prereq": "irradiance",
+   "dependent": "reflectance_model",
+   "reason": "Reflectance model relates incident irradiance to outgoing light"
+  },
+  {
+   "prereq": "k_mean",
+   "dependent": "gaussian_mixture_model",
+   "reason": "GMM generalizes k-means from hard to soft assignment and uses it for initialization."
+  },
+  {
+   "prereq": "keypoint_detection",
+   "dependent": "feature_matching",
+   "reason": "Keypoints provide the repeatable locations that feature matching establishes correspondences between."
+  },
+  {
+   "prereq": "keypoint_detection",
+   "dependent": "pose_estimation",
+   "reason": "Articulated and object pose is defined and solved via semantic keypoints."
+  },
+  {
+   "prereq": "lambertian_surface",
+   "dependent": "shading_analysis",
+   "reason": "Most shading analysis assumes Lambertian diffuse reflection to simplify the image formation model."
+  },
+  {
+   "prereq": "lambertian_surface",
+   "dependent": "specular_surface",
+   "reason": "Specular surfaces are understood as the non-Lambertian, view-dependent counterpart to ideal diffuse reflection."
+  },
+  {
+   "prereq": "linear_algebra",
+   "dependent": "basis_function",
+   "reason": "Basis functions generalize vector basis, span, and linear combination to function spaces."
+  },
+  {
+   "prereq": "linear_algebra",
+   "dependent": "computer_graphic",
+   "reason": "Computer graphics transformations, projections, and rendering rely on linear algebra."
+  },
+  {
+   "prereq": "linear_algebra",
+   "dependent": "frenet_frame_and_frenet_equation",
+   "reason": "Frenet frame is an orthonormal T-N-B vector basis requiring vectors and orthogonality"
+  },
+  {
+   "prereq": "linear_algebra",
+   "dependent": "linear_regression",
+   "reason": "Multivariate linear regression is formulated and solved using vectors, matrices, and linear equations."
+  },
+  {
+   "prereq": "linear_algebra",
+   "dependent": "optimization",
+   "reason": "Optimization problems are formulated and solved using vectors, matrices and linear operations."
+  },
+  {
+   "prereq": "linear_algebra",
+   "dependent": "projective_geometry",
+   "reason": "Projective geometry is formulated with homogeneous coordinates and linear transformations requiring linear algebra."
+  },
+  {
+   "prereq": "linear_algebra",
+   "dependent": "projective_plane",
+   "reason": "Projective plane is defined using homogeneous coordinates and vector subspaces requiring linear algebra."
+  },
+  {
+   "prereq": "linear_algebra",
+   "dependent": "singular_value_decomposition",
+   "reason": "SVD is a linear algebra factorization of a matrix into orthonormal bases and singular values."
+  },
+  {
+   "prereq": "linear_algebra",
+   "dependent": "vector_representation",
+   "reason": "Vector representations require understanding vectors and vector spaces from linear algebra."
+  },
+  {
+   "prereq": "linear_regression",
+   "dependent": "logistic_regression",
+   "reason": "Logistic regression extends linear regression with a logistic function for binary outcomes."
+  },
+  {
+   "prereq": "local_features_or_blob",
+   "dependent": "keypoint_detection",
+   "reason": "Keypoints are distinctive local features, often blobs, requiring that concept first."
+  },
+  {
+   "prereq": "long_short_term_memory_network",
+   "dependent": "seq2seq",
+   "reason": "LSTMs provide the long-range memory that makes seq2seq work on long sequences"
+  },
+  {
+   "prereq": "matrix_multiplication",
+   "dependent": "second_moment_matrix_or_autocorrelation",
+   "reason": "Matrix is formed as sum of outer products of gradient vectors."
+  },
+  {
+   "prereq": "matrix_multiplication",
+   "dependent": "singular_value_decomposition",
+   "reason": "SVD defines a matrix as U Sigma V^T, which requires understanding matrix multiplication."
+  },
+  {
+   "prereq": "motion_detection_and_tracking",
+   "dependent": "action_or_gesture_recognition",
+   "reason": "Actions and gestures are defined by motion of people/objects over time that must be detected and tracked"
+  },
+  {
+   "prereq": "motion_detection_and_tracking",
+   "dependent": "eye_tracking",
+   "reason": "eye tracking is specialized tracking of eye/pupil motion across frames"
+  },
+  {
+   "prereq": "motion_detection_and_tracking",
+   "dependent": "trajectory_prediction",
+   "reason": "Must obtain and associate object positions over time to form trajectories before forecasting future positions."
+  },
+  {
+   "prereq": "motion_detection_and_tracking",
+   "dependent": "video_prediction",
+   "reason": "Must understand how objects move over time to forecast their future positions and appearance."
+  },
+  {
+   "prereq": "motion_detection_and_tracking",
+   "dependent": "visual_odometry",
+   "reason": "Visual odometry requires detecting and tracking motion/features across sequential frames."
+  },
+  {
+   "prereq": "multi_view_geometry",
+   "dependent": "affine_reconstruction",
+   "reason": "Provides the multi-camera projection framework in which reconstruction is formulated."
+  },
+  {
+   "prereq": "multi_view_geometry",
+   "dependent": "structure_from_motion",
+   "reason": "Structure from motion is a core multi-view geometry problem of recovering cameras and 3D from multiple views."
+  },
+  {
+   "prereq": "named_entity_recognition",
+   "dependent": "relation_extraction",
+   "reason": "Relation extraction identifies relations between entity mentions, which must first be located by named entity recognition."
+  },
+  {
+   "prereq": "neural_network",
+   "dependent": "backpropagation",
+   "reason": "Backpropagation computes gradients for weights in a neural network forward-backward pass."
+  },
+  {
+   "prereq": "neural_network",
+   "dependent": "deep_q_network",
+   "reason": "DQN uses a deep neural network to approximate the Q-value function."
+  },
+  {
+   "prereq": "neural_network",
+   "dependent": "image_generation",
+   "reason": "Modern generative models like GANs, VAEs, and diffusion are built on neural networks."
+  },
+  {
+   "prereq": "neural_network",
+   "dependent": "multi_task_learning",
+   "reason": "Provides shared-encoder architectures used to learn multiple tasks together."
+  },
+  {
+   "prereq": "neural_network",
+   "dependent": "transfer_learning",
+   "reason": "Modern transfer learning reuses pretrained neural network weights and fine-tuning."
+  },
+  {
+   "prereq": "object_detection",
+   "dependent": "crowd_counting",
+   "reason": "Detection-based crowd counting requires detecting each person to enumerate the crowd."
+  },
+  {
+   "prereq": "object_detection",
+   "dependent": "face_detection",
+   "reason": "Face detection is a specialized instance of generic object detection applied to faces."
+  },
+  {
+   "prereq": "object_detection",
+   "dependent": "pose_estimation",
+   "reason": "Pose is estimated for a detected instance, so the object must be detected first."
+  },
+  {
+   "prereq": "object_detection",
+   "dependent": "scene_understanding_and_scene_parsing",
+   "reason": "Must detect and localize objects to interpret scene layout and content."
+  },
+  {
+   "prereq": "object_localization",
+   "dependent": "motion_detection_and_tracking",
+   "reason": "Provides per-frame object positions that tracking links over time."
+  },
+  {
+   "prereq": "object_localization",
+   "dependent": "object_detection",
+   "reason": "Object detection extends single-object localization to localizing multiple instances with bounding boxes."
+  },
+  {
+   "prereq": "object_recognition",
+   "dependent": "imagenet",
+   "reason": "ImageNet provides labeled object categories for recognition evaluation"
+  },
+  {
+   "prereq": "object_recognition",
+   "dependent": "object_localization",
+   "reason": "Must know what the object is before locating it in an image"
+  },
+  {
+   "prereq": "optical_flow",
+   "dependent": "motion_detection_and_tracking",
+   "reason": "Estimates per-pixel motion between frames used as basis for tracking."
+  },
+  {
+   "prereq": "optimization",
+   "dependent": "genetic_algorithm",
+   "reason": "Genetic algorithms are a class of stochastic optimization methods for maximizing a fitness function."
+  },
+  {
+   "prereq": "optimization",
+   "dependent": "gradient_descent",
+   "reason": "Gradient descent is an iterative optimization method, so the concept of optimization must be understood first."
+  },
+  {
+   "prereq": "optimization",
+   "dependent": "pattern_recognition_or_machine_learning",
+   "reason": "Training models requires formulating and minimizing objective functions."
+  },
+  {
+   "prereq": "particle_filter",
+   "dependent": "trajectory_prediction",
+   "reason": "Provides recursive Bayesian predict-update framework for estimating future states under uncertainty."
+  },
+  {
+   "prereq": "passive_sensing",
+   "dependent": "remote_sensing",
+   "reason": "Understanding passive detection of natural energy is required to understand passive remote sensing."
+  },
+  {
+   "prereq": "pattern_recognition_or_machine_learning",
+   "dependent": "classification",
+   "reason": "Classification is a core task formulated within pattern recognition and machine learning."
+  },
+  {
+   "prereq": "pattern_recognition_or_machine_learning",
+   "dependent": "feature_learning",
+   "reason": "Feature learning is a machine learning approach to discovering representations from raw data."
+  },
+  {
+   "prereq": "pattern_recognition_or_machine_learning",
+   "dependent": "model_based_method",
+   "reason": "Model-based methods are a type of pattern recognition approach so ML basics must come first."
+  },
+  {
+   "prereq": "pattern_recognition_or_machine_learning",
+   "dependent": "optical_character_recognition",
+   "reason": "OCR is fundamentally classifying character image patterns into text symbols"
+  },
+  {
+   "prereq": "pattern_recognition_or_machine_learning",
+   "dependent": "reinforcement_learning",
+   "reason": "Reinforcement learning is a core paradigm of machine learning for learning from interaction."
+  },
+  {
+   "prereq": "pattern_recognition_or_machine_learning",
+   "dependent": "representation_learning",
+   "reason": "Provides the ML framework of features, models and learning objectives that representation learning builds on."
+  },
+  {
+   "prereq": "pattern_recognition_or_machine_learning",
+   "dependent": "unsupervised_learning",
+   "reason": "Unsupervised learning is a sub-paradigm of machine learning defined by learning patterns without labeled data."
+  },
+  {
+   "prereq": "perceptron",
+   "dependent": "neural_network",
+   "reason": "Single-neuron predecessor that multi-layer neural networks directly extend."
+  },
+  {
+   "prereq": "perspective_projection",
+   "dependent": "contour_and_silhouette",
+   "reason": "Silhouettes are 2D perspective projections of 3D shapes."
+  },
+  {
+   "prereq": "perspective_projection",
+   "dependent": "pinhole_camera_model",
+   "reason": "Pinhole camera model is defined by perspective projection of 3D points through the optical center onto the image plane"
+  },
+  {
+   "prereq": "perspective_projection",
+   "dependent": "shape_from_texture",
+   "reason": "Texture foreshortening and scaling cues depend on perspective projection of surfaces."
+  },
+  {
+   "prereq": "pinhole_camera_model",
+   "dependent": "camera_calibration_or_resectioning",
+   "reason": "Calibration/resectioning estimates the intrinsic and extrinsic parameters of the pinhole model."
+  },
+  {
+   "prereq": "pinhole_camera_model",
+   "dependent": "epipolar_geometry",
+   "reason": "Must understand two-view pinhole projection before relating views via epipoles and epipolar lines."
+  },
+  {
+   "prereq": "pinhole_camera_model",
+   "dependent": "pose_estimation",
+   "reason": "3D pose (rotation and translation) is defined by how 3D points project through the camera model."
+  },
+  {
+   "prereq": "pinhole_camera_model",
+   "dependent": "radial_distortion",
+   "reason": "Radial distortion is defined as radial deviation from the ideal pinhole projection."
+  },
+  {
+   "prereq": "pinhole_camera_model",
+   "dependent": "single_view_reconstruction",
+   "reason": "Single image formation must be known to invert 2D measurements back to 3D."
+  },
+  {
+   "prereq": "pinhole_camera_model",
+   "dependent": "vanishing_point",
+   "reason": "Vanishing points are derived from how the pinhole camera maps 3D directions to image points."
+  },
+  {
+   "prereq": "pose_estimation",
+   "dependent": "camera_localization",
+   "reason": "Camera localization is the specific case of estimating 6-DoF camera position and orientation."
+  },
+  {
+   "prereq": "pose_estimation",
+   "dependent": "face_alignment",
+   "reason": "Alignment normalizes head pose to a canonical view so pose must be understood first."
+  },
+  {
+   "prereq": "pose_estimation",
+   "dependent": "human_parsing",
+   "reason": "Body joint structure provides the spatial prior needed to assign head, torso, and limb labels."
+  },
+  {
+   "prereq": "pose_estimation",
+   "dependent": "visual_odometry",
+   "reason": "Visual odometry incrementally estimates camera position and orientation over time."
+  },
+  {
+   "prereq": "preprocessing",
+   "dependent": "feature_extraction",
+   "reason": "Cleaning and enhancing raw data is required before reliable extraction."
+  },
+  {
+   "prereq": "preprocessing",
+   "dependent": "video_and_image_augmentation",
+   "reason": "Augmentation is performed as a preprocessing step to prepare training data"
+  },
+  {
+   "prereq": "projective_factorization",
+   "dependent": "carlsson_weinshall_duality",
+   "reason": "Provides the measurement-matrix factorization of motion and shape whose transpose defines the dual reconstruction."
+  },
+  {
+   "prereq": "projective_geometry",
+   "dependent": "absolute_conic",
+   "reason": "Provides projective space, homogeneous coordinates and conic representation needed to define the absolute conic."
+  },
+  {
+   "prereq": "projective_geometry",
+   "dependent": "camera_calibration_or_resectioning",
+   "reason": "Camera matrix estimation uses homogeneous coordinates and projective formulation."
+  },
+  {
+   "prereq": "projective_geometry",
+   "dependent": "epipolar_geometry",
+   "reason": "Must understand projective points, lines and planes to formulate epipolar geometry."
+  },
+  {
+   "prereq": "projective_geometry",
+   "dependent": "vanishing_point",
+   "reason": "Vanishing points require projective concepts of points at infinity and homogeneous coordinates."
+  },
+  {
+   "prereq": "projective_plane",
+   "dependent": "absolute_conic",
+   "reason": "Provides the plane at infinity on which the absolute conic is defined."
+  },
+  {
+   "prereq": "projective_plane",
+   "dependent": "vanishing_line",
+   "reason": "A vanishing line is the image of the line at infinity in the projective plane."
+  },
+  {
+   "prereq": "quantization",
+   "dependent": "color_histogram",
+   "reason": "Building a histogram requires quantizing colors into discrete bins for counting."
+  },
+  {
+   "prereq": "quantization",
+   "dependent": "image_compression",
+   "reason": "Lossy compression achieves bit reduction primarily by coarser quantization of values."
+  },
+  {
+   "prereq": "question_answering",
+   "dependent": "visual_question_answering",
+   "reason": "VQA extends textual question answering to images, so the QA task must be understood first."
+  },
+  {
+   "prereq": "radiance",
+   "dependent": "bidirectional_reflectance_distribution_function",
+   "reason": "BRDF is defined as outgoing radiance per unit incoming irradiance."
+  },
+  {
+   "prereq": "radiance",
+   "dependent": "reflectance_model",
+   "reason": "Reflectance model predicts reflected radiance from incident light"
+  },
+  {
+   "prereq": "rectification",
+   "dependent": "stereo_matching_and_3d_reconstruction",
+   "reason": "Aligns stereo pair so epipolar lines are horizontal to enable efficient matching."
+  },
+  {
+   "prereq": "recurrent_neural_network",
+   "dependent": "gated_recurrent_unit",
+   "reason": "GRUs are a gated variant of RNN architecture for modeling sequential dependencies"
+  },
+  {
+   "prereq": "recurrent_neural_network",
+   "dependent": "long_short_term_memory_network",
+   "reason": "LSTM is a specialized RNN architecture that adds memory cells and gates to model long-term dependencies."
+  },
+  {
+   "prereq": "recurrent_neural_network",
+   "dependent": "video_prediction",
+   "reason": "Must understand sequential temporal modeling to capture dependencies across video frames."
+  },
+  {
+   "prereq": "reflectance_map",
+   "dependent": "shading_analysis",
+   "reason": "Shading analysis inverts the reflectance map that links surface orientation to image intensity."
+  },
+  {
+   "prereq": "reflectance_model",
+   "dependent": "color_constancy",
+   "reason": "Observed color results from illuminant interacting with surface reflectance that must be disentangled."
+  },
+  {
+   "prereq": "reflectance_model",
+   "dependent": "diffuse_surface",
+   "reason": "Diffuse surface is a specific reflectance type that requires understanding general reflectance modeling."
+  },
+  {
+   "prereq": "reflectance_model",
+   "dependent": "interreflection",
+   "reason": "Interreflection is light bouncing between surfaces, which requires understanding how surfaces reflect light."
+  },
+  {
+   "prereq": "reflectance_model",
+   "dependent": "reflectance_map",
+   "reason": "Reflectance map is the reflectance model tabulated as a function of surface orientation under fixed lighting."
+  },
+  {
+   "prereq": "regression",
+   "dependent": "crowd_counting",
+   "reason": "Crowd counting is commonly framed as regressing image features or density maps to a people count."
+  },
+  {
+   "prereq": "regression",
+   "dependent": "linear_regression",
+   "reason": "Linear regression is a specific type of regression, so the general regression problem must be understood first."
+  },
+  {
+   "prereq": "reinforcement_learning",
+   "dependent": "deep_q_network",
+   "reason": "DQN learns optimal Q-values from environmental rewards to maximize return."
+  },
+  {
+   "prereq": "relation_extraction",
+   "dependent": "bio_text_mining",
+   "reason": "Extracting gene-disease and protein-protein interactions is a core bio text mining task."
+  },
+  {
+   "prereq": "representation_learning",
+   "dependent": "contrastive_learning",
+   "reason": "Contrastive learning is a method for learning embeddings by contrasting similar vs dissimilar samples."
+  },
+  {
+   "prereq": "representation_learning",
+   "dependent": "image_generation",
+   "reason": "Must understand learning latent distributions and embeddings that are decoded into images."
+  },
+  {
+   "prereq": "representation_learning",
+   "dependent": "transfer_learning",
+   "reason": "Transfer works by reusing learned representations and features from a source task."
+  },
+  {
+   "prereq": "saliency_detection",
+   "dependent": "saliency_prediction",
+   "reason": "Defines salient regions and objects that prediction methods aim to score."
+  },
+  {
+   "prereq": "saliency_detection",
+   "dependent": "video_summarization",
+   "reason": "Must identify salient frames and segments to select for the summary."
+  },
+  {
+   "prereq": "sampling",
+   "dependent": "gibbs_sampling",
+   "reason": "Gibbs sampling is a specific iterative sampling algorithm, so general sampling must be understood first."
+  },
+  {
+   "prereq": "sampling",
+   "dependent": "hyperspectral_image",
+   "reason": "Hyperspectral data requires understanding discrete sampling of the continuous spectrum into bands."
+  },
+  {
+   "prereq": "sampling",
+   "dependent": "image_processing",
+   "reason": "Must understand sampling of continuous scenes into discrete pixels to handle resolution and aliasing."
+  },
+  {
+   "prereq": "sampling",
+   "dependent": "particle_filter",
+   "reason": "Particle filters are sequential Monte Carlo methods based on importance sampling and resampling to approximate posteriors."
+  },
+  {
+   "prereq": "sampling",
+   "dependent": "sub_sampling",
+   "reason": "Sub-sampling is defined as reducing an existing sampling rate, so Sampling must be understood first"
+  },
+  {
+   "prereq": "saturation",
+   "dependent": "color_space",
+   "reason": "Saturation is a core color attribute that color spaces like HSV/HSL use as a dimension."
+  },
+  {
+   "prereq": "scale_space",
+   "dependent": "local_features_or_blob",
+   "reason": "Blob detectors operate over scale-space for scale-invariant localization."
+  },
+  {
+   "prereq": "scene_understanding_and_scene_parsing",
+   "dependent": "visual_question_answering",
+   "reason": "Answering questions requires parsing overall scene context and object relationships."
+  },
+  {
+   "prereq": "search",
+   "dependent": "beam_search",
+   "reason": "Beam search is a heuristic search algorithm that keeps the top-k partial solutions during search."
+  },
+  {
+   "prereq": "search",
+   "dependent": "genetic_algorithm",
+   "reason": "Genetic algorithms perform heuristic search over a space of candidate solutions."
+  },
+  {
+   "prereq": "second_moment_matrix_or_autocorrelation",
+   "dependent": "corner_detection",
+   "reason": "Harris/Shi-Tomasi corner response is defined from eigenvalues of the second moment matrix."
+  },
+  {
+   "prereq": "segmentation",
+   "dependent": "contour_and_silhouette",
+   "reason": "Silhouettes are foreground segments separating object from background."
+  },
+  {
+   "prereq": "segmentation",
+   "dependent": "human_parsing",
+   "reason": "Human parsing is fine-grained pixel-level segmentation of body parts, so segmentation must be understood first."
+  },
+  {
+   "prereq": "segmentation",
+   "dependent": "image_matting",
+   "reason": "Matting extends binary segmentation to per-pixel fractional alpha foreground-background separation."
+  },
+  {
+   "prereq": "segmentation",
+   "dependent": "region_adjacency_graph",
+   "reason": "RAG nodes are segmented image regions, so segmentation must be understood first."
+  },
+  {
+   "prereq": "segmentation",
+   "dependent": "scene_understanding_and_scene_parsing",
+   "reason": "Scene parsing is semantic segmentation applied to label all scene regions."
+  },
+  {
+   "prereq": "seq2seq",
+   "dependent": "attention_model",
+   "reason": "Attention solves the fixed-context bottleneck of encoder-decoder seq2seq models."
+  },
+  {
+   "prereq": "shading_analysis",
+   "dependent": "bas_relief_ambiguity",
+   "reason": "Bas-relief ambiguity describes the inherent non-uniqueness in recovering shape from shading."
+  },
+  {
+   "prereq": "simultaneous_localization_and_mapping",
+   "dependent": "autonomous_driving",
+   "reason": "Vehicle must localize itself and build a map of the environment for navigation."
+  },
+  {
+   "prereq": "singular_value_decomposition",
+   "dependent": "dimensionality_reduction",
+   "reason": "Core tool for PCA and low-rank approximation used to reduce dimensions."
+  },
+  {
+   "prereq": "smoothing",
+   "dependent": "denoising",
+   "reason": "Classical denoising is achieved with smoothing filters that suppress noise."
+  },
+  {
+   "prereq": "smoothing",
+   "dependent": "edge_detection",
+   "reason": "Smoothing suppresses noise before differentiation for reliable edge detection."
+  },
+  {
+   "prereq": "smoothing",
+   "dependent": "scale_space",
+   "reason": "Scale space is constructed by progressively smoothing an image to form a multi-scale stack."
+  },
+  {
+   "prereq": "smoothing",
+   "dependent": "second_moment_matrix_or_autocorrelation",
+   "reason": "Entries are locally averaged over a window to aggregate neighborhood structure."
+  },
+  {
+   "prereq": "statistical_method",
+   "dependent": "entropy",
+   "reason": "Requires understanding distributions and expectation to compute uncertainty."
+  },
+  {
+   "prereq": "statistical_method",
+   "dependent": "information_retrieval",
+   "reason": "probabilistic ranking and relevance estimation rely on statistics"
+  },
+  {
+   "prereq": "statistical_method",
+   "dependent": "information_theory",
+   "reason": "Provides probability distributions and expectation needed to quantify information."
+  },
+  {
+   "prereq": "statistical_method",
+   "dependent": "linear_regression",
+   "reason": "Fitting and interpreting linear regression relies on core statistical concepts like least squares and variance."
+  },
+  {
+   "prereq": "statistical_method",
+   "dependent": "pattern_recognition_or_machine_learning",
+   "reason": "Pattern recognition and machine learning are built on statistical decision theory and inference."
+  },
+  {
+   "prereq": "structure_from_motion",
+   "dependent": "projective_factorization",
+   "reason": "Defines the problem of recovering cameras and 3D structure from correspondences that projective factorization solves."
+  },
+  {
+   "prereq": "structure_from_motion",
+   "dependent": "visual_odometry",
+   "reason": "Visual odometry is the online incremental form of structure from motion for ego-motion."
+  },
+  {
+   "prereq": "structuring_element",
+   "dependent": "mathematical_morphology",
+   "reason": "Erosion, dilation, opening and closing are defined by probing the image with a structuring element."
+  },
+  {
+   "prereq": "template_matching",
+   "dependent": "image_registration",
+   "reason": "Area-based registration is performed by template matching with similarity measures over candidate transformations."
+  },
+  {
+   "prereq": "template_matching",
+   "dependent": "object_localization",
+   "reason": "Core similarity-search method used to find object location"
+  },
+  {
+   "prereq": "texture",
+   "dependent": "shape_from_texture",
+   "reason": "Shape from texture infers 3D from distortion of texture elements, so texture must be understood first."
+  },
+  {
+   "prereq": "texture",
+   "dependent": "texture_classification",
+   "reason": "Texture classification assigns labels to texture patterns so must understand what texture is"
+  },
+  {
+   "prereq": "trajectory_prediction",
+   "dependent": "autonomous_driving",
+   "reason": "Must predict future motion of surrounding agents to plan safe driving actions."
+  },
+  {
+   "prereq": "transfer_learning",
+   "dependent": "domain_adaptation",
+   "reason": "Domain adaptation is a specialized type of transfer learning for adapting a source-domain model to a shifted target domain."
+  },
+  {
+   "prereq": "transfer_learning",
+   "dependent": "few_shot_learning",
+   "reason": "Few-shot methods typically reuse representations learned on data-rich base tasks for data-scarce novel tasks."
+  },
+  {
+   "prereq": "transfer_learning",
+   "dependent": "zero_shot_learning",
+   "reason": "Zero-shot requires transferring knowledge from seen classes to unseen classes."
+  },
+  {
+   "prereq": "triangulation",
+   "dependent": "depth_estimation",
+   "reason": "Provides geometric computation of depth from correspondences."
+  },
+  {
+   "prereq": "triangulation",
+   "dependent": "stereo_matching_and_3d_reconstruction",
+   "reason": "Converts matched 2D correspondences into 3D points for reconstruction."
+  },
+  {
+   "prereq": "triangulation",
+   "dependent": "structure_from_motion",
+   "reason": "3D structure in SfM is recovered by triangulating matched image points from estimated poses."
+  },
+  {
+   "prereq": "unsupervised_learning",
+   "dependent": "clustering",
+   "reason": "Clustering is a core type of unsupervised learning on unlabeled data."
+  },
+  {
+   "prereq": "unsupervised_learning",
+   "dependent": "contrastive_learning",
+   "reason": "Contrastive learning typically learns from unlabeled positive and negative pairs."
+  },
+  {
+   "prereq": "unsupervised_learning",
+   "dependent": "dimensionality_reduction",
+   "reason": "Frames dimensionality reduction as discovering structure from unlabeled data."
+  },
+  {
+   "prereq": "unsupervised_learning",
+   "dependent": "semi_supervised_learning",
+   "reason": "Provides principles for learning structure from unlabeled data central to semi-supervised methods."
+  },
+  {
+   "prereq": "vanishing_point",
+   "dependent": "vanishing_line",
+   "reason": "A vanishing line is defined as the line joining or locus of vanishing points of directions in a plane."
+  },
+  {
+   "prereq": "vector_representation",
+   "dependent": "information_retrieval",
+   "reason": "IR models queries and documents as vectors in the vector space model"
+  },
+  {
+   "prereq": "vector_representation",
+   "dependent": "representation_learning",
+   "reason": "Defines vectors/embeddings as the output form that representation learning methods learn."
+  },
+  {
+   "prereq": "video_classification",
+   "dependent": "action_or_gesture_recognition",
+   "reason": "Action/gesture recognition is video classification specialized to human actions and gestures"
+  },
+  {
+   "prereq": "visual_odometry",
+   "dependent": "simultaneous_localization_and_mapping",
+   "reason": "SLAM builds on visual odometry for incremental camera motion estimation before adding global mapping and loop closure."
+  }
+ ],
+ "retired": {}
+}

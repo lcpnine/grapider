@@ -1,0 +1,1336 @@
+{
+ "nodes": [
+  {
+   "id": "access_control",
+   "name": "Access Control",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "acid_property",
+   "name": "ACID Properties",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "alter_table",
+   "name": "ALTER TABLE",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "attribute",
+   "name": "Attribute",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "authentication",
+   "name": "Authentication",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "boyce_codd_normal_form_bcnf",
+   "name": "Boyce-Codd normal form (BCNF)",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "candidate_key",
+   "name": "Candidate key",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "cardinality",
+   "name": "Cardinality",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "cardinality_ratio",
+   "name": "Cardinality ratios",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "cartesian_product",
+   "name": "Cartesian product",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "closure",
+   "name": "Closure",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "concurrent_transaction",
+   "name": "Concurrent Transactions",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "count",
+   "name": "COUNT",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "create_table",
+   "name": "CREATE TABLE",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "data_integrity",
+   "name": "Data integrity",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "data_model",
+   "name": "Data Model",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "data_structure",
+   "name": "Data structure",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "data_type",
+   "name": "Data type",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "database_security",
+   "name": "Database Security",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "ddl",
+   "name": "DDL",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "delete",
+   "name": "DELETE",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "dependency_preservation",
+   "name": "Dependency preservation",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "difference",
+   "name": "Difference",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "discretionary_access_control_dac",
+   "name": "Discretionary access control (DAC)",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "dml",
+   "name": "DML",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "domain",
+   "name": "Domain",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "drop_table",
+   "name": "DROP TABLE",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "enhanced_entity_relationship",
+   "name": "Enhanced Entity-Relationship",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "entity",
+   "name": "Entity",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "entity_relationship_model",
+   "name": "Entity-Relationship Model",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "equality",
+   "name": "Equality",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "equivalent",
+   "name": "Equivalent",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "except",
+   "name": "EXCEPT",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "exist",
+   "name": "EXISTS",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "foreign_key",
+   "name": "Foreign key",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "functional_dependency",
+   "name": "Functional dependencies",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "grant",
+   "name": "GRANT",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "group_by",
+   "name": "GROUP BY",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "having",
+   "name": "HAVING",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "implied",
+   "name": "Implied",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "inner_join",
+   "name": "Inner Join",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "insert",
+   "name": "INSERT",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "intersection",
+   "name": "Intersection",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "isolation",
+   "name": "Isolation",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "join",
+   "name": "Join",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "key_attribute",
+   "name": "Key attributes",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "left_join",
+   "name": "Left Join",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "locking",
+   "name": "Locking",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "logging",
+   "name": "Logging",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "lossless_join",
+   "name": "Lossless Join",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "mandatory_access_control_mac",
+   "name": "Mandatory Access Control (MAC)",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "many_to_many",
+   "name": "Many-To-Many",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "min",
+   "name": "MIN",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "minimal_cover",
+   "name": "Minimal Cover",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "natural_join",
+   "name": "Natural Join",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "normalisation",
+   "name": "Normalisation",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "one_to_many",
+   "name": "One-To-Many",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "one_to_one",
+   "name": "One-To-One",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "partial",
+   "name": "partial",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "participation_constraint",
+   "name": "Participation constraints",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "primary_key",
+   "name": "Primary Key",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "prime_attribute",
+   "name": "Prime Attribute",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "projection",
+   "name": "Projection",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "query",
+   "name": "Query",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "read_committed",
+   "name": "Read Committed",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "read_uncommitted",
+   "name": "Read Uncommitted",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "relation",
+   "name": "Relation",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "relational_algebra",
+   "name": "Relational Algebra",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "relational_data_model",
+   "name": "Relational data model",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "relationship",
+   "name": "Relationship",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "renaming",
+   "name": "Renaming",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "revoke",
+   "name": "REVOKE",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "role_based_access_control_rbac",
+   "name": "Role-Based Access Control (RBAC)",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "schema",
+   "name": "Schema",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "select",
+   "name": "SELECT",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "select_distinct",
+   "name": "SELECT DISTINCT",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "selection",
+   "name": "Selection",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "serializable",
+   "name": "Serializable",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "set",
+   "name": "Set",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "specifying_privileges_view",
+   "name": "Specifying Privileges - Views",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "sql",
+   "name": "SQL",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "sql_injection",
+   "name": "SQL Injection",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "subclass",
+   "name": "Subclass",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "subset",
+   "name": "Subset",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "superclass",
+   "name": "Superclass",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "superkey",
+   "name": "Superkey",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "the_dirty_read_problem",
+   "name": "The Dirty Read Problem",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "the_lost_update_problem",
+   "name": "The Lost Update Problem",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "the_unrepeatable_read_problem",
+   "name": "The Unrepeatable Read Problem",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "third_normal_form_3nf",
+   "name": "Third normal form (3NF)",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "total",
+   "name": "Total",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "transaction",
+   "name": "Transactions",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "trivial",
+   "name": "Trivial",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "trojan_horse_attack",
+   "name": "Trojan Horse attacks",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "tuple",
+   "name": "Tuple",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "two_phase_locking_2pl_protocol",
+   "name": "Two-Phase Locking (2PL) Protocol",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "union",
+   "name": "union",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  },
+  {
+   "id": "weak_entity",
+   "name": "weak entity",
+   "provenance": [
+    "dbe"
+   ],
+   "valid_versions": []
+  }
+ ],
+ "edges": [
+  {
+   "prereq": "access_control",
+   "dependent": "database_security",
+   "reason": "Database security relies on access control to restrict who can access data."
+  },
+  {
+   "prereq": "access_control",
+   "dependent": "discretionary_access_control_dac",
+   "reason": "DAC is a specific model of access control, so general access control must be understood first."
+  },
+  {
+   "prereq": "access_control",
+   "dependent": "mandatory_access_control_mac",
+   "reason": "MAC is a specific access control model enforcing access via security classifications."
+  },
+  {
+   "prereq": "access_control",
+   "dependent": "role_based_access_control_rbac",
+   "reason": "RBAC is a specific model of access control, so general access control must be understood first."
+  },
+  {
+   "prereq": "attribute",
+   "dependent": "entity_relationship_model",
+   "reason": "ER model describes properties as attributes so attribute must be understood first"
+  },
+  {
+   "prereq": "attribute",
+   "dependent": "tuple",
+   "reason": "A tuple is an ordered list of values where each position corresponds to an attribute."
+  },
+  {
+   "prereq": "authentication",
+   "dependent": "access_control",
+   "reason": "Access control authorization decisions require identities verified by authentication."
+  },
+  {
+   "prereq": "candidate_key",
+   "dependent": "key_attribute",
+   "reason": "Key attributes are defined as attributes that belong to any candidate key."
+  },
+  {
+   "prereq": "candidate_key",
+   "dependent": "normalisation",
+   "reason": "Normal forms are defined in terms of candidate keys and prime attributes."
+  },
+  {
+   "prereq": "candidate_key",
+   "dependent": "primary_key",
+   "reason": "A primary key is a candidate key chosen as the main identifier."
+  },
+  {
+   "prereq": "candidate_key",
+   "dependent": "prime_attribute",
+   "reason": "A prime attribute is defined as an attribute that is part of any candidate key."
+  },
+  {
+   "prereq": "cardinality",
+   "dependent": "cardinality_ratio",
+   "reason": "Cardinality ratios specify maximum participation counts, requiring the general cardinality concept."
+  },
+  {
+   "prereq": "cardinality_ratio",
+   "dependent": "many_to_many",
+   "reason": "Many-to-many is one of the cardinality ratio types constraining relationship participation."
+  },
+  {
+   "prereq": "cardinality_ratio",
+   "dependent": "one_to_many",
+   "reason": "One-To-Many is a specific type of cardinality ratio."
+  },
+  {
+   "prereq": "cardinality_ratio",
+   "dependent": "one_to_one",
+   "reason": "One-to-one is one instance of a cardinality ratio."
+  },
+  {
+   "prereq": "cartesian_product",
+   "dependent": "join",
+   "reason": "Join is defined as a selection over the cartesian product of two relations."
+  },
+  {
+   "prereq": "closure",
+   "dependent": "minimal_cover",
+   "reason": "Closure tests are used to detect extraneous attributes and redundant dependencies when minimizing."
+  },
+  {
+   "prereq": "concurrent_transaction",
+   "dependent": "isolation",
+   "reason": "Isolation governs interference between concurrently executing transactions."
+  },
+  {
+   "prereq": "concurrent_transaction",
+   "dependent": "the_dirty_read_problem",
+   "reason": "Dirty read only occurs with interleaved execution of multiple concurrent transactions."
+  },
+  {
+   "prereq": "concurrent_transaction",
+   "dependent": "the_lost_update_problem",
+   "reason": "Lost update only occurs when transactions execute concurrently with interleaved reads and writes."
+  },
+  {
+   "prereq": "concurrent_transaction",
+   "dependent": "the_unrepeatable_read_problem",
+   "reason": "The anomaly only occurs due to interleaved execution of concurrent transactions."
+  },
+  {
+   "prereq": "count",
+   "dependent": "group_by",
+   "reason": "GROUP BY is used to partition rows for per-group aggregation like COUNT"
+  },
+  {
+   "prereq": "create_table",
+   "dependent": "alter_table",
+   "reason": "ALTER TABLE modifies tables first defined by CREATE TABLE"
+  },
+  {
+   "prereq": "create_table",
+   "dependent": "drop_table",
+   "reason": "Must understand what a table is as created by CREATE TABLE before it can be dropped."
+  },
+  {
+   "prereq": "data_model",
+   "dependent": "relational_data_model",
+   "reason": "The relational model is a specific type of data model, so the general concept of a data model must be understood first."
+  },
+  {
+   "prereq": "data_model",
+   "dependent": "schema",
+   "reason": "A schema is a description of database structure expressed using the constructs of a data model."
+  },
+  {
+   "prereq": "data_type",
+   "dependent": "create_table",
+   "reason": "Each column in CREATE TABLE must be declared with a specific data type"
+  },
+  {
+   "prereq": "data_type",
+   "dependent": "ddl",
+   "reason": "DDL table definitions require specifying data types for attributes."
+  },
+  {
+   "prereq": "database_security",
+   "dependent": "trojan_horse_attack",
+   "reason": "Provides the threat model and security goals that Trojan Horse attacks violate"
+  },
+  {
+   "prereq": "ddl",
+   "dependent": "alter_table",
+   "reason": "ALTER TABLE is a DDL statement for defining database structure"
+  },
+  {
+   "prereq": "ddl",
+   "dependent": "drop_table",
+   "reason": "DROP TABLE is a DDL operation that modifies database structure, not data."
+  },
+  {
+   "prereq": "difference",
+   "dependent": "except",
+   "reason": "EXCEPT is the SQL implementation of the relational algebra Difference operation."
+  },
+  {
+   "prereq": "discretionary_access_control_dac",
+   "dependent": "grant",
+   "reason": "GRANT is SQL's implementation of discretionary access control."
+  },
+  {
+   "prereq": "discretionary_access_control_dac",
+   "dependent": "trojan_horse_attack",
+   "reason": "Trojan Horses exploit discretionarily granted privileges passed to malicious code"
+  },
+  {
+   "prereq": "dml",
+   "dependent": "delete",
+   "reason": "DELETE is a DML statement for modifying stored data"
+  },
+  {
+   "prereq": "dml",
+   "dependent": "insert",
+   "reason": "INSERT is a DML statement for manipulating data so must understand DML."
+  },
+  {
+   "prereq": "domain",
+   "dependent": "tuple",
+   "reason": "Each value in a tuple must be drawn from the domain of its attribute."
+  },
+  {
+   "prereq": "enhanced_entity_relationship",
+   "dependent": "superclass",
+   "reason": "Superclass is defined within EER as the parent in superclass/subclass relationships."
+  },
+  {
+   "prereq": "entity",
+   "dependent": "relationship",
+   "reason": "A relationship is defined as an association among entities, so Entity must be understood first."
+  },
+  {
+   "prereq": "entity_relationship_model",
+   "dependent": "enhanced_entity_relationship",
+   "reason": "EER directly extends the ER model with specialization, generalization, and inheritance."
+  },
+  {
+   "prereq": "entity_relationship_model",
+   "dependent": "participation_constraint",
+   "reason": "It provides the modeling framework where participation constraints are expressed."
+  },
+  {
+   "prereq": "equality",
+   "dependent": "natural_join",
+   "reason": "Natural join combines tuples with equal values on common attributes"
+  },
+  {
+   "prereq": "equivalent",
+   "dependent": "minimal_cover",
+   "reason": "A minimal cover is defined as an equivalent set with no redundancy, so equivalence of FD sets is required."
+  },
+  {
+   "prereq": "functional_dependency",
+   "dependent": "closure",
+   "reason": "Closure is defined as the set of all functional dependencies implied by a given set of functional dependencies"
+  },
+  {
+   "prereq": "functional_dependency",
+   "dependent": "dependency_preservation",
+   "reason": "Dependency preservation checks whether functional dependencies can still be enforced after decomposition."
+  },
+  {
+   "prereq": "functional_dependency",
+   "dependent": "implied",
+   "reason": "Implied means a functional dependency logically implied by a set, so functional dependencies must be understood first."
+  },
+  {
+   "prereq": "functional_dependency",
+   "dependent": "normalisation",
+   "reason": "Normalisation identifies and removes redundancy by analyzing functional dependencies."
+  },
+  {
+   "prereq": "functional_dependency",
+   "dependent": "third_normal_form_3nf",
+   "reason": "3NF is defined as a restriction on non-trivial functional dependencies to eliminate transitive dependence"
+  },
+  {
+   "prereq": "functional_dependency",
+   "dependent": "trivial",
+   "reason": "Trivial defines a special case of a functional dependency X->Y."
+  },
+  {
+   "prereq": "grant",
+   "dependent": "revoke",
+   "reason": "REVOKE withdraws privileges previously given by GRANT, so GRANT must be understood first."
+  },
+  {
+   "prereq": "group_by",
+   "dependent": "having",
+   "reason": "HAVING filters groups formed by GROUP BY, so grouping must be understood first"
+  },
+  {
+   "prereq": "inner_join",
+   "dependent": "left_join",
+   "reason": "Left Join extends Inner Join by preserving unmatched left tuples."
+  },
+  {
+   "prereq": "isolation",
+   "dependent": "locking",
+   "reason": "Locking is a mechanism used to enforce isolation of concurrent execution"
+  },
+  {
+   "prereq": "isolation",
+   "dependent": "read_committed",
+   "reason": "Read Committed is a specific isolation level, so isolation must be understood first."
+  },
+  {
+   "prereq": "isolation",
+   "dependent": "read_uncommitted",
+   "reason": "Read Uncommitted is a specific isolation guarantee, so isolation must be understood first."
+  },
+  {
+   "prereq": "isolation",
+   "dependent": "serializable",
+   "reason": "Serializable is the correctness criterion for achieving full transaction isolation."
+  },
+  {
+   "prereq": "join",
+   "dependent": "inner_join",
+   "reason": "Inner Join is a specific type of the general Join operation."
+  },
+  {
+   "prereq": "join",
+   "dependent": "natural_join",
+   "reason": "Natural join is a specific type of join operation"
+  },
+  {
+   "prereq": "key_attribute",
+   "dependent": "weak_entity",
+   "reason": "Weak entities are defined by lacking their own key attributes and using a partial key instead."
+  },
+  {
+   "prereq": "locking",
+   "dependent": "two_phase_locking_2pl_protocol",
+   "reason": "2PL defines growing and shrinking phases for acquiring and releasing shared and exclusive locks."
+  },
+  {
+   "prereq": "natural_join",
+   "dependent": "lossless_join",
+   "reason": "Lossless join is defined as reconstructing the original via natural join of projections."
+  },
+  {
+   "prereq": "normalisation",
+   "dependent": "boyce_codd_normal_form_bcnf",
+   "reason": "BCNF is a level of normalisation aimed at removing redundancy and update anomalies."
+  },
+  {
+   "prereq": "normalisation",
+   "dependent": "lossless_join",
+   "reason": "Lossless join is the required property when decomposing during normalisation."
+  },
+  {
+   "prereq": "participation_constraint",
+   "dependent": "partial",
+   "reason": "Partial participation is a specific type of participation constraint."
+  },
+  {
+   "prereq": "participation_constraint",
+   "dependent": "total",
+   "reason": "Total is a type of participation constraint (total vs partial participation)."
+  },
+  {
+   "prereq": "primary_key",
+   "dependent": "foreign_key",
+   "reason": "A foreign key is defined as referencing the primary key of the referenced relation."
+  },
+  {
+   "prereq": "prime_attribute",
+   "dependent": "third_normal_form_3nf",
+   "reason": "3NF permits a dependency when the right-hand side is a prime attribute"
+  },
+  {
+   "prereq": "query",
+   "dependent": "sql",
+   "reason": "SQL is a language for expressing queries, so the general concept of a query must be understood first."
+  },
+  {
+   "prereq": "relation",
+   "dependent": "create_table",
+   "reason": "CREATE TABLE creates a new empty relation to store tuples"
+  },
+  {
+   "prereq": "relation",
+   "dependent": "difference",
+   "reason": "Difference operates on relations as its operands"
+  },
+  {
+   "prereq": "relation",
+   "dependent": "functional_dependency",
+   "reason": "A functional dependency holds over attributes within a relation."
+  },
+  {
+   "prereq": "relation",
+   "dependent": "intersection",
+   "reason": "Database intersection operates on union-compatible relations"
+  },
+  {
+   "prereq": "relation",
+   "dependent": "projection",
+   "reason": "Projection operates on a relation and returns a relation, so relation must be understood first."
+  },
+  {
+   "prereq": "relation",
+   "dependent": "relational_algebra",
+   "reason": "Relational algebra operators take relations as input and produce relations as output."
+  },
+  {
+   "prereq": "relation",
+   "dependent": "renaming",
+   "reason": "Renaming changes the name of a relation, so must understand what a relation is."
+  },
+  {
+   "prereq": "relation",
+   "dependent": "selection",
+   "reason": "Selection takes a relation as input and returns a relation."
+  },
+  {
+   "prereq": "relation",
+   "dependent": "sql",
+   "reason": "SQL statements operate on relations and return relations, so the concept of a relation must be understood first."
+  },
+  {
+   "prereq": "relation",
+   "dependent": "superkey",
+   "reason": "A superkey is defined within the schema of a specific relation."
+  },
+  {
+   "prereq": "relational_data_model",
+   "dependent": "relational_algebra",
+   "reason": "Provides the structural framework of tables, tuples and attributes that the algebra operates on."
+  },
+  {
+   "prereq": "relational_data_model",
+   "dependent": "sql",
+   "reason": "SQL is the standard language for defining and manipulating databases based on the relational data model."
+  },
+  {
+   "prereq": "relationship",
+   "dependent": "cardinality",
+   "reason": "Cardinality constrains relationship instances, so relationship must be understood first."
+  },
+  {
+   "prereq": "relationship",
+   "dependent": "entity_relationship_model",
+   "reason": "ER model represents associations as relationships so relationship must be understood first"
+  },
+  {
+   "prereq": "relationship",
+   "dependent": "weak_entity",
+   "reason": "A weak entity depends on an owner entity through an identifying relationship."
+  },
+  {
+   "prereq": "revoke",
+   "dependent": "specifying_privileges_view",
+   "reason": "Granted privileges on views are managed and removed using REVOKE."
+  },
+  {
+   "prereq": "schema",
+   "dependent": "ddl",
+   "reason": "DDL is the language used to define and modify database schemas."
+  },
+  {
+   "prereq": "schema",
+   "dependent": "renaming",
+   "reason": "Renaming modifies the relation schema names without changing data, so must understand schema."
+  },
+  {
+   "prereq": "select",
+   "dependent": "count",
+   "reason": "COUNT is used inside a SELECT clause to return aggregated results"
+  },
+  {
+   "prereq": "select",
+   "dependent": "except",
+   "reason": "EXCEPT combines the results of two SELECT queries."
+  },
+  {
+   "prereq": "select",
+   "dependent": "exist",
+   "reason": "EXISTS takes a SELECT subquery and tests whether it returns any rows"
+  },
+  {
+   "prereq": "select",
+   "dependent": "min",
+   "reason": "MIN is used inside a SELECT clause to retrieve the minimum value."
+  },
+  {
+   "prereq": "select",
+   "dependent": "select_distinct",
+   "reason": "SELECT DISTINCT is a modifier of the SELECT clause to eliminate duplicates"
+  },
+  {
+   "prereq": "select",
+   "dependent": "sql_injection",
+   "reason": "Classic injections manipulate SELECT statements to bypass logic, so SELECT must be understood first."
+  },
+  {
+   "prereq": "select",
+   "dependent": "union",
+   "reason": "In SQL UNION combines the results of SELECT statements."
+  },
+  {
+   "prereq": "selection",
+   "dependent": "join",
+   "reason": "Join filters combined tuples using a selection condition."
+  },
+  {
+   "prereq": "serializable",
+   "dependent": "two_phase_locking_2pl_protocol",
+   "reason": "2PL's correctness guarantee is to produce serializable schedules."
+  },
+  {
+   "prereq": "set",
+   "dependent": "cartesian_product",
+   "reason": "Cartesian product is defined over sets as the set of all ordered pairs"
+  },
+  {
+   "prereq": "set",
+   "dependent": "domain",
+   "reason": "A domain is defined as a set of atomic values, so understanding sets is required first."
+  },
+  {
+   "prereq": "set",
+   "dependent": "subset",
+   "reason": "A subset is defined as a set whose elements are all contained in another set."
+  },
+  {
+   "prereq": "sql",
+   "dependent": "ddl",
+   "reason": "DDL is a subset of SQL, so the SQL context must be understood first."
+  },
+  {
+   "prereq": "sql",
+   "dependent": "dml",
+   "reason": "DML is defined as the data-manipulation subset of SQL statements"
+  },
+  {
+   "prereq": "sql",
+   "dependent": "grant",
+   "reason": "GRANT is a SQL statement, so basic SQL knowledge is required to understand its syntax and use."
+  },
+  {
+   "prereq": "sql",
+   "dependent": "select",
+   "reason": "SELECT is a SQL statement, so the SQL language context must be understood first."
+  },
+  {
+   "prereq": "subset",
+   "dependent": "trivial",
+   "reason": "Triviality is defined by the RHS being a subset of the LHS."
+  },
+  {
+   "prereq": "superclass",
+   "dependent": "subclass",
+   "reason": "A subclass is defined as a subset of a superclass from which it inherits attributes and relationships."
+  },
+  {
+   "prereq": "superkey",
+   "dependent": "candidate_key",
+   "reason": "A candidate key is defined as a minimal superkey."
+  },
+  {
+   "prereq": "transaction",
+   "dependent": "acid_property",
+   "reason": "ACID defines the Atomicity, Consistency, Isolation and Durability guarantees required of a transaction."
+  },
+  {
+   "prereq": "transaction",
+   "dependent": "concurrent_transaction",
+   "reason": "Concurrent transactions are interleaved executions of individual transactions"
+  },
+  {
+   "prereq": "transaction",
+   "dependent": "logging",
+   "reason": "Logging records transaction operations for recovery, so transactions must be understood first."
+  },
+  {
+   "prereq": "tuple",
+   "dependent": "relation",
+   "reason": "A relation instance is a collection of tuples."
+  }
+ ],
+ "retired": {}
+}
