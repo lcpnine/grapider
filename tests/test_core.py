@@ -3,7 +3,7 @@ import json
 import pytest
 
 from prereq.dag import PrereqDAG
-from prereq.schema import ROOT, canon, guard_test_path, load_dbe, load_ucd, normalize
+from prereq.schema import ROOT, canon, guard_test_path, load_dbe, load_lbcd, load_ucd, normalize, ucd_rows
 from prereq.splits import make_splits
 
 
@@ -33,13 +33,6 @@ def test_normalize_drops_and_counts_bad_rows():
     assert (stats["conflict"], stats["both_directions"]) == (1, 1)
 
 
-def test_ucd_second_column_is_the_prereq(tmp_path):
-    f = tmp_path / "preqs.csv"
-    f.write_text("advanced,intro\n")
-    _, edges, _ = load_ucd(f)
-    assert (edges[0]["prereq_id"], edges[0]["dependent_id"], edges[0]["label"]) == ("intro", "advanced", 1)
-
-
 def test_dbe_edges_are_reversed(tmp_path):
     f = tmp_path / "g.graphml"
     f.write_text('<graphml xmlns="http://graphml.graphdrawing.org/xmlns"><graph edgedefault="directed">'
@@ -47,6 +40,39 @@ def test_dbe_edges_are_reversed(tmp_path):
                  "</graph></graphml>")
     _, edges, _ = load_dbe(f)
     assert (edges[0]["prereq_id"], edges[0]["dependent_id"]) == ("intro", "advanced")
+
+
+def test_dbe_uses_names_and_descriptions_not_numeric_ids(tmp_path):
+    f = tmp_path / "g.graphml"
+    f.write_text('<graphml xmlns="http://graphml.graphdrawing.org/xmlns">'
+                 '<key id="d1" for="node" attr.name="description"/><key id="d0" for="node" attr.name="name"/>'
+                 '<graph edgedefault="directed">'
+                 '<node id="1"><data key="d0">Subset </data><data key="d1">Part of a set</data></node>'
+                 '<node id="2"><data key="d0">Set</data></node><edge source="1" target="2"/></graph></graphml>')
+    concepts, edges, _ = load_dbe(f)
+    by_id = {c["id"]: c for c in concepts}
+    assert by_id["subset"]["name"] == "Subset" and by_id["subset"]["description"] == "Part of a set"
+    assert (edges[0]["prereq_id"], edges[0]["dependent_id"]) == ("set", "subset")
+
+
+def test_ucd_majority_vote_keeps_direction_and_real_negatives():
+    rows, undecided = ucd_rows([["adv", "intro", "1", "1", "3", ""], ["x", "y", "2", "", "2", "3"],
+                                ["p", "q", "3", "3", "1"], ["m", "n", "1", "2", "3"], ["r", "s", "4", "4", "1"]])
+    assert undecided == 2
+    assert ("intro", "adv", 1) in rows and ("adv", "intro", 0) in rows
+    assert ("x", "y", 1) in rows and ("y", "x", 0) in rows
+    assert ("p", "q", 0) in rows and ("q", "p", 0) in rows
+
+
+def test_lbcd_reads_prereq_first_and_strips_names(tmp_path):
+    data = tmp_path / "LB-Paper" / "LectureBankCD" / "data"
+    data.mkdir(parents=True)
+    (data / "BIO.topics.tsv").write_text("1\tprobability \n2\tbayesian inference")
+    (data / "BIO.annotation.csv").write_text("1,2,1\n2,1,0\n")
+    concepts, edges, _ = load_lbcd(tmp_path, "BIO")
+    assert sorted(c["name"] for c in concepts) == ["bayesian inference", "probability"]
+    positive = [e for e in edges if e["label"] == 1]
+    assert [(e["prereq_id"], e["dependent_id"]) for e in positive] == [("probability", "bayesian_inference")]
 
 
 def test_test_data_is_locked(monkeypatch):

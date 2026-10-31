@@ -103,12 +103,31 @@ def load_lb2(root):
     return normalize(names, _read_csv(data / "final_new_annotation.csv"), "lb2")
 
 
+def ucd_rows(annotation_rows):
+    """Majority vote of three annotators: 1 means B is a prerequisite of A, 2 the reverse, 3 neither.
+
+    Returns ((prereq, dependent, label) rows, pairs with no valid majority). The value 4 is undocumented.
+    """
+    rows, undecided = [], 0
+    for a, b, *votes in annotation_rows:
+        winner, count = Counter(v for v in votes if v).most_common(1)[0]
+        if count < 2 or winner not in ("1", "2", "3"):
+            undecided += 1
+            continue
+        rows.append((b, a, int(winner == "1")))
+        rows.append((a, b, int(winner == "2")))
+    return rows, undecided
+
+
 def load_ucd(path):
-    """UCD 'A,B' means B is a prerequisite of A, so the columns are swapped here."""
+    """UCD annotations (cs_annotations.tsv), with real negatives. Names are Wikipedia titles."""
     guard_test_path(path)
-    rows = [(b, a, 1) for a, b in (r[:2] for r in _read_csv(path))]
-    names = {x: x for r in rows for x in r[:2]}
-    return normalize(names, rows, "ucd")
+    with open(path, encoding="utf8", errors="replace", newline="") as f:
+        annotated = list(csv.reader(f, delimiter="\t"))[1:]
+    rows, undecided = ucd_rows(annotated)
+    names = {x: x.replace("_", " ") for a, b, *_ in annotated for x in (a, b)}
+    concepts, edges, stats = normalize(names, rows, "ucd")
+    return concepts, edges, {**stats, "undecided_pairs": undecided}
 
 
 def load_dbe(path):
@@ -116,12 +135,23 @@ def load_dbe(path):
     guard_test_path(path)
     ns = {"g": "http://graphml.graphdrawing.org/xmlns"}
     graph = ET.parse(path).getroot()
-    names = {n.get("id"): n.get("id") for n in graph.iterfind(".//g:node", ns)}
+    keys = {k.get("attr.name"): k.get("id") for k in graph.iterfind("g:key", ns)}
+    names, descriptions = {}, {}
+    for n in graph.iterfind(".//g:node", ns):
+        data = {d.get("key"): (d.text or "").strip() for d in n.iterfind("g:data", ns)}
+        names[n.get("id")] = data.get(keys.get("name")) or n.get("id")
+        descriptions[canon(names[n.get("id")])] = data.get(keys.get("description"), "")
     rows = [(e.get("target"), e.get("source"), 1) for e in graph.iterfind(".//g:edge", ns)]
-    return normalize(names, rows, "dbe")
+    concepts, edges, stats = normalize(names, rows, "dbe")
+    for c in concepts:
+        c["description"] = descriptions[c["id"]]
+    return concepts, edges, stats
 
 
 def load_lbcd(root, domain):
-    """Written at 'run test': the data stays closed until then, so its format is still unseen."""
+    """LectureBankCD rows are (prereq, dependent, label), as in LB1 and LB2; topics are id<tab>name."""
     guard_test_path(root)
-    raise NotImplementedError("LectureBankCD loader is written when the test run is unlocked")
+    data = Path(root) / "LB-Paper" / "LectureBankCD" / "data"
+    with open(data / f"{domain}.topics.tsv", encoding="utf8", errors="replace") as f:
+        names = dict((raw, name.strip()) for raw, name in (line.rstrip("\n").split("\t", 1) for line in f if "\t" in line))
+    return normalize(names, _read_csv(data / f"{domain}.annotation.csv"), f"lbcd_{domain.lower()}")
