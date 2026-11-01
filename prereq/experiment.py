@@ -4,7 +4,7 @@ Every arm builds a graph over all dev concepts. Choices use pairs inside the tun
 is scored once, after those choices are written to exp_freeze.json.
 
 Usage: python -m prereq.experiment split | arm <name> <replicate> | report cap|source | signal | repair <arm>
-       | controls <arm> | uptake | votes <arm> | holdout | packet | disputes | score_reviews
+       | controls <arm> | uptake | votes <arm> | freeze | dry_run | holdout | packet | disputes | score_reviews
 """
 import csv
 import hashlib
@@ -50,6 +50,9 @@ ARMS = {
     "source": dict(system=SOURCE, cap=None, passages="real"),
     "placebo": dict(system=SOURCE, cap=None, passages="placebo"),
 }
+# A repaired graph is scored as an arm: base arm's saved picks minus its widest edges.
+REMOVALS = {"uncapped_widest50": ("uncapped", CHECK_BUDGET)}
+RANDOM_DRAWS = 500
 
 
 class Dev:
@@ -217,20 +220,27 @@ def scope_pairs(pairs, ids):
     return {p for p in pairs if p[0] in ids and p[1] in ids}
 
 
-def measure(dev, picks, ids, targets=None):
-    """Direct and closure counts for one run, all inside one split half."""
+def widest_edges(graph, dev, budget):
+    """The edges that alone support the most closure pairs in the whole graph. An empty scope keeps labels out."""
+    return [e for _, e in Bits(graph, dev, set()).impact()[:budget]]
+
+
+def measure(dev, picks, ids, targets=None, budget=0):
+    """Direct and closure counts for one run, all inside one split half. budget removes that many widest edges."""
     targets = sorted(targets if targets is not None else ids)
     pos = scope_pairs(dev.positive, ids)
     labeled = pos | scope_pairs(dev.negative, ids)
     reach = scope_pairs(dev.reach, ids)
     universe = scope_pairs(dev.universe, ids)
     graph, removed = assemble(dev, picks)
+    cut = set(widest_edges(graph, dev, budget)) if budget else set()
+    graph.remove_edges_from(cut)
     closure = closure_of(graph)
     return dict(
-        direct=per_target(set(picks), pos, labeled, targets),
+        direct=per_target(set(picks) - cut, pos, labeled, targets),
         reach=per_target(closure, reach, universe, targets),
         raw=per_target(closure, pos, labeled, targets),
-        extras=dict(edges=len(picks), cycle_edges_removed=len(removed), closure_scored=len(closure & universe),
+        extras=dict(edges=len(set(picks) - cut), cycle_edges_removed=len(removed), closure_scored=len(closure & universe),
                     unlabeled_picks=len(scope_pairs(set(picks), ids) - labeled),
                     per_target=len(picks) / len(dev.names)),
     )
@@ -241,7 +251,8 @@ def available(arm):
 
 
 def arm_summary(dev, arm, ids, targets=None):
-    runs = [measure(dev, load_picks(arm, r), ids, targets) for r in available(arm)]
+    base, budget = REMOVALS.get(arm, (arm, 0))
+    runs = [measure(dev, load_picks(base, r), ids, targets, budget) for r in available(base)]
     summary = {}
     for kind in ("direct", "reach", "raw"):
         mean = prf(np.mean([run[kind] for run in runs], axis=0))
@@ -745,23 +756,142 @@ def score_reviews():
     show("reviews", result)
 
 
-def holdout():
-    """One scoring of the frozen choices on concepts no choice has used."""
-    if not FREEZE.exists():
-        raise FileNotFoundError("write the tune decisions to exp_freeze.json first")
-    if LOG.exists() and any(json.loads(line)["config"].get("stage") == "holdout" for line in LOG.open()):
+def holdout_scored():
+    return LOG.exists() and any(json.loads(line)["config"].get("stage") == "holdout" for line in LOG.open())
+
+
+def picks_hash(arm, replicate):
+    return hashlib.sha256(picks_path(arm, replicate).read_bytes()).hexdigest()[:12]
+
+
+def removed_edges_hash(dev, arm, replicate):
+    base, budget = REMOVALS[arm]
+    graph, _ = assemble(dev, load_picks(base, replicate))
+    return hash_text(json.dumps(sorted(widest_edges(graph, dev, budget))))
+
+
+def fingerprints(dev, arms):
+    """Hashes of what will be scored. Reads picks and no labels."""
+    bases = sorted({REMOVALS.get(arm, (arm, 0))[0] for arm in arms})
+    return dict(picks={arm: [picks_hash(arm, r) for r in available(arm)] for arm in bases},
+                removed_edges={arm: [removed_edges_hash(dev, arm, r) for r in available(REMOVALS[arm][0])] for arm in arms if arm in REMOVALS})
+
+
+def freeze():
+    """Write the holdout decisions before any scoring."""
+    from .sensitivity import HUBS, THRESHOLDS
+    if holdout_scored():
         raise RuntimeError("holdout was already scored")
+    arms = ["capped", "uncapped", "uncapped_widest50"]
+    frozen = dict(
+        date="2026-11-01",
+        arms=arms,
+        compare=[["uncapped", "capped"], ["uncapped_widest50", "uncapped"], ["uncapped_widest50", "capped"]],
+        replicates=REPLICATES,
+        **fingerprints(Dev(), arms),
+        removal=dict(uncapped_widest50=dict(
+            base="uncapped", budget=CHECK_BUDGET,
+            rule="Per run, remove the 50 edges of the whole acyclic dev graph that alone support the most closure pairs. No labels, no checker.")),
+        thresholds=dict(THRESHOLDS, meaning="Mean of 3 runs on the holdout, against uncapped, same as experiment 3: false closure pairs removed >= 30%, true pairs lost < 10%, direct recall lost < 5%."),
+        decisions=dict(
+            uncapped_widest50="Holds up only if all three thresholds pass on the holdout as labeled. Otherwise it is rejected. A pass does not add it to the pipeline: that needs the user's approval.",
+            uncapped_vs_capped="Report only. The cap was removed by design direction, and no holdout result restores it.",
+            no_retuning="Whatever the holdout shows is reported as is. No arm, rule, budget or threshold changes after scoring, and the holdout is not rescored."),
+        rows=dict(
+            primary="Holdout as labeled: 159 concepts, direct and closure scored separately, intervals from resampling targets.",
+            sensitivity_hub_positives_removed="Same arms and comparisons without positives from the listed hub parents. Sensitivity only: it decides nothing.",
+            control_50_random="Random 50-edge removals, 500 draws per run, the experiment 3 control. Reported beside widest-50. It decides nothing."),
+        hubs=list(HUBS),
+        excluded=dict(source="Rejected on tune: no gain over uncapped or placebo.", placebo="Control for source only.",
+                      pair_level_evidence="Not run: failed the offline gate, no arm exists."),
+        caveats=[
+            "The holdout is not fully unseen: the earlier all-dev diagnosis in scripts/diagnostics/ touched holdout concepts.",
+            "Widest-50 is post hoc: it came from a control added after seeing tune results.",
+            "The widest-edge wrong share (80% vs 65%) and the gold-limit repair row used labels from all dev, including holdout pairs, and were seen before widest-50 became a candidate.",
+            "The tune hub check revealed the holdout's label mix: 6 of 7 hubs are in it. No arm was scored there.",
+            "Some widest edges straddle tune and holdout, so holdout closure also depends on them. The budget of 50 is fixed and does not scale with graph size.",
+            "Gold is the merged either-dataset label, and independent human review is still pending.",
+        ],
+    )
+    FREEZE.write_text(json.dumps(frozen, indent=1) + "\n")
+    print(FREEZE.read_text())
+
+
+def verify_freeze(dev, frozen):
+    if fingerprints(dev, frozen["arms"]) != dict(picks=frozen["picks"], removed_edges=frozen["removed_edges"]):
+        raise RuntimeError("picks or removed edges changed after the freeze")
+
+
+def removal_effects(view, ids, dev, arm, thresholds, draws=RANDOM_DRAWS):
+    """Threshold check for a removal arm against its base, beside random removals of the same size."""
+    base, budget = REMOVALS[arm]
+    reach_size = len(scope_pairs(view.reach, ids))
+    pos = scope_pairs(view.positive, ids)
+    rows = defaultdict(list)
+    for r in available(base):
+        graph, _ = assemble(dev, load_picks(base, r))
+        bits = Bits(graph, view, ids)
+        base_tp, base_fp = bits.score()
+        direct = bits.edges & pos
+
+        def effect(removed):
+            tp, fp = bits.score(removed)
+            return dict(false_removed=(base_fp - fp) / max(base_fp, 1), true_lost=(base_tp - tp) / max(base_tp, 1),
+                        recall_lost=len(direct & removed) / max(len(direct), 1), closure_f1=closure_f1(tp, fp, reach_size),
+                        closure_precision=tp / max(tp + fp, 1), closure_recall=tp / max(reach_size, 1))
+
+        widest = set(widest_edges(graph, dev, budget))
+        rows["none"].append(effect(set()))
+        rows["widest"].append(dict(effect(widest), edges_inside_scope=len(scope_pairs(widest, ids)),
+                                   edges_touching_scope=sum(a in ids or b in ids for a, b in widest)))
+        rng = random.Random(SEED + r)
+        every = sorted(bits.edges)
+        sampled = [effect(set(rng.sample(every, budget))) for _ in range(draws)]
+        rows["random"].append({k: float(np.mean([d[k] for d in sampled])) for k in sampled[0]})
+    summary = {label: {k: float(np.mean([g[k] for g in group])) for k in group[0]} for label, group in rows.items()}
+    summary["widest"]["false_removed_each_run"] = [g["false_removed"] for g in rows["widest"]]
+    summary["widest"]["true_lost_each_run"] = [g["true_lost"] for g in rows["widest"]]
+    summary["widest"]["recall_lost_each_run"] = [g["recall_lost"] for g in rows["widest"]]
+    widest = summary["widest"]
+    summary["passes"] = bool(widest["false_removed"] >= thresholds["false_removed"] and widest["true_lost"] < thresholds["true_lost"]
+                             and widest["recall_lost"] < thresholds["recall_lost"])
+    return summary
+
+
+def score_view(view, ids, dev, frozen):
+    arms = {arm: arm_summary(view, arm, ids) for arm in frozen["arms"]}
+    gains = {f"{a} vs {b}": {kind: paired_gain(arms[a]["counts"][kind], arms[b]["counts"][kind]) for kind in ("direct", "reach", "raw")} for a, b in frozen["compare"]}
+    removal = {arm: removal_effects(view, ids, dev, arm, frozen["thresholds"]) for arm in frozen["arms"] if arm in REMOVALS}
+    return dict(positives=len(scope_pairs(view.positive, ids)), arms=arms, gains=gains, removal=removal)
+
+
+def score_frozen(ids):
+    """Both pre-declared rows for one split half."""
+    from .sensitivity import dev_edges, without_hubs
     frozen = json.loads(FREEZE.read_text())
     dev = Dev()
-    ids = load_split("holdout")
-    results = {arm: arm_summary(dev, arm, ids) for arm in frozen["arms"]}
-    for arm, summary in results.items():
-        show(arm, summary)
-    gains = {f"{a} vs {b}": {kind: paired_gain(results[a]["counts"][kind], results[b]["counts"][kind]) for kind in ("direct", "reach", "raw")} for a, b in frozen["compare"]}
-    for label, gain in gains.items():
-        show(label, gain)
-    log_run("experiments", dict(stage="holdout", split="holdout", frozen=frozen, prompt_version="see arms", git=git_state(), code=code_hash()),
-            clean(dict(arms=results, gains=gains)))
+    verify_freeze(dev, frozen)
+    return frozen, dict(as_labeled=score_view(dev, ids, dev, frozen), hub_positives_removed=score_view(without_hubs(dev, dev_edges()), ids, dev, frozen))
+
+
+def dry_run():
+    """Run the holdout code path on tune, to catch bugs before the single scoring."""
+    if holdout_scored():
+        raise RuntimeError("holdout was already scored")
+    frozen, result = score_frozen(load_split("tune"))
+    log_run("experiments", dict(stage="freeze_dry_run", split="tune", frozen=frozen, prompt_version="see arms", git=git_state(), code=code_hash()), clean(result))
+    show("dry_run", result)
+
+
+def holdout():
+    """One scoring of the frozen choices on concepts no choice has used. Logged before it is shown."""
+    if not FREEZE.exists():
+        raise FileNotFoundError("write the tune decisions to exp_freeze.json first")
+    if holdout_scored():
+        raise RuntimeError("holdout was already scored")
+    frozen, result = score_frozen(load_split("holdout"))
+    log_run("experiments", dict(stage="holdout", split="holdout", frozen=frozen, prompt_version="see arms", git=git_state(), code=code_hash()), clean(result))
+    show("holdout", result)
 
 
 def packet(arms=("capped", "uncapped", "source"), per_arm=40):
@@ -784,7 +914,7 @@ def main():
     command, args = sys.argv[1], sys.argv[2:]
     if command == "arm":
         return run_arm(args[0], int(args[1]))
-    return dict(split=make_split, report=report, signal=signal, repair=repair, controls=controls, uptake=uptake, votes=votes, holdout=holdout, packet=packet, disputes=disputes, score_reviews=score_reviews)[command](*args)
+    return dict(split=make_split, report=report, signal=signal, repair=repair, controls=controls, uptake=uptake, votes=votes, freeze=freeze, dry_run=dry_run, holdout=holdout, packet=packet, disputes=disputes, score_reviews=score_reviews)[command](*args)
 
 
 if __name__ == "__main__":

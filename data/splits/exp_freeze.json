@@ -1,0 +1,87 @@
+{
+ "date": "2026-11-01",
+ "arms": [
+  "capped",
+  "uncapped",
+  "uncapped_widest50"
+ ],
+ "compare": [
+  [
+   "uncapped",
+   "capped"
+  ],
+  [
+   "uncapped_widest50",
+   "uncapped"
+  ],
+  [
+   "uncapped_widest50",
+   "capped"
+  ]
+ ],
+ "replicates": 3,
+ "picks": {
+  "capped": [
+   "9e6d1156cc2e",
+   "eab75223ccea",
+   "2d6c6ced9f55"
+  ],
+  "uncapped": [
+   "1659b12f26bc",
+   "1be1dfd36922",
+   "1ea8c4e6929d"
+  ]
+ },
+ "removed_edges": {
+  "uncapped_widest50": [
+   "151149639643",
+   "76cd6eb6f764",
+   "0ab25bfb276f"
+  ]
+ },
+ "removal": {
+  "uncapped_widest50": {
+   "base": "uncapped",
+   "budget": 50,
+   "rule": "Per run, remove the 50 edges of the whole acyclic dev graph that alone support the most closure pairs. No labels, no checker."
+  }
+ },
+ "thresholds": {
+  "false_removed": 0.3,
+  "true_lost": 0.1,
+  "recall_lost": 0.05,
+  "meaning": "Mean of 3 runs on the holdout, against uncapped, same as experiment 3: false closure pairs removed >= 30%, true pairs lost < 10%, direct recall lost < 5%."
+ },
+ "decisions": {
+  "uncapped_widest50": "Holds up only if all three thresholds pass on the holdout as labeled. Otherwise it is rejected. A pass does not add it to the pipeline: that needs the user's approval.",
+  "uncapped_vs_capped": "Report only. The cap was removed by design direction, and no holdout result restores it.",
+  "no_retuning": "Whatever the holdout shows is reported as is. No arm, rule, budget or threshold changes after scoring, and the holdout is not rescored."
+ },
+ "rows": {
+  "primary": "Holdout as labeled: 159 concepts, direct and closure scored separately, intervals from resampling targets.",
+  "sensitivity_hub_positives_removed": "Same arms and comparisons without positives from the listed hub parents. Sensitivity only: it decides nothing.",
+  "control_50_random": "Random 50-edge removals, 500 draws per run, the experiment 3 control. Reported beside widest-50. It decides nothing."
+ },
+ "hubs": [
+  "Bayes theorem",
+  "relational databases",
+  "linear algebra",
+  "natural language processing intro",
+  "linguistics basics",
+  "Conditional probability",
+  "Matrix multiplication"
+ ],
+ "excluded": {
+  "source": "Rejected on tune: no gain over uncapped or placebo.",
+  "placebo": "Control for source only.",
+  "pair_level_evidence": "Not run: failed the offline gate, no arm exists."
+ },
+ "caveats": [
+  "The holdout is not fully unseen: the earlier all-dev diagnosis in scripts/diagnostics/ touched holdout concepts.",
+  "Widest-50 is post hoc: it came from a control added after seeing tune results.",
+  "The widest-edge wrong share (80% vs 65%) and the gold-limit repair row used labels from all dev, including holdout pairs, and were seen before widest-50 became a candidate.",
+  "The tune hub check revealed the holdout's label mix: 6 of 7 hubs are in it. No arm was scored there.",
+  "Some widest edges straddle tune and holdout, so holdout closure also depends on them. The budget of 50 is fixed and does not scale with graph size.",
+  "Gold is the merged either-dataset label, and independent human review is still pending."
+ ]
+}

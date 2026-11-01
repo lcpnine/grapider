@@ -12,9 +12,9 @@ All numbers are from the tune half (159 concepts, 171 positive pairs), averaged 
 | Remove the 3-parent cap | Recall up, precision down, F1 within noise | Removed from the pipeline; see `docs/cap_removal.md` |
 | Source-grounded inference (target-only excerpts) | Worse than uncapped, no better than placebo | Not kept |
 | Repair by checker (frozen judge, Muse + excerpts) | Neither meets the threshold | Not kept |
-| Remove the 50 widest edges, unchecked | Clears the thresholds, found after seeing results | Candidate only; needs holdout |
+| Remove the 50 widest edges, unchecked | Cleared the thresholds on tune, found after seeing results; lost 15.6% of true pairs on the holdout | Rejected; see `docs/holdout.md` |
 
-The holdout was deliberately not scored. Nothing that passed needs confirming, the widest-edge rule was found after looking at results, and the holdout can be scored once.
+The holdout was deliberately not scored during these experiments. Nothing that passed needed confirming, the widest-edge rule was found after looking at results, and the holdout can be scored once. It was scored later, with the result in `docs/holdout.md`.
 
 ## Experiment 1: remove the cap
 
@@ -141,4 +141,4 @@ Rating rule for human raters: "Would a course on B have to teach or assume A?" T
 
 Re-rank uncapped candidates using passages that mention both concepts plus which concept comes first in a course, tested against a placebo. Then freeze that choice with the widest-edge rule and score the holdout once.
 
-Update: the pair-level design failed its offline gate, so it has not been run (`docs/offline_checks.md`). Course order was not tested.
+Update: the pair-level design failed its offline gate, so it has not been run (`docs/offline_checks.md`). Course order was not tested. The holdout was scored without it, and the widest-edge rule failed there (`docs/holdout.md`).

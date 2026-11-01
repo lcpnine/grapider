@@ -89,6 +89,76 @@ def test_oracle_removes_only_edges_gold_calls_wrong():
     assert curve["all wrong"] == {("a", "d"), ("d", "e")}
 
 
+CHAINS = {("a", "b"): "x", ("b", "c"): "x", ("a", "d"): "x", ("d", "e"): "x"}
+
+
+def graph_of(picks):
+    return ex.assemble(FakeDev, picks)[0]
+
+
+def test_widest_edges_use_no_labels_and_rank_the_widest_first():
+    class OtherGold(FakeDev):
+        positive, negative, reach, universe = set(), set(), set(), set()
+
+    graph = nx.DiGraph([("a", "b"), ("b", "c"), ("c", "d"), ("c", "e")])
+    assert ex.widest_edges(graph, FakeDev, 1) == [("b", "c")]
+    assert ex.widest_edges(graph, FakeDev, 3) == ex.widest_edges(graph, OtherGold, 3)
+
+
+def test_measure_with_budget_drops_edges_from_direct_and_closure():
+    ids = set("abcde")
+    before = ex.measure(FakeDev, CHAINS, ids)
+    after = ex.measure(FakeDev, CHAINS, ids, budget=1)
+    assert before["direct"][:, 0].sum() == 2 and after["direct"][:, 0].sum() == 1
+    assert before["reach"][:, 0].sum() == 3 and after["reach"][:, 0].sum() == 1
+    assert after["extras"]["edges"] == 3
+    assert ex.measure(FakeDev, CHAINS, ids, budget=0)["extras"] == before["extras"]
+
+
+def test_measure_does_not_bring_back_a_cycle_edge_after_removal():
+    picks = {("a", "b"): "x", ("b", "a"): "x", ("b", "c"): "x"}
+    graph, removed = ex.assemble(FakeDev, picks)
+    assert removed
+    graph.remove_edges_from(ex.widest_edges(graph, FakeDev, 1))
+    measured = ex.measure(FakeDev, picks, set("abc"), budget=1)
+    assert measured["extras"]["closure_scored"] == len(ex.closure_of(graph) & FakeDev.universe)
+    assert measured["extras"]["cycle_edges_removed"] == len(removed)
+
+
+def test_removal_arm_scores_its_base_picks_minus_the_widest_edges(monkeypatch):
+    monkeypatch.setattr(ex, "available", lambda arm: [0] if arm == "base" else [])
+    monkeypatch.setattr(ex, "load_picks", lambda arm, r: CHAINS)
+    monkeypatch.setattr(ex, "REMOVALS", {"base_cut": ("base", 1)})
+    ids = set("abcde")
+    assert ex.arm_summary(FakeDev, "base_cut", ids)["extras"]["edges"] == 3
+    assert ex.arm_summary(FakeDev, "base", ids)["extras"]["edges"] == 4
+
+
+def test_removal_effects_apply_every_threshold(monkeypatch):
+    thresholds = dict(false_removed=0.30, true_lost=0.10, recall_lost=0.05)
+    monkeypatch.setattr(ex, "available", lambda arm: [0])
+    monkeypatch.setattr(ex, "REMOVALS", {"cut": ("base", 1)})
+    monkeypatch.setattr(ex, "load_picks", lambda arm, r: {("a", "d"): "x", ("d", "e"): "x"})
+    clean = ex.removal_effects(FakeDev, set("abcde"), FakeDev, "cut", thresholds, draws=5)
+    assert clean["passes"] and clean["widest"]["false_removed"] == 0.5
+    monkeypatch.setattr(ex, "load_picks", lambda arm, r: CHAINS)
+    costly = ex.removal_effects(FakeDev, set("abcde"), FakeDev, "cut", thresholds, draws=5)
+    assert not costly["passes"] and costly["widest"]["true_lost"] > 0.10
+
+
+def test_verify_freeze_rejects_changed_picks(monkeypatch, tmp_path):
+    monkeypatch.setattr(ex, "PICKS", tmp_path)
+    monkeypatch.setattr(ex, "REMOVALS", {"base_cut": ("base", 1)})
+    path = ex.picks_path("base", 0)
+    write = lambda picks: path.write_text(json.dumps([[a, b, why] for (a, b), why in picks.items()]))
+    write(CHAINS)
+    frozen = dict(arms=["base", "base_cut"], **ex.fingerprints(FakeDev, ["base", "base_cut"]))
+    ex.verify_freeze(FakeDev, frozen)
+    write({("a", "b"): "x"})
+    with pytest.raises(RuntimeError):
+        ex.verify_freeze(FakeDev, frozen)
+
+
 def test_holdout_refuses_before_decisions_and_after_one_scoring(monkeypatch, tmp_path):
     monkeypatch.setattr(ex, "FREEZE", tmp_path / "freeze.json")
     monkeypatch.setattr(ex, "LOG", tmp_path / "log.jsonl")
