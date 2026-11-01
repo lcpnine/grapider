@@ -17,12 +17,12 @@ from pathlib import Path
 import networkx as nx
 import numpy as np
 
-from .dag import MAX_PARENTS, PrereqDAG
+from .dag import PrereqDAG
 from .judge import PROMPTS as JUDGE_PROMPTS
 from .judge import predict
 from .llm import MUSE_MODEL, RUNS, Ledger, ask_json, log_run, pmap
 from .materials import Library, name_pattern, normal
-from .pipeline import DEFAULT_EDGE_PROMPT, EDGE_OUTPUT, EDGE_PROMPTS, break_cycles, gold_reachability
+from .pipeline import EDGE_PROMPTS, LEGACY_CAP, break_cycles, gold_reachability
 from .revision import FROZEN
 from .schema import canon
 from .splits import SPLIT_DIR
@@ -38,16 +38,14 @@ REPLICATES = 3
 CHECK_BUDGET = 50
 ORACLE_BUDGETS = (10, 25, 50, 100)
 BOOTSTRAPS = 2000
+RATER_ANSWERS = {"yes": "yes", "y": "yes", "no": "no", "n": "no", "unsure": "unclear", "u": "unclear"}
 
-UNCAPPED = ("You build a prerequisite graph. Given a target concept and a list of concepts, pick every concept "
-            "from the list that a learner must understand before the target. Being related is not enough, and "
-            "do not pick concepts that build on the target. Many foundational concepts have no prerequisites "
-            "in the list. " + EDGE_OUTPUT)
+UNCAPPED = EDGE_PROMPTS["e4_uncapped"]
 SOURCE = UNCAPPED + (" Excerpts from course materials retrieved for the target are included. "
                      "Use them as evidence of what the target builds on.")
 CHECK = JUDGE_PROMPTS["v1_direct"] + " Course excerpts are included. Use them as evidence."
 ARMS = {
-    "capped": dict(system=EDGE_PROMPTS[DEFAULT_EDGE_PROMPT], cap=MAX_PARENTS, passages=None),
+    "capped": dict(system=EDGE_PROMPTS["e2_strict"], cap=LEGACY_CAP, passages=None),
     "uncapped": dict(system=UNCAPPED, cap=None, passages=None),
     "source": dict(system=SOURCE, cap=None, passages="real"),
     "placebo": dict(system=SOURCE, cap=None, passages="placebo"),
@@ -630,9 +628,9 @@ def disputes(per_group=22):
     rng.shuffle(items)
     with (RUNS / "kappa_review.csv").open("w", newline="") as f:
         out = csv.writer(f)
-        out.writerow(["item", "A", "B", "rater_A_needed_for_B"])
+        out.writerow(["item", "A", "B", "rater_1_A_needed_for_B", "rater_2_A_needed_for_B"])
         for i, ((a, b), _) in enumerate(items):
-            out.writerow([i, dev.names[a], dev.names[b], ""])
+            out.writerow([i, dev.names[a], dev.names[b], "", ""])
     PRIVATE.mkdir(parents=True, exist_ok=True)
     (PRIVATE / "kappa_key.json").write_text(json.dumps({i: v for i, (_, v) in enumerate(items)}))
     result = dict(items=len(items), **{k: len(v) for k, v in groups.items()})
@@ -663,8 +661,65 @@ def tally_arm(items, ratings):
                 floor=tiers["yes"] / max(len(items), 1))
 
 
+def read_raters(path):
+    """Filled rater columns of a review sheet, as {column: {item: yes, unclear or no}}. Blank cells stay unrated."""
+    with path.open(newline="") as f:
+        rows = list(csv.DictReader(f))
+    answers = {c: {} for c in rows[0] if c.startswith("rater_")}
+    for row in rows:
+        for column, given in answers.items():
+            raw = row[column].strip().lower()
+            if raw:
+                if raw not in RATER_ANSWERS:
+                    raise ValueError(f"{path.name} item {row['item']} {column}: {raw!r} is not yes, no or unsure")
+                given[int(row["item"])] = RATER_ANSWERS[raw]
+    return {column: given for column, given in answers.items() if given}
+
+
+def rater_agreement(first, second):
+    """Agreement between two raters. Kappa uses items both answered yes or no."""
+    shared = set(first) & set(second)
+    decided = [i for i in shared if "unclear" not in (first[i], second[i])]
+    seen = sum(first[i] == second[i] for i in decided) / max(len(decided), 1)
+    yes_1 = sum(first[i] == "yes" for i in decided) / max(len(decided), 1)
+    yes_2 = sum(second[i] == "yes" for i in decided) / max(len(decided), 1)
+    chance = yes_1 * yes_2 + (1 - yes_1) * (1 - yes_2)
+    return dict(both_rated=len(shared), raw_agreement=sum(first[i] == second[i] for i in shared) / max(len(shared), 1),
+                both_decided=len(decided), kappa=(seen - chance) / (1 - chance) if decided and chance < 1 else None)
+
+
+def as_tiers(given):
+    return {tier: {i for i, answer in given.items() if answer == tier} for tier in ("yes", "unclear", "no")}
+
+
+def outcome_kind(labels):
+    if labels["lb1"] != labels["lb2"]:
+        return "lb1_only" if labels["lb1"] else "lb2_only"
+    return "both_yes" if labels["lb1"] else "both_no"
+
+
+def sheet_agreement(raters):
+    return rater_agreement(*raters.values()) if len(raters) == 2 else None
+
+
+def human_reviews(packet_key, kappa_key):
+    """Scores from filled CSV columns, or None while the sheets are blank. Never mixed with AI verdicts."""
+    packet = read_raters(RUNS / "review_packet.csv")
+    kappa = read_raters(RUNS / "kappa_review.csv")
+    if not packet and not kappa:
+        return None
+    outcomes = {}
+    for column, given in kappa.items():
+        counted = defaultdict(Counter)
+        for item, labels in kappa_key.items():
+            counted[outcome_kind(labels)][given.get(int(item), "unrated")] += 1
+        outcomes[column] = {kind: dict(v) for kind, v in counted.items()}
+    return dict(packet_arms={column: {arm: tally_arm(items, as_tiers(given)) for arm, items in packet_key.items()} for column, given in packet.items()},
+                packet_agreement=sheet_agreement(packet), kappa_sheet=outcomes, kappa_agreement=sheet_agreement(kappa))
+
+
 def score_reviews():
-    """Score written reviews against the keys. The rater comes from the ratings file; AI review is not human review."""
+    """Score reviews against the keys. Written AI verdicts and filled human columns are reported apart."""
     ratings = json.loads((RUNS / "review_ratings.json").read_text())
     dev = Dev()
     key = json.loads((PRIVATE / "kappa_key.json").read_text())
@@ -672,8 +727,7 @@ def score_reviews():
     tier = lambda i: "yes" if i in kappa["yes"] else "defensible" if i in kappa["defensible"] else "no"
     outcome = defaultdict(Counter)
     for item, v in key.items():
-        kind = "lb1_only" if v["lb1"] > v["lb2"] else "lb2_only" if v["lb2"] > v["lb1"] else "both_yes" if v["lb1"] else "both_no"
-        outcome[kind][tier(int(item))] += 1
+        outcome[outcome_kind(v)][tier(int(item))] += 1
     packet = json.loads((PRIVATE / "review_key.json").read_text())
     rows = list(csv.DictReader((RUNS / "review_packet.csv").open()))
     edge = {int(r["item"]): (dev.ids[r["A"]], dev.ids[r["B"]]) for r in rows}
@@ -684,8 +738,9 @@ def score_reviews():
         crossed[gold(e)][tier_of(item, rated)] += 1
     arms = {arm: tally_arm(items, rated) for arm, items in packet.items()}
     by_gold = {arm: dict(Counter(gold(edge[i]) for i in items)) for arm, items in packet.items()}
-    result = dict(rater=ratings["rater"], kappa_sheet={k: dict(v) for k, v in outcome.items()}, packet_arms=arms,
-                  packet_gold_counts=by_gold, packet_gold_by_tier={k: dict(v) for k, v in crossed.items()})
+    result = dict(ai_review=dict(rater=ratings["rater"], kappa_sheet={k: dict(v) for k, v in outcome.items()}, packet_arms=arms,
+                                 packet_gold_counts=by_gold, packet_gold_by_tier={k: dict(v) for k, v in crossed.items()}),
+                  human_review=human_reviews(packet, key))
     log_run("experiments", dict(stage="score_reviews", split="all dev", prompt_version=None, git=git_state(), code=code_hash()), clean(result))
     show("reviews", result)
 

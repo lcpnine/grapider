@@ -1,0 +1,2361 @@
+{
+ "nodes": [
+  {
+   "id": "19th_century_war",
+   "name": "19th-century wars",
+   "provenance": [
+    "2008:q72"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "20th_century_war",
+   "name": "20th-century wars",
+   "provenance": [
+    "2008:q78"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "abraham_lincoln",
+   "name": "Abraham Lincoln",
+   "provenance": [
+    "2008:q75"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "american_civil_war",
+   "name": "American Civil War",
+   "provenance": [
+    "2008:q73",
+    "2008:q75",
+    "2008:q76"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "american_colonization",
+   "name": "American colonization",
+   "provenance": [
+    "2008:q58"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "american_founding_father",
+   "name": "American Founding Fathers",
+   "provenance": [
+    "2008:q68"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "american_founding_history",
+   "name": "American founding history",
+   "provenance": [
+    "2008:q70"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "american_independence",
+   "name": "American independence",
+   "provenance": [
+    "2008:q8"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "american_indian_tribe",
+   "name": "American Indian tribes",
+   "provenance": [
+    "2008:q87"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "american_revolution",
+   "name": "American Revolution",
+   "provenance": [
+    "2008:q61",
+    "2008:q62",
+    "2008:q63"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "axis_power",
+   "name": "Axis Powers",
+   "provenance": [
+    "2008:q81"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "basic_right",
+   "name": "Basic rights",
+   "provenance": [
+    "2008:q2"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "benjamin_franklin",
+   "name": "Benjamin Franklin",
+   "provenance": [
+    "2008:q68"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "bicameral_legislature",
+   "name": "Bicameral legislature",
+   "provenance": [
+    "2008:q17"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "bill_of_right",
+   "name": "Bill of Rights",
+   "provenance": [
+    "2008:q5",
+    "2008:q51"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "branches_of_government",
+   "name": "branches of government",
+   "provenance": [
+    "2008:q13"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "capitalism",
+   "name": "capitalism",
+   "provenance": [
+    "2008:q11"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "causes_of_the_civil_war",
+   "name": "Causes of the Civil War",
+   "provenance": [
+    "2008:q74"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "checks_and_balance",
+   "name": "checks and balances",
+   "provenance": [
+    "2008:q14",
+    "2008:q34"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "civic_participation",
+   "name": "civic participation",
+   "provenance": [
+    "2008:q55"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "civil_rights_activism",
+   "name": "Civil rights activism",
+   "provenance": [
+    "2008:q77"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "civil_rights_movement",
+   "name": "civil rights movement",
+   "provenance": [
+    "2008:q84",
+    "2008:q85"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "cold_war",
+   "name": "Cold War",
+   "provenance": [
+    "2008:q83"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "colonial_self_government",
+   "name": "Colonial self-government",
+   "provenance": [
+    "2008:q61"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "communism",
+   "name": "Communism",
+   "provenance": [
+    "2008:q83"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "confederate_state",
+   "name": "Confederate States",
+   "provenance": [
+    "2008:q76"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "congressional_district",
+   "name": "Congressional districts",
+   "provenance": [
+    "2008:q23"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "congressional_term_length",
+   "name": "Congressional term lengths",
+   "provenance": [
+    "2008:q22"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "constitutional_amendment",
+   "name": "Constitutional amendment",
+   "provenance": [
+    "2008:q4",
+    "2008:q48",
+    "2008:q7"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "constitutional_convention",
+   "name": "Constitutional Convention",
+   "provenance": [
+    "2008:q65",
+    "2008:q66"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "court_hierarchy",
+   "name": "court hierarchy",
+   "provenance": [
+    "2008:q38"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "declaration_of_independence",
+   "name": "Declaration of Independence",
+   "provenance": [
+    "2008:q63",
+    "2008:q8",
+    "2008:q9"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "democratic_engagement",
+   "name": "democratic engagement",
+   "provenance": [
+    "2008:q55"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "district_of_columbia_government",
+   "name": "District of Columbia government",
+   "provenance": [
+    "2008:q43"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "district_of_columbia_status",
+   "name": "District of Columbia status",
+   "provenance": [
+    "2008:q44"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "economic_motivation",
+   "name": "Economic motivations",
+   "provenance": [
+    "2008:q58"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "economic_system",
+   "name": "economic systems",
+   "provenance": [
+    "2008:q11"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "eisenhower_military_career",
+   "name": "Eisenhower military career",
+   "provenance": [
+    "2008:q82"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "emancipation_proclamation",
+   "name": "Emancipation Proclamation",
+   "provenance": [
+    "2008:q75",
+    "2008:q76"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "enumerated_power",
+   "name": "enumerated powers",
+   "provenance": [
+    "2008:q41"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "equality_before_the_law",
+   "name": "equality before the law",
+   "provenance": [
+    "2008:q12"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "executive_branch",
+   "name": "executive branch",
+   "provenance": [
+    "2008:q15",
+    "2008:q28",
+    "2008:q29",
+    "2008:q32",
+    "2008:q33",
+    "2008:q34",
+    "2008:q35",
+    "2008:q36"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "federal_cabinet_department",
+   "name": "federal cabinet departments",
+   "provenance": [
+    "2008:q36"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "federal_office_eligibility",
+   "name": "federal office eligibility",
+   "provenance": [
+    "2008:q50"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "federalism",
+   "name": "federalism",
+   "provenance": [
+    "2008:q41",
+    "2008:q42"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "federalist_papers_authorship",
+   "name": "Federalist Papers authorship",
+   "provenance": [
+    "2008:q67"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "first_amendment_freedom",
+   "name": "First Amendment freedoms",
+   "provenance": [
+    "2008:q6"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "first_amendment_right",
+   "name": "First Amendment rights",
+   "provenance": [
+    "2008:q10",
+    "2008:q51"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "founding_father",
+   "name": "Founding Fathers",
+   "provenance": [
+    "2008:q62",
+    "2008:q69"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "government_structure",
+   "name": "Government structure",
+   "provenance": [
+    "2008:q2"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "great_depression",
+   "name": "Great Depression",
+   "provenance": [
+    "2008:q80"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "income_taxation",
+   "name": "income taxation",
+   "provenance": [
+    "2008:q56"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "indigenous_people",
+   "name": "Indigenous peoples",
+   "provenance": [
+    "2008:q59"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "judicial_branch",
+   "name": "judicial branch",
+   "provenance": [
+    "2008:q37",
+    "2008:q38",
+    "2008:q39"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "judicial_branch_leadership",
+   "name": "Judicial branch leadership",
+   "provenance": [
+    "2008:q40"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "judicial_review",
+   "name": "judicial review",
+   "provenance": [
+    "2008:q37"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "lawmaking_process",
+   "name": "Lawmaking process",
+   "provenance": [
+    "2008:q33"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "legislative_branch",
+   "name": "legislative branch",
+   "provenance": [
+    "2008:q16",
+    "2008:q17"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "legislative_branch_structure",
+   "name": "Legislative branch structure",
+   "provenance": [
+    "2008:q21"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "legislative_process",
+   "name": "legislative process",
+   "provenance": [
+    "2008:q34"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "louisiana_purchase",
+   "name": "Louisiana Purchase",
+   "provenance": [
+    "2008:q71"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "major_river",
+   "name": "Major rivers",
+   "provenance": [
+    "2008:q88"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "market_economy",
+   "name": "market economy",
+   "provenance": [
+    "2008:q11"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "military_draft_eligibility",
+   "name": "Military draft eligibility",
+   "provenance": [
+    "2008:q57"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "national_capital",
+   "name": "National capitals",
+   "provenance": [
+    "2008:q94"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "national_symbol",
+   "name": "national symbols",
+   "provenance": [
+    "2008:q98"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "new_york_geography",
+   "name": "New York geography",
+   "provenance": [
+    "2008:q95"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "oath_of_allegiance",
+   "name": "Oath of Allegiance",
+   "provenance": [
+    "2008:q53"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "pledge_of_allegiance",
+   "name": "Pledge of Allegiance",
+   "provenance": [
+    "2008:q52"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "political_party",
+   "name": "Political parties",
+   "provenance": [
+    "2008:q45",
+    "2008:q46"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "popular_sovereignty",
+   "name": "Popular sovereignty",
+   "provenance": [
+    "2008:q3"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "pre_columbian_era",
+   "name": "Pre-Columbian era",
+   "provenance": [
+    "2008:q59"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "preamble_to_the_constitution",
+   "name": "Preamble to the Constitution",
+   "provenance": [
+    "2008:q3"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "presidential_cabinet",
+   "name": "Presidential Cabinet",
+   "provenance": [
+    "2008:q35"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "presidential_election",
+   "name": "Presidential elections",
+   "provenance": [
+    "2008:q27",
+    "2008:q54"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "presidential_military_power",
+   "name": "Presidential military powers",
+   "provenance": [
+    "2008:q32"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "presidential_succession",
+   "name": "presidential succession",
+   "provenance": [
+    "2008:q30",
+    "2008:q31"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "presidential_term_length",
+   "name": "Presidential term length",
+   "provenance": [
+    "2008:q26"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "racial_equality",
+   "name": "Racial equality",
+   "provenance": [
+    "2008:q85"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "religious_liberty",
+   "name": "religious liberty",
+   "provenance": [
+    "2008:q10"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "religious_persecution",
+   "name": "Religious persecution",
+   "provenance": [
+    "2008:q58"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "reserved_power",
+   "name": "reserved powers",
+   "provenance": [
+    "2008:q42"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "rule_of_law",
+   "name": "rule of law",
+   "provenance": [
+    "2008:q12"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "selective_service_system",
+   "name": "Selective Service System",
+   "provenance": [
+    "2008:q57"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "separation_of_power",
+   "name": "separation of powers",
+   "provenance": [
+    "2008:q14",
+    "2008:q15"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "september_11_attack",
+   "name": "September 11 attacks",
+   "provenance": [
+    "2008:q86"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "slavery_in_the_america",
+   "name": "Slavery in the Americas",
+   "provenance": [
+    "2008:q60"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "speaker_of_the_house",
+   "name": "Speaker of the House",
+   "provenance": [
+    "2008:q47"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "state_capital",
+   "name": "state capitals",
+   "provenance": [
+    "2008:q44"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "state_governor",
+   "name": "state governors",
+   "provenance": [
+    "2008:q43"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "state_population",
+   "name": "state population",
+   "provenance": [
+    "2008:q25"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "state_representation",
+   "name": "State representation",
+   "provenance": [
+    "2008:q20",
+    "2008:q24"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "supremacy_clause",
+   "name": "Supremacy Clause",
+   "provenance": [
+    "2008:q1"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "supreme_court",
+   "name": "Supreme Court",
+   "provenance": [
+    "2008:q39",
+    "2008:q40"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "tax_filing_deadline",
+   "name": "tax filing deadlines",
+   "provenance": [
+    "2008:q56"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "taxation_without_representation",
+   "name": "Taxation without representation",
+   "provenance": [
+    "2008:q61"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "terrorism",
+   "name": "terrorism",
+   "provenance": [
+    "2008:q86"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "thirteen_colony",
+   "name": "Thirteen Colonies",
+   "provenance": [
+    "2008:q64",
+    "2008:q96"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "transatlantic_slave_trade",
+   "name": "Transatlantic slave trade",
+   "provenance": [
+    "2008:q60"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "u_s_border",
+   "name": "U.S. borders",
+   "provenance": [
+    "2008:q92"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "u_s_citizen_responsibility",
+   "name": "U.S. citizen responsibilities",
+   "provenance": [
+    "2008:q49",
+    "2008:q53"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "u_s_citizen_right",
+   "name": "U.S. citizen rights",
+   "provenance": [
+    "2008:q50"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "u_s_congress",
+   "name": "U.S. Congress",
+   "provenance": [
+    "2008:q16",
+    "2008:q18"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "u_s_constitution",
+   "name": "U.S. Constitution",
+   "provenance": [
+    "2008:q1",
+    "2008:q4",
+    "2008:q5",
+    "2008:q65",
+    "2008:q66",
+    "2008:q7"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "u_s_constitution_purpose",
+   "name": "U.S. Constitution purpose",
+   "provenance": [
+    "2008:q2"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "u_s_constitution_ratification",
+   "name": "U.S. Constitution ratification",
+   "provenance": [
+    "2008:q67"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "u_s_federal_holiday",
+   "name": "U.S. federal holidays",
+   "provenance": [
+    "2008:q100"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "u_s_flag",
+   "name": "U.S. flag",
+   "provenance": [
+    "2008:q52",
+    "2008:q97"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "u_s_foreign_policy",
+   "name": "U.S. foreign policy",
+   "provenance": [
+    "2008:q83"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "u_s_geography",
+   "name": "U.S. geography",
+   "provenance": [
+    "2008:q89",
+    "2008:q93"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "u_s_holiday",
+   "name": "U.S. holidays",
+   "provenance": [
+    "2008:q99"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "u_s_house_of_representative",
+   "name": "U.S. House of Representatives",
+   "provenance": [
+    "2008:q21",
+    "2008:q22",
+    "2008:q23",
+    "2008:q25",
+    "2008:q47"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "u_s_independence_day",
+   "name": "U.S. Independence Day",
+   "provenance": [
+    "2008:q99"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "u_s_landmark",
+   "name": "U.S. landmarks",
+   "provenance": [
+    "2008:q95"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "u_s_mexico_border",
+   "name": "U.S.-Mexico border",
+   "provenance": [
+    "2008:q93"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "u_s_political_system",
+   "name": "U.S. political system",
+   "provenance": [
+    "2008:q45"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "u_s_presidency",
+   "name": "U.S. presidency",
+   "provenance": [
+    "2008:q28",
+    "2008:q46",
+    "2008:q70"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "u_s_president",
+   "name": "U.S. Presidents",
+   "provenance": [
+    "2008:q69",
+    "2008:q79",
+    "2008:q80"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "u_s_senate",
+   "name": "U.S. Senate",
+   "provenance": [
+    "2008:q18",
+    "2008:q20",
+    "2008:q24"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "u_s_senate_term_length",
+   "name": "U.S. Senate term length",
+   "provenance": [
+    "2008:q19"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "u_s_state",
+   "name": "U.S. states",
+   "provenance": [
+    "2008:q64",
+    "2008:q92",
+    "2008:q97"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "u_s_territorial_expansion",
+   "name": "U.S. territorial expansion",
+   "provenance": [
+    "2008:q71"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "u_s_territory",
+   "name": "U.S. territories",
+   "provenance": [
+    "2008:q91"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "u_s_territory_capital",
+   "name": "U.S. territory capitals",
+   "provenance": [
+    "2008:q44"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "u_s_voting_process",
+   "name": "U.S. voting process",
+   "provenance": [
+    "2008:q27"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "unalienable_right",
+   "name": "Unalienable rights",
+   "provenance": [
+    "2008:q9"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "united_states_geography",
+   "name": "United States geography",
+   "provenance": [
+    "2008:q88",
+    "2008:q90",
+    "2008:q94"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "united_states_military_history",
+   "name": "United States military history",
+   "provenance": [
+    "2008:q72",
+    "2008:q78"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "us_flag_symbolism",
+   "name": "US flag symbolism",
+   "provenance": [
+    "2008:q96"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "vice_presidency",
+   "name": "vice presidency",
+   "provenance": [
+    "2008:q30"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "vice_president",
+   "name": "Vice President",
+   "provenance": [
+    "2008:q29"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "voting_age",
+   "name": "voting age",
+   "provenance": [
+    "2008:q54"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "voting_right",
+   "name": "Voting rights",
+   "provenance": [
+    "2008:q48",
+    "2008:q50"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "women_s_rights_movement",
+   "name": "Women's rights movement",
+   "provenance": [
+    "2008:q77"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "world_ocean",
+   "name": "World oceans",
+   "provenance": [
+    "2008:q89",
+    "2008:q90"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "world_war_i_history",
+   "name": "World War I history",
+   "provenance": [
+    "2008:q79"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "world_war_ii",
+   "name": "World War II",
+   "provenance": [
+    "2008:q80"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "world_war_ii_alliance",
+   "name": "World War II alliances",
+   "provenance": [
+    "2008:q81"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  },
+  {
+   "id": "world_war_ii_history",
+   "name": "World War II history",
+   "provenance": [
+    "2008:q82"
+   ],
+   "valid_versions": [
+    "2008"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "prereq": "19th_century_war",
+   "dependent": "united_states_military_history",
+   "reason": "Covers War of 1812, Mexican-American War, Civil War, and Spanish-American War central to early U.S. military history."
+  },
+  {
+   "prereq": "20th_century_war",
+   "dependent": "united_states_military_history",
+   "reason": "Covers WWI, WWII, Korea, Vietnam, and Gulf War central to modern U.S. military history."
+  },
+  {
+   "prereq": "abraham_lincoln",
+   "dependent": "american_civil_war",
+   "reason": "Lincoln's election triggered secession and his leadership defined the Union war effort."
+  },
+  {
+   "prereq": "american_civil_war",
+   "dependent": "emancipation_proclamation",
+   "reason": "The Proclamation was issued by the Union during the Civil War."
+  },
+  {
+   "prereq": "american_civil_war",
+   "dependent": "united_states_military_history",
+   "reason": "Largest domestic U.S. armed conflict and key part of U.S. military history."
+  },
+  {
+   "prereq": "american_colonization",
+   "dependent": "slavery_in_the_america",
+   "reason": "European colonization established the colonial plantation economies where slavery in the Americas developed"
+  },
+  {
+   "prereq": "american_colonization",
+   "dependent": "thirteen_colony",
+   "reason": "The Thirteen Colonies were established through American colonization, which must be understood first."
+  },
+  {
+   "prereq": "american_founding_father",
+   "dependent": "federalist_papers_authorship",
+   "reason": "The authors were leading American Founders, so must understand that group to place them."
+  },
+  {
+   "prereq": "american_independence",
+   "dependent": "constitutional_convention",
+   "reason": "Independent states needed a new frame of government, which was the purpose of the Convention."
+  },
+  {
+   "prereq": "american_independence",
+   "dependent": "u_s_independence_day",
+   "reason": "Independence Day celebrates the United States achieving independence from Britain."
+  },
+  {
+   "prereq": "american_independence",
+   "dependent": "u_s_territorial_expansion",
+   "reason": "An independent sovereign United States had to exist before it could acquire new territory."
+  },
+  {
+   "prereq": "american_indian_tribe",
+   "dependent": "american_colonization",
+   "reason": "Settlers interacted with specific tribal groups during colonization."
+  },
+  {
+   "prereq": "american_revolution",
+   "dependent": "american_independence",
+   "reason": "Describes the war fought to achieve independence"
+  },
+  {
+   "prereq": "axis_power",
+   "dependent": "20th_century_war",
+   "reason": "Must know Axis Powers to understand the opposing sides in World War II, a core 20th-century war."
+  },
+  {
+   "prereq": "axis_power",
+   "dependent": "eisenhower_military_career",
+   "reason": "Eisenhower commanded Allied forces against the Axis Powers in Europe."
+  },
+  {
+   "prereq": "basic_right",
+   "dependent": "unalienable_right",
+   "reason": "Must understand what a right is before understanding rights that cannot be taken away."
+  },
+  {
+   "prereq": "bicameral_legislature",
+   "dependent": "u_s_congress",
+   "reason": "U.S. Congress is bicameral, so learner must understand what a bicameral legislature is first."
+  },
+  {
+   "prereq": "bill_of_right",
+   "dependent": "first_amendment_freedom",
+   "reason": "The First Amendment is the first entry in the Bill of Rights that guarantees these freedoms."
+  },
+  {
+   "prereq": "bill_of_right",
+   "dependent": "first_amendment_right",
+   "reason": "First Amendment rights are the first protections listed in the Bill of Rights."
+  },
+  {
+   "prereq": "bill_of_right",
+   "dependent": "u_s_citizen_right",
+   "reason": "Bill of Rights enumerates the core protections that define U.S. citizen rights."
+  },
+  {
+   "prereq": "branches_of_government",
+   "dependent": "executive_branch",
+   "reason": "The executive branch is defined as one of the branches of government."
+  },
+  {
+   "prereq": "branches_of_government",
+   "dependent": "judicial_branch",
+   "reason": "Judicial branch is one of the three branches of government"
+  },
+  {
+   "prereq": "branches_of_government",
+   "dependent": "legislative_branch",
+   "reason": "The legislative branch is one of the three branches introduced by branches of government."
+  },
+  {
+   "prereq": "capitalism",
+   "dependent": "market_economy",
+   "reason": "Market economy is the supply-and-demand mechanism operating under capitalist private ownership."
+  },
+  {
+   "prereq": "causes_of_the_civil_war",
+   "dependent": "abraham_lincoln",
+   "reason": "Lincoln's election and presidency cannot be understood without the sectional crisis over slavery that led to secession."
+  },
+  {
+   "prereq": "causes_of_the_civil_war",
+   "dependent": "confederate_state",
+   "reason": "The Confederate States formed through secession driven by the causes of the Civil War"
+  },
+  {
+   "prereq": "checks_and_balance",
+   "dependent": "judicial_review",
+   "reason": "Judicial review is a core check by courts on other branches."
+  },
+  {
+   "prereq": "checks_and_balance",
+   "dependent": "presidential_military_power",
+   "reason": "Must know Congress checks presidential military action, e.g. declaring war."
+  },
+  {
+   "prereq": "checks_and_balance",
+   "dependent": "u_s_political_system",
+   "reason": "Core mechanism that constrains and defines interaction within the U.S. system."
+  },
+  {
+   "prereq": "civic_participation",
+   "dependent": "civil_rights_activism",
+   "reason": "Activism is a form of civic participation so the general concept comes first."
+  },
+  {
+   "prereq": "civic_participation",
+   "dependent": "democratic_engagement",
+   "reason": "Democratic engagement is a specific form of civic participation."
+  },
+  {
+   "prereq": "civil_rights_activism",
+   "dependent": "civil_rights_movement",
+   "reason": "The movement is a form of organized civil rights activism using protest and advocacy."
+  },
+  {
+   "prereq": "civil_rights_activism",
+   "dependent": "women_s_rights_movement",
+   "reason": "Movement is organized collective action to secure equal rights."
+  },
+  {
+   "prereq": "cold_war",
+   "dependent": "20th_century_war",
+   "reason": "Cold War is a major 20th-century geopolitical conflict central to 20th-century wars."
+  },
+  {
+   "prereq": "cold_war",
+   "dependent": "u_s_foreign_policy",
+   "reason": "Containment rivalry defined modern U.S. alliance system and intervention doctrine."
+  },
+  {
+   "prereq": "colonial_self_government",
+   "dependent": "taxation_without_representation",
+   "reason": "Explains colonists' tradition of self-rule that made lack of representation a grievance."
+  },
+  {
+   "prereq": "communism",
+   "dependent": "cold_war",
+   "reason": "Cold War was an ideological struggle against the communist Soviet bloc."
+  },
+  {
+   "prereq": "confederate_state",
+   "dependent": "american_civil_war",
+   "reason": "Must understand the seceding Confederacy as one of the war's parties."
+  },
+  {
+   "prereq": "constitutional_amendment",
+   "dependent": "bill_of_right",
+   "reason": "The Bill of Rights consists of amendments, so the amendment concept must be understood first"
+  },
+  {
+   "prereq": "constitutional_convention",
+   "dependent": "u_s_constitution",
+   "reason": "Meeting where the Constitution was drafted and debated."
+  },
+  {
+   "prereq": "constitutional_convention",
+   "dependent": "u_s_constitution_ratification",
+   "reason": "Convention drafted the document that was then sent for ratification"
+  },
+  {
+   "prereq": "court_hierarchy",
+   "dependent": "supreme_court",
+   "reason": "Supreme Court is the top of the hierarchy, requiring hierarchy to understand supreme."
+  },
+  {
+   "prereq": "declaration_of_independence",
+   "dependent": "american_independence",
+   "reason": "Is the formal declaration that enacted American independence"
+  },
+  {
+   "prereq": "district_of_columbia_status",
+   "dependent": "district_of_columbia_government",
+   "reason": "DC's status as a federal district not a state defines why its government is unique."
+  },
+  {
+   "prereq": "economic_motivation",
+   "dependent": "american_colonization",
+   "reason": "Economic goals drove European powers to fund colonies."
+  },
+  {
+   "prereq": "economic_system",
+   "dependent": "capitalism",
+   "reason": "Capitalism is a type of economic system, so economic systems must be understood first."
+  },
+  {
+   "prereq": "economic_system",
+   "dependent": "communism",
+   "reason": "Communism is a specific type of economic system, so the general concept of economic systems must be understood first."
+  },
+  {
+   "prereq": "emancipation_proclamation",
+   "dependent": "civil_rights_movement",
+   "reason": "Ended slavery but left inequality that the movement later fought to overcome."
+  },
+  {
+   "prereq": "enumerated_power",
+   "dependent": "reserved_power",
+   "reason": "Reserved powers are defined as powers not delegated as enumerated powers to the federal government."
+  },
+  {
+   "prereq": "equality_before_the_law",
+   "dependent": "racial_equality",
+   "reason": "Racial equality is the application of equality before the law to race"
+  },
+  {
+   "prereq": "executive_branch",
+   "dependent": "separation_of_power",
+   "reason": "Must know what the executive is to understand it as one separated power."
+  },
+  {
+   "prereq": "executive_branch",
+   "dependent": "state_governor",
+   "reason": "A governor heads the executive branch at the state level"
+  },
+  {
+   "prereq": "executive_branch",
+   "dependent": "u_s_presidency",
+   "reason": "The presidency is the head of the executive branch"
+  },
+  {
+   "prereq": "federal_office_eligibility",
+   "dependent": "presidential_election",
+   "reason": "Must meet eligibility requirements to run for president."
+  },
+  {
+   "prereq": "federalism",
+   "dependent": "district_of_columbia_government",
+   "reason": "Federal versus local division of power explains DC's relationship to the federal government."
+  },
+  {
+   "prereq": "federalism",
+   "dependent": "enumerated_power",
+   "reason": "Enumerated powers define the federal share of authority in the federal-state division of powers."
+  },
+  {
+   "prereq": "federalism",
+   "dependent": "state_governor",
+   "reason": "Federalism explains why states have separate governments from the federal government"
+  },
+  {
+   "prereq": "federalism",
+   "dependent": "supremacy_clause",
+   "reason": "The Clause defines federal law supremacy over state law, so the federal-state division of federalism must be understood first."
+  },
+  {
+   "prereq": "federalism",
+   "dependent": "u_s_political_system",
+   "reason": "U.S. system is a federal division of power that requires prior understanding of federalism."
+  },
+  {
+   "prereq": "first_amendment_freedom",
+   "dependent": "civil_rights_activism",
+   "reason": "Activism uses speech, assembly and petition protected by the First Amendment."
+  },
+  {
+   "prereq": "first_amendment_right",
+   "dependent": "civil_rights_activism",
+   "reason": "Protest and advocacy require understanding First Amendment speech and assembly rights."
+  },
+  {
+   "prereq": "founding_father",
+   "dependent": "federalist_papers_authorship",
+   "reason": "Hamilton, Madison, and Jay were Founding Fathers, so must know who that group was."
+  },
+  {
+   "prereq": "government_structure",
+   "dependent": "federalism",
+   "reason": "Must understand levels and organization of government to grasp division of powers"
+  },
+  {
+   "prereq": "government_structure",
+   "dependent": "judicial_branch",
+   "reason": "Defines the overall government framework containing the judicial branch"
+  },
+  {
+   "prereq": "government_structure",
+   "dependent": "legislative_branch_structure",
+   "reason": "General government organization is needed before specific legislative branch organization."
+  },
+  {
+   "prereq": "great_depression",
+   "dependent": "world_war_ii",
+   "reason": "Great Depression created the economic instability and political extremism that led to World War II."
+  },
+  {
+   "prereq": "income_taxation",
+   "dependent": "tax_filing_deadline",
+   "reason": "Tax filing deadlines are deadlines for filing income taxes, so understanding income taxation is required first."
+  },
+  {
+   "prereq": "indigenous_people",
+   "dependent": "american_indian_tribe",
+   "reason": "American Indian tribes are specific groups within Indigenous peoples"
+  },
+  {
+   "prereq": "judicial_branch",
+   "dependent": "court_hierarchy",
+   "reason": "Court hierarchy describes levels within the judicial branch so that branch must be known first."
+  },
+  {
+   "prereq": "judicial_branch",
+   "dependent": "separation_of_power",
+   "reason": "Must know what the judiciary is to understand it as one separated power."
+  },
+  {
+   "prereq": "legislative_branch",
+   "dependent": "bicameral_legislature",
+   "reason": "A bicameral legislature is a two-chamber form of the legislative branch, so the legislature concept must be understood first."
+  },
+  {
+   "prereq": "legislative_branch",
+   "dependent": "separation_of_power",
+   "reason": "Must know what the legislature is to understand it as one separated power."
+  },
+  {
+   "prereq": "legislative_branch_structure",
+   "dependent": "congressional_district",
+   "reason": "Structure explains the House vs Senate division that makes districts House-specific."
+  },
+  {
+   "prereq": "legislative_branch_structure",
+   "dependent": "legislative_process",
+   "reason": "Process steps depend on how the legislative branch is organized."
+  },
+  {
+   "prereq": "legislative_process",
+   "dependent": "lawmaking_process",
+   "reason": "Committee review, debate, and voting steps are the core of the lawmaking process."
+  },
+  {
+   "prereq": "market_economy",
+   "dependent": "great_depression",
+   "reason": "Must understand markets and stock markets to understand the crash and downturn."
+  },
+  {
+   "prereq": "national_capital",
+   "dependent": "district_of_columbia_status",
+   "reason": "DC status is that it is the U.S. national capital, so must understand what a national capital is."
+  },
+  {
+   "prereq": "political_party",
+   "dependent": "presidential_election",
+   "reason": "Presidential candidates run and campaign as party nominees."
+  },
+  {
+   "prereq": "popular_sovereignty",
+   "dependent": "causes_of_the_civil_war",
+   "reason": "Doctrine letting territories decide slavery was key to the pre-war debates."
+  },
+  {
+   "prereq": "popular_sovereignty",
+   "dependent": "u_s_political_system",
+   "reason": "Foundational principle that U.S. authority derives from the people."
+  },
+  {
+   "prereq": "pre_columbian_era",
+   "dependent": "american_colonization",
+   "reason": "Establishes what existed in the Americas before European arrival."
+  },
+  {
+   "prereq": "preamble_to_the_constitution",
+   "dependent": "u_s_constitution_purpose",
+   "reason": "Preamble explicitly states the goals and purpose of the Constitution"
+  },
+  {
+   "prereq": "presidential_cabinet",
+   "dependent": "federal_cabinet_department",
+   "reason": "Cabinet departments are defined as the departments whose heads advise the president as the Cabinet."
+  },
+  {
+   "prereq": "presidential_cabinet",
+   "dependent": "presidential_succession",
+   "reason": "Cabinet secretaries follow VP and congressional leaders in succession order."
+  },
+  {
+   "prereq": "presidential_military_power",
+   "dependent": "u_s_foreign_policy",
+   "reason": "Commander-in-chief authority is the military instrument of foreign policy."
+  },
+  {
+   "prereq": "presidential_term_length",
+   "dependent": "presidential_election",
+   "reason": "Election frequency is determined by the president's 4-year term."
+  },
+  {
+   "prereq": "racial_equality",
+   "dependent": "civil_rights_activism",
+   "reason": "U.S. civil rights activism centers on achieving racial equality."
+  },
+  {
+   "prereq": "religious_persecution",
+   "dependent": "american_colonization",
+   "reason": "Religious persecution motivated groups like Pilgrims to emigrate."
+  },
+  {
+   "prereq": "rule_of_law",
+   "dependent": "equality_before_the_law",
+   "reason": "Must understand that law governs everyone before understanding it applies equally to all"
+  },
+  {
+   "prereq": "rule_of_law",
+   "dependent": "judicial_branch",
+   "reason": "Judicial branch exists to interpret laws under rule of law"
+  },
+  {
+   "prereq": "selective_service_system",
+   "dependent": "military_draft_eligibility",
+   "reason": "Draft eligibility specifies who must register with the Selective Service System."
+  },
+  {
+   "prereq": "separation_of_power",
+   "dependent": "checks_and_balance",
+   "reason": "Explains the division of power that checks and balances is designed to constrain"
+  },
+  {
+   "prereq": "september_11_attack",
+   "dependent": "u_s_foreign_policy",
+   "reason": "Catalyst for War on Terror that reshaped current U.S. foreign policy."
+  },
+  {
+   "prereq": "september_11_attack",
+   "dependent": "united_states_military_history",
+   "reason": "Catalyst for 21st-century U.S. military operations in Afghanistan and Iraq."
+  },
+  {
+   "prereq": "slavery_in_the_america",
+   "dependent": "causes_of_the_civil_war",
+   "reason": "System of enslavement was the central sectional conflict behind the war."
+  },
+  {
+   "prereq": "speaker_of_the_house",
+   "dependent": "presidential_succession",
+   "reason": "Speaker of the House is next in succession after the Vice President."
+  },
+  {
+   "prereq": "state_population",
+   "dependent": "congressional_district",
+   "reason": "The number and size of districts per state are apportioned by state population."
+  },
+  {
+   "prereq": "state_representation",
+   "dependent": "congressional_district",
+   "reason": "Districts are the mechanism for proportional state representation in the House."
+  },
+  {
+   "prereq": "supreme_court",
+   "dependent": "judicial_branch_leadership",
+   "reason": "Must know the Supreme Court because its Chief Justice leads the judicial branch"
+  },
+  {
+   "prereq": "supreme_court",
+   "dependent": "judicial_review",
+   "reason": "Must know the highest court that has final say in review."
+  },
+  {
+   "prereq": "taxation_without_representation",
+   "dependent": "american_revolution",
+   "reason": "Taxation without representation was the core grievance that caused the Revolution."
+  },
+  {
+   "prereq": "taxation_without_representation",
+   "dependent": "declaration_of_independence",
+   "reason": "Core grievance against Britain cited to justify independence."
+  },
+  {
+   "prereq": "terrorism",
+   "dependent": "september_11_attack",
+   "reason": "The September 11 attacks were coordinated acts of terrorism, so terrorism must be understood first."
+  },
+  {
+   "prereq": "thirteen_colony",
+   "dependent": "colonial_self_government",
+   "reason": "Must know the specific colonies that practiced colonial self-government."
+  },
+  {
+   "prereq": "thirteen_colony",
+   "dependent": "us_flag_symbolism",
+   "reason": "Stripes represent the original thirteen colonies, so colonies must be understood first."
+  },
+  {
+   "prereq": "transatlantic_slave_trade",
+   "dependent": "slavery_in_the_america",
+   "reason": "Forced transport of enslaved Africans created the labor system used in slavery in the Americas"
+  },
+  {
+   "prereq": "u_s_border",
+   "dependent": "louisiana_purchase",
+   "reason": "Purchase expanded U.S. borders and doubled the nation's size."
+  },
+  {
+   "prereq": "u_s_border",
+   "dependent": "u_s_mexico_border",
+   "reason": "Must understand the general concept of U.S. borders before the specific U.S.-Mexico border."
+  },
+  {
+   "prereq": "u_s_citizen_responsibility",
+   "dependent": "democratic_engagement",
+   "reason": "Engagement fulfills core citizen responsibilities like voting and participating."
+  },
+  {
+   "prereq": "u_s_citizen_responsibility",
+   "dependent": "oath_of_allegiance",
+   "reason": "The oath is the formal promise to fulfill citizen duties so responsibilities must be understood first."
+  },
+  {
+   "prereq": "u_s_citizen_right",
+   "dependent": "voting_right",
+   "reason": "Voting is a citizen-specific right, so citizen rights must be understood first."
+  },
+  {
+   "prereq": "u_s_congress",
+   "dependent": "district_of_columbia_government",
+   "reason": "Congress holds ultimate authority over DC and delegates home rule to its local government."
+  },
+  {
+   "prereq": "u_s_congress",
+   "dependent": "state_representation",
+   "reason": "State representation describes states' seats in Congress"
+  },
+  {
+   "prereq": "u_s_congress",
+   "dependent": "u_s_foreign_policy",
+   "reason": "Congress declares war and Senate ratifies treaties for foreign action."
+  },
+  {
+   "prereq": "u_s_congress",
+   "dependent": "u_s_house_of_representative",
+   "reason": "The House is one chamber of the U.S. Congress."
+  },
+  {
+   "prereq": "u_s_congress",
+   "dependent": "u_s_senate",
+   "reason": "The Senate is one house of the U.S. Congress"
+  },
+  {
+   "prereq": "u_s_constitution",
+   "dependent": "constitutional_amendment",
+   "reason": "An amendment is a formal change to the Constitution, so the Constitution must be understood first."
+  },
+  {
+   "prereq": "u_s_constitution",
+   "dependent": "enumerated_power",
+   "reason": "Enumerated powers are the specific powers granted to the federal government by the Constitution."
+  },
+  {
+   "prereq": "u_s_constitution",
+   "dependent": "federalist_papers_authorship",
+   "reason": "Federalist Papers were written to advocate for the Constitution, so must know what it is."
+  },
+  {
+   "prereq": "u_s_constitution",
+   "dependent": "judicial_branch",
+   "reason": "Constitution establishes and empowers the judicial branch"
+  },
+  {
+   "prereq": "u_s_constitution",
+   "dependent": "oath_of_allegiance",
+   "reason": "The oath is a vow to support and defend the Constitution so the Constitution must be understood first."
+  },
+  {
+   "prereq": "u_s_constitution",
+   "dependent": "preamble_to_the_constitution",
+   "reason": "The Preamble is the introduction to the U.S. Constitution, so the Constitution itself must be known first."
+  },
+  {
+   "prereq": "u_s_constitution",
+   "dependent": "supremacy_clause",
+   "reason": "The Supremacy Clause is Article VI of the Constitution, so the Constitution must be understood first."
+  },
+  {
+   "prereq": "u_s_constitution",
+   "dependent": "u_s_congress",
+   "reason": "Congress is created and empowered by the Constitution, so Constitution must be understood first."
+  },
+  {
+   "prereq": "u_s_constitution",
+   "dependent": "u_s_presidency",
+   "reason": "The Constitution creates and defines the presidency"
+  },
+  {
+   "prereq": "u_s_constitution_ratification",
+   "dependent": "federalist_papers_authorship",
+   "reason": "Authorship makes sense only in context of the ratification debate the authors were trying to influence."
+  },
+  {
+   "prereq": "u_s_flag",
+   "dependent": "pledge_of_allegiance",
+   "reason": "The Pledge is a vow of allegiance to the U.S. flag and the republic it represents."
+  },
+  {
+   "prereq": "u_s_flag",
+   "dependent": "us_flag_symbolism",
+   "reason": "Must know the flag itself before learning what its stars and stripes symbolize."
+  },
+  {
+   "prereq": "u_s_geography",
+   "dependent": "major_river",
+   "reason": "Provides the geographic framework needed to locate and identify major rivers."
+  },
+  {
+   "prereq": "u_s_geography",
+   "dependent": "u_s_border",
+   "reason": "Provides location of U.S. and neighboring countries needed to identify borders."
+  },
+  {
+   "prereq": "u_s_geography",
+   "dependent": "u_s_landmark",
+   "reason": "U.S. landmarks are physical sites located within U.S. geography."
+  },
+  {
+   "prereq": "u_s_geography",
+   "dependent": "u_s_state",
+   "reason": "Must understand the overall U.S. geographic framework to locate and define its states."
+  },
+  {
+   "prereq": "u_s_holiday",
+   "dependent": "u_s_federal_holiday",
+   "reason": "Federal holidays are a specific subset of U.S. holidays, so the broader concept must be understood first."
+  },
+  {
+   "prereq": "u_s_house_of_representative",
+   "dependent": "congressional_term_length",
+   "reason": "Must know the House to understand its 2-year term portion."
+  },
+  {
+   "prereq": "u_s_house_of_representative",
+   "dependent": "federal_office_eligibility",
+   "reason": "House has distinct age, citizenship, and residency eligibility requirements."
+  },
+  {
+   "prereq": "u_s_house_of_representative",
+   "dependent": "legislative_branch_structure",
+   "reason": "The House is one chamber that defines the legislative structure."
+  },
+  {
+   "prereq": "u_s_house_of_representative",
+   "dependent": "speaker_of_the_house",
+   "reason": "The Speaker is the presiding officer and leader of the House."
+  },
+  {
+   "prereq": "u_s_political_system",
+   "dependent": "presidential_election",
+   "reason": "Presidential elections are a core process within the U.S. political system."
+  },
+  {
+   "prereq": "u_s_presidency",
+   "dependent": "presidential_cabinet",
+   "reason": "Cabinet is defined by its role advising the President."
+  },
+  {
+   "prereq": "u_s_presidency",
+   "dependent": "presidential_military_power",
+   "reason": "Military powers are powers of the presidential office itself."
+  },
+  {
+   "prereq": "u_s_presidency",
+   "dependent": "presidential_term_length",
+   "reason": "Must know what the presidency is to understand how long a presidential term lasts."
+  },
+  {
+   "prereq": "u_s_presidency",
+   "dependent": "u_s_president",
+   "reason": "Must understand the office of the presidency to understand the individuals who have held it"
+  },
+  {
+   "prereq": "u_s_presidency",
+   "dependent": "vice_presidency",
+   "reason": "The vice presidency is defined as deputy to and backup for the presidency."
+  },
+  {
+   "prereq": "u_s_presidency",
+   "dependent": "vice_president",
+   "reason": "Vice President is defined as second to and successor of the President, so the presidency must be understood first."
+  },
+  {
+   "prereq": "u_s_senate",
+   "dependent": "federal_office_eligibility",
+   "reason": "Senate has distinct age, citizenship, and residency eligibility requirements."
+  },
+  {
+   "prereq": "u_s_senate",
+   "dependent": "legislative_branch_structure",
+   "reason": "The Senate is the other chamber that defines the legislative structure."
+  },
+  {
+   "prereq": "u_s_senate",
+   "dependent": "u_s_senate_term_length",
+   "reason": "You must know what the U.S. Senate is to understand how long its members serve."
+  },
+  {
+   "prereq": "u_s_senate_term_length",
+   "dependent": "congressional_term_length",
+   "reason": "Senate 6-year term is a required component of overall congressional term lengths."
+  },
+  {
+   "prereq": "u_s_state",
+   "dependent": "district_of_columbia_status",
+   "reason": "DC status is defined as a federal district that is not a state, so must understand what states are."
+  },
+  {
+   "prereq": "u_s_state",
+   "dependent": "federalism",
+   "reason": "Federalism divides power between national government and states, so must know what states are"
+  },
+  {
+   "prereq": "u_s_state",
+   "dependent": "new_york_geography",
+   "reason": "Learner must know New York is one of the U.S. states."
+  },
+  {
+   "prereq": "u_s_state",
+   "dependent": "state_capital",
+   "reason": "A state capital is defined as the seat of government of a U.S. state"
+  },
+  {
+   "prereq": "u_s_state",
+   "dependent": "state_population",
+   "reason": "Must know what U.S. states are to understand population counts by state."
+  },
+  {
+   "prereq": "u_s_state",
+   "dependent": "state_representation",
+   "reason": "Must know what states are to understand how they are represented"
+  },
+  {
+   "prereq": "u_s_state",
+   "dependent": "u_s_territory",
+   "reason": "Territories are U.S. jurisdictions that are not states, so states must be understood to define them."
+  },
+  {
+   "prereq": "u_s_state",
+   "dependent": "us_flag_symbolism",
+   "reason": "Stars represent the 50 states, so the concept of states must be understood first."
+  },
+  {
+   "prereq": "u_s_territorial_expansion",
+   "dependent": "causes_of_the_civil_war",
+   "reason": "Westward expansion created the fight over slave versus free new states."
+  },
+  {
+   "prereq": "u_s_territorial_expansion",
+   "dependent": "u_s_territory",
+   "reason": "Explains how the U.S. acquired lands beyond the states that became territories."
+  },
+  {
+   "prereq": "u_s_territory",
+   "dependent": "louisiana_purchase",
+   "reason": "Louisiana was acquired as a territory before becoming states."
+  },
+  {
+   "prereq": "u_s_territory",
+   "dependent": "u_s_territory_capital",
+   "reason": "Must understand what U.S. territories are before learning their capitals."
+  },
+  {
+   "prereq": "u_s_voting_process",
+   "dependent": "democratic_engagement",
+   "reason": "Voting is the central mechanism of democratic engagement."
+  },
+  {
+   "prereq": "u_s_voting_process",
+   "dependent": "presidential_election",
+   "reason": "Presidential elections use the general voting process of registering and casting ballots."
+  },
+  {
+   "prereq": "unalienable_right",
+   "dependent": "declaration_of_independence",
+   "reason": "Philosophical basis asserted in the Declaration for life, liberty, and pursuit of happiness."
+  },
+  {
+   "prereq": "unalienable_right",
+   "dependent": "equality_before_the_law",
+   "reason": "Must understand inherent equal rights from creation before understanding equal treatment by law"
+  },
+  {
+   "prereq": "united_states_geography",
+   "dependent": "major_river",
+   "reason": "Provides national geographic context required to understand major rivers."
+  },
+  {
+   "prereq": "united_states_geography",
+   "dependent": "u_s_border",
+   "reason": "Provides overall geographic context required to understand where U.S. borders lie."
+  },
+  {
+   "prereq": "united_states_geography",
+   "dependent": "u_s_landmark",
+   "reason": "U.S. landmarks are physical sites located within United States geography."
+  },
+  {
+   "prereq": "united_states_geography",
+   "dependent": "u_s_state",
+   "reason": "Must understand national geography to contextualize states within the country."
+  },
+  {
+   "prereq": "vice_presidency",
+   "dependent": "federal_office_eligibility",
+   "reason": "Vice presidential eligibility mirrors presidential eligibility requirements."
+  },
+  {
+   "prereq": "vice_presidency",
+   "dependent": "presidential_succession",
+   "reason": "The vice presidency is the office that assumes the presidency in succession."
+  },
+  {
+   "prereq": "vice_president",
+   "dependent": "presidential_election",
+   "reason": "Vice President is elected on the same ticket as the president."
+  },
+  {
+   "prereq": "vice_president",
+   "dependent": "presidential_succession",
+   "reason": "Vice President is first in line and becomes President upon vacancy."
+  },
+  {
+   "prereq": "voting_age",
+   "dependent": "u_s_voting_process",
+   "reason": "Specifies the minimum age eligibility required to participate in voting"
+  },
+  {
+   "prereq": "voting_right",
+   "dependent": "civil_rights_activism",
+   "reason": "Securing voting rights is a core goal that must be understood to understand the activism."
+  },
+  {
+   "prereq": "voting_right",
+   "dependent": "voting_age",
+   "reason": "Voting age sets the minimum age requirement for exercising voting rights."
+  },
+  {
+   "prereq": "world_ocean",
+   "dependent": "united_states_geography",
+   "reason": "The United States is bounded by oceans, requiring ocean knowledge to locate it."
+  },
+  {
+   "prereq": "world_war_i_history",
+   "dependent": "world_war_ii",
+   "reason": "World War I history explains the Treaty of Versailles and unresolved conflicts that caused World War II."
+  },
+  {
+   "prereq": "world_war_ii",
+   "dependent": "world_war_ii_alliance",
+   "reason": "World War II is the conflict whose opposing sides must be known to understand its alliances."
+  },
+  {
+   "prereq": "world_war_ii_alliance",
+   "dependent": "world_war_ii_history",
+   "reason": "Allied versus Axis alignment is essential to follow WWII events and U.S. role."
+  },
+  {
+   "prereq": "world_war_ii_history",
+   "dependent": "axis_power",
+   "reason": "Historical context of the war is needed to understand who the Axis Powers were"
+  },
+  {
+   "prereq": "world_war_ii_history",
+   "dependent": "cold_war",
+   "reason": "Knowledge of WWII events explains the origins of U.S.-Soviet rivalry."
+  }
+ ],
+ "retired": {}
+}

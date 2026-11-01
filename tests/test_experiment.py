@@ -194,3 +194,58 @@ def test_capped_replicate_zero_keeps_the_prompt_already_cached():
     assert "up to 3" in ex.ARMS["capped"]["system"]
     assert "up to" not in ex.UNCAPPED
     assert ex.SOURCE.startswith(ex.UNCAPPED)
+
+
+def test_prompt_text_matches_what_was_logged_and_cached():
+    """A changed hash would silently change a baseline and miss its cached answers."""
+    assert {arm: ex.hash_text(config["system"]) for arm, config in ex.ARMS.items()} == {
+        "capped": "a6ffb8c5fc47", "uncapped": "947202d3f6c8", "source": "fe201ea19344", "placebo": "fe201ea19344"}
+    assert ex.ARMS["capped"]["cap"] == 3 and ex.ARMS["uncapped"]["cap"] is None
+    assert {name: ex.hash_text(ex.EDGE_PROMPTS[name]) for name in ("e1_direct", "e2_strict", "e3_chain", "e4_uncapped")} == {
+        "e1_direct": "f8de7ec0723a", "e2_strict": "a6ffb8c5fc47", "e3_chain": "8b70a769db1b", "e4_uncapped": "947202d3f6c8"}
+
+
+def write_sheet(path, rows):
+    path.write_text("item,A,B,rater_1_A_needed_for_B,rater_2_A_needed_for_B\n" + "\n".join(rows) + "\n")
+
+
+def test_read_raters_normalizes_answers_and_skips_blank_columns(tmp_path):
+    sheet = tmp_path / "s.csv"
+    write_sheet(sheet, ['0,"a, b",c,Yes,', "1,d,e,unsure,", "2,f,g,,"])
+    assert ex.read_raters(sheet) == {"rater_1_A_needed_for_B": {0: "yes", 1: "unclear"}}
+
+
+def test_read_raters_rejects_an_unknown_answer(tmp_path):
+    sheet = tmp_path / "s.csv"
+    write_sheet(sheet, ["0,a,b,maybe,"])
+    with pytest.raises(ValueError, match="item 0"):
+        ex.read_raters(sheet)
+
+
+def test_rater_agreement_kappa_uses_items_both_decided():
+    first = {0: "yes", 1: "yes", 2: "no", 3: "no", 4: "unclear", 5: "yes"}
+    second = {0: "yes", 1: "no", 2: "no", 3: "no", 4: "yes"}
+    out = ex.rater_agreement(first, second)
+    assert out["both_rated"] == 5 and out["both_decided"] == 4
+    assert out["raw_agreement"] == pytest.approx(3 / 5)
+    assert out["kappa"] == pytest.approx(.5)
+
+
+def test_rater_agreement_has_no_kappa_without_decided_items():
+    assert ex.rater_agreement({0: "unclear"}, {0: "yes"})["kappa"] is None
+
+
+def test_human_reviews_stay_none_until_a_column_is_filled(tmp_path, monkeypatch):
+    monkeypatch.setattr(ex, "RUNS", tmp_path)
+    write_sheet(tmp_path / "review_packet.csv", ["0,a,b,,", "1,c,d,,"])
+    write_sheet(tmp_path / "kappa_review.csv", ["0,a,b,,"])
+    packet_key, kappa_key = {"capped": [0], "uncapped": [1]}, {"0": {"lb1": 1, "lb2": 0}}
+    assert ex.human_reviews(packet_key, kappa_key) is None
+    write_sheet(tmp_path / "review_packet.csv", ["0,a,b,yes,no", "1,c,d,no,no"])
+    write_sheet(tmp_path / "kappa_review.csv", ["0,a,b,no,"])
+    out = ex.human_reviews(packet_key, kappa_key)
+    assert out["packet_arms"]["rater_1_A_needed_for_B"]["capped"]["yes"] == 1
+    assert out["packet_arms"]["rater_2_A_needed_for_B"]["capped"]["no"] == 1
+    assert out["packet_agreement"]["both_rated"] == 2
+    assert out["kappa_sheet"]["rater_1_A_needed_for_B"] == {"lb1_only": {"no": 1}}
+    assert out["kappa_agreement"] is None

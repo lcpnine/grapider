@@ -207,16 +207,15 @@ def test_reversing_a_retained_edge_can_replace_it_when_judged_right(monkeypatch)
     assert revised.g.has_edge("c", "b") and not revised.g.has_edge("b", "c")
 
 
-def test_parent_limit_drops_bridges_then_new_edges_before_old_ones():
-    dag = PrereqDAG()
-    for n in ["bridge", "fresh", "old1", "old2", "old3", "t"]:
-        dag.add_node(n)
-    dag.add_edge("bridge", "t", "bridged after retiring x")
-    dag.add_edge("fresh", "t", "needed")
-    for old in ["old1", "old2", "old3"]:
-        dag.add_edge(old, "t", "needed")
-    revision.enforce_parent_limit(dag, {("fresh", "t")})
-    assert sorted(dag.g.predecessors("t")) == ["old1", "old2", "old3"]
+def test_revision_keeps_every_parent_and_bridge_past_three(monkeypatch):
+    """A retired node with four parents leaves four bridges on its child, and nothing trims them."""
+    monkeypatch.setattr(pipeline, "ask_json", lambda *a, **k: {"prereqs": [], "concepts": []})
+    dag = dag_of(*((p, "gone") for p in "abcd"), ("gone", "t"))
+    dag.g.nodes["gone"]["provenance"] = {"old:removed"}
+    diff = dict(removed=["old:removed"], added=[], modified=[], unchanged=[(f"old:{n}", f"new:{n}") for n in ["a", "b", "c", "d", "t"]])
+    revised, report = revise(dag, diff, [], "new", Ledger())
+    assert report["retired"] == ["gone"]
+    assert sorted(revised.g.predecessors("t")) == ["a", "b", "c", "d"]
 
 
 def test_learner_report_uses_the_given_version_and_rates_violations():

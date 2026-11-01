@@ -7,6 +7,21 @@ def edge(a, b, label=1):
     return dict(prereq_id=a, dependent_id=b, label=label)
 
 
+def test_default_prompt_keeps_every_pick(monkeypatch):
+    names = [f"c{i}" for i in range(6)]
+    prompts = []
+    monkeypatch.setattr(pipeline, "ask_json", lambda system, user, ledger=None: prompts.append(system) or {"prereqs": [{"name": n} for n in names[1:]]})
+    assert [n for n, _ in pipeline.pick_prereqs("c0", names, pipeline.DEFAULT_EDGE_PROMPT)] == names[1:]
+    assert "up to" not in prompts[0]
+
+
+def test_earlier_prompts_keep_their_cap_for_reproducing_old_results(monkeypatch):
+    names = [f"c{i}" for i in range(6)]
+    monkeypatch.setattr(pipeline, "ask_json", lambda *a, **k: {"prereqs": [{"name": n} for n in names[1:]]})
+    for prompt in pipeline.CAPPED_PROMPTS:
+        assert len(pipeline.pick_prereqs("c0", names, prompt)) == 3
+
+
 def test_gold_reachability_includes_transitive_pairs():
     reach, universe = gold_reachability([edge("a", "b"), edge("b", "c"), edge("c", "a", 0)])
     assert reach == {("a", "b"), ("b", "c"), ("a", "c")}

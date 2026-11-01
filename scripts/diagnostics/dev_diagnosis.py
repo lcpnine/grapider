@@ -9,9 +9,9 @@ from collections import Counter
 import networkx as nx
 
 sys.path.insert(0, str(__import__("pathlib").Path(__file__).resolve().parents[2]))
-from prereq.dag import MAX_PARENTS
+from prereq.pipeline import LEGACY_CAP as MAX_PARENTS
 from prereq.llm import CACHE, MUSE_MODEL
-from prereq.pipeline import EDGE_PROMPTS, gold_reachability
+from prereq.pipeline import CAPPED_PROMPTS, EDGE_PROMPTS, gold_reachability
 from prereq.schema import canon
 from prereq.splits import SPLIT_DIR
 
@@ -86,7 +86,7 @@ if nx.is_directed_acyclic_graph(gold):
 
 print("\n== raw picks by prompt (before cycle breaking and reduction)")
 results = {}
-for prompt_id in EDGE_PROMPTS:
+for prompt_id in CAPPED_PROMPTS:
     picks, sizes, dropped, missing, positions = [], [], 0, 0, []
     for target in name.values():
         key, others = cached_picks(prompt_id, target)

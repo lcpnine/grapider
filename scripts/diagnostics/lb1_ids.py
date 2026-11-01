@@ -8,7 +8,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 sys.path.insert(0, str(__import__("pathlib").Path(__file__).resolve().parents[2]))
-from prereq.dag import MAX_PARENTS
+from prereq.pipeline import LEGACY_CAP as MAX_PARENTS
 from prereq.llm import CACHE, MUSE_MODEL
 from prereq.pipeline import EDGE_PROMPTS
 from prereq.schema import canon

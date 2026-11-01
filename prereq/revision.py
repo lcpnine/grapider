@@ -77,17 +77,6 @@ def retire_node(dag, node, anomalies, version):
     dag.retire(node, version)
 
 
-def enforce_parent_limit(dag, fresh=()):
-    """Keep the revised graph inside the parent limit: drop bridges, then this revision's edges."""
-    def rank(p, node):
-        bridged = dag.g[p][node]["reason"].startswith("bridged")
-        return (0 if bridged else 1 if (p, node) in fresh else 2, p)
-    for node in [n for n in dag.g if dag.g.in_degree(n) > 3]:
-        parents = sorted(dag.g.predecessors(node), key=lambda p: rank(p, node))
-        for p in parents[: dag.g.in_degree(node) - 3]:
-            dag.g.remove_edge(p, node)
-
-
 def revise(old_dag, diff, new_questions, version, ledger):
     """Apply a question diff: only nodes the diff touches change. Returns (dag, report)."""
     dag = PrereqDAG.from_json(old_dag.to_json())
@@ -119,13 +108,11 @@ def revise(old_dag, diff, new_questions, version, ledger):
 
     # New nodes get parents. An existing node a new question touched can only gain a new concept
     # as a parent, unless its proposal reverses an edge, which is a conflict for the judge to decide.
-    kept_edges = set(dag.g.edges)
     build_edges(dag, DEFAULT_EDGE_PROMPT, ledger,
                 targets=[dag.g.nodes[n]["name"] for n in sorted(new_nodes | touched)],
                 judge_cycle=cycle_judge(ledger, anomalies),
                 keep=lambda prereq, dependent: prereq in new_nodes or dependent in new_nodes,
                 on_conflict=conflict_judge(dag, ledger, anomalies))
-    enforce_parent_limit(dag, set(dag.g.edges) - kept_edges)
     return dag, dict(affected=sorted(affected | touched), retired=retired, new_nodes=sorted(new_nodes),
                      absorbed=absorbed, anomalies=anomalies)
 
@@ -329,7 +316,7 @@ def compare_methods(label, old_q, new_q, old_version, version):
 def main():
     old_q, new_q = load_civics()
     assert (len(old_q), len(new_q)) == (100, 128), (len(old_q), len(new_q))
-    compare_methods("civics", old_q, new_q, "2008", "2025")
+    compare_methods("civics_uncapped", old_q, new_q, "2008", "2025")
 
 
 if __name__ == "__main__":

@@ -130,12 +130,10 @@ def test_validate_finds_cycle():
     assert chain(("a", "b"), ("b", "a")).validate()["cycles"]
 
 
-def test_validate_finds_too_many_parents():
-    dag = chain(("a", "x"), ("b", "x"), ("c", "x"))
-    assert dag.validate()["too_many_parents"] == []
-    dag.add_node("d")
-    dag.add_edge("d", "x", "needed")
-    assert dag.validate()["too_many_parents"] == ["x"]
+def test_validate_sets_no_limit_on_parents():
+    dag = chain(*((p, "x") for p in "abcdefgh"))
+    assert dag.g.in_degree("x") == 8
+    assert not any(dag.validate().values())
 
 
 def test_validate_finds_orphan():

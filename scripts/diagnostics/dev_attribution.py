@@ -11,7 +11,8 @@ from pathlib import Path
 import networkx as nx
 
 sys.path.insert(0, str(__import__("pathlib").Path(__file__).resolve().parents[2]))
-from prereq.dag import MAX_PARENTS, PrereqDAG
+from prereq.dag import PrereqDAG
+from prereq.pipeline import LEGACY_CAP as MAX_PARENTS
 from prereq.llm import CACHE, MUSE_MODEL
 from prereq.pipeline import EDGE_PROMPTS, break_cycles, gold_reachability
 from prereq.schema import canon

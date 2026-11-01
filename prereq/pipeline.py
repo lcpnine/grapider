@@ -8,32 +8,40 @@ import sys
 
 import networkx as nx
 
-from .dag import MAX_PARENTS, PrereqDAG
+from .dag import PrereqDAG
 from .llm import MUSE_MODEL, Ledger, ask_json, log_run, pmap
 from .schema import canon
 from .splits import SPLIT_DIR
 
 EDGE_OUTPUT = ('Reply with JSON only: {"prereqs": [{"name": "<exact name from the list>", '
                '"reason": "<one line>"}]}. Use an empty list if there are none.')
+# Cached answers are keyed on exact prompt text, so never edit a prompt here: add a new one.
 EDGE_PROMPTS = {
-    "e1_direct": f"You build a prerequisite graph. Given a target concept and a list of concepts, pick up to "
-                 f"{MAX_PARENTS} from the list that are its direct prerequisites. " + EDGE_OUTPUT,
-    "e2_strict": f"You build a prerequisite graph. Given a target concept and a list of concepts, pick up to "
-                 f"{MAX_PARENTS} from the list that a learner must understand before the target. Being related "
-                 f"is not enough, and do not pick concepts that build on the target. Many foundational concepts "
-                 f"have no prerequisites in the list. " + EDGE_OUTPUT,
-    "e3_chain": f"You build a prerequisite graph where long chains matter. Given a target concept and a list of "
-                f"concepts, pick up to {MAX_PARENTS} from the list that are the closest immediate steps before "
-                f"the target: choose the most advanced concepts the target directly builds on, not distant "
-                f"fundamentals they already rely on. Foundational concepts may have none. " + EDGE_OUTPUT,
+    "e1_direct": "You build a prerequisite graph. Given a target concept and a list of concepts, pick up to "
+                 "3 from the list that are its direct prerequisites. " + EDGE_OUTPUT,
+    "e2_strict": "You build a prerequisite graph. Given a target concept and a list of concepts, pick up to "
+                 "3 from the list that a learner must understand before the target. Being related "
+                 "is not enough, and do not pick concepts that build on the target. Many foundational concepts "
+                 "have no prerequisites in the list. " + EDGE_OUTPUT,
+    "e3_chain": "You build a prerequisite graph where long chains matter. Given a target concept and a list of "
+                "concepts, pick up to 3 from the list that are the closest immediate steps before "
+                "the target: choose the most advanced concepts the target directly builds on, not distant "
+                "fundamentals they already rely on. Foundational concepts may have none. " + EDGE_OUTPUT,
+    "e4_uncapped": "You build a prerequisite graph. Given a target concept and a list of concepts, pick every concept "
+                   "from the list that a learner must understand before the target. Being related is not enough, and "
+                   "do not pick concepts that build on the target. Many foundational concepts have no prerequisites "
+                   "in the list. " + EDGE_OUTPUT,
 }
+# Earlier prompts and their cap exist only to reproduce earlier results. Generation sets no limit on parents.
+CAPPED_PROMPTS = ("e1_direct", "e2_strict", "e3_chain")
+LEGACY_CAP = 3
 EXTRACT_SYSTEM = ('Extract the 1 to 3 core study concepts a learner must know to answer this question. Use short, '
                   'general noun phrases, not the question text and not answers that change over time. '
                   'Reply with JSON only: {"concepts": ["..."]}.')
 MERGE_SYSTEM = ('Two concept labels come from the same study material. Decide if they mean the same concept. '
                 'Reply with JSON only: {"same": true or false}.')
 ASK_MERGE = 0.80
-DEFAULT_EDGE_PROMPT = "e2_strict"
+DEFAULT_EDGE_PROMPT = "e4_uncapped"
 
 
 def pick_prereqs(target, names, prompt_id, ledger=None, reverse=False):
@@ -47,7 +55,7 @@ def pick_prereqs(target, names, prompt_id, ledger=None, reverse=False):
         name = known.get(canon(str(p.get("name", ""))))
         if name and name not in [x[0] for x in picks]:
             picks.append((name, " ".join(str(p.get("reason") or "selected by model").split())))
-    return picks[:MAX_PARENTS]
+    return picks[:LEGACY_CAP] if prompt_id in CAPPED_PROMPTS else picks
 
 
 def break_cycles(dag, judge_cycle=None):

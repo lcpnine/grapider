@@ -3,8 +3,6 @@ import json
 
 import networkx as nx
 
-MAX_PARENTS = 3
-
 
 class PrereqDAG:
     def __init__(self):
@@ -51,7 +49,6 @@ class PrereqDAG:
         cycles = list(nx.simple_cycles(self.g))
         return {
             "cycles": cycles,
-            "too_many_parents": sorted(n for n in self.g if self.g.in_degree(n) > MAX_PARENTS),
             "redundant_edges": [] if cycles else sorted(self._redundant_edges()),
             "orphans": sorted(n for n in self.g if self.g.degree(n) == 0) if len(self.g) > 1 else [],
         }
